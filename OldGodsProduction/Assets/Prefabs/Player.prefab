@@ -47,13 +47,15 @@ GameObject:
   - 92: {fileID: 9236908}
   - 124: {fileID: 12436908}
   - 81: {fileID: 8136908}
+  - 114: {fileID: 11487576}
+  - 114: {fileID: 11487578}
   m_Layer: 8
   m_Name: NormalView
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &136908
 GameObject:
   m_ObjectHideFlags: 0
@@ -77,6 +79,7 @@ GameObject:
   - 114: {fileID: 11419290}
   - 114: {fileID: 11419288}
   - 114: {fileID: 11419154}
+  - 114: {fileID: 11487574}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -156,7 +159,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 136908}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.29999995, y: 3.0999999, z: -.400000006}
+  m_LocalPosition: {x: -2.24000001, y: 8.63000011, z: -2.79999995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 436904}
@@ -184,7 +187,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_BackGroundColor: {r: .109803922, g: .368627459, b: .635294139, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -193,7 +196,7 @@ Camera:
     height: 1
   near clip plane: .300000012
   far clip plane: 1000
-  field of view: 60
+  field of view: 56.7000008
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -203,7 +206,7 @@ Camera:
   m_RenderingPath: 2
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
-  m_HDR: 0
+  m_HDR: 1
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
@@ -3282,31 +3285,32 @@ MonoBehaviour:
   fsm:
     usedInTemplate: {fileID: 0}
     name: WorldSwitch
-    startState: State 1
+    startState: RealWorld
     states:
-    - name: State 1
+    - name: RealWorld
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 53.6875
+        x: 213.6875
         y: 114
         width: 101
         height: 32
       isBreakpoint: 0
-      isSequence: 1
+      isSequence: 0
       hideUnused: 0
       transitions:
       - fsmEvent:
           name: SpiritSwitch
           isSystemEvent: 0
           isGlobal: 0
-        toState: State 2
+        toState: EnterSpiritWorld
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.CameraFadeIn
         - HutongGames.PlayMaker.Actions.SendEvent
         - HutongGames.PlayMaker.Actions.SetBoolValue
         - HutongGames.PlayMaker.Actions.ActivateGameObject
@@ -3326,10 +3330,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101010100000001
-        actionIsOpen: 010101010101010101
-        actionStartIndex: 0000000004000000070000000c0000001000000015000000170000002000000022000000
-        actionHashCodes: eec9d96829b4727bb4797e4aa31b8ad0b4797e4ae19d21d874708330e19d21d8437581ed
+        - 
+        actionEnabled: 01010101010100000001
+        actionIsOpen: 01010101010101010101
+        actionStartIndex: 0000000004000000080000000b0000001000000014000000190000001b0000002400000026000000
+        actionHashCodes: 06583ecfeec9d96829b4727bb4797e4aa31b8ad0b4797e4ae19d21d874708330e19d21d8437581ed
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -3448,13 +3453,17 @@ MonoBehaviour:
           value: spiritMusicStop
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 574f524c4453574954434800000000000000015265616c576f726c64537069726974576f726c64000000000000000000010000000000000000000000000000000000000000803f0000000000000100000000000000803f0000000000000000000000000000720000005370697269745377697463680001
+        byteData: 0000000000000000000000000000803f000000803f0000574f524c4453574954434800000000000000015265616c576f726c64537069726974576f726c64000000000000000000010000000000000000000000000000000000000000803f0000000000000100000000000000803f0000000000000000000000000000720000005370697269745377697463680001
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1f000000170000000f000000010000001100000011000000010000001400000011000000110000000100000001000000140000001200000012000000130000001400000011000000110000000100000001000000120000001c0000001400000012000000120000000f0000000f0000001100000011000000110000000f000000120000001c000000070000001700000011000000
+        paramDataType: 190000000f00000017000000010000001f000000170000000f000000010000001100000011000000010000001400000011000000110000000100000001000000140000001200000012000000130000001400000011000000110000000100000001000000120000001c0000001400000012000000120000000f0000000f0000001100000011000000110000000f000000120000001c000000070000001700000011000000
         paramName:
+        - color
+        - time
+        - finishEvent
+        - realTime
         - eventTarget
         - sendEvent
         - delay
@@ -3492,15 +3501,15 @@ MonoBehaviour:
         - key
         - sendEvent
         - storeResult
-        paramDataPos: 00000000000000000b00000010000000110000002700000029000000000000002a0000002c0000002e0000002f000000010000000000000001000000000000000200000030000000320000003400000035000000020000003600000003000000030000000400000043000000480000004d0000004f00000051000000530000000500000058000000650000006900000075000000
-        paramByteDataSize: 000000000b00000005000000010000001600000002000000010000000000000002000000020000000100000001000000000000000000000000000000000000000000000002000000020000000100000001000000000000000d000000000000000000000000000000050000000500000002000000020000000200000005000000000000000d000000040000000c00000002000000
-    - name: State 2
+        paramDataPos: 0000000011000000160000001600000000000000170000002200000027000000280000003e000000400000000000000041000000430000004500000046000000010000000000000001000000000000000200000047000000490000004b0000004c000000020000004d0000000300000003000000040000005a0000005f0000006400000066000000680000006a000000050000006f0000007c000000800000008c000000
+        paramByteDataSize: 11000000050000000000000001000000000000000b00000005000000010000001600000002000000010000000000000002000000020000000100000001000000000000000000000000000000000000000000000002000000020000000100000001000000000000000d000000000000000000000000000000050000000500000002000000020000000200000005000000000000000d000000040000000c00000002000000
+    - name: SpiritWorld
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 66
-        y: 190
+        x: 223
+        y: 211
         width: 101
         height: 32
       isBreakpoint: 0
@@ -3511,12 +3520,13 @@ MonoBehaviour:
           name: SpiritSwitch
           isSystemEvent: 0
           isGlobal: 0
-        toState: State 1
+        toState: EnterRealWorld
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.CameraFadeIn
         - HutongGames.PlayMaker.Actions.GetChild
         - HutongGames.PlayMaker.Actions.ActivateGameObject
         - HutongGames.PlayMaker.Actions.ActivateGameObject
@@ -3525,6 +3535,8 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.GetKeyDown
         - HutongGames.PlayMaker.Actions.SetBoolValue
         - HutongGames.PlayMaker.Actions.SendEvent
+        - HutongGames.PlayMaker.Actions.SendEvent
+        - HutongGames.PlayMaker.Actions.IntAdd
         customNames:
         - 
         - 
@@ -3534,10 +3546,13 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 0101010000010101
-        actionIsOpen: 0101010101010101
-        actionStartIndex: 0000000004000000090000000e00000017000000190000001c0000001f000000
-        actionHashCodes: a31b8ad0b4797e4ab4797e4a74708330e19d21d8437581ed29b4727beec9d968
+        - 
+        - 
+        - 
+        actionEnabled: 0101010100000101010101
+        actionIsOpen: 0101010101010101010101
+        actionStartIndex: 0000000004000000080000000d000000120000001b0000001d0000002000000023000000270000002b000000
+        actionHashCodes: 06583ecfa31b8ad0b4797e4ab4797e4a74708330e19d21d8437581ed29b4727beec9d968eec9d9689ffa9c66
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -3615,6 +3630,38 @@ MonoBehaviour:
             networkSync: 0
             value: 0
           fsmComponent: {fileID: 0}
+        - target: 4
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 0
+            gameObject:
+              useVariable: 0
+              name: 
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 0}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
         fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams:
@@ -3650,13 +3697,17 @@ MonoBehaviour:
           value: STOP
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0100000000000000000000000000803f0000000000000100000000000000803f000000000000000000000000000072000000537069726974537769746368000100015265616c576f726c64537069726974576f726c64010000574f524c44535749544348000000000000
+        byteData: 0000000000000000000000000000803f000000003f00000100000000000000000000000000803f0000000000000100000000000000803f000000000000000000000000000072000000537069726974537769746368000100015265616c576f726c64537069726974576f726c64010000574f524c44535749544348000000000000574f524c44535749544348000000000000000000000150737963686f736973030000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000120000001200000013000000140000001100000011000000010000000100000014000000110000001100000001000000010000001400000012000000120000000f0000000f0000001100000011000000110000000f000000120000001c0000000700000017000000110000001100000011000000010000001f000000170000000f00000001000000
+        paramDataType: 190000000f000000170000000100000014000000120000001200000013000000140000001100000011000000010000000100000014000000110000001100000001000000010000001400000012000000120000000f0000000f0000001100000011000000110000000f000000120000001c0000000700000017000000110000001100000011000000010000001f000000170000000f000000010000001f000000170000000f00000001000000100000001000000001000000
         paramName:
+        - color
+        - time
+        - finishEvent
+        - realTime
         - gameObject
         - childName
         - withTag
@@ -3692,12 +3743,211 @@ MonoBehaviour:
         - sendEvent
         - delay
         - everyFrame
-        paramDataPos: 0000000000000000010000000000000001000000000000000200000004000000050000000200000006000000080000000a0000000b0000000300000002000000030000000c0000001100000016000000180000001a0000001c00000004000000210000002e000000320000003e00000040000000560000005800000000000000590000006400000069000000
-        paramByteDataSize: 0000000000000000000000000000000000000000020000000200000001000000010000000000000002000000020000000100000001000000000000000000000000000000050000000500000002000000020000000200000005000000000000000d000000040000000c00000002000000160000000200000001000000000000000b0000000500000001000000
+        - eventTarget
+        - sendEvent
+        - delay
+        - everyFrame
+        - intVariable
+        - add
+        - everyFrame
+        paramDataPos: 00000000110000001600000016000000000000000000000001000000000000000100000017000000190000001b0000001c000000020000001d0000001f000000210000002200000003000000020000000300000023000000280000002d0000002f00000031000000330000000400000038000000450000004900000055000000570000006d0000006f00000000000000700000007b0000008000000001000000810000008c0000009100000092000000a0000000a5000000
+        paramByteDataSize: 110000000500000000000000010000000000000000000000000000000000000000000000020000000200000001000000010000000000000002000000020000000100000001000000000000000000000000000000050000000500000002000000020000000200000005000000000000000d000000040000000c00000002000000160000000200000001000000000000000b0000000500000001000000000000000b00000005000000010000000e0000000500000001000000
+    - name: EnterSpiritWorld
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 63
+        y: 166
+        width: 131
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: SpiritSwitch
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: SpiritWorld
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.CameraFadeOut
+        - HutongGames.PlayMaker.Actions.SendEvent
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000004000000
+        actionHashCodes: 06583ecfeec9d968
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams:
+        - target: 4
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 0
+            gameObject:
+              useVariable: 0
+              name: 
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 0}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 0000000000000000000000000000803f000000003f0053706972697453776974636800566963746f7269614953537069726974000000000000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 190000000f00000017000000010000001f000000170000000f00000001000000
+        paramName:
+        - color
+        - time
+        - finishEvent
+        - realTime
+        - eventTarget
+        - sendEvent
+        - delay
+        - everyFrame
+        paramDataPos: 0000000011000000160000002200000000000000230000003300000038000000
+        paramByteDataSize: 11000000050000000c0000000100000000000000100000000500000001000000
+    - name: EnterRealWorld
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 371
+        y: 172
+        width: 124
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: SpiritSwitch
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: RealWorld
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.CameraFadeOut
+        - HutongGames.PlayMaker.Actions.SendEvent
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000004000000
+        actionHashCodes: 06583ecfeec9d968
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams:
+        - target: 4
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 0
+            gameObject:
+              useVariable: 0
+              name: 
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 0}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 0000000000000000000000000000803f000000003f0053706972697453776974636800566963746f72696149535265616c000000000000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 190000000f00000017000000010000001f000000170000000f00000001000000
+        paramName:
+        - color
+        - time
+        - finishEvent
+        - realTime
+        - eventTarget
+        - sendEvent
+        - delay
+        - everyFrame
+        paramDataPos: 0000000011000000160000002200000000000000230000003100000036000000
+        paramByteDataSize: 11000000050000000c00000001000000000000000e0000000500000001000000
     events:
     - name: SpiritSwitch
       isSystemEvent: 0
       isGlobal: 0
+    - name: VictoriaISReal
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: VictoriaISSpirit
+      isSystemEvent: 0
+      isGlobal: 1
     - name: WORLDSWITCH
       isSystemEvent: 0
       isGlobal: 1
@@ -4719,7 +4969,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: 
+            value: Stone (Instance)
           Vector2Parameter:
             useVariable: 0
             name: 
@@ -5159,6 +5409,224 @@ MonoBehaviour:
   noiseTexture: {fileID: 2800000, guid: 1cf0ffff99a8a45ff822b67a5f55bab2, type: 3}
   noiseShader: {fileID: 4800000, guid: b0249d8c935344451aa4de6db76f0688, type: 3}
   dx11NoiseShader: {fileID: 4800000, guid: 8b30686bb4322ab42ad5eb50a0210b58, type: 3}
+--- !u!114 &11487574
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 136908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    usedInTemplate: {fileID: 0}
+    name: SpiritRealmPsychosis
+    startState: State 2
+    states:
+    - name: State 1
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 55
+        y: 104
+        width: 122
+        height: 32
+      isBreakpoint: 0
+      isSequence: 1
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: reset
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: State 1
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.IntAdd
+        - HutongGames.PlayMaker.Actions.Wait
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000003000000
+        actionHashCodes: 9ffa9c663708ec1a
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 000000000150737963686f73697302000000015073795f50726963655f5370697269745f537461790000000040015073795f50726963655f537069726974537461795f54696d65726573657400
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1000000010000000010000000f0000001700000001000000
+        paramName:
+        - intVariable
+        - add
+        - everyFrame
+        - time
+        - finishEvent
+        - realTime
+        paramDataPos: 000000000e0000002800000029000000470000004c000000
+        paramByteDataSize: 0e0000001a000000010000001e0000000500000001000000
+    - name: State 2
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 261
+        y: 117
+        width: 115
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
+    events:
+    - name: VictoriaISReal
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: VictoriaISSpirit
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: reset
+      isSystemEvent: 0
+      isGlobal: 0
+    globalTransitions:
+    - fsmEvent:
+        name: VictoriaISSpirit
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: State 1
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
+    - fsmEvent:
+        name: VictoriaISReal
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: State 2
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
+    variables:
+      floatVariables: []
+      intVariables: []
+      boolVariables: []
+      stringVariables: []
+      vector2Variables: []
+      vector3Variables: []
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+    description: 
+    docUrl: 
+    showStateLabel: 1
+    maxLoopCount: 0
+    watermark: 
+    version: 0
+    ExposedEvents: []
+    RestartOnEnable: 1
+    EnableDebugFlow: 0
+    StepFrame: 0
+    activeStateName: 
+  fsmTemplate: {fileID: 0}
+--- !u!114 &11487576
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 136906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bef3d242a13c447ac90c2d2dc213b1ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 0
+  intensity: 2.44000006
+  chromaticAberration: 1
+  axialAberration: .5
+  blur: .189999998
+  blurSpread: 1.33000004
+  luminanceDependency: .36500001
+  blurDistance: 1.71000004
+  vignetteShader: {fileID: 4800000, guid: 627943dc7a9a74286b70a4f694a0acd5, type: 3}
+  separableBlurShader: {fileID: 4800000, guid: e97c14fbb5ea04c3a902cc533d7fc5d1, type: 3}
+  chromAberrationShader: {fileID: 4800000, guid: 2b4f29398d9484ccfa9fd220449f5eee,
+    type: 3}
+--- !u!114 &11487578
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 136906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9aaa3f5f2d574f228e4a21aa38b61e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 1
+  showGeneratedNormals: 0
+  offsetScale: .200000003
+  blurRadius: 18
+  edgeThresholdMin: .0500000007
+  edgeThreshold: .200000003
+  edgeSharpness: 4
+  dlaaSharp: 0
+  ssaaShader: {fileID: 4800000, guid: b3728d1488b02490cbd196c7941bf1f8, type: 3}
+  dlaaShader: {fileID: 4800000, guid: 017ca72b9e8a749058d13ebd527e98fa, type: 3}
+  nfaaShader: {fileID: 4800000, guid: ce0cb2621f6d84e21a87414e471a3cce, type: 3}
+  shaderFXAAPreset2: {fileID: 4800000, guid: 6f1418cffd12146f2a83be795f6fa5a7, type: 3}
+  shaderFXAAPreset3: {fileID: 4800000, guid: c182fa94a5a0a4c02870641efcd38cd5, type: 3}
+  shaderFXAAII: {fileID: 4800000, guid: cd5b323dcc592457790ff18b528f5e67, type: 3}
+  shaderFXAAIII: {fileID: 4800000, guid: c547503fff0e8482ea5793727057041c, type: 3}
 --- !u!124 &12436908
 Behaviour:
   m_ObjectHideFlags: 1

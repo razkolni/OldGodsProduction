@@ -735,7 +735,7 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 00014841535f4142494c4954595f53554d4d4f4e5f4f424a4543545343616e53756d6d6f6e43616e7453756d6d6f6e00
+        byteData: 01014841535f4142494c4954595f53554d4d4f4e5f4f424a4543545343616e53756d6d6f6e43616e7453756d6d6f6e00
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -961,7 +961,7 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.SetBoolValue
-        - HutongGames.PlayMaker.Actions.FloatAdd
+        - HutongGames.PlayMaker.Actions.IntAdd
         - HutongGames.PlayMaker.Actions.IntAdd
         - HutongGames.PlayMaker.Actions.SendEvent
         customNames:
@@ -971,8 +971,8 @@ MonoBehaviour:
         - 
         actionEnabled: 01010101
         actionIsOpen: 01010101
-        actionStartIndex: 0000000003000000070000000a000000
-        actionHashCodes: 29b4727b22e895229ffa9c66eec9d968
+        actionStartIndex: 00000000030000000600000009000000
+        actionHashCodes: 29b4727b9ffa9c669ffa9c66eec9d968
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -1017,20 +1017,19 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0001497353756d6d6f6e6564010000000000000150737963686f73697300004040015073795f50726963655f53756d6d6f6e696e670000000000000145746865720000000001457468657250726963655f53756d6d6f6e696e670053756d6d6f6e000000000000
+        byteData: 0001497353756d6d6f6e6564010000000000000150737963686f73697300000000015073795f50726963655f53756d6d6f6e696e6700000000000145746865720000000001457468657250726963655f53756d6d6f6e696e670053756d6d6f6e000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1100000011000000010000000f0000000f00000001000000010000001000000010000000010000001f000000170000000f00000001000000
+        paramDataType: 1100000011000000010000001000000010000000010000001000000010000000010000001f000000170000000f00000001000000
         paramName:
         - boolVariable
         - boolValue
         - everyFrame
-        - floatVariable
+        - intVariable
         - add
         - everyFrame
-        - perSecond
         - intVariable
         - add
         - everyFrame
@@ -1038,8 +1037,8 @@ MonoBehaviour:
         - sendEvent
         - delay
         - everyFrame
-        paramDataPos: 000000000c0000000e0000000f0000001d000000350000003600000037000000410000005a000000000000005b0000006100000066000000
-        paramByteDataSize: 0c00000002000000010000000e0000001800000001000000010000000a000000190000000100000000000000060000000500000001000000
+        paramDataPos: 000000000c0000000e0000000f0000001d00000035000000360000004000000059000000000000005a0000006000000065000000
+        paramByteDataSize: 0c00000002000000010000000e00000018000000010000000a000000190000000100000000000000060000000500000001000000
     - name: Summonned
       description: 
       colorIndex: 0
@@ -1278,8 +1277,8 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.IntAdd
         - HutongGames.PlayMaker.Actions.SetBoolValue
-        - HutongGames.PlayMaker.Actions.FloatAdd
         - HutongGames.PlayMaker.Actions.SetLayerRecursive
         - HutongGames.PlayMaker.Actions.ActivateGameObject
         - HutongGames.PlayMaker.Actions.ActivateGameObject
@@ -1295,8 +1294,8 @@ MonoBehaviour:
         - 
         actionEnabled: 01010101010101
         actionIsOpen: 01010101010101
-        actionStartIndex: 0000000003000000070000000a0000000f0000001400000018000000
-        actionHashCodes: 29b4727b22e895221a4c434eb4797e4ab4797e4ac3addc63eec9d968
+        actionStartIndex: 000000000300000006000000090000000e0000001300000017000000
+        actionHashCodes: 9ffa9c6629b4727b1a4c434eb4797e4ab4797e4ac3addc63eec9d968
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -1379,20 +1378,19 @@ MonoBehaviour:
           value: SpiritSwitched
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0001497353756d6d6f6e6564000000000000000150737963686f736973000040c00000000900000001000001000000010001000000010000007265736574000000000000
+        byteData: 000000000150737963686f736973fdffffff00000001497353756d6d6f6e65640000000900000001000001000000010001000000010000007265736574000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1100000011000000010000000f0000000f000000010000000100000014000000000000000100000014000000110000001100000001000000010000001400000011000000110000000100000001000000140000001200000011000000110000001f000000170000000f00000001000000
+        paramDataType: 10000000100000000100000011000000110000000100000014000000000000000100000014000000110000001100000001000000010000001400000011000000110000000100000001000000140000001200000011000000110000001f000000170000000f00000001000000
         paramName:
+        - intVariable
+        - add
+        - everyFrame
         - boolVariable
         - boolValue
         - everyFrame
-        - floatVariable
-        - add
-        - everyFrame
-        - perSecond
         - gameObject
         - layer
         - children
@@ -1414,8 +1412,8 @@ MonoBehaviour:
         - sendEvent
         - delay
         - everyFrame
-        paramDataPos: 000000000c0000000e0000000f0000001d000000220000002300000000000000240000002800000001000000290000002b0000002d0000002e000000020000002f0000003100000033000000340000000300000000000000350000003700000000000000390000003e00000043000000
-        paramByteDataSize: 0c00000002000000010000000e000000050000000100000001000000000000000400000001000000000000000200000002000000010000000100000000000000020000000200000001000000010000000000000000000000020000000200000000000000050000000500000001000000
+        paramDataPos: 000000000e0000001300000014000000200000002200000000000000230000002700000001000000280000002a0000002c0000002d000000020000002e0000003000000032000000330000000300000000000000340000003600000000000000380000003d00000042000000
+        paramByteDataSize: 0e00000005000000010000000c0000000200000001000000000000000400000001000000000000000200000002000000010000000100000000000000020000000200000001000000010000000000000000000000020000000200000000000000050000000500000001000000
     - name: TestIfSummoned
       description: 
       colorIndex: 0
@@ -2620,6 +2618,149 @@ AudioSource:
     m_Curve:
     - time: 0
       value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!1 &82425138
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 82425139}
+  - 82: {fileID: 82425142}
+  - 114: {fileID: 82425141}
+  - 114: {fileID: 82425140}
+  m_Layer: 0
+  m_Name: WindB1_Ether
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &82425139
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 82425138}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1278497508}
+  m_RootOrder: 4
+--- !u!114 &82425140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 82425138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1b7eb7dcef8b0e48a8572747ca7c64d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &82425141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 82425138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 931518f9ca6c3844891dee74db8ed494, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  useLocalization: 0
+  useRandomPitch: 0
+  randomPitchMode: 0
+  randomPitchMin: 0
+  randomPitchMax: 0
+  useRandomVolume: 0
+  randomVolumeMode: 0
+  randomVolumeMin: 0
+  randomVolumeMax: 0
+  audLocation: 0
+  resourceFileName: 
+  fxTailTime: 0
+  original_pitch: 0
+  isExpanded: 1
+  isChecked: 1
+  useFades: 0
+  fadeInTime: 0
+  fadeOutTime: 0
+  useRandomStartTime: 0
+  randomStartMinPercent: 0
+  randomStartMaxPercent: 0
+  useIntroSilence: 0
+  introSilenceMin: 0
+  introSilenceMax: 0
+  fadeMaxVolume: 0
+  curFadeMode: 0
+  curDetectEndMode: 0
+--- !u!82 &82425142
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 82425138}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 757e242aea1e34b929b4b4fc1ad03327, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 54.4956245
+  Pan2D: 0
+  rolloffMode: 2
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: -1.01135218
+      tangentMode: 0
+    - time: .343454927
+      value: .270567566
+      inSlope: -.994801521
+      outSlope: -.994801521
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: -1.01135218
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: .958333313
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -4027,7 +4168,7 @@ Transform:
   - {fileID: 1911982433}
   - {fileID: 113753117}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!1 &241513168
 GameObject:
   m_ObjectHideFlags: 0
@@ -4195,7 +4336,7 @@ Transform:
   - {fileID: 918317042}
   - {fileID: 39397260}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!1 &249500579
 GameObject:
   m_ObjectHideFlags: 0
@@ -5174,7 +5315,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 436908, guid: f25a36948516c7040a410cbf5fe97bbb, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 11436910, guid: f25a36948516c7040a410cbf5fe97bbb, type: 2}
       propertyPath: fsm.states.Array.data[0].actionData.fsmGameObjectParams.Array.data[0].value
@@ -5373,7 +5514,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!1 &330828981
 GameObject:
   m_ObjectHideFlags: 0
@@ -6240,6 +6381,154 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1694948822}
   m_GameObject: {fileID: 400403219}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &402026367
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 402026368}
+  - 82: {fileID: 402026371}
+  - 114: {fileID: 402026370}
+  - 114: {fileID: 402026369}
+  m_Layer: 0
+  m_Name: WaterA1_Ether
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &402026368
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 402026367}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1278497508}
+  m_RootOrder: 7
+--- !u!114 &402026369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 402026367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1b7eb7dcef8b0e48a8572747ca7c64d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &402026370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 402026367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 931518f9ca6c3844891dee74db8ed494, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  useLocalization: 0
+  useRandomPitch: 0
+  randomPitchMode: 0
+  randomPitchMin: 0
+  randomPitchMax: 0
+  useRandomVolume: 0
+  randomVolumeMode: 0
+  randomVolumeMin: 0
+  randomVolumeMax: 0
+  audLocation: 0
+  resourceFileName: 
+  fxTailTime: 0
+  original_pitch: 0
+  isExpanded: 1
+  isChecked: 1
+  useFades: 0
+  fadeInTime: 0
+  fadeOutTime: 0
+  useRandomStartTime: 0
+  randomStartMinPercent: 0
+  randomStartMaxPercent: 0
+  useIntroSilence: 0
+  introSilenceMin: 0
+  introSilenceMax: 0
+  fadeMaxVolume: 0
+  curFadeMode: 0
+  curDetectEndMode: 0
+--- !u!82 &402026371
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 402026367}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: a1955851a67f14d9b992e7fbba382107, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: .499074459
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 54.4956245
+  Pan2D: 0
+  rolloffMode: 2
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: .987993121
+      inSlope: 0
+      outSlope: -1.01135218
+      tangentMode: 0
+    - time: .333185345
+      value: .186519533
+      inSlope: -.994801521
+      outSlope: -.994801521
+      tangentMode: 0
+    - time: .613022268
+      value: .019258948
+      inSlope: -.236658886
+      outSlope: -.236658886
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: -.0272692349
+      outSlope: -.0272692349
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: .988333285
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &411024705
 GameObject:
   m_ObjectHideFlags: 0
@@ -6823,6 +7112,11 @@ GameObject:
   - 114: {fileID: 445660078}
   - 114: {fileID: 445660077}
   - 114: {fileID: 445660076}
+  - 168: {fileID: 445660083}
+  - 164: {fileID: 445660082}
+  - 166: {fileID: 445660081}
+  - 170: {fileID: 445660080}
+  - 169: {fileID: 445660079}
   m_Layer: 8
   m_Name: SightCamera
   m_TagString: SpiritWorldCamera
@@ -7103,6 +7397,798 @@ MonoBehaviour:
   adaptionSpeed: 1.5
   tonemapper: {fileID: 4800000, guid: 003377fc2620a44939dadde6fe3f8190, type: 3}
   validRenderTextureFormat: 1
+--- !u!169 &445660079
+AudioLowPassFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 445660065}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_CutoffFrequency: 4499.99951
+  m_LowpassResonanceQ: 1
+  lowpassLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: .795454562
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!170 &445660080
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 445660065}
+  m_Enabled: 0
+  m_DistortionLevel: .100000001
+--- !u!166 &445660081
+AudioChorusFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 445660065}
+  m_Enabled: 1
+  m_DryMix: .899999976
+  m_WetMix1: .300000012
+  m_WetMix2: .200000003
+  m_WetMix3: .400000006
+  m_Delay: 40
+  m_Rate: 10
+  m_Depth: .0500000007
+--- !u!164 &445660082
+AudioReverbFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 445660065}
+  m_Enabled: 1
+  m_DryLevel: -1500
+  m_Room: -1150
+  m_RoomHF: -1000
+  m_RoomRolloff: 0
+  m_DecayTime: 15
+  m_DecayHFRatio: .100000001
+  m_ReflectionsLevel: -6600
+  m_ReverbLevel: 310
+  m_ReverbDelay: 0
+  m_Diffusion: 70
+  m_Density: 80
+  m_HFReference: 4250
+  m_RoomLF: -1100
+  m_LFReference: 205
+  m_ReflectionsDelay: 0
+  m_ReverbPreset: 27
+--- !u!168 &445660083
+AudioEchoFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 445660065}
+  m_Enabled: 1
+  m_Delay: 500
+  m_DecayRatio: .5
+  m_WetMix: .150000006
+  m_DryMix: 1
+--- !u!1001 &446656272
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.byteData.Array.size
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.byteData.Array.size
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramName.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramName.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.actionNames.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.customNames.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.actionNames.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.customNames.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.actionIsOpen.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataPos.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.actionIsOpen.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataPos.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.actionEnabled.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataType.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.actionEnabled.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataType.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.actionHashCodes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.actionHashCodes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.fsmStringParams.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.fsmStringParams.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.actionStartIndex.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.actionStartIndex.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramByteDataSize.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramByteDataSize.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.fsmOwnerDefaultParams.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.fsmOwnerDefaultParams.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: .632148743
+      objectReference: {fileID: 0}
+    - target: {fileID: 426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 3.05384779
+      objectReference: {fileID: 0}
+    - target: {fileID: 426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -.701584816
+      objectReference: {fileID: 0}
+    - target: {fileID: 426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.actionNames.Array.data[0]
+      value: MasterAudioPlaySound
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.actionEnabled.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.actionIsOpen.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.actionHashCodes.Array.data[0]
+      value: 813920372
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataType.Array.data[0]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataType.Array.data[1]
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataType.Array.data[2]
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramName.Array.data[0]
+      value: gameObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramName.Array.data[1]
+      value: soundGroupName
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramName.Array.data[2]
+      value: variationName
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataPos.Array.data[1]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataPos.Array.data[2]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramByteDataSize.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramByteDataSize.Array.data[2]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.byteData.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.byteData.Array.data[5]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].isSequence
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.actionNames.Array.data[0]
+      value: MasterAudioPlaySound
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.actionEnabled.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.actionIsOpen.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.actionHashCodes.Array.data[0]
+      value: 813920372
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataType.Array.data[0]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataType.Array.data[1]
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataType.Array.data[2]
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramName.Array.data[0]
+      value: gameObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramName.Array.data[1]
+      value: soundGroupName
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramName.Array.data[2]
+      value: variationName
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataPos.Array.data[1]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataPos.Array.data[2]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramByteDataSize.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramByteDataSize.Array.data[2]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.byteData.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.byteData.Array.data[5]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].isSequence
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.actionNames.Array.data[1]
+      value: MasterAudioPlaySound
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.actionEnabled.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.actionIsOpen.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.actionStartIndex.Array.data[1]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.actionHashCodes.Array.data[1]
+      value: 813920372
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.byteData.Array.data[8]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.byteData.Array.data[9]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.byteData.Array.data[16]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.byteData.Array.data[24]
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.byteData.Array.data[25]
+      value: 63
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataType.Array.data[3]
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataType.Array.data[4]
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataType.Array.data[5]
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataType.Array.data[6]
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataType.Array.data[7]
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataType.Array.data[8]
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataType.Array.data[9]
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataType.Array.data[10]
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataType.Array.data[11]
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramName.Array.data[3]
+      value: volume
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramName.Array.data[4]
+      value: delaySound
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramName.Array.data[5]
+      value: useThisLocation
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramName.Array.data[6]
+      value: attachToGameObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramName.Array.data[7]
+      value: useFixedPitch
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramName.Array.data[8]
+      value: fixedPitch
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramName.Array.data[9]
+      value: attachToGameObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramName.Array.data[10]
+      value: useFixedPitch
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramName.Array.data[11]
+      value: fixedPitch
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataPos.Array.data[5]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataPos.Array.data[6]
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataPos.Array.data[7]
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataPos.Array.data[8]
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataPos.Array.data[9]
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataPos.Array.data[10]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataPos.Array.data[11]
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramByteDataSize.Array.data[6]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramByteDataSize.Array.data[7]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramByteDataSize.Array.data[8]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramByteDataSize.Array.data[9]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramByteDataSize.Array.data[10]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramByteDataSize.Array.data[11]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.fsmStringParams.Array.data[0].value
+      value: TransitionIn
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.fsmStringParams.Array.data[1].useVariable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.actionNames.Array.data[2]
+      value: MasterAudioPlaySound
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.actionEnabled.Array.data[2]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.actionIsOpen.Array.data[2]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.actionStartIndex.Array.data[2]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.actionHashCodes.Array.data[2]
+      value: 813920372
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataType.Array.data[12]
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataType.Array.data[13]
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataType.Array.data[14]
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramName.Array.data[12]
+      value: attachToGameObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramName.Array.data[13]
+      value: useFixedPitch
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramName.Array.data[14]
+      value: fixedPitch
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataPos.Array.data[12]
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataPos.Array.data[13]
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataPos.Array.data[14]
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramByteDataSize.Array.data[12]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramByteDataSize.Array.data[14]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.byteData.Array.data[27]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.byteData.Array.data[32]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.byteData.Array.data[6]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.byteData.Array.data[11]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.byteData.Array.data[14]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.byteData.Array.data[15]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.byteData.Array.data[22]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.byteData.Array.data[30]
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.byteData.Array.data[31]
+      value: 63
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataPos.Array.data[3]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataPos.Array.data[4]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramByteDataSize.Array.data[3]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramByteDataSize.Array.data[5]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramByteDataSize.Array.data[13]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.byteData.Array.data[2]
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.byteData.Array.data[3]
+      value: 63
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.byteData.Array.data[10]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.byteData.Array.data[18]
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.byteData.Array.data[19]
+      value: 63
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataType.Array.data[3]
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataType.Array.data[4]
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataType.Array.data[5]
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataType.Array.data[6]
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataType.Array.data[7]
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataType.Array.data[8]
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramName.Array.data[3]
+      value: volume
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramName.Array.data[4]
+      value: delaySound
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramName.Array.data[5]
+      value: useThisLocation
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramName.Array.data[6]
+      value: attachToGameObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramName.Array.data[7]
+      value: useFixedPitch
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramName.Array.data[8]
+      value: fixedPitch
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataPos.Array.data[4]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataPos.Array.data[5]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataPos.Array.data[6]
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataPos.Array.data[7]
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataPos.Array.data[8]
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramByteDataSize.Array.data[3]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramByteDataSize.Array.data[4]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramByteDataSize.Array.data[5]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramByteDataSize.Array.data[6]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramByteDataSize.Array.data[7]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.paramByteDataSize.Array.data[8]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.fsmStringParams.Array.data[0].value
+      value: TransitionOut
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.byteData.Array.data[2]
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.byteData.Array.data[3]
+      value: 63
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.byteData.Array.data[10]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.byteData.Array.data[18]
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.byteData.Array.data[19]
+      value: 63
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.paramByteDataSize.Array.data[4]
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+  m_RootGameObject: {fileID: 2072516292}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &459502150
 GameObject:
   m_ObjectHideFlags: 0
@@ -7945,9 +9031,9 @@ AudioSource:
   MaxDistance: 100
   Pan2D: 0
   rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
+  BypassEffects: 1
+  BypassListenerEffects: 1
+  BypassReverbZones: 1
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -9612,9 +10698,9 @@ AudioSource:
   MaxDistance: 100
   Pan2D: 0
   rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
+  BypassEffects: 1
+  BypassListenerEffects: 1
+  BypassReverbZones: 1
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -11191,7 +12277,7 @@ Transform:
   m_LocalScale: {x: 52.9176636, y: 52.9176674, z: 52.9176674}
   m_Children: []
   m_Father: {fileID: 1273272784}
-  m_RootOrder: 7
+  m_RootOrder: 6
 --- !u!1 &635821604
 GameObject:
   m_ObjectHideFlags: 0
@@ -12354,7 +13440,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 2107309294}
         - ownerOption: 1
           gameObject:
             useVariable: 0
@@ -12459,7 +13545,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 2107309294}
         - ownerOption: 1
           gameObject:
             useVariable: 0
@@ -12804,7 +13890,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 2107309294}
         - ownerOption: 0
           gameObject:
             useVariable: 0
@@ -14323,7 +15409,7 @@ Transform:
   m_LocalScale: {x: 20.6586914, y: 1.33535314, z: 19.3682194}
   m_Children: []
   m_Father: {fileID: 1273272784}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!114 &799294877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15889,6 +16975,34 @@ MonoBehaviour:
     StepFrame: 0
     activeStateName: 
   fsmTemplate: {fileID: 0}
+--- !u!1 &814756524
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 814756525}
+  m_Layer: 0
+  m_Name: AudioZones
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &814756525
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 814756524}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1572152691}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
 --- !u!1 &832253777
 GameObject:
   m_ObjectHideFlags: 0
@@ -17126,6 +18240,149 @@ MonoBehaviour:
   despawnFadeTime: 1
   isSoloed: 0
   isMuted: 0
+--- !u!1 &949402262
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 949402263}
+  - 82: {fileID: 949402266}
+  - 114: {fileID: 949402265}
+  - 114: {fileID: 949402264}
+  m_Layer: 0
+  m_Name: WindA1_Ether
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &949402263
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 949402262}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1278497508}
+  m_RootOrder: 5
+--- !u!114 &949402264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 949402262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1b7eb7dcef8b0e48a8572747ca7c64d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &949402265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 949402262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 931518f9ca6c3844891dee74db8ed494, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  useLocalization: 0
+  useRandomPitch: 0
+  randomPitchMode: 0
+  randomPitchMin: 0
+  randomPitchMax: 0
+  useRandomVolume: 0
+  randomVolumeMode: 0
+  randomVolumeMin: 0
+  randomVolumeMax: 0
+  audLocation: 0
+  resourceFileName: 
+  fxTailTime: 0
+  original_pitch: 0
+  isExpanded: 1
+  isChecked: 1
+  useFades: 0
+  fadeInTime: 0
+  fadeOutTime: 0
+  useRandomStartTime: 0
+  randomStartMinPercent: 0
+  randomStartMaxPercent: 0
+  useIntroSilence: 0
+  introSilenceMin: 0
+  introSilenceMax: 0
+  fadeMaxVolume: 0
+  curFadeMode: 0
+  curDetectEndMode: 0
+--- !u!82 &949402266
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 949402262}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: c9d102a204b2e4dd6ad4e0f480aaf8fb, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 54.4956245
+  Pan2D: 0
+  rolloffMode: 2
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: -1.01135218
+      tangentMode: 0
+    - time: .343454927
+      value: .270567566
+      inSlope: -.994801521
+      outSlope: -.994801521
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: -1.01135218
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: .958333313
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1008161336
 GameObject:
   m_ObjectHideFlags: 0
@@ -19703,7 +20960,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 2107309294}
         - ownerOption: 1
           gameObject:
             useVariable: 0
@@ -19727,7 +20984,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 1500330622}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -19929,7 +21186,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 2107309294}
         - ownerOption: 1
           gameObject:
             useVariable: 1
@@ -19937,7 +21194,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 2107309294}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -21415,7 +22672,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1572152691}
   - {fileID: 1387766844}
   - {fileID: 1706603196}
   - {fileID: 1382203013}
@@ -21513,6 +22769,10 @@ Transform:
   - {fileID: 1982464343}
   - {fileID: 317518637}
   - {fileID: 1355184067}
+  - {fileID: 82425139}
+  - {fileID: 949402263}
+  - {fileID: 2006145690}
+  - {fileID: 402026368}
   m_Father: {fileID: 1657585407}
   m_RootOrder: 15
 --- !u!114 &1278497509
@@ -21547,6 +22807,10 @@ MonoBehaviour:
   - {fileID: 1982464344}
   - {fileID: 317518638}
   - {fileID: 1355184068}
+  - {fileID: 82425141}
+  - {fileID: 949402265}
+  - {fileID: 2006145692}
+  - {fileID: 402026370}
   bulkVariationMode: 0
   resourceClipsAllLoadAsync: 1
   logSound: 0
@@ -22823,9 +24087,9 @@ AudioSource:
   MaxDistance: 100
   Pan2D: 0
   rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
+  BypassEffects: 1
+  BypassListenerEffects: 1
+  BypassReverbZones: 1
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -24084,7 +25348,7 @@ Transform:
   m_LocalScale: {x: 20.6586914, y: 1.33535278, z: 19.3682194}
   m_Children: []
   m_Father: {fileID: 1273272784}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!23 &1382203014
 Renderer:
   m_ObjectHideFlags: 0
@@ -25260,7 +26524,7 @@ Transform:
   m_LocalScale: {x: 20.6586914, y: 1.33535314, z: 19.3682194}
   m_Children: []
   m_Father: {fileID: 1273272784}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!23 &1387766845
 Renderer:
   m_ObjectHideFlags: 0
@@ -27058,7 +28322,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 2107309294}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -31339,7 +32603,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 12
 --- !u!1 &1538519701
 GameObject:
   m_ObjectHideFlags: 0
@@ -31583,9 +32847,9 @@ AudioSource:
   MaxDistance: 100
   Pan2D: 0
   rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
+  BypassEffects: 1
+  BypassListenerEffects: 1
+  BypassReverbZones: 1
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -31907,7 +33171,7 @@ GameObject:
   - 4: {fileID: 1572152691}
   - 167: {fileID: 1572152690}
   m_Layer: 0
-  m_Name: Reverb Zone
+  m_Name: ReverbOut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31947,7 +33211,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1273272784}
+  m_Father: {fileID: 814756525}
   m_RootOrder: 0
 --- !u!1 &1580816542
 GameObject:
@@ -32546,7 +33810,7 @@ Transform:
   - {fileID: 204957079}
   - {fileID: 1022700410}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!1 &1657585406
 GameObject:
   m_ObjectHideFlags: 0
@@ -32667,7 +33931,7 @@ MonoBehaviour:
     stopOldest: 0
     isExisting: 0
   - busName: transitions
-    volume: .763379514
+    volume: .513157904
     isSoloed: 0
     isMuted: 0
     voiceLimit: -1
@@ -34273,7 +35537,7 @@ Transform:
   m_LocalScale: {x: 20.6586914, y: 1.33535314, z: 19.3682194}
   m_Children: []
   m_Father: {fileID: 1273272784}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!23 &1706603197
 Renderer:
   m_ObjectHideFlags: 0
@@ -36852,7 +38116,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1273272784}
-  m_RootOrder: 6
+  m_RootOrder: 5
 --- !u!1 &1782198236
 GameObject:
   m_ObjectHideFlags: 0
@@ -37845,7 +39109,7 @@ MonoBehaviour:
   busIndex: 4
   isSelected: 0
   isExpanded: 1
-  groupMasterVolume: .913931191
+  groupMasterVolume: .355226338
   retriggerPercentage: 50
   curVariationMode: 0
   alwaysHighestPriority: 0
@@ -38493,7 +39757,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 2107309294}
         - ownerOption: 1
           gameObject:
             useVariable: 1
@@ -38501,7 +39765,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 2107309294}
         - ownerOption: 1
           gameObject:
             useVariable: 1
@@ -38509,7 +39773,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 2107309294}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -38728,7 +39992,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 2107309294}
         - ownerOption: 1
           gameObject:
             useVariable: 1
@@ -38736,7 +40000,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 2107309294}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -39927,7 +41191,7 @@ AudioSource:
   m_GameObject: {fileID: 1982464342}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 2d2efbb258b3e4f7d8bd03aabc470e78, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 97cf0f979e4dd4354b742be41bb9ce88, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -40209,6 +41473,149 @@ MeshFilter:
   m_PrefabInternal: {fileID: 550120890}
   m_GameObject: {fileID: 2000859700}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2006145689
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2006145690}
+  - 82: {fileID: 2006145693}
+  - 114: {fileID: 2006145692}
+  - 114: {fileID: 2006145691}
+  m_Layer: 0
+  m_Name: BirdsA1_Ether
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2006145690
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2006145689}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1278497508}
+  m_RootOrder: 6
+--- !u!114 &2006145691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2006145689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1b7eb7dcef8b0e48a8572747ca7c64d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2006145692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2006145689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 931518f9ca6c3844891dee74db8ed494, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  useLocalization: 0
+  useRandomPitch: 0
+  randomPitchMode: 0
+  randomPitchMin: 0
+  randomPitchMax: 0
+  useRandomVolume: 0
+  randomVolumeMode: 0
+  randomVolumeMin: 0
+  randomVolumeMax: 0
+  audLocation: 0
+  resourceFileName: 
+  fxTailTime: 0
+  original_pitch: 0
+  isExpanded: 1
+  isChecked: 1
+  useFades: 0
+  fadeInTime: 0
+  fadeOutTime: 0
+  useRandomStartTime: 0
+  randomStartMinPercent: 0
+  randomStartMaxPercent: 0
+  useIntroSilence: 0
+  introSilenceMin: 0
+  introSilenceMax: 0
+  fadeMaxVolume: 0
+  curFadeMode: 0
+  curDetectEndMode: 0
+--- !u!82 &2006145693
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2006145689}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 83c4984e9712f402faecdbd66468b616, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 54.4956245
+  Pan2D: 0
+  rolloffMode: 2
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: -1.01135218
+      tangentMode: 0
+    - time: .343454927
+      value: .270567566
+      inSlope: -.994801521
+      outSlope: -.994801521
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: -1.01135218
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: .958333313
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &2007763937
 GameObject:
   m_ObjectHideFlags: 0
@@ -40701,7 +42108,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1273272784}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!114 &2066412746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41946,6 +43353,286 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!1 &2072516292
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 126720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+  m_PrefabInternal: {fileID: 446656272}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2072516294}
+  - 114: {fileID: 2072516293}
+  m_Layer: 0
+  m_Name: WorldChecker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2072516293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8,
+    type: 2}
+  m_PrefabInternal: {fileID: 446656272}
+  m_GameObject: {fileID: 2072516292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    usedInTemplate: {fileID: 0}
+    name: FSM
+    startState: State 2
+    states:
+    - name: Real
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 64
+        y: 112
+        width: 115
+        height: 16
+      isBreakpoint: 0
+      isSequence: 1
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - MasterAudioPlaySound
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 74708330
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: TransitionOut
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 0000803f0000000000000100000000000000803f00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1400000012000000120000000f0000000f0000001100000011000000110000000f000000
+        paramName:
+        - gameObject
+        - soundGroupName
+        - variationName
+        - volume
+        - delaySound
+        - useThisLocation
+        - attachToGameObject
+        - useFixedPitch
+        - fixedPitch
+        paramDataPos: 00000000000000000100000000000000050000000a0000000c0000000e00000010000000
+        paramByteDataSize: 000000000000000000000000050000000500000002000000020000000200000005000000
+    - name: State 2
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 395
+        y: 109
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
+    - name: Spirit
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 208
+        y: 112
+        width: 122
+        height: 16
+      isBreakpoint: 0
+      isSequence: 1
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - MasterAudioPlaySound
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 74708330
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: TransitionIn
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 0000803f0000000000000100000000000000803f00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1400000012000000120000000f0000000f0000001100000011000000110000000f000000
+        paramName:
+        - gameObject
+        - soundGroupName
+        - variationName
+        - volume
+        - delaySound
+        - useThisLocation
+        - attachToGameObject
+        - useFixedPitch
+        - fixedPitch
+        paramDataPos: 00000000000000000100000000000000050000000a0000000c0000000e00000010000000
+        paramByteDataSize: 000000000000000000000000050000000500000002000000020000000200000005000000
+    events:
+    - name: VictoriaISReal
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: VictoriaISSpirit
+      isSystemEvent: 0
+      isGlobal: 1
+    globalTransitions:
+    - fsmEvent:
+        name: VictoriaISReal
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: Real
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
+    - fsmEvent:
+        name: VictoriaISSpirit
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: Spirit
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
+    variables:
+      floatVariables: []
+      intVariables: []
+      boolVariables: []
+      stringVariables: []
+      vector2Variables: []
+      vector3Variables: []
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+    description: 
+    docUrl: 
+    showStateLabel: 1
+    maxLoopCount: 0
+    watermark: 
+    version: 0
+    ExposedEvents: []
+    RestartOnEnable: 1
+    EnableDebugFlow: 0
+    StepFrame: 0
+    activeStateName: 
+  fsmTemplate: {fileID: 0}
+--- !u!4 &2072516294
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 426720, guid: 3ae2b8c986d2c49ceb5ef6cfcf94a6a8, type: 2}
+  m_PrefabInternal: {fileID: 446656272}
+  m_GameObject: {fileID: 2072516292}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .632148743, y: 3.05384779, z: -.701584816}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
 --- !u!1 &2082107992
 GameObject:
   m_ObjectHideFlags: 0
@@ -41958,13 +43645,15 @@ GameObject:
   - 92: {fileID: 2082107996}
   - 124: {fileID: 2082107995}
   - 81: {fileID: 2082107994}
+  - 114: {fileID: 2082107999}
+  - 114: {fileID: 2082107998}
   m_Layer: 8
   m_Name: NormalView
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2082107993
 Transform:
   m_ObjectHideFlags: 0
@@ -42011,7 +43700,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_BackGroundColor: {r: .109803922, g: .368627459, b: .635294139, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -42020,7 +43709,7 @@ Camera:
     height: 1
   near clip plane: .300000012
   far clip plane: 1000
-  field of view: 60
+  field of view: 56.7000008
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -42030,10 +43719,61 @@ Camera:
   m_RenderingPath: 2
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
-  m_HDR: 0
+  m_HDR: 1
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+--- !u!114 &2082107998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11487578, guid: f25a36948516c7040a410cbf5fe97bbb,
+    type: 2}
+  m_PrefabInternal: {fileID: 319513601}
+  m_GameObject: {fileID: 2082107992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9aaa3f5f2d574f228e4a21aa38b61e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 1
+  showGeneratedNormals: 0
+  offsetScale: .200000003
+  blurRadius: 18
+  edgeThresholdMin: .0500000007
+  edgeThreshold: .200000003
+  edgeSharpness: 4
+  dlaaSharp: 0
+  ssaaShader: {fileID: 4800000, guid: b3728d1488b02490cbd196c7941bf1f8, type: 3}
+  dlaaShader: {fileID: 4800000, guid: 017ca72b9e8a749058d13ebd527e98fa, type: 3}
+  nfaaShader: {fileID: 4800000, guid: ce0cb2621f6d84e21a87414e471a3cce, type: 3}
+  shaderFXAAPreset2: {fileID: 4800000, guid: 6f1418cffd12146f2a83be795f6fa5a7, type: 3}
+  shaderFXAAPreset3: {fileID: 4800000, guid: c182fa94a5a0a4c02870641efcd38cd5, type: 3}
+  shaderFXAAII: {fileID: 4800000, guid: cd5b323dcc592457790ff18b528f5e67, type: 3}
+  shaderFXAAIII: {fileID: 4800000, guid: c547503fff0e8482ea5793727057041c, type: 3}
+--- !u!114 &2082107999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11487576, guid: f25a36948516c7040a410cbf5fe97bbb,
+    type: 2}
+  m_PrefabInternal: {fileID: 319513601}
+  m_GameObject: {fileID: 2082107992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bef3d242a13c447ac90c2d2dc213b1ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 0
+  intensity: 2.44000006
+  chromaticAberration: 1
+  axialAberration: .5
+  blur: .189999998
+  blurSpread: 1.33000004
+  luminanceDependency: .36500001
+  blurDistance: 1.71000004
+  vignetteShader: {fileID: 4800000, guid: 627943dc7a9a74286b70a4f694a0acd5, type: 3}
+  separableBlurShader: {fileID: 4800000, guid: e97c14fbb5ea04c3a902cc533d7fc5d1, type: 3}
+  chromAberrationShader: {fileID: 4800000, guid: 2b4f29398d9484ccfa9fd220449f5eee,
+    type: 3}
 --- !u!1 &2100114676
 GameObject:
   m_ObjectHideFlags: 0
@@ -42267,6 +44007,7 @@ GameObject:
   - 114: {fileID: 2107309298}
   - 114: {fileID: 2107309297}
   - 114: {fileID: 2107309296}
+  - 114: {fileID: 2107309311}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -42287,7 +44028,7 @@ Transform:
   - {fileID: 1500330623}
   - {fileID: 1396734154}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 10
 --- !u!114 &2107309296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42349,7 +44090,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 1396734153}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -42478,7 +44219,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 1396734153}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -42550,7 +44291,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 1396734153}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -43759,7 +45500,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 918317041}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -43809,7 +45550,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: 
+            value: Stone (Instance)
           Vector2Parameter:
             useVariable: 0
             name: 
@@ -45239,31 +46980,32 @@ MonoBehaviour:
   fsm:
     usedInTemplate: {fileID: 0}
     name: WorldSwitch
-    startState: State 1
+    startState: RealWorld
     states:
-    - name: State 1
+    - name: RealWorld
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 53.6875
+        x: 213.6875
         y: 114
         width: 101
         height: 32
       isBreakpoint: 0
-      isSequence: 1
+      isSequence: 0
       hideUnused: 0
       transitions:
       - fsmEvent:
           name: SpiritSwitch
           isSystemEvent: 0
           isGlobal: 0
-        toState: State 2
+        toState: EnterSpiritWorld
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.CameraFadeIn
         - HutongGames.PlayMaker.Actions.SendEvent
         - HutongGames.PlayMaker.Actions.SetBoolValue
         - HutongGames.PlayMaker.Actions.ActivateGameObject
@@ -45283,10 +47025,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101010100000001
-        actionIsOpen: 010101010101010101
-        actionStartIndex: 0000000004000000070000000c0000001000000015000000170000002000000022000000
-        actionHashCodes: eec9d96829b4727bb4797e4aa31b8ad0b4797e4ae19d21d874708330e19d21d8437581ed
+        - 
+        actionEnabled: 01010101010100000001
+        actionIsOpen: 01010101010101010101
+        actionStartIndex: 0000000004000000080000000b0000001000000014000000190000001b0000002400000026000000
+        actionHashCodes: 06583ecfeec9d96829b4727bb4797e4aa31b8ad0b4797e4ae19d21d874708330e19d21d8437581ed
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -45405,13 +47148,17 @@ MonoBehaviour:
           value: spiritMusicStop
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 574f524c4453574954434800000000000000015265616c576f726c64537069726974576f726c64000000000000000000010000000000000000000000000000000000000000803f0000000000000100000000000000803f0000000000000000000000000000720000005370697269745377697463680001
+        byteData: 0000000000000000000000000000803f000000803f0000574f524c4453574954434800000000000000015265616c576f726c64537069726974576f726c64000000000000000000010000000000000000000000000000000000000000803f0000000000000100000000000000803f0000000000000000000000000000720000005370697269745377697463680001
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1f000000170000000f000000010000001100000011000000010000001400000011000000110000000100000001000000140000001200000012000000130000001400000011000000110000000100000001000000120000001c0000001400000012000000120000000f0000000f0000001100000011000000110000000f000000120000001c000000070000001700000011000000
+        paramDataType: 190000000f00000017000000010000001f000000170000000f000000010000001100000011000000010000001400000011000000110000000100000001000000140000001200000012000000130000001400000011000000110000000100000001000000120000001c0000001400000012000000120000000f0000000f0000001100000011000000110000000f000000120000001c000000070000001700000011000000
         paramName:
+        - color
+        - time
+        - finishEvent
+        - realTime
         - eventTarget
         - sendEvent
         - delay
@@ -45449,15 +47196,15 @@ MonoBehaviour:
         - key
         - sendEvent
         - storeResult
-        paramDataPos: 00000000000000000b00000010000000110000002700000029000000000000002a0000002c0000002e0000002f000000010000000000000001000000000000000200000030000000320000003400000035000000020000003600000003000000030000000400000043000000480000004d0000004f00000051000000530000000500000058000000650000006900000075000000
-        paramByteDataSize: 000000000b00000005000000010000001600000002000000010000000000000002000000020000000100000001000000000000000000000000000000000000000000000002000000020000000100000001000000000000000d000000000000000000000000000000050000000500000002000000020000000200000005000000000000000d000000040000000c00000002000000
-    - name: State 2
+        paramDataPos: 0000000011000000160000001600000000000000170000002200000027000000280000003e000000400000000000000041000000430000004500000046000000010000000000000001000000000000000200000047000000490000004b0000004c000000020000004d0000000300000003000000040000005a0000005f0000006400000066000000680000006a000000050000006f0000007c000000800000008c000000
+        paramByteDataSize: 11000000050000000000000001000000000000000b00000005000000010000001600000002000000010000000000000002000000020000000100000001000000000000000000000000000000000000000000000002000000020000000100000001000000000000000d000000000000000000000000000000050000000500000002000000020000000200000005000000000000000d000000040000000c00000002000000
+    - name: SpiritWorld
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 66
-        y: 190
+        x: 223
+        y: 211
         width: 101
         height: 32
       isBreakpoint: 0
@@ -45468,12 +47215,13 @@ MonoBehaviour:
           name: SpiritSwitch
           isSystemEvent: 0
           isGlobal: 0
-        toState: State 1
+        toState: EnterRealWorld
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.CameraFadeIn
         - HutongGames.PlayMaker.Actions.GetChild
         - HutongGames.PlayMaker.Actions.ActivateGameObject
         - HutongGames.PlayMaker.Actions.ActivateGameObject
@@ -45482,6 +47230,8 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.GetKeyDown
         - HutongGames.PlayMaker.Actions.SetBoolValue
         - HutongGames.PlayMaker.Actions.SendEvent
+        - HutongGames.PlayMaker.Actions.SendEvent
+        - HutongGames.PlayMaker.Actions.IntAdd
         customNames:
         - 
         - 
@@ -45491,10 +47241,13 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 0101010000010101
-        actionIsOpen: 0101010101010101
-        actionStartIndex: 0000000004000000090000000e00000017000000190000001c0000001f000000
-        actionHashCodes: a31b8ad0b4797e4ab4797e4a74708330e19d21d8437581ed29b4727beec9d968
+        - 
+        - 
+        - 
+        actionEnabled: 0101010100000101010101
+        actionIsOpen: 0101010101010101010101
+        actionStartIndex: 0000000004000000080000000d000000120000001b0000001d0000002000000023000000270000002b000000
+        actionHashCodes: 06583ecfa31b8ad0b4797e4ab4797e4a74708330e19d21d8437581ed29b4727beec9d968eec9d9689ffa9c66
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -45572,6 +47325,38 @@ MonoBehaviour:
             networkSync: 0
             value: 0
           fsmComponent: {fileID: 0}
+        - target: 4
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 0
+            gameObject:
+              useVariable: 0
+              name: 
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 0}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
         fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams:
@@ -45607,13 +47392,17 @@ MonoBehaviour:
           value: STOP
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0100000000000000000000000000803f0000000000000100000000000000803f000000000000000000000000000072000000537069726974537769746368000100015265616c576f726c64537069726974576f726c64010000574f524c44535749544348000000000000
+        byteData: 0000000000000000000000000000803f000000003f00000100000000000000000000000000803f0000000000000100000000000000803f000000000000000000000000000072000000537069726974537769746368000100015265616c576f726c64537069726974576f726c64010000574f524c44535749544348000000000000574f524c44535749544348000000000000000000000150737963686f736973030000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000120000001200000013000000140000001100000011000000010000000100000014000000110000001100000001000000010000001400000012000000120000000f0000000f0000001100000011000000110000000f000000120000001c0000000700000017000000110000001100000011000000010000001f000000170000000f00000001000000
+        paramDataType: 190000000f000000170000000100000014000000120000001200000013000000140000001100000011000000010000000100000014000000110000001100000001000000010000001400000012000000120000000f0000000f0000001100000011000000110000000f000000120000001c0000000700000017000000110000001100000011000000010000001f000000170000000f000000010000001f000000170000000f00000001000000100000001000000001000000
         paramName:
+        - color
+        - time
+        - finishEvent
+        - realTime
         - gameObject
         - childName
         - withTag
@@ -45649,12 +47438,211 @@ MonoBehaviour:
         - sendEvent
         - delay
         - everyFrame
-        paramDataPos: 0000000000000000010000000000000001000000000000000200000004000000050000000200000006000000080000000a0000000b0000000300000002000000030000000c0000001100000016000000180000001a0000001c00000004000000210000002e000000320000003e00000040000000560000005800000000000000590000006400000069000000
-        paramByteDataSize: 0000000000000000000000000000000000000000020000000200000001000000010000000000000002000000020000000100000001000000000000000000000000000000050000000500000002000000020000000200000005000000000000000d000000040000000c00000002000000160000000200000001000000000000000b0000000500000001000000
+        - eventTarget
+        - sendEvent
+        - delay
+        - everyFrame
+        - intVariable
+        - add
+        - everyFrame
+        paramDataPos: 00000000110000001600000016000000000000000000000001000000000000000100000017000000190000001b0000001c000000020000001d0000001f000000210000002200000003000000020000000300000023000000280000002d0000002f00000031000000330000000400000038000000450000004900000055000000570000006d0000006f00000000000000700000007b0000008000000001000000810000008c0000009100000092000000a0000000a5000000
+        paramByteDataSize: 110000000500000000000000010000000000000000000000000000000000000000000000020000000200000001000000010000000000000002000000020000000100000001000000000000000000000000000000050000000500000002000000020000000200000005000000000000000d000000040000000c00000002000000160000000200000001000000000000000b0000000500000001000000000000000b00000005000000010000000e0000000500000001000000
+    - name: EnterSpiritWorld
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 63
+        y: 166
+        width: 131
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: SpiritSwitch
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: SpiritWorld
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.CameraFadeOut
+        - HutongGames.PlayMaker.Actions.SendEvent
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000004000000
+        actionHashCodes: 06583ecfeec9d968
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams:
+        - target: 4
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 0
+            gameObject:
+              useVariable: 0
+              name: 
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 0}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 0000000000000000000000000000803f000000003f0053706972697453776974636800566963746f7269614953537069726974000000000000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 190000000f00000017000000010000001f000000170000000f00000001000000
+        paramName:
+        - color
+        - time
+        - finishEvent
+        - realTime
+        - eventTarget
+        - sendEvent
+        - delay
+        - everyFrame
+        paramDataPos: 0000000011000000160000002200000000000000230000003300000038000000
+        paramByteDataSize: 11000000050000000c0000000100000000000000100000000500000001000000
+    - name: EnterRealWorld
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 371
+        y: 172
+        width: 124
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: SpiritSwitch
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: RealWorld
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.CameraFadeOut
+        - HutongGames.PlayMaker.Actions.SendEvent
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000004000000
+        actionHashCodes: 06583ecfeec9d968
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams:
+        - target: 4
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 0
+            gameObject:
+              useVariable: 0
+              name: 
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 0}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 0000000000000000000000000000803f000000003f0053706972697453776974636800566963746f72696149535265616c000000000000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 190000000f00000017000000010000001f000000170000000f00000001000000
+        paramName:
+        - color
+        - time
+        - finishEvent
+        - realTime
+        - eventTarget
+        - sendEvent
+        - delay
+        - everyFrame
+        paramDataPos: 0000000011000000160000002200000000000000230000003100000036000000
+        paramByteDataSize: 11000000050000000c00000001000000000000000e0000000500000001000000
     events:
     - name: SpiritSwitch
       isSystemEvent: 0
       isGlobal: 0
+    - name: VictoriaISReal
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: VictoriaISSpirit
+      isSystemEvent: 0
+      isGlobal: 1
     - name: WORLDSWITCH
       isSystemEvent: 0
       isGlobal: 1
@@ -46479,6 +48467,176 @@ MeshFilter:
   m_PrefabInternal: {fileID: 319513601}
   m_GameObject: {fileID: 2107309294}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2107309311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11487574, guid: f25a36948516c7040a410cbf5fe97bbb,
+    type: 2}
+  m_PrefabInternal: {fileID: 319513601}
+  m_GameObject: {fileID: 2107309294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    usedInTemplate: {fileID: 0}
+    name: SpiritRealmPsychosis
+    startState: State 2
+    states:
+    - name: State 1
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 55
+        y: 104
+        width: 122
+        height: 32
+      isBreakpoint: 0
+      isSequence: 1
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: reset
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: State 1
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.IntAdd
+        - HutongGames.PlayMaker.Actions.Wait
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000003000000
+        actionHashCodes: 9ffa9c663708ec1a
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 000000000150737963686f73697302000000015073795f50726963655f5370697269745f537461790000000040015073795f50726963655f537069726974537461795f54696d65726573657400
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1000000010000000010000000f0000001700000001000000
+        paramName:
+        - intVariable
+        - add
+        - everyFrame
+        - time
+        - finishEvent
+        - realTime
+        paramDataPos: 000000000e0000002800000029000000470000004c000000
+        paramByteDataSize: 0e0000001a000000010000001e0000000500000001000000
+    - name: State 2
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 261
+        y: 117
+        width: 115
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
+    events:
+    - name: VictoriaISReal
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: VictoriaISSpirit
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: reset
+      isSystemEvent: 0
+      isGlobal: 0
+    globalTransitions:
+    - fsmEvent:
+        name: VictoriaISSpirit
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: State 1
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
+    - fsmEvent:
+        name: VictoriaISReal
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: State 2
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
+    variables:
+      floatVariables: []
+      intVariables: []
+      boolVariables: []
+      stringVariables: []
+      vector2Variables: []
+      vector3Variables: []
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+    description: 
+    docUrl: 
+    showStateLabel: 1
+    maxLoopCount: 0
+    watermark: 
+    version: 0
+    ExposedEvents: []
+    RestartOnEnable: 1
+    EnableDebugFlow: 0
+    StepFrame: 0
+    activeStateName: 
+  fsmTemplate: {fileID: 0}
 --- !u!1 &2119265644
 GameObject:
   m_ObjectHideFlags: 0
