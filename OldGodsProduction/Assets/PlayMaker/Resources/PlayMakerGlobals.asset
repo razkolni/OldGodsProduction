@@ -26,17 +26,11 @@ MonoBehaviour:
       networkSync: 0
       value: 10
     - useVariable: 1
-      name: Psy_Price_Summoning
+      name: Psy_Price_SpiritStay_Time
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 3
-    - useVariable: 1
-      name: Psychosis
-      tooltip: 
-      showInInspector: 0
-      networkSync: 0
-      value: 0
+      value: 1
     - useVariable: 1
       name: SpiritWorldMoveSpeed
       tooltip: 
@@ -52,6 +46,30 @@ MonoBehaviour:
       value: 0
     - useVariable: 1
       name: EtherPrice_Summoning
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: Psy_Price_SpiritWalk
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 3
+    - useVariable: 1
+      name: Psy_Price_Spirit_Stay
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 2
+    - useVariable: 1
+      name: Psy_Price_Summoning
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 3
+    - useVariable: 1
+      name: Psychosis
       tooltip: 
       showInInspector: 0
       networkSync: 0
@@ -228,3 +246,17 @@ MonoBehaviour:
   - Lantern_Off
   - Lantern_On
   - turn_off
+  - StageOnePsychosisB
+  - StageOnePsychosisS
+  - StageTwoPsychosisB
+  - StageTwoPsychosisS
+  - StageFourPsychosisB
+  - StageFourPsychosisS
+  - StageThreePsychosisB
+  - StageThreePsychosisS
+  - Suicide
+  - IsScared
+  - IsTerrified
+  - IsCalm
+  - VictoriaISReal
+  - VictoriaISSpirit
