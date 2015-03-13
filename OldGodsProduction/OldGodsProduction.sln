@@ -11,6 +11,8 @@ Project("{8F90A46E-E816-FBD9-D01B-BFF013CED846}") = "OldGodsProduction", "Assemb
 EndProject
 Project("{8F90A46E-E816-FBD9-D01B-BFF013CED846}") = "OldGodsProduction", "Assembly-UnityScript.unityproj", "{F1678BD8-CBC8-A432-2C38-AAC865A46DA1}"
 EndProject
+Project("{8F90A46E-E816-FBD9-D01B-BFF013CED846}") = "OldGodsProduction", "Assembly-UnityScript-Editor.unityproj", "{5ABC49F2-56BC-810A-B3F7-5E54798EC4E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,11 +39,15 @@ Global
 		{F1678BD8-CBC8-A432-2C38-AAC865A46DA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1678BD8-CBC8-A432-2C38-AAC865A46DA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1678BD8-CBC8-A432-2C38-AAC865A46DA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ABC49F2-56BC-810A-B3F7-5E54798EC4E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ABC49F2-56BC-810A-B3F7-5E54798EC4E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ABC49F2-56BC-810A-B3F7-5E54798EC4E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ABC49F2-56BC-810A-B3F7-5E54798EC4E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																														GlobalSection(MonoDevelopProperties) = preSolution
+																																					GlobalSection(MonoDevelopProperties) = preSolution
 =======
 																							GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> c71acf4e804ccaedfbe9da319845d3024d3375af
