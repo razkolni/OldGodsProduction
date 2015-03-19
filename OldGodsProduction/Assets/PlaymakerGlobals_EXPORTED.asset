@@ -1,0 +1,262 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 42938266, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: PlaymakerGlobals_EXPORTED
+  m_EditorClassIdentifier: 
+  variables:
+    floatVariables:
+    - useVariable: 1
+      name: MovementSpeed
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 3
+    - useVariable: 1
+      name: Object_Summon_Time
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 10
+    - useVariable: 1
+      name: Psy_Price_SpiritStay_Time
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 1
+    - useVariable: 1
+      name: SpiritWorldMoveSpeed
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 7
+    intVariables:
+    - useVariable: 1
+      name: Ether
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: EtherPrice_Summoning
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: Psy_Price_SpiritWalk
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 3
+    - useVariable: 1
+      name: Psy_Price_Spirit_Stay
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 2
+    - useVariable: 1
+      name: Psy_Price_Summoning
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 3
+    - useVariable: 1
+      name: Psychosis
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    boolVariables:
+    - useVariable: 1
+      name: CharacterMoving
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: CharacterOnGround
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 1
+    - useVariable: 1
+      name: HAS_ABILITY_GHOSTING
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 1
+    - useVariable: 1
+      name: HAS_ABILITY_SIGIL
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 1
+    - useVariable: 1
+      name: HAS_ABILITY_SUMMON_OBJECTS
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 1
+    - useVariable: 1
+      name: HAS_LANTERN
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 1
+    - useVariable: 1
+      name: LANTERN_UP
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: MISFORTUNE_RUN_CHANCE
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: MISFORTUNE_TRIPPING_HAPPENED
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: PlayerIsRunning
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: RealWorldSpiritWorld
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    stringVariables:
+    - useVariable: 1
+      name: Material Name
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 
+    vector2Variables: []
+    vector3Variables:
+    - useVariable: 1
+      name: Movement
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {x: 0, y: 0, z: 0}
+    colorVariables: []
+    rectVariables: []
+    quaternionVariables: []
+    gameObjectVariables:
+    - useVariable: 1
+      name: ActiveCamera
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: Cameras
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: GameObjectWalkedOn
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: PlayerGlobal
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: PlayerIsLookingAt
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: The_Lantern
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    objectVariables:
+    - useVariable: 1
+      name: ObjectWalkedOn
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      typeName: UnityEngine.Object
+      value: {fileID: 0}
+    materialVariables:
+    - useVariable: 1
+      name: SurfaceMaterial
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      typeName: UnityEngine.Object
+      value: {fileID: 0}
+    textureVariables: []
+  events:
+  - WORLDSWITCH
+  - tooLow
+  - jump
+  - Landed
+  - Falling
+  - DropFromEnd
+  - TrippingCanHappen
+  - TrippingCantHappen
+  - MISFORTUNE_TRIPOVER_HAPPENED
+  - MISFORTUNE_TRIPOVER_OVER
+  - PlayerIsMoving
+  - PlayerStoped
+  - CheckStatus
+  - DontCheckStatus
+  - PLAYER_CANT_MOVE
+  - CAMERA_LOCK
+  - CAMERA_UNLOCK
+  - PLAYER_CAN_MOVE
+  - Begin_Ritual
+  - Ritual_Is_Over
+  - End_Ritual_Success
+  - Procced_Casting
+  - End_Ritual_Fail
+  - Ritual_Is_Over_Success
+  - Sigil_Activated
+  - Times_Up
+  - Start_Timer
+  - Activate
+  - Deactivate
+  - Lantern_Off
+  - Lantern_On
+  - turn_off
+  - StageOnePsychosisB
+  - StageOnePsychosisS
+  - StageTwoPsychosisB
+  - StageTwoPsychosisS
+  - StageFourPsychosisB
+  - StageFourPsychosisS
+  - StageThreePsychosisB
+  - StageThreePsychosisS
+  - Suicide
+  - IsScared
+  - IsTerrified
+  - IsCalm
+  - VictoriaISReal
+  - VictoriaISSpirit

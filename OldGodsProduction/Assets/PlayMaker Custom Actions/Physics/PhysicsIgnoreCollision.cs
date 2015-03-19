@@ -39,18 +39,18 @@ namespace HutongGames.PlayMaker.Actions
 		public void doIgnoreCollision()
 		{
 			GameObject go1 = Fsm.GetOwnerDefaultTarget(collider1);
-			if (go1==null || go1.collider==null)
+			if (go1==null || go1.GetComponent<Collider>()==null)
 			{
 				return;
 			}
 
 			GameObject go2 = collider2.Value;
-			if (go2==null || go2.collider==null)
+			if (go2==null || go2.GetComponent<Collider>()==null)
 			{
 				return;
 			}
 
-			Physics.IgnoreCollision(go1.collider, go2.collider,ignoreCollision.Value);
+			Physics.IgnoreCollision(go1.GetComponent<Collider>(), go2.GetComponent<Collider>(),ignoreCollision.Value);
 		}
 
 	}
