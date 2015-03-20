@@ -7,10 +7,10 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: alderbranches
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _ALPHATEST_ON _NORMALMAP
+  m_Shader: {fileID: 10601, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: EFFECT_HUE_VARIATION GEOM_TYPE_BRANCH _ALPHATEST_ON
   m_LightmapFlags: 5
-  m_CustomRenderQueue: 2450
+  m_CustomRenderQueue: 2000
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -25,7 +25,7 @@ Material:
         first:
           name: _BumpMap
         second:
-          m_Texture: {fileID: 2800000, guid: c5721aa7e9a1744e48b401978606bd9a, type: 3}
+          m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -77,11 +77,47 @@ Material:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _GlossMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _TranslucencyMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ShadowOffset
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
           name: _Cutoff
-        second: .54905659
+        second: .233999997
+      data:
+        first:
+          name: _Shininess
+        second: .252000004
+      data:
+        first:
+          name: _WindQuality
+        second: 0
       data:
         first:
           name: _SrcBlend
@@ -129,15 +165,11 @@ Material:
       data:
         first:
           name: _Metallic
-        second: .200000003
-      data:
-        first:
-          name: _Occlusion
-        second: 5.47169781
+        second: 0
       data:
         first:
           name: _BaseLight
-        second: .163000003
+        second: .103773586
       data:
         first:
           name: _AO
@@ -146,6 +178,14 @@ Material:
         first:
           name: _SquashAmount
         second: 1
+      data:
+        first:
+          name: _Occlusion
+        second: 5.47169781
+      data:
+        first:
+          name: _Cull
+        second: 2
     m_Colors:
       data:
         first:
@@ -158,7 +198,11 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: .662420988, g: .779411793, b: .567365944, a: 1}
+        second: {r: .659061432, g: .779411793, b: .689771533, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: 0, g: 0, b: 0, a: 0}
       data:
         first:
           name: _MainTex_ST
@@ -175,6 +219,10 @@ Material:
         first:
           name: _TreeInstanceColor
         second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _HueVariation
+        second: {r: 1, g: .5, b: 0, a: .100000001}
 --- !u!1002 &2100001
 EditorExtensionImpl:
   serializedVersion: 6

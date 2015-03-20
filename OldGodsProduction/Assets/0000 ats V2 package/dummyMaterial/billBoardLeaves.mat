@@ -2,13 +2,14 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: billBoardLeaves
   m_Shader: {fileID: 4800000, guid: e07255e28b35a446f894cf8bc38c5d22, type: 3}
-  m_ShaderKeywords: []
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
   m_CustomRenderQueue: -1
   m_SavedProperties:
     serializedVersion: 2
@@ -22,14 +23,14 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _BumpSpecMap
+          name: _TranslucencyMap
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _TranslucencyMap
+          name: _BumpSpecMap
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -41,12 +42,12 @@ Material:
         second: .5
       data:
         first:
-          name: _HalfOverCutoff
-        second: 1
-      data:
-        first:
           name: _TranslucencyViewDependency
         second: .699999988
+      data:
+        first:
+          name: _HalfOverCutoff
+        second: 1
     m_Colors:
       data:
         first:
