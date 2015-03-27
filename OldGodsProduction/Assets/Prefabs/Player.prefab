@@ -104,11 +104,6 @@ GameObject:
   - 92: {fileID: 9236910}
   - 124: {fileID: 12436910}
   - 81: {fileID: 8136910}
-  - 169: {fileID: 16935350}
-  - 170: {fileID: 17025000}
-  - 166: {fileID: 16635294}
-  - 164: {fileID: 16415574}
-  - 168: {fileID: 16871832}
   - 114: {fileID: 11417206}
   - 114: {fileID: 11412740}
   - 114: {fileID: 11491270}
@@ -3582,7 +3577,7 @@ MonoBehaviour:
     steepPerpAmount: .5
   movingPlatform:
     enabled: 1
-    movementTransfer: 2
+    movementTransfer: 3
   sliding:
     enabled: 1
     slidingSpeed: 15
@@ -6071,82 +6066,6 @@ CharacterController:
   m_SkinWidth: .0799999982
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0, z: 0}
---- !u!164 &16415574
-AudioReverbFilter:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 136910}
-  m_Enabled: 1
-  m_DryLevel: -1500
-  m_Room: -1150
-  m_RoomHF: -1000
-  m_RoomRolloff: 0
-  m_DecayTime: 15
-  m_DecayHFRatio: .100000001
-  m_ReflectionsLevel: -6600
-  m_ReverbLevel: 310
-  m_ReverbDelay: 0
-  m_Diffusion: 70
-  m_Density: 80
-  m_HFReference: 4250
-  m_RoomLF: -1100
-  m_LFReference: 205
-  m_ReflectionsDelay: 0
-  m_ReverbPreset: 27
---- !u!166 &16635294
-AudioChorusFilter:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 136910}
-  m_Enabled: 1
-  m_DryMix: .899999976
-  m_WetMix1: .300000012
-  m_WetMix2: .200000003
-  m_WetMix3: .400000006
-  m_Delay: 40
-  m_Rate: 10
-  m_Depth: .0500000007
---- !u!168 &16871832
-AudioEchoFilter:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 136910}
-  m_Enabled: 1
-  m_Delay: 500
-  m_DecayRatio: .5
-  m_WetMix: .150000006
-  m_DryMix: 1
---- !u!169 &16935350
-AudioLowPassFilter:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 136910}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_CutoffFrequency: 4499.99951
-  m_LowpassResonanceQ: 1
-  lowpassLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: .795454562
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
---- !u!170 &17025000
-AudioDistortionFilter:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 136910}
-  m_Enabled: 0
-  m_DistortionLevel: .100000001
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
