@@ -1,23 +1,41 @@
 fileFormatVersion: 2
-guid: 05eab95d91a0143cbb7c813fb8f2c89e
-labels:
-- Africa
-- Stone
-- Terrain
+guid: fedea7581af7e91488f9efa41ad5f911
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2300000: //RootNode
-    2800000: __AssetImporterPreview
-    3300000: //RootNode
-    4300000: pPlane2
-    6400000: //RootNode
-    11100000: //RootNode
+    100000: DoorBase
+    100002: //RootNode
+    100004: Handle
+    100006: HandleJoint
+    100008: Object179
+    100010: Object180
+    100012: Sphere047
+    400000: DoorBase
+    400002: //RootNode
+    400004: Handle
+    400006: HandleJoint
+    400008: Object179
+    400010: Object180
+    400012: Sphere047
+    2300000: Handle
+    2300002: HandleJoint
+    2300004: Object179
+    2300006: Object180
+    2300008: Sphere047
+    3300000: Handle
+    3300002: HandleJoint
+    3300004: Object179
+    3300006: Object180
+    3300008: Sphere047
+    4300000: Handle
+    4300002: HandleJoint
+    4300004: Object179
+    4300006: Object180
+    4300008: Sphere047
+    9500000: //RootNode
   materials:
     importMaterials: 1
-    materialName: 3
+    materialName: 0
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4
@@ -34,11 +52,11 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .100000001
+    globalScale: .00999999978
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     importBlendShapes: 1
-    swapUVChannels: 1
+    swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
@@ -51,7 +69,7 @@ ModelImporter:
     useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
-    splitTangentsAcrossUV: 0
+    splitTangentsAcrossUV: 1
     normalImportMode: 0
     tangentImportMode: 1
   importAnimation: 1
@@ -68,7 +86,7 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 1
+  animationType: 2
   additionalBone: 0
   userData: 
   assetBundleName: 

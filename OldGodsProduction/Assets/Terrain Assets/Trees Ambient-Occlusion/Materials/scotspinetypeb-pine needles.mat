@@ -25,7 +25,15 @@ Material:
       data:
         first:
           name: _Cutoff
-        second: .669811308
+        second: .421000004
+      data:
+        first:
+          name: _SquashAmount
+        second: 1
+      data:
+        first:
+          name: _Occlusion
+        second: .943396211
       data:
         first:
           name: _BaseLight
@@ -34,10 +42,6 @@ Material:
         first:
           name: _AO
         second: 1.22641516
-      data:
-        first:
-          name: _Occlusion
-        second: .943396211
     m_Colors:
       data:
         first:
@@ -46,6 +50,14 @@ Material:
       data:
         first:
           name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _TreeInstanceScale
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _TreeInstanceColor
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
