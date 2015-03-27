@@ -90,14 +90,6 @@ Material:
         first:
           name: _SpecColor
         second: {r: .5, g: .5, b: .5, a: 1}
-      data:
-        first:
-          name: _TreeInstanceScale
-        second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
-          name: _TreeInstanceColor
-        second: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1002 &2100001
 EditorExtensionImpl:
   serializedVersion: 6
@@ -150,12 +142,12 @@ Material:
         second: .449999988
       data:
         first:
-          name: _SquashAmount
-        second: 1
-      data:
-        first:
           name: _TranslucencyViewDependency
         second: .699999988
+      data:
+        first:
+          name: _SquashAmount
+        second: 1
       data:
         first:
           name: _ShadowStrength
@@ -172,14 +164,6 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
-          name: _TreeInstanceScale
-        second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
-          name: _TreeInstanceColor
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
@@ -11416,9 +11400,8 @@ MonoBehaviour:
     _uniqueID: 2050
   mesh: {fileID: 4300000}
   optimizedSolidMaterial: {fileID: 2100000}
-  optimizedCutoutMaterial: {fileID: 2100000, guid: 6e0a1c8ecd118f12a000e6888f962b59,
-    type: 2}
-  isInPreviewMode: 1
+  optimizedCutoutMaterial: {fileID: 2100002}
+  isInPreviewMode: 0
 --- !u!1002 &11400001
 EditorExtensionImpl:
   serializedVersion: 6
