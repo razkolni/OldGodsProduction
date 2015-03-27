@@ -8901,9 +8901,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a1955851a67f14d9b992e7fbba382107, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c9d102a204b2e4dd6ad4e0f480aaf8fb, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: .400000006
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -8930,7 +8930,7 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - time: 0
-      value: .100000001
+      value: .25
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -9409,7 +9409,7 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - time: 0
-      value: .100000001
+      value: .25
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -14403,7 +14403,7 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - time: 0
-      value: .100000001
+      value: .25
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -17172,7 +17172,7 @@ MonoBehaviour:
       fadeVolume: 0
       fadeTime: 1
       targetVolMode: 0
-      clipName: Out_M_1base
+      clipName: Out_M_1
       variationType: 1
       variationName: 
       theCustomEventName: 
@@ -17288,7 +17288,7 @@ MonoBehaviour:
       fadeVolume: 0
       fadeTime: 1
       targetVolMode: 0
-      clipName: In_Spirit
+      clipName: Out_Spirit_LOOP
       variationType: 1
       variationName: 
       theCustomEventName: 
@@ -28116,7 +28116,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 83c4984e9712f402faecdbd66468b616, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -28712,7 +28712,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a1955851a67f14d9b992e7fbba382107, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: .75
+  m_Volume: 0
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -40008,10 +40008,10 @@ MonoBehaviour:
     songTransitionType: 3
     MusicSettings:
     - audLocation: 0
-      clip: {fileID: 8300000, guid: e067bd22c8ccc4a9f8fe1725b4cfb584, type: 3}
-      songName: Out_M_1base
+      clip: {fileID: 8300000, guid: 31e75284e3b4c4b5e86a21c5ffa5b83b, type: 3}
+      songName: Out_M_1
       resourceFileName: 
-      volume: 1
+      volume: .800000012
       pitch: 1
       isExpanded: 1
       isLoop: 1
@@ -40023,10 +40023,10 @@ MonoBehaviour:
       songChangedEventExpanded: 0
       songChangedCustomEvent: 
     - audLocation: 0
-      clip: {fileID: 8300000, guid: d7cb6cc14823d453582d8a27298809e3, type: 3}
-      songName: In_Spirit
+      clip: {fileID: 8300000, guid: 764d63eb389f84fb397c5a98eb1a98d6, type: 3}
+      songName: Out_Spirit_LOOP
       resourceFileName: 
-      volume: .600000024
+      volume: 1
       pitch: 1
       isExpanded: 1
       isLoop: 1
@@ -49104,9 +49104,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 594b32bfbccff494badb9cd039aa65f6, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 97cf0f979e4dd4354b742be41bb9ce88, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: .400000006
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -49133,7 +49133,7 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - time: 0
-      value: .100000001
+      value: .25
       inSlope: 0
       outSlope: 0
       tangentMode: 0
