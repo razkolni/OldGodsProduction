@@ -2925,8 +2925,8 @@ AudioSource:
       inSlope: 0
       outSlope: -1.01135218
       tangentMode: 0
-    - time: .343454927
-      value: .270567566
+    - time: .480477303
+      value: .745039403
       inSlope: -.994801521
       outSlope: -.994801521
       tangentMode: 0
@@ -6373,7 +6373,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 757e242aea1e34b929b4b4fc1ad03327, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: .75
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -8871,7 +8871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showGizmo: 1
-  soundSpawnMode: 1
+  soundSpawnMode: 2
   disableSounds: 0
   showPoolManager: 0
   showNGUI: 0
@@ -8892,9 +8892,45 @@ MonoBehaviour:
     mechanimStateName: 
     mechEventPlayedForState: 0
     SoundEvents:
-    - actionName: play birds
+    - actionName: playBirdsA1_spirit
       isExpanded: 1
-      soundType: Ambiance
+      soundType: AmbSpirit
+      allPlaylistControllersForGroupCmd: 0
+      allSoundTypesForGroupCmd: 0
+      allSoundTypesForBusCmd: 0
+      volume: 1
+      useFixedPitch: 0
+      pitch: 1
+      emitParticles: 0
+      particleCountToEmit: 1
+      delaySound: 0
+      currentSoundFunctionType: 0
+      currentPlaylistCommand: 0
+      currentSoundGroupCommand: 0
+      currentBusCommand: 0
+      currentCustomEventCommand: 0
+      currentGlobalCommand: 0
+      currentMixerCommand: 0
+      snapshotToTransitionTo: {fileID: 0}
+      snapshotTransitionTime: 1
+      snapshotsToBlend:
+      - snapshot: {fileID: 0}
+        weight: 1
+      currentPersistentSettingsCommand: 0
+      busName: 
+      playlistName: 
+      playlistControllerName: 
+      startPlaylist: 1
+      fadeVolume: 0
+      fadeTime: 1
+      targetVolMode: 0
+      clipName: '[None]'
+      variationType: 0
+      variationName: BirdsA1_Ether
+      theCustomEventName: 
+    - actionName: playBirdsA1_real
+      isExpanded: 1
+      soundType: AmbReal
       allPlaylistControllersForGroupCmd: 0
       allSoundTypesForGroupCmd: 0
       allSoundTypesForBusCmd: 0
@@ -12380,7 +12416,7 @@ MonoBehaviour:
       currentMixerCommand: 1
       snapshotToTransitionTo: {fileID: 24500003, guid: 70a8db915670b4f2aa0b2a93a61ee775,
         type: 2}
-      snapshotTransitionTime: 1
+      snapshotTransitionTime: .100000001
       snapshotsToBlend:
       - snapshot: {fileID: 0}
         weight: 1
@@ -12439,7 +12475,7 @@ MonoBehaviour:
       currentMixerCommand: 1
       snapshotToTransitionTo: {fileID: 24578364, guid: 70a8db915670b4f2aa0b2a93a61ee775,
         type: 2}
-      snapshotTransitionTime: 1
+      snapshotTransitionTime: .100000001
       snapshotsToBlend:
       - snapshot: {fileID: 0}
         weight: 1
@@ -13799,7 +13835,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a1955851a67f14d9b992e7fbba382107, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: .499074459
+  m_Volume: .75
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -14696,7 +14732,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 890c53be13b194605b42a48ccfc8aa31, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: .499074459
+  m_Volume: .600000024
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -14717,13 +14753,13 @@ AudioSource:
       inSlope: 0
       outSlope: -1.01135218
       tangentMode: 0
-    - time: .333185345
-      value: .186519533
+    - time: .293659657
+      value: .190392777
       inSlope: -.994801521
       outSlope: -.994801521
       tangentMode: 0
-    - time: .613022268
-      value: .019258948
+    - time: .584036767
+      value: .0231321864
       inSlope: -.236658886
       outSlope: -.236658886
       tangentMode: 0
@@ -14999,7 +15035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showGizmo: 1
-  soundSpawnMode: 1
+  soundSpawnMode: 2
   disableSounds: 0
   showPoolManager: 0
   showNGUI: 0
@@ -15020,9 +15056,45 @@ MonoBehaviour:
     mechanimStateName: 
     mechEventPlayedForState: 0
     SoundEvents:
-    - actionName: play water
+    - actionName: playWaterA1_spirit
       isExpanded: 1
-      soundType: Ambiance
+      soundType: AmbSpirit
+      allPlaylistControllersForGroupCmd: 0
+      allSoundTypesForGroupCmd: 0
+      allSoundTypesForBusCmd: 0
+      volume: 1
+      useFixedPitch: 0
+      pitch: 1
+      emitParticles: 0
+      particleCountToEmit: 1
+      delaySound: 0
+      currentSoundFunctionType: 0
+      currentPlaylistCommand: 0
+      currentSoundGroupCommand: 0
+      currentBusCommand: 0
+      currentCustomEventCommand: 0
+      currentGlobalCommand: 0
+      currentMixerCommand: 0
+      snapshotToTransitionTo: {fileID: 0}
+      snapshotTransitionTime: 1
+      snapshotsToBlend:
+      - snapshot: {fileID: 0}
+        weight: 1
+      currentPersistentSettingsCommand: 0
+      busName: 
+      playlistName: 
+      playlistControllerName: 
+      startPlaylist: 1
+      fadeVolume: 0
+      fadeTime: 1
+      targetVolMode: 0
+      clipName: '[None]'
+      variationType: 0
+      variationName: WaterA1_Ether
+      theCustomEventName: 
+    - actionName: playWaterA1_real
+      isExpanded: 1
+      soundType: AmbReal
       allPlaylistControllersForGroupCmd: 0
       allSoundTypesForGroupCmd: 0
       allSoundTypesForBusCmd: 0
@@ -20452,12 +20524,6 @@ MonoBehaviour:
     eventReceiveMode: 0
     distanceThreshold: 1
     frameLastFired: -1
-  - EventName: STOP
-    ProspectiveName: STOP
-    eventExpanded: 0
-    eventReceiveMode: 0
-    distanceThreshold: 1
-    frameLastFired: -1
   - EventName: Start
     ProspectiveName: Start
     eventExpanded: 0
@@ -20817,7 +20883,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showGizmo: 1
-  soundSpawnMode: 1
+  soundSpawnMode: 2
   disableSounds: 0
   showPoolManager: 0
   showNGUI: 0
@@ -20838,9 +20904,45 @@ MonoBehaviour:
     mechanimStateName: 
     mechEventPlayedForState: 0
     SoundEvents:
-    - actionName: play wind B
+    - actionName: playWindB1_spirit
       isExpanded: 1
-      soundType: Ambiance
+      soundType: AmbSpirit
+      allPlaylistControllersForGroupCmd: 0
+      allSoundTypesForGroupCmd: 0
+      allSoundTypesForBusCmd: 0
+      volume: 1
+      useFixedPitch: 0
+      pitch: 1
+      emitParticles: 0
+      particleCountToEmit: 1
+      delaySound: 0
+      currentSoundFunctionType: 0
+      currentPlaylistCommand: 0
+      currentSoundGroupCommand: 0
+      currentBusCommand: 0
+      currentCustomEventCommand: 0
+      currentGlobalCommand: 0
+      currentMixerCommand: 0
+      snapshotToTransitionTo: {fileID: 0}
+      snapshotTransitionTime: 1
+      snapshotsToBlend:
+      - snapshot: {fileID: 0}
+        weight: 1
+      currentPersistentSettingsCommand: 0
+      busName: 
+      playlistName: 
+      playlistControllerName: 
+      startPlaylist: 1
+      fadeVolume: 0
+      fadeTime: 1
+      targetVolMode: 0
+      clipName: '[None]'
+      variationType: 0
+      variationName: WindB1_Ether
+      theCustomEventName: 
+    - actionName: playWindA_real
+      isExpanded: 1
+      soundType: AmbReal
       allPlaylistControllersForGroupCmd: 0
       allSoundTypesForGroupCmd: 0
       allSoundTypesForBusCmd: 0

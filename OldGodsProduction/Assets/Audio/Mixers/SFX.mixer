@@ -162,6 +162,7 @@ AudioMixerGroupController:
   - {fileID: 24488658}
   - {fileID: 24464718}
   - {fileID: 24480708}
+  - {fileID: 24427828}
   - {fileID: 24469566}
   m_UserColorIndex: 0
   m_Mute: 0
@@ -290,6 +291,27 @@ AudioMixerEffectController:
   m_EffectName: Attenuation
   m_MixLevel: 6e29ca4cc2ae545638b0a7f6938ffd55
   m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &24427828
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: eade89153b1c44d588756445bda31502
+  m_EffectName: Flange
+  m_MixLevel: 33d2c928d2dd842b2958a63e231591a2
+  m_Parameters:
+  - m_ParameterName: Drymix
+    m_GUID: 3e76ddf727cd840afb195fbd65243e4a
+  - m_ParameterName: Wetmix
+    m_GUID: f4afed37f619f446fb145e838965325a
+  - m_ParameterName: Depth
+    m_GUID: 6bdf76a0db8e04aa1a147ee3515873b5
+  - m_ParameterName: Rate
+    m_GUID: 43243d185e61b4a93ab377692e5835b1
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
@@ -672,16 +694,17 @@ AudioMixerSnapshotController:
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: b1b276c4dc379444c981fdf2f29da14d
   m_FloatValues:
-    eb4527102571f41faa30a9459b67f574: -5608
+    eb4527102571f41faa30a9459b67f574: -2767
+    6bdf76a0db8e04aa1a147ee3515873b5: .25
     a2c285b0dfffb4c46ae5b43b045ca0b8: -80
     1ae2a4e07f7a948c980b0bd335b24559: .100000001
     5443ed311a1a847a1861bdba1204ab72: -80
     a7830581153ec4014ab5b40ae30645e4: 0
     334a26b140b5f4b5ab731206e8502eb2: -1500
-    ae6d03f1a5a19445eac153521f6f541e: 15
+    ae6d03f1a5a19445eac153521f6f541e: 15.1999998
     142b7a42a42b9429f9dcf986b296f132: -80
     d8e5ec72732c949a2b4654e0b473673c: 1
-    30b870a2903c64b7abac9baf7c4fa812: -2091
+    30b870a2903c64b7abac9baf7c4fa812: -2461
     6ae28bc291d284f01834273db3903f8c: -29.7185726
     9e8d580340b0e48e7a2f904c9407709b: -4.56034613
     92c6c023c274944d48ce349291dba3f0: 1
@@ -691,17 +714,20 @@ AudioMixerSnapshotController:
     553c31643b94341b497a9c91a69bfccc: 1
     b7f7ad15b5e904071a9a0dc85baabf65: 80
     88d933d54edd8418689ff7b8c7e55257: -2603
-    870dafd557ff84987a4d57f75e63b145: .400000006
+    870dafd557ff84987a4d57f75e63b145: .369000018
     22efe5b6176cd45cdab02aea60222c2b: .0255785119
     e219acb6d01e1402f9b4ea871c8d4550: 341
+    f4afed37f619f446fb145e838965325a: .200000003
     879edbf79e3c04d3fa31a5eeb5b66a5c: 1
+    3e76ddf727cd840afb195fbd65243e4a: 1
+    43243d185e61b4a93ab377692e5835b1: .200000003
     5f15cf1854a7b42bb84ccf4f0b57d25e: .5
     827fe448b8c934076a940e5407b2b0ce: -14.8166084
     ba9462c82cafb415b9a8e73caf7c5d0a: .25
-    982c35691cb24448d96991fc2cde9fbf: -40.4999962
+    982c35691cb24448d96991fc2cde9fbf: -21.0000114
     f14509897efea43b9a7300ed968a52f6: -29.7185726
     2f657d9926ef14e5ba1aadccbff4714b: 4000
-    ac8f6ae95c3be4ffbb7f90f79968520d: -10000
+    ac8f6ae95c3be4ffbb7f90f79968520d: -6564
     5946225a0204e424f9f96e0d5b83ab78: 0
     a26e675a7c59144ae8ae79b668002fa6: 0
     707c01eb709644a70b9ae776481ebe0f: 1
