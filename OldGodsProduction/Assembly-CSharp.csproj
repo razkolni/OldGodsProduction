@@ -218,6 +218,8 @@
      <Compile Include="Assets\Photon Unity Networking\UtilityScripts\TestBase.cs" />
      <Compile Include="Assets\Photon Unity Networking\UtilityScripts\TestDontDestroyOnLoad.cs" />
      <Compile Include="Assets\Photon Unity Networking\UtilityScripts\TimeKeeper.cs" />
+     <Compile Include="Assets\PlayMaker Custom Actions\Color\ColorHSV.cs" />
+     <Compile Include="Assets\PlayMaker Custom Actions\Color\SetColorHSV.cs" />
      <Compile Include="Assets\PlayMaker Custom Actions\GameObject\SetLayerRecursive.cs" />
      <Compile Include="Assets\PlayMaker Custom Actions\Logic\MaterialCompare.cs" />
      <Compile Include="Assets\PlayMaker Custom Actions\Physics\PhysicsIgnoreCollision.cs" />
@@ -797,6 +799,7 @@
      <Compile Include="Assets\ReliefPack\Scripts\ReliefTerrain\_Internal\ReliefTerrainPresetHolder.cs" />
      <Compile Include="Assets\ReliefPack\Shaders\ReliefTerrain\VertexControl\ReliefTerrainVertexBlendTriplanar.cs" />
      <Compile Include="Assets\ReliefPack\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
+     <Compile Include="Assets\ReverbTrigger.cs" />
      <Compile Include="Assets\iTween\iTween.cs" />
      <None Include="Assets\ReliefPack\Shaders\CustomLighting.cginc" />
      <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\Water\GeometryBlend_WaterShader_HB U5.shader" />

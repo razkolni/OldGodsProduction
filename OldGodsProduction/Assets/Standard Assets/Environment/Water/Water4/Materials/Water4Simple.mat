@@ -112,6 +112,10 @@ Material:
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
+          name: _SpecularColor
+        second: {r: .820895553, g: .805815935, b: .771886885, a: 1}
+      data:
+        first:
           name: _DistortParams
         second: {r: 1.02857149, g: .201872215, b: 2.76662493, a: -.417142838}
       data:
@@ -144,12 +148,8 @@ Material:
         second: {r: .47582978, g: .606486499, b: .664179087, a: .470588237}
       data:
         first:
-          name: _SpecularColor
-        second: {r: .820895553, g: .805815935, b: .771886885, a: 1}
-      data:
-        first:
           name: _WorldLightDir
-        second: {r: .0139923692, g: -.173590809, b: -.984718621, a: 0}
+        second: {r: .910372674, g: -.173590779, b: -.375616908, a: 0}
       data:
         first:
           name: _Foam
