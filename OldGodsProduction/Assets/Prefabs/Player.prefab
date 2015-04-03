@@ -60,7 +60,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &136908
 GameObject:
   m_ObjectHideFlags: 0
@@ -117,7 +117,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &139836
 GameObject:
   m_ObjectHideFlags: 0
@@ -181,7 +181,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 136908}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.24000001, y: 8.63000011, z: -2.79999995}
+  m_LocalPosition: {x: 87.5400009, y: 7.17999983, z: 43.0400009}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 436904}
@@ -231,7 +231,7 @@ Camera:
     height: 1
   near clip plane: .300000012
   far clip plane: 1000
-  field of view: 56.7000008
+  field of view: 71
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -263,7 +263,7 @@ Camera:
     height: 1
   near clip plane: .300000012
   far clip plane: 1000
-  field of view: 56.7000008
+  field of view: 71
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -520,7 +520,7 @@ MonoBehaviour:
   sensitivityNormals: 1
   lumThreshold: .200000003
   edgeExp: 1
-  sampleDist: .569999993
+  sampleDist: .49000001
   edgesOnly: .104000002
   edgesOnlyBgColor: {r: 0, g: .507352948, b: .444371223, a: 1}
   edgeDetectShader: {fileID: 4800000, guid: 0d1644bdf064147baa97f235fc5b4903, type: 3}
@@ -580,11 +580,11 @@ MonoBehaviour:
   screenBlendMode: 0
   sunTransform: {fileID: 0}
   radialBlurIterations: 2
-  sunColor: {r: .132352948, g: 1, b: .712778986, a: 1}
+  sunColor: {r: 0, g: .505882382, b: .443137288, a: 1}
   sunThreshold: {r: .748620689, g: .649999976, b: .870000005, a: 1}
   sunShaftBlurRadius: 2.5
   sunShaftIntensity: 1.14999998
-  maxRadius: .265999973
+  maxRadius: .218999982
   useDepthTexture: 1
   sunShaftsShader: {fileID: 4800000, guid: d3b1c8c1036784176946f5cfbfb7fe4c, type: 3}
   simpleClearShader: {fileID: 4800000, guid: f688f89ed5eb847c5b19c934a0f1e772, type: 3}
@@ -604,7 +604,7 @@ MonoBehaviour:
   globalDensity: .0149999997
   heightScale: 100
   height: 1
-  globalFogColor: {r: .184904844, g: .324528724, b: .441176474, a: 1}
+  globalFogColor: {r: .050173007, g: .426470578, b: .41089958, a: 1}
   fogShader: {fileID: 4800000, guid: 70d8568987ac0499f952b54c7c13e265, type: 3}
 --- !u!114 &11417206
 MonoBehaviour:
@@ -1295,7 +1295,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 707
-        y: 123
+        y: 267
         width: 166
         height: 16
       isBreakpoint: 0
@@ -1336,7 +1336,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 948
-        y: 128
+        y: 272
         width: 100
         height: 16
       isBreakpoint: 0
@@ -1377,7 +1377,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 61
-        y: 201
+        y: 345
         width: 100
         height: 32
       isBreakpoint: 0
@@ -1388,7 +1388,7 @@ MonoBehaviour:
           name: play
           isSystemEvent: 0
           isGlobal: 0
-        toState: WhatPlayerWalksOn
+        toState: Check_Running_Walking
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -1435,7 +1435,7 @@ MonoBehaviour:
           value: 
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000803f0000000000000100000000000000803f000000003f00706c617900
+        byteData: 0000803f0000000000000100000000000000803f000000000001537465705f627265616b5f7370656564706c617900
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -1454,15 +1454,15 @@ MonoBehaviour:
         - time
         - finishEvent
         - realTime
-        paramDataPos: 00000000000000000100000000000000050000000a0000000c0000000e00000010000000150000001a0000001e000000
-        paramByteDataSize: 000000000000000000000000050000000500000002000000020000000200000005000000050000000400000001000000
+        paramDataPos: 00000000000000000100000000000000050000000a0000000c0000000e00000010000000150000002a0000002e000000
+        paramByteDataSize: 000000000000000000000000050000000500000002000000020000000200000005000000150000000400000001000000
     - name: WhatPlayerWalksOn
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 287
-        y: 111
+        x: 265.03125
+        y: 248.875
         width: 158
         height: 64
       isBreakpoint: 0
@@ -1607,7 +1607,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 297
-        y: 221
+        y: 365
         width: 100
         height: 32
       isBreakpoint: 0
@@ -1618,7 +1618,7 @@ MonoBehaviour:
           name: play
           isSystemEvent: 0
           isGlobal: 0
-        toState: WhatPlayerWalksOn
+        toState: Check_Running_Walking
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -1665,7 +1665,7 @@ MonoBehaviour:
           value: 
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000803f0000000000000100000000000000803f000000003f00706c617900
+        byteData: 0000803f0000000000000100000000000000803f000000000001537465705f627265616b5f7370656564706c617900
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -1684,15 +1684,15 @@ MonoBehaviour:
         - time
         - finishEvent
         - realTime
-        paramDataPos: 00000000000000000100000000000000050000000a0000000c0000000e00000010000000150000001a0000001e000000
-        paramByteDataSize: 000000000000000000000000050000000500000002000000020000000200000005000000050000000400000001000000
+        paramDataPos: 00000000000000000100000000000000050000000a0000000c0000000e00000010000000150000002a0000002e000000
+        paramByteDataSize: 000000000000000000000000050000000500000002000000020000000200000005000000150000000400000001000000
     - name: Wood
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
         x: 524
-        y: 192
+        y: 336
         width: 100
         height: 32
       isBreakpoint: 0
@@ -1703,7 +1703,7 @@ MonoBehaviour:
           name: play
           isSystemEvent: 0
           isGlobal: 0
-        toState: WhatPlayerWalksOn
+        toState: Check_Running_Walking
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -1750,7 +1750,7 @@ MonoBehaviour:
           value: 
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000803f0000000000000100000000000000803f000000003f00706c617900
+        byteData: 0000803f0000000000000100000000000000803f000000000001537465705f627265616b5f7370656564706c617900
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -1769,8 +1769,185 @@ MonoBehaviour:
         - time
         - finishEvent
         - realTime
-        paramDataPos: 00000000000000000100000000000000050000000a0000000c0000000e00000010000000150000001a0000001e000000
-        paramByteDataSize: 000000000000000000000000050000000500000002000000020000000200000005000000050000000400000001000000
+        paramDataPos: 00000000000000000100000000000000050000000a0000000c0000000e00000010000000150000002a0000002e000000
+        paramByteDataSize: 000000000000000000000000050000000500000002000000020000000200000005000000150000000400000001000000
+    - name: Check_Running_Walking
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 264.90625
+        y: 112.59375
+        width: 185
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: set running
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: running
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: set walking
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: walking
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.BoolTest
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 3334d172
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 0001506c61796572497352756e6e696e677365742072756e6e696e677365742077616c6b696e6700
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 11000000170000001700000001000000
+        paramName:
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
+        paramDataPos: 00000000110000001c00000027000000
+        paramByteDataSize: 110000000b0000000b00000001000000
+    - name: running
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 148.90625
+        y: 185.398438
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 1
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: go
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: WhatPlayerWalksOn
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SetFloatValue
+        - HutongGames.PlayMaker.Actions.NextFrameEvent
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000003000000
+        actionHashCodes: 79fc1dedc631a949
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 0000000001537465705f627265616b5f73706565649a99993e0000676f
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0f0000000f0000000100000017000000
+        paramName:
+        - floatVariable
+        - floatValue
+        - everyFrame
+        - sendEvent
+        paramDataPos: 00000000150000001a0000001b000000
+        paramByteDataSize: 15000000050000000100000002000000
+    - name: walking
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 469.257812
+        y: 194.640625
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: go
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: WhatPlayerWalksOn
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SetFloatValue
+        - HutongGames.PlayMaker.Actions.NextFrameEvent
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000003000000
+        actionHashCodes: 79fc1dedc631a949
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 0000000001537465705f627265616b5f73706565640000003f0000676f
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0f0000000f0000000100000017000000
+        paramName:
+        - floatVariable
+        - floatValue
+        - everyFrame
+        - sendEvent
+        paramDataPos: 00000000150000001a0000001b000000
+        paramByteDataSize: 15000000050000000100000002000000
     events:
     - name: FadeIn
       isSystemEvent: 0
@@ -1796,10 +1973,19 @@ MonoBehaviour:
     - name: PlayerStoped
       isSystemEvent: 0
       isGlobal: 1
+    - name: go
+      isSystemEvent: 0
+      isGlobal: 0
     - name: play
       isSystemEvent: 0
       isGlobal: 0
     - name: reset
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: set running
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: set walking
       isSystemEvent: 0
       isGlobal: 0
     globalTransitions:
@@ -1812,14 +1998,6 @@ MonoBehaviour:
       linkConstraint: 0
       colorIndex: 0
     - fsmEvent:
-        name: PlayerIsMoving
-        isSystemEvent: 0
-        isGlobal: 1
-      toState: WhatPlayerWalksOn
-      linkStyle: 0
-      linkConstraint: 0
-      colorIndex: 0
-    - fsmEvent:
         name: PLAYER_CANT_MOVE
         isSystemEvent: 0
         isGlobal: 1
@@ -1827,8 +2005,22 @@ MonoBehaviour:
       linkStyle: 0
       linkConstraint: 0
       colorIndex: 0
+    - fsmEvent:
+        name: PlayerIsMoving
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: Check_Running_Walking
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
     variables:
-      floatVariables: []
+      floatVariables:
+      - useVariable: 1
+        name: Step_break_speed
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
       intVariables: []
       boolVariables: []
       stringVariables: []
@@ -2935,7 +3127,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 226
+        x: 370
         y: 100
         width: 100
         height: 48
@@ -3165,13 +3357,13 @@ MonoBehaviour:
         paramDataPos: 000000001300000015000000160000001a0000001e0000000000000029000000000000002a00000030000000350000000000000036000000360000003d0000003f000000
         paramByteDataSize: 13000000020000000100000004000000040000000b0000000000000001000000000000000600000005000000010000000000000000000000070000000200000001000000
     - name: Jumped
-      description: 
+      description: Footsteps Fade Goes Here
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 228
-        y: 241
-        width: 100
+        x: 360
+        y: 253
+        width: 132.5
         height: 48
       isBreakpoint: 0
       isSequence: 1
@@ -3246,8 +3438,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 54
-        y: 146
+        x: 52
+        y: 166
         width: 100
         height: 32
       isBreakpoint: 0
@@ -3258,7 +3450,7 @@ MonoBehaviour:
           name: Landed
           isSystemEvent: 0
           isGlobal: 1
-        toState: JumpReady
+        toState: LandingMoment
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -3353,7 +3545,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 224
+        x: 368
         y: 175
         width: 101
         height: 48
@@ -3544,6 +3736,58 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 000000001300000015000000160000001a0000001e0000000000000029000000000000002a0000002a0000003100000033000000
         paramByteDataSize: 13000000020000000100000004000000040000000b00000000000000010000000000000000000000070000000200000001000000
+    - name: LandingMoment
+      description: "What should happen in \nthe moment of landing"
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 182
+        y: 113
+        width: 147
+        height: 32
+      isBreakpoint: 0
+      isSequence: 1
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: Landed
+          isSystemEvent: 0
+          isGlobal: 1
+        toState: JumpReady
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.NextFrameEvent
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: c631a949
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 4c616e646564
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 17000000
+        paramName:
+        - sendEvent
+        paramDataPos: 00000000
+        paramByteDataSize: 06000000
     events:
     - name: Falling
       isSystemEvent: 0
@@ -3642,7 +3886,7 @@ MonoBehaviour:
     steepPerpAmount: .5
   movingPlatform:
     enabled: 1
-    movementTransfer: 2
+    movementTransfer: 3
   sliding:
     enabled: 1
     slidingSpeed: 15
@@ -5153,13 +5397,13 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000000000000000000000000100000000000000000000b44200010000000000c842000001000000000000000000000000010000000000000000000000000100000000010300000000080000000001000000803feceb6b3f8180803c0000803f000100
-        arrayParamSizes: 01000000
+        byteData: 0000000000000000000000000100000000000000000000b44200010000000000c84200000100000000000000000000000001000000000000000000000000010000000001030000000008000000000a0000000001000000803feceb6b3f8180803c0000803f000100
+        arrayParamSizes: 02000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmInt
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 140000001c0000001c000000070000000f0000001700000011000000130000001c0000001c0000000f000000100000000c00000010000000110000001900000011000000
+        paramDataType: 140000001c0000001c000000070000000f0000001700000011000000130000001c0000001c0000000f000000100000000c0000001000000010000000110000001900000011000000
         paramName:
         - fromGameObject
         - fromPosition
@@ -5175,11 +5419,12 @@ MonoBehaviour:
         - repeatInterval
         - layerMask
         - 
+        - 
         - invertMask
         - debugColor
         - debug
-        paramDataPos: 00000000000000000d0000001a0000001e00000023000000230000000000000025000000320000003f0000004400000000000000490000004e0000005000000061000000
-        paramByteDataSize: 000000000d0000000d00000004000000050000000000000002000000000000000d0000000d00000005000000050000000000000005000000020000001100000002000000
+        paramDataPos: 00000000000000000d0000001a0000001e00000023000000230000000000000025000000320000003f0000004400000000000000490000004e000000530000005500000066000000
+        paramByteDataSize: 000000000d0000000d00000004000000050000000000000002000000000000000d0000000d0000000500000005000000000000000500000005000000020000001100000002000000
     events: []
     globalTransitions: []
     variables:
@@ -5704,12 +5949,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34c3946ab5378473cb34bedd1c8194ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fogMode: 0
+  fogMode: 2
   startDistance: 12.4499998
   globalDensity: .00999999978
   heightScale: 100
   height: 2.58999991
-  globalFogColor: {r: .0955882072, g: .0955882072, b: .0955882072, a: 1}
+  globalFogColor: {r: .083417818, g: .0772058666, b: .102941155, a: 1}
   fogShader: {fileID: 4800000, guid: 70d8568987ac0499f952b54c7c13e265, type: 3}
 --- !u!114 &11448728
 MonoBehaviour:
@@ -5779,7 +6024,7 @@ MonoBehaviour:
   chromaticAberration: .200000003
   axialAberration: .5
   blur: .629999995
-  blurSpread: .75
+  blurSpread: 0
   luminanceDependency: .25
   blurDistance: 2.5
   vignetteShader: {fileID: 4800000, guid: 627943dc7a9a74286b70a4f694a0acd5, type: 3}
