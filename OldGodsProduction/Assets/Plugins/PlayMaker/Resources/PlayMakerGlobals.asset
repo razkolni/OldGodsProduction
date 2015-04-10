@@ -39,6 +39,12 @@ MonoBehaviour:
       value: 7
     intVariables:
     - useVariable: 1
+      name: Ability_Consume_Ether_Lvl
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 1
+    - useVariable: 1
       name: Ether
       tooltip: 
       showInInspector: 0
