@@ -118,6 +118,12 @@ MonoBehaviour:
       networkSync: 0
       value: 1
     - useVariable: 1
+      name: Indoors_Outdoors
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
       name: LANTERN_UP
       tooltip: 
       showInInspector: 0
@@ -273,3 +279,5 @@ MonoBehaviour:
   - OutOf_Pos
   - Scale_Down
   - Trigger_Summoning_Visuals
+  - PlayerIsInside
+  - PlayerIsOutside
