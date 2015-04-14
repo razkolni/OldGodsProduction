@@ -2,13 +2,14 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Nighttime Simple Water
   m_Shader: {fileID: 4800000, guid: 9dccc8e8f0da4494991c26ef59019551, type: 3}
-  m_ShaderKeywords: []
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
   m_CustomRenderQueue: -1
   m_SavedProperties:
     serializedVersion: 2
@@ -25,6 +26,20 @@ Material:
           name: _BumpMap
         second:
           m_Texture: {fileID: 2800000, guid: a53cf5449d11a15d1100a04b44295342, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ReflectionTex
+        second:
+          m_Texture: {fileID: 8400000, guid: 21bb33409d118354d000dcabe39e7c39, type: 2}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _WavesTex
+        second:
+          m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -50,23 +65,9 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _ReflectionTex
-        second:
-          m_Texture: {fileID: 8400000, guid: 21bb33409d118354d000dcabe39e7c39, type: 2}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
           name: _ColorGradient
         second:
           m_Texture: {fileID: 2800000, guid: 8403d3349d112ba4d000be1be39e7c39, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _WavesTex
-        second:
-          m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -77,7 +78,7 @@ Material:
       data:
         first:
           name: _WaveScale
-        second: .0702830181
+        second: .150000006
       data:
         first:
           name: _Highlight
@@ -113,12 +114,12 @@ Material:
         second: {r: .700785816, g: .481223762, b: .474296182, a: 1}
       data:
         first:
-          name: _MainTex_ST
-        second: {r: 1, g: 1, b: 0, a: 0}
-      data:
-        first:
           name: _SpecColor
         second: {r: 0, g: 0, b: 0, a: .400000006}
+      data:
+        first:
+          name: _MainTex_ST
+        second: {r: 1, g: 1, b: 0, a: 0}
       data:
         first:
           name: _BumpMap_ST
@@ -126,7 +127,7 @@ Material:
       data:
         first:
           name: _horizonColor
-        second: {r: .148485541, g: .282429248, b: .379949659, a: 0}
+        second: {r: .286770791, g: .286770791, b: .286770791, a: 0}
       data:
         first:
           name: _ColorControl_ST
@@ -138,7 +139,7 @@ Material:
       data:
         first:
           name: WaveSpeed
-        second: {r: 9.68770027, g: 4.81898165, b: -7.91322803, a: 2.87029743}
+        second: {r: .687699974, g: .818982005, b: .913227975, a: .870297015}
       data:
         first:
           name: BumpParm
