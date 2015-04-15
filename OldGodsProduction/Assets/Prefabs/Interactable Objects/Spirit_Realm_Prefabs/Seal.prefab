@@ -6435,7 +6435,6 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
-        - MasterAudioPlaySound
         - HutongGames.PlayMaker.Actions.EnableFSM
         - HutongGames.PlayMaker.Actions.SetProperty
         - HutongGames.PlayMaker.Actions.SendEvent
@@ -6455,11 +6454,10 @@ MonoBehaviour:
         - 
         - 
         - 
-        - 
-        actionEnabled: 01010101010101010101
-        actionIsOpen: 01010101010101010101
-        actionStartIndex: 00000000090000000d0000000f00000013000000180000001d00000021000000250000002a000000
-        actionHashCodes: 74708330c3addc63d23668dceec9d968b4797e4ab4797e4ae0558823e0558823b4797e4ab4797e4a
+        actionEnabled: 010101010101010101
+        actionIsOpen: 010101010101010101
+        actionStartIndex: 0000000004000000060000000a0000000f00000014000000180000001c00000021000000
+        actionHashCodes: c3addc63d23668dceec9d968b4797e4ab4797e4ae0558823e0558823b4797e4ab4797e4a
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -6475,14 +6473,6 @@ MonoBehaviour:
           networkSync: 0
           value: {fileID: 0}
         fsmOwnerDefaultParams:
-        - ownerOption: 0
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
         - ownerOption: 1
           gameObject:
             useVariable: 0
@@ -6677,18 +6667,6 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: SigilOut
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
           value: 
         - useVariable: 0
           name: 
@@ -6704,22 +6682,13 @@ MonoBehaviour:
           value: Player
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000803f0000000000000100000000000000803f0001000000005363616c655f446f776e00000000000000000000000000000000000000000000436865636b506c617965724c6f6f6b696e6701000000436865636b506c617965724c6f6f6b696e67000000000000000000000000
+        byteData: 01000000005363616c655f446f776e00000000000000000000000000000000000000000000436865636b506c617965724c6f6f6b696e6701000000436865636b506c617965724c6f6f6b696e67000000000000000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000012000000120000000f0000000f0000001100000011000000110000000f0000001400000012000000110000001100000024000000010000001f000000170000000f0000000100000014000000110000001100000001000000010000001400000011000000110000000100000001000000070000001200000017000000130000000700000012000000170000001300000014000000110000001100000001000000010000001400000011000000110000000100000001000000
+        paramDataType: 1400000012000000110000001100000024000000010000001f000000170000000f0000000100000014000000110000001100000001000000010000001400000011000000110000000100000001000000070000001200000017000000130000000700000012000000170000001300000014000000110000001100000001000000010000001400000011000000110000000100000001000000
         paramName:
-        - gameObject
-        - soundGroupName
-        - variationName
-        - volume
-        - delaySound
-        - useThisLocation
-        - attachToGameObject
-        - useFixedPitch
-        - fixedPitch
         - gameObject
         - fsmName
         - enable
@@ -6758,8 +6727,8 @@ MonoBehaviour:
         - recursive
         - resetOnExit
         - everyFrame
-        paramDataPos: 00000000000000000100000000000000050000000a0000000c0000000e00000010000000010000000200000015000000170000000000000019000000000000001a0000002400000029000000020000002a0000002c0000002e0000002f000000030000003000000032000000340000003500000036000000030000003a000000000000004c000000040000005000000001000000040000006200000064000000660000006700000005000000680000006a0000006c0000006d000000
-        paramByteDataSize: 000000000000000000000000050000000500000002000000020000000200000005000000000000000000000002000000020000000000000001000000000000000a000000050000000100000000000000020000000200000001000000010000000000000002000000020000000100000001000000040000000000000012000000000000000400000000000000120000000000000000000000020000000200000001000000010000000000000002000000020000000100000001000000
+        paramDataPos: 00000000000000000000000002000000000000000400000000000000050000000f00000014000000010000001500000017000000190000001a000000020000001b0000001d0000001f000000200000002100000001000000250000000000000037000000020000003b00000001000000030000004d0000004f00000051000000520000000400000053000000550000005700000058000000
+        paramByteDataSize: 000000000000000002000000020000000000000001000000000000000a000000050000000100000000000000020000000200000001000000010000000000000002000000020000000100000001000000040000000000000012000000000000000400000000000000120000000000000000000000020000000200000001000000010000000000000002000000020000000100000001000000
     - name: PlayerLooking
       description: 'Highlight Effect Deactivates Here
 
@@ -6789,7 +6758,7 @@ MonoBehaviour:
           name: reset
           isSystemEvent: 0
           isGlobal: 0
-        toState: Proximity
+        toState: Sound_Plays
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -7292,7 +7261,7 @@ MonoBehaviour:
           name: reset
           isSystemEvent: 0
           isGlobal: 0
-        toState: Proximity
+        toState: Sound_Plays
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -7907,7 +7876,7 @@ MonoBehaviour:
           name: reset
           isSystemEvent: 0
           isGlobal: 0
-        toState: Proximity
+        toState: Sound_Plays
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -8560,6 +8529,89 @@ MonoBehaviour:
         - realTime
         paramDataPos: 00000000000000000500000007000000180000001d00000024000000
         paramByteDataSize: 00000000050000000200000011000000050000000700000001000000
+    - name: Sound_Plays
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 1152
+        y: 115
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 1
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: reset
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Proximity
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - MasterAudioPlaySound
+        - HutongGames.PlayMaker.Actions.NextFrameEvent
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000009000000
+        actionHashCodes: 74708330c631a949
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: SigilOut
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 0000803f0000000000000100000000000000803f007265736574
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1400000012000000120000000f0000000f0000001100000011000000110000000f00000017000000
+        paramName:
+        - gameObject
+        - soundGroupName
+        - variationName
+        - volume
+        - delaySound
+        - useThisLocation
+        - attachToGameObject
+        - useFixedPitch
+        - fixedPitch
+        - sendEvent
+        paramDataPos: 00000000000000000100000000000000050000000a0000000c0000000e0000001000000015000000
+        paramByteDataSize: 00000000000000000000000005000000050000000200000002000000020000000500000005000000
     events:
     - name: BeginRitual
       isSystemEvent: 0
@@ -9742,6 +9794,7 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - MasterAudioPlaySound
         - HutongGames.PlayMaker.Actions.Wait
         - HutongGames.PlayMaker.Actions.GetKeyDown
         - HutongGames.PlayMaker.Actions.AnyKey
@@ -9749,29 +9802,59 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
-        actionStartIndex: 000000000300000006000000
-        actionHashCodes: 3708ec1a437581edc631a949
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 00000000090000000c0000000f000000
+        actionHashCodes: 747083303708ec1a437581edc631a949
         unityObjectParams: []
         fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: GliffIn
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000803f006661696c656400770000007375636365737300016661696c6564
+        byteData: 0000803f0000000000000100000000000000803f000000803f006661696c656400770000007375636365737300016661696c6564
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0f000000170000000100000007000000170000001100000017000000
+        paramDataType: 1400000012000000120000000f0000000f0000001100000011000000110000000f0000000f000000170000000100000007000000170000001100000017000000
         paramName:
+        - gameObject
+        - soundGroupName
+        - variationName
+        - volume
+        - delaySound
+        - useThisLocation
+        - attachToGameObject
+        - useFixedPitch
+        - fixedPitch
         - time
         - finishEvent
         - realTime
@@ -9779,8 +9862,8 @@ MonoBehaviour:
         - sendEvent
         - storeResult
         - sendEvent
-        paramDataPos: 00000000050000000b0000000c000000100000001700000019000000
-        paramByteDataSize: 05000000060000000100000004000000070000000200000006000000
+        paramDataPos: 00000000000000000100000000000000050000000a0000000c0000000e00000010000000150000001a0000002000000021000000250000002c0000002e000000
+        paramByteDataSize: 00000000000000000000000005000000050000000200000002000000020000000500000005000000060000000100000004000000070000000200000006000000
     - name: State 1
       description: 
       colorIndex: 0
@@ -9883,6 +9966,7 @@ MonoBehaviour:
       transitions: []
       actionData:
         actionNames:
+        - MasterAudioPlaySound
         - HutongGames.PlayMaker.Actions.SendEvent
         - HutongGames.PlayMaker.Actions.Wait
         - HutongGames.PlayMaker.Actions.DestroySelf
@@ -9890,13 +9974,22 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
-        actionStartIndex: 000000000400000007000000
-        actionHashCodes: eec9d9683708ec1a3ee6a00a
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 00000000090000000d00000010000000
+        actionHashCodes: 74708330eec9d9683708ec1a3ee6a00a
         unityObjectParams: []
         fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -9935,16 +10028,37 @@ MonoBehaviour:
           fsmComponent: {fileID: 0}
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: GliffSuccess
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 50726f636365645f43617374696e670000000000000000a04000000000
+        byteData: 0000803f0000000000000100000000000000803f0050726f636365645f43617374696e670000000000000000a04000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1f000000170000000f000000010000000f000000170000000100000011000000
+        paramDataType: 1400000012000000120000000f0000000f0000001100000011000000110000000f0000001f000000170000000f000000010000000f000000170000000100000011000000
         paramName:
+        - gameObject
+        - soundGroupName
+        - variationName
+        - volume
+        - delaySound
+        - useThisLocation
+        - attachToGameObject
+        - useFixedPitch
+        - fixedPitch
         - eventTarget
         - sendEvent
         - delay
@@ -9953,8 +10067,8 @@ MonoBehaviour:
         - finishEvent
         - realTime
         - detachChildren
-        paramDataPos: 00000000000000000f00000014000000150000001a0000001a0000001b000000
-        paramByteDataSize: 000000000f000000050000000100000005000000000000000100000002000000
+        paramDataPos: 00000000000000000100000000000000050000000a0000000c0000000e00000010000000000000001500000024000000290000002a0000002f0000002f00000030000000
+        paramByteDataSize: 000000000000000000000000050000000500000002000000020000000200000005000000000000000f000000050000000100000005000000000000000100000002000000
     events:
     - name: failed
       isSystemEvent: 0
@@ -10036,6 +10150,7 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - MasterAudioPlaySound
         - HutongGames.PlayMaker.Actions.Wait
         - HutongGames.PlayMaker.Actions.GetKeyDown
         - HutongGames.PlayMaker.Actions.AnyKey
@@ -10043,29 +10158,59 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
-        actionStartIndex: 000000000300000006000000
-        actionHashCodes: 3708ec1a437581edc631a949
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 00000000090000000c0000000f000000
+        actionHashCodes: 747083303708ec1a437581edc631a949
         unityObjectParams: []
         fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: GliffIn
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000803f006661696c656400640000007375636365737300016661696c6564
+        byteData: 0000803f0000000000000100000000000000803f000000803f006661696c656400640000007375636365737300016661696c6564
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0f000000170000000100000007000000170000001100000017000000
+        paramDataType: 1400000012000000120000000f0000000f0000001100000011000000110000000f0000000f000000170000000100000007000000170000001100000017000000
         paramName:
+        - gameObject
+        - soundGroupName
+        - variationName
+        - volume
+        - delaySound
+        - useThisLocation
+        - attachToGameObject
+        - useFixedPitch
+        - fixedPitch
         - time
         - finishEvent
         - realTime
@@ -10073,8 +10218,8 @@ MonoBehaviour:
         - sendEvent
         - storeResult
         - sendEvent
-        paramDataPos: 00000000050000000b0000000c000000100000001700000019000000
-        paramByteDataSize: 05000000060000000100000004000000070000000200000006000000
+        paramDataPos: 00000000000000000100000000000000050000000a0000000c0000000e00000010000000150000001a0000002000000021000000250000002c0000002e000000
+        paramByteDataSize: 00000000000000000000000005000000050000000200000002000000020000000500000005000000060000000100000004000000070000000200000006000000
     - name: State 1
       description: 
       colorIndex: 0
@@ -10177,6 +10322,7 @@ MonoBehaviour:
       transitions: []
       actionData:
         actionNames:
+        - MasterAudioPlaySound
         - HutongGames.PlayMaker.Actions.SendEvent
         - HutongGames.PlayMaker.Actions.Wait
         - HutongGames.PlayMaker.Actions.DestroySelf
@@ -10184,13 +10330,22 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
-        actionStartIndex: 000000000400000007000000
-        actionHashCodes: eec9d9683708ec1a3ee6a00a
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 00000000090000000d00000010000000
+        actionHashCodes: 74708330eec9d9683708ec1a3ee6a00a
         unityObjectParams: []
         fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -10229,16 +10384,37 @@ MonoBehaviour:
           fsmComponent: {fileID: 0}
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: GliffSuccess
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 50726f636365645f43617374696e670000000000000000a04000000000
+        byteData: 0000803f0000000000000100000000000000803f0050726f636365645f43617374696e670000000000000000a04000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1f000000170000000f000000010000000f000000170000000100000011000000
+        paramDataType: 1400000012000000120000000f0000000f0000001100000011000000110000000f0000001f000000170000000f000000010000000f000000170000000100000011000000
         paramName:
+        - gameObject
+        - soundGroupName
+        - variationName
+        - volume
+        - delaySound
+        - useThisLocation
+        - attachToGameObject
+        - useFixedPitch
+        - fixedPitch
         - eventTarget
         - sendEvent
         - delay
@@ -10247,8 +10423,8 @@ MonoBehaviour:
         - finishEvent
         - realTime
         - detachChildren
-        paramDataPos: 00000000000000000f00000014000000150000001a0000001a0000001b000000
-        paramByteDataSize: 000000000f000000050000000100000005000000000000000100000002000000
+        paramDataPos: 00000000000000000100000000000000050000000a0000000c0000000e00000010000000000000001500000024000000290000002a0000002f0000002f00000030000000
+        paramByteDataSize: 000000000000000000000000050000000500000002000000020000000200000005000000000000000f000000050000000100000005000000000000000100000002000000
     events:
     - name: failed
       isSystemEvent: 0
@@ -10330,6 +10506,7 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - MasterAudioPlaySound
         - HutongGames.PlayMaker.Actions.Wait
         - HutongGames.PlayMaker.Actions.GetKeyDown
         - HutongGames.PlayMaker.Actions.AnyKey
@@ -10337,29 +10514,59 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
-        actionStartIndex: 000000000300000006000000
-        actionHashCodes: 3708ec1a437581edc631a949
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 00000000090000000c0000000f000000
+        actionHashCodes: 747083303708ec1a437581edc631a949
         unityObjectParams: []
         fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: GliffIn
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000803f006661696c656400640000007375636365737300016661696c6564
+        byteData: 0000803f0000000000000100000000000000803f000000803f006661696c656400640000007375636365737300016661696c6564
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0f000000170000000100000007000000170000001100000017000000
+        paramDataType: 1400000012000000120000000f0000000f0000001100000011000000110000000f0000000f000000170000000100000007000000170000001100000017000000
         paramName:
+        - gameObject
+        - soundGroupName
+        - variationName
+        - volume
+        - delaySound
+        - useThisLocation
+        - attachToGameObject
+        - useFixedPitch
+        - fixedPitch
         - time
         - finishEvent
         - realTime
@@ -10367,8 +10574,8 @@ MonoBehaviour:
         - sendEvent
         - storeResult
         - sendEvent
-        paramDataPos: 00000000050000000b0000000c000000100000001700000019000000
-        paramByteDataSize: 05000000060000000100000004000000070000000200000006000000
+        paramDataPos: 00000000000000000100000000000000050000000a0000000c0000000e00000010000000150000001a0000002000000021000000250000002c0000002e000000
+        paramByteDataSize: 00000000000000000000000005000000050000000200000002000000020000000500000005000000060000000100000004000000070000000200000006000000
     - name: State 3
       description: 
       colorIndex: 0
@@ -10471,6 +10678,7 @@ MonoBehaviour:
       transitions: []
       actionData:
         actionNames:
+        - MasterAudioPlaySound
         - HutongGames.PlayMaker.Actions.SendEvent
         - HutongGames.PlayMaker.Actions.Wait
         - HutongGames.PlayMaker.Actions.DestroySelf
@@ -10478,13 +10686,22 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
-        actionStartIndex: 000000000400000007000000
-        actionHashCodes: eec9d9683708ec1a3ee6a00a
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 00000000090000000d00000010000000
+        actionHashCodes: 74708330eec9d9683708ec1a3ee6a00a
         unityObjectParams: []
         fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -10523,16 +10740,37 @@ MonoBehaviour:
           fsmComponent: {fileID: 0}
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: GliffSuccess
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 50726f636365645f43617374696e670000000000000000a04000000000
+        byteData: 0000803f0000000000000100000000000000803f0050726f636365645f43617374696e670000000000000000a04000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1f000000170000000f000000010000000f000000170000000100000011000000
+        paramDataType: 1400000012000000120000000f0000000f0000001100000011000000110000000f0000001f000000170000000f000000010000000f000000170000000100000011000000
         paramName:
+        - gameObject
+        - soundGroupName
+        - variationName
+        - volume
+        - delaySound
+        - useThisLocation
+        - attachToGameObject
+        - useFixedPitch
+        - fixedPitch
         - eventTarget
         - sendEvent
         - delay
@@ -10541,8 +10779,8 @@ MonoBehaviour:
         - finishEvent
         - realTime
         - detachChildren
-        paramDataPos: 00000000000000000f00000014000000150000001a0000001a0000001b000000
-        paramByteDataSize: 000000000f000000050000000100000005000000000000000100000002000000
+        paramDataPos: 00000000000000000100000000000000050000000a0000000c0000000e00000010000000000000001500000024000000290000002a0000002f0000002f00000030000000
+        paramByteDataSize: 000000000000000000000000050000000500000002000000020000000200000005000000000000000f000000050000000100000005000000000000000100000002000000
     events:
     - name: failed
       isSystemEvent: 0
@@ -10624,6 +10862,7 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - MasterAudioPlaySound
         - HutongGames.PlayMaker.Actions.Wait
         - HutongGames.PlayMaker.Actions.GetKeyDown
         - HutongGames.PlayMaker.Actions.AnyKey
@@ -10631,29 +10870,59 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
-        actionStartIndex: 000000000300000006000000
-        actionHashCodes: 3708ec1a437581edc631a949
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 00000000090000000c0000000f000000
+        actionHashCodes: 747083303708ec1a437581edc631a949
         unityObjectParams: []
         fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: GliffIn
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000803f006661696c656400770000007375636365737300016661696c6564
+        byteData: 0000803f0000000000000100000000000000803f000000803f006661696c656400770000007375636365737300016661696c6564
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0f000000170000000100000007000000170000001100000017000000
+        paramDataType: 1400000012000000120000000f0000000f0000001100000011000000110000000f0000000f000000170000000100000007000000170000001100000017000000
         paramName:
+        - gameObject
+        - soundGroupName
+        - variationName
+        - volume
+        - delaySound
+        - useThisLocation
+        - attachToGameObject
+        - useFixedPitch
+        - fixedPitch
         - time
         - finishEvent
         - realTime
@@ -10661,8 +10930,8 @@ MonoBehaviour:
         - sendEvent
         - storeResult
         - sendEvent
-        paramDataPos: 00000000050000000b0000000c000000100000001700000019000000
-        paramByteDataSize: 05000000060000000100000004000000070000000200000006000000
+        paramDataPos: 00000000000000000100000000000000050000000a0000000c0000000e00000010000000150000001a0000002000000021000000250000002c0000002e000000
+        paramByteDataSize: 00000000000000000000000005000000050000000200000002000000020000000500000005000000060000000100000004000000070000000200000006000000
     - name: State 3
       description: 
       colorIndex: 0
@@ -10765,6 +11034,7 @@ MonoBehaviour:
       transitions: []
       actionData:
         actionNames:
+        - MasterAudioPlaySound
         - HutongGames.PlayMaker.Actions.SendEvent
         - HutongGames.PlayMaker.Actions.Wait
         - HutongGames.PlayMaker.Actions.DestroySelf
@@ -10772,13 +11042,22 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
-        actionStartIndex: 000000000400000007000000
-        actionHashCodes: eec9d9683708ec1a3ee6a00a
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 00000000090000000d00000010000000
+        actionHashCodes: 74708330eec9d9683708ec1a3ee6a00a
         unityObjectParams: []
         fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -10817,16 +11096,37 @@ MonoBehaviour:
           fsmComponent: {fileID: 0}
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: GliffSuccess
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 50726f636365645f43617374696e670000000000000000a04000000000
+        byteData: 0000803f0000000000000100000000000000803f0050726f636365645f43617374696e670000000000000000a04000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1f000000170000000f000000010000000f000000170000000100000011000000
+        paramDataType: 1400000012000000120000000f0000000f0000001100000011000000110000000f0000001f000000170000000f000000010000000f000000170000000100000011000000
         paramName:
+        - gameObject
+        - soundGroupName
+        - variationName
+        - volume
+        - delaySound
+        - useThisLocation
+        - attachToGameObject
+        - useFixedPitch
+        - fixedPitch
         - eventTarget
         - sendEvent
         - delay
@@ -10835,8 +11135,8 @@ MonoBehaviour:
         - finishEvent
         - realTime
         - detachChildren
-        paramDataPos: 00000000000000000f00000014000000150000001a0000001a0000001b000000
-        paramByteDataSize: 000000000f000000050000000100000005000000000000000100000002000000
+        paramDataPos: 00000000000000000100000000000000050000000a0000000c0000000e00000010000000000000001500000024000000290000002a0000002f0000002f00000030000000
+        paramByteDataSize: 000000000000000000000000050000000500000002000000020000000200000005000000000000000f000000050000000100000005000000000000000100000002000000
     events:
     - name: failed
       isSystemEvent: 0
