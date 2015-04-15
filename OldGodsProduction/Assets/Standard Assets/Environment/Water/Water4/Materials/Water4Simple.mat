@@ -37,6 +37,13 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
+          name: _WavesTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
           name: _RefractionTex
         second:
           m_Texture: {fileID: 0}
@@ -47,13 +54,6 @@ Material:
           name: _ShoreTex
         second:
           m_Texture: {fileID: 2800000, guid: 36dd0b22da8874ed38075789055ca664, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _WavesTex
-        second:
-          m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -88,11 +88,11 @@ Material:
       data:
         first:
           name: _Shininess
-        second: 349.137939
+        second: 158
       data:
         first:
           name: _FresnelScale
-        second: .389714301
+        second: 2.57999992
       data:
         first:
           name: _GerstnerIntensity
@@ -112,12 +112,8 @@ Material:
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
-          name: _SpecularColor
-        second: {r: .820895553, g: .805815935, b: .771886885, a: 1}
-      data:
-        first:
           name: _DistortParams
-        second: {r: 1.02857149, g: .201872215, b: 2.76662493, a: -.417142838}
+        second: {r: 1.02857149, g: .201872215, b: 1.39999998, a: -.469999999}
       data:
         first:
           name: _InvFadeParemeter
@@ -125,7 +121,7 @@ Material:
       data:
         first:
           name: _AnimationTiling
-        second: {r: .400000006, g: .390999973, b: .560000002, a: .699999988}
+        second: {r: .400000006, g: .390999973, b: .560000002, a: 34.1300011}
       data:
         first:
           name: _AnimationDirection
@@ -137,19 +133,23 @@ Material:
       data:
         first:
           name: _BumpDirection
-        second: {r: 1, g: 30, b: 20, a: -20}
+        second: {r: 1, g: 30, b: 20, a: 0}
       data:
         first:
           name: _BaseColor
-        second: {r: .172755614, g: .224076003, b: .24626863, a: .505882382}
+        second: {r: .231617644, g: .283265799, b: .308823526, a: .650980413}
       data:
         first:
           name: _ReflectionColor
-        second: {r: .47582978, g: .606486499, b: .664179087, a: .470588237}
+        second: {r: .0808823705, g: .0808823705, b: .0808823705, a: .619607866}
+      data:
+        first:
+          name: _SpecularColor
+        second: {r: .647058845, g: .647058845, b: .647058845, a: 1}
       data:
         first:
           name: _WorldLightDir
-        second: {r: .910372674, g: -.173590779, b: -.375616908, a: 0}
+        second: {r: .183665022, g: -.173590809, b: -.967540383, a: 0}
       data:
         first:
           name: _Foam
@@ -157,11 +157,11 @@ Material:
       data:
         first:
           name: _GAmplitude
-        second: {r: .300000012, g: .200000003, b: .25, a: .25}
+        second: {r: 0, g: 0, b: .25, a: .25}
       data:
         first:
           name: _GFrequency
-        second: {r: .5, g: .25, b: .600000024, a: .245000005}
+        second: {r: 0, g: .25, b: .600000024, a: .245000005}
       data:
         first:
           name: _GSteepness
