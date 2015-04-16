@@ -1512,14 +1512,18 @@ MonoBehaviour:
       actionData:
         actionNames:
         - MasterAudioPlaySound
+        - MasterAudioGroupFade
+        - MasterAudioGroupFade
         - HutongGames.PlayMaker.Actions.IntSwitch
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000009000000
-        actionHashCodes: 74708330a97ac3d3
+        - 
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 00000000090000000d00000011000000
+        actionHashCodes: 74708330f750cc8ff750cc8fa97ac3d3
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -1550,16 +1554,28 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: EtherIdle
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: EtherTouch
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000803f0000000000000100000000000000803f0001000000014162696c6974795f436f6e73756d655f45746865725f4c766c0100000000020000000003000000004c564c315f436f6e73756d654c564c325f436f6e73756d654c564c335f436f6e73756d6501
+        byteData: 0000803f0000000000000100000000000000803f0000000000000000000000400000000000000000cdcccc3d0001000000014162696c6974795f436f6e73756d655f45746865725f4c766c0100000000020000000003000000004c564c315f436f6e73756d654c564c325f436f6e73756d654c564c335f436f6e73756d6501
         arrayParamSizes: 0300000003000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmInt
         - HutongGames.PlayMaker.FsmEvent
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000012000000120000000f0000000f0000001100000011000000110000000f000000100000000c0000001000000010000000100000000c00000017000000170000001700000001000000
+        paramDataType: 1400000012000000120000000f0000000f0000001100000011000000110000000f00000011000000120000000f0000000f00000011000000120000000f0000000f000000100000000c0000001000000010000000100000000c00000017000000170000001700000001000000
         paramName:
         - gameObject
         - soundGroupName
@@ -1570,6 +1586,14 @@ MonoBehaviour:
         - attachToGameObject
         - useFixedPitch
         - fixedPitch
+        - allGroups
+        - soundGroupName
+        - targetVolume
+        - fadeTime
+        - allGroups
+        - soundGroupName
+        - targetVolume
+        - fadeTime
         - intVariable
         - compareTo
         - 
@@ -1580,8 +1604,8 @@ MonoBehaviour:
         - 
         - 
         - everyFrame
-        paramDataPos: 00000000000000000100000000000000050000000a0000000c0000000e00000010000000150000000000000033000000380000003d00000001000000420000004e0000005a00000066000000
-        paramByteDataSize: 0000000000000000000000000500000005000000020000000200000002000000050000001e00000000000000050000000500000005000000000000000c0000000c0000000c00000001000000
+        paramDataPos: 00000000000000000100000000000000050000000a0000000c0000000e000000100000001500000002000000170000001c000000210000000300000023000000280000002d000000000000004b0000005000000055000000010000005a00000066000000720000007e000000
+        paramByteDataSize: 00000000000000000000000005000000050000000200000002000000020000000500000002000000000000000500000005000000020000000000000005000000050000001e00000000000000050000000500000005000000000000000c0000000c0000000c00000001000000
     - name: LVL1
       description: Audio needs to stop after couple of seconds
       colorIndex: 0
@@ -1601,6 +1625,9 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.SetProperty
         - HutongGames.PlayMaker.Actions.SetProperty
         - HutongGames.PlayMaker.Actions.Wait
+        - MasterAudioGroupFade
+        - MasterAudioGroupFade
+        - HutongGames.PlayMaker.Actions.Wait
         - HutongGames.PlayMaker.Actions.DestroySelf
         customNames:
         - 
@@ -1608,10 +1635,13 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 0101010101
-        actionIsOpen: 0101010101
-        actionStartIndex: 000000000300000005000000070000000a000000
-        actionHashCodes: 9ffa9c66d23668dcd23668dc3708ec1a3ee6a00a
+        - 
+        - 
+        - 
+        actionEnabled: 0101010101010101
+        actionIsOpen: 0101010101010101
+        actionStartIndex: 000000000300000005000000070000000a0000000e0000001200000015000000
+        actionHashCodes: 9ffa9c66d23668dcd23668dc3708ec1af750cc8ff750cc8f3708ec1a3ee6a00a
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -1841,15 +1871,27 @@ MonoBehaviour:
             value: {r: 0, g: 0, b: 0, a: 1}
           setProperty: 1
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: EtherIdle
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: EtherTouch
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000000001457468657219000000000000000000204100000000
+        byteData: 00000000014574686572190000000000000000001041000000000000803f00cdcccc3d0000000000803f00cdcccc3d000000003f00000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 100000001000000001000000240000000100000024000000010000000f000000170000000100000011000000
+        paramDataType: 100000001000000001000000240000000100000024000000010000000f000000170000000100000011000000120000000f0000000f00000011000000120000000f0000000f0000000f000000170000000100000011000000
         paramName:
         - intVariable
         - add
@@ -1861,9 +1903,20 @@ MonoBehaviour:
         - time
         - finishEvent
         - realTime
+        - allGroups
+        - soundGroupName
+        - targetVolume
+        - fadeTime
+        - allGroups
+        - soundGroupName
+        - targetVolume
+        - fadeTime
+        - time
+        - finishEvent
+        - realTime
         - detachChildren
-        paramDataPos: 000000000a0000000f0000000000000010000000010000001100000012000000170000001700000018000000
-        paramByteDataSize: 0a00000005000000010000000000000001000000000000000100000005000000000000000100000002000000
+        paramDataPos: 000000000a0000000f0000000000000010000000010000001100000012000000170000001700000018000000000000001a0000001f0000002400000001000000260000002b00000030000000350000003500000036000000
+        paramByteDataSize: 0a000000050000000100000000000000010000000000000001000000050000000000000001000000020000000000000005000000050000000200000000000000050000000500000005000000000000000100000002000000
     - name: LVL2
       description: Audio needs to stop after couple of seconds
       colorIndex: 0
@@ -1883,6 +1936,9 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.SetProperty
         - HutongGames.PlayMaker.Actions.SetProperty
         - HutongGames.PlayMaker.Actions.Wait
+        - MasterAudioGroupFade
+        - MasterAudioGroupFade
+        - HutongGames.PlayMaker.Actions.Wait
         - HutongGames.PlayMaker.Actions.DestroySelf
         customNames:
         - 
@@ -1890,10 +1946,13 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 0101010101
-        actionIsOpen: 0101010101
-        actionStartIndex: 000000000300000005000000070000000a000000
-        actionHashCodes: 9ffa9c66d23668dcd23668dc3708ec1a3ee6a00a
+        - 
+        - 
+        - 
+        actionEnabled: 0101010101010101
+        actionIsOpen: 0101010101010101
+        actionStartIndex: 000000000300000005000000070000000a0000000e0000001200000015000000
+        actionHashCodes: 9ffa9c66d23668dcd23668dc3708ec1af750cc8ff750cc8f3708ec1a3ee6a00a
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -2123,15 +2182,27 @@ MonoBehaviour:
             value: {r: 0, g: 0, b: 0, a: 1}
           setProperty: 1
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: EtherIdle
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: EtherTouch
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000000001457468657232000000000000000000204100000000
+        byteData: 00000000014574686572320000000000000000001041000000000000803f00cdcccc3d0000000000803f00cdcccc3d000000003f00000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 100000001000000001000000240000000100000024000000010000000f000000170000000100000011000000
+        paramDataType: 100000001000000001000000240000000100000024000000010000000f000000170000000100000011000000120000000f0000000f00000011000000120000000f0000000f0000000f000000170000000100000011000000
         paramName:
         - intVariable
         - add
@@ -2143,9 +2214,20 @@ MonoBehaviour:
         - time
         - finishEvent
         - realTime
+        - allGroups
+        - soundGroupName
+        - targetVolume
+        - fadeTime
+        - allGroups
+        - soundGroupName
+        - targetVolume
+        - fadeTime
+        - time
+        - finishEvent
+        - realTime
         - detachChildren
-        paramDataPos: 000000000a0000000f0000000000000010000000010000001100000012000000170000001700000018000000
-        paramByteDataSize: 0a00000005000000010000000000000001000000000000000100000005000000000000000100000002000000
+        paramDataPos: 000000000a0000000f0000000000000010000000010000001100000012000000170000001700000018000000000000001a0000001f0000002400000001000000260000002b00000030000000350000003500000036000000
+        paramByteDataSize: 0a000000050000000100000000000000010000000000000001000000050000000000000001000000020000000000000005000000050000000200000000000000050000000500000005000000000000000100000002000000
     - name: LVL2 3
       description: Audio needs to stop after couple of seconds
       colorIndex: 0
@@ -2165,6 +2247,9 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.SetProperty
         - HutongGames.PlayMaker.Actions.SetProperty
         - HutongGames.PlayMaker.Actions.Wait
+        - MasterAudioGroupFade
+        - MasterAudioGroupFade
+        - HutongGames.PlayMaker.Actions.Wait
         - HutongGames.PlayMaker.Actions.DestroySelf
         customNames:
         - 
@@ -2172,10 +2257,13 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 0101010101
-        actionIsOpen: 0101010101
-        actionStartIndex: 000000000300000005000000070000000a000000
-        actionHashCodes: 9ffa9c66d23668dcd23668dc3708ec1a3ee6a00a
+        - 
+        - 
+        - 
+        actionEnabled: 0101010101010101
+        actionIsOpen: 0101010101010101
+        actionStartIndex: 000000000300000005000000070000000a0000000e0000001200000015000000
+        actionHashCodes: 9ffa9c66d23668dcd23668dc3708ec1af750cc8ff750cc8f3708ec1a3ee6a00a
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -2405,15 +2493,27 @@ MonoBehaviour:
             value: {r: 0, g: 0, b: 0, a: 1}
           setProperty: 1
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: EtherIdle
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: EtherTouch
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 000000000145746865724b000000000000000000204100000000
+        byteData: 000000000145746865724b0000000000000000001041000000000000803f00cdcccc3d0000000000803f00cdcccc3d000000003f00000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 100000001000000001000000240000000100000024000000010000000f000000170000000100000011000000
+        paramDataType: 100000001000000001000000240000000100000024000000010000000f000000170000000100000011000000120000000f0000000f00000011000000120000000f0000000f0000000f000000170000000100000011000000
         paramName:
         - intVariable
         - add
@@ -2425,9 +2525,20 @@ MonoBehaviour:
         - time
         - finishEvent
         - realTime
+        - allGroups
+        - soundGroupName
+        - targetVolume
+        - fadeTime
+        - allGroups
+        - soundGroupName
+        - targetVolume
+        - fadeTime
+        - time
+        - finishEvent
+        - realTime
         - detachChildren
-        paramDataPos: 000000000a0000000f0000000000000010000000010000001100000012000000170000001700000018000000
-        paramByteDataSize: 0a00000005000000010000000000000001000000000000000100000005000000000000000100000002000000
+        paramDataPos: 000000000a0000000f0000000000000010000000010000001100000012000000170000001700000018000000000000001a0000001f0000002400000001000000260000002b00000030000000350000003500000036000000
+        paramByteDataSize: 0a000000050000000100000000000000010000000000000001000000050000000000000001000000020000000000000005000000050000000200000000000000050000000500000005000000000000000100000002000000
     events:
     - name: Consume
       isSystemEvent: 0
