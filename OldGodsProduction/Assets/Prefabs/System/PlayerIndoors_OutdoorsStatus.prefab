@@ -49,8 +49,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 219
-        y: 100
+        x: 473
+        y: 115
         width: 120
         height: 48
       isBreakpoint: 0
@@ -112,12 +112,12 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 50
-        y: 187
+        x: 209
+        y: 200
         width: 100
-        height: 32
+        height: 64
       isBreakpoint: 0
-      isSequence: 1
+      isSequence: 0
       hideUnused: 0
       transitions:
       - fsmEvent:
@@ -128,17 +128,35 @@ MonoBehaviour:
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
+      - fsmEvent:
+          name: Real
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Outdoors_Real
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: Spirit
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Outdoors_Spirit
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.SendEvent
         - HutongGames.PlayMaker.Actions.BoolChanged
+        - HutongGames.PlayMaker.Actions.BoolTest
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000004000000
-        actionHashCodes: eec9d9683aad00ef
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000400000007000000
+        actionHashCodes: eec9d9683aad00ef3334d172
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -183,12 +201,12 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 506c6179657249734f7574736964650000000000000001496e646f6f72735f4f7574646f6f727372657365740001
+        byteData: 506c6179657249734f7574736964650000000000000001496e646f6f72735f4f7574646f6f72737265736574000100015265616c576f726c64537069726974576f726c645370697269745265616c00
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1f000000170000000f00000001000000110000001700000011000000
+        paramDataType: 1f000000170000000f0000000100000011000000170000001100000011000000170000001700000001000000
         paramName:
         - eventTarget
         - sendEvent
@@ -197,15 +215,240 @@ MonoBehaviour:
         - boolVariable
         - changedEvent
         - storeResult
-        paramDataPos: 00000000000000000f0000001400000015000000270000002c000000
-        paramByteDataSize: 000000000f0000000500000001000000120000000500000002000000
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
+        paramDataPos: 00000000000000000f0000001400000015000000270000002c0000002e000000440000004a0000004e000000
+        paramByteDataSize: 000000000f000000050000000100000012000000050000000200000016000000060000000400000001000000
     - name: Indoors
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 405
-        y: 183
+        x: 648
+        y: 211
+        width: 100
+        height: 64
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: reset
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: State 1
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: Real
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Indoors_Real
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: Spirit
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Indoors_Spirit
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SendEvent
+        - HutongGames.PlayMaker.Actions.BoolChanged
+        - HutongGames.PlayMaker.Actions.BoolTest
+        customNames:
+        - 
+        - 
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000400000007000000
+        actionHashCodes: eec9d9683aad00ef3334d172
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams:
+        - target: 4
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 0
+            gameObject:
+              useVariable: 0
+              name: 
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 0}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 506c617965724973496e736964650000000000000001496e646f6f72735f4f7574646f6f72737265736574000100015265616c576f726c64537069726974576f726c645370697269745265616c00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1f000000170000000f0000000100000011000000170000001100000011000000170000001700000001000000
+        paramName:
+        - eventTarget
+        - sendEvent
+        - delay
+        - everyFrame
+        - boolVariable
+        - changedEvent
+        - storeResult
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
+        paramDataPos: 00000000000000000e0000001300000014000000260000002b0000002d00000043000000490000004d000000
+        paramByteDataSize: 000000000e000000050000000100000012000000050000000200000016000000060000000400000001000000
+    - name: Indoors_Spirit
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 801
+        y: 287
+        width: 107
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: reset
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: State 1
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SendEvent
+        - MasterAudioFireCustomEvent
+        - HutongGames.PlayMaker.Actions.BoolChanged
+        - HutongGames.PlayMaker.Actions.BoolChanged
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 00010101
+        actionIsOpen: 01010101
+        actionStartIndex: 00000000040000000600000009000000
+        actionHashCodes: eec9d968e19d21d83aad00ef3aad00ef
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams:
+        - target: 4
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 0
+            gameObject:
+              useVariable: 0
+              name: 
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 0}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: SpiritIn
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 506c6179657249734f757473696465000000000000000000000000000000000000000001496e646f6f72735f4f7574646f6f72737265736574000100015265616c576f726c64537069726974576f726c6472657365740001
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1f000000170000000f00000001000000120000001c000000110000001700000011000000110000001700000011000000
+        paramName:
+        - eventTarget
+        - sendEvent
+        - delay
+        - everyFrame
+        - customEventName
+        - eventOriginPoint
+        - boolVariable
+        - changedEvent
+        - storeResult
+        - boolVariable
+        - changedEvent
+        - storeResult
+        paramDataPos: 00000000000000000f0000001400000000000000150000002200000034000000390000003b0000005100000056000000
+        paramByteDataSize: 000000000f0000000500000001000000000000000d000000120000000500000002000000160000000500000002000000
+    - name: Indoors_Real
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 487
+        y: 286
         width: 100
         height: 32
       isBreakpoint: 0
@@ -223,14 +466,18 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.SendEvent
+        - MasterAudioFireCustomEvent
+        - HutongGames.PlayMaker.Actions.BoolChanged
         - HutongGames.PlayMaker.Actions.BoolChanged
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000004000000
-        actionHashCodes: eec9d9683aad00ef
+        - 
+        - 
+        actionEnabled: 00010101
+        actionIsOpen: 01010101
+        actionStartIndex: 00000000040000000600000009000000
+        actionHashCodes: eec9d968e19d21d83aad00ef3aad00ef
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -272,30 +519,185 @@ MonoBehaviour:
           fsmComponent: {fileID: 0}
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: RealIn
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 506c617965724973496e736964650000000000000001496e646f6f72735f4f7574646f6f727372657365740001
+        byteData: 506c6179657249734f757473696465000000000000000000000000000000000000000001496e646f6f72735f4f7574646f6f72737265736574000100015265616c576f726c64537069726974576f726c6472657365740001
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1f000000170000000f00000001000000110000001700000011000000
+        paramDataType: 1f000000170000000f00000001000000120000001c000000110000001700000011000000110000001700000011000000
         paramName:
         - eventTarget
         - sendEvent
         - delay
         - everyFrame
+        - customEventName
+        - eventOriginPoint
         - boolVariable
         - changedEvent
         - storeResult
-        paramDataPos: 00000000000000000e0000001300000014000000260000002b000000
-        paramByteDataSize: 000000000e0000000500000001000000120000000500000002000000
+        - boolVariable
+        - changedEvent
+        - storeResult
+        paramDataPos: 00000000000000000f0000001400000000000000150000002200000034000000390000003b0000005100000056000000
+        paramByteDataSize: 000000000f0000000500000001000000000000000d000000120000000500000002000000160000000500000002000000
+    - name: Outdoors_Spirit
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 328
+        y: 282
+        width: 118
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: reset
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: State 1
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - MasterAudioFireCustomEvent
+        - HutongGames.PlayMaker.Actions.BoolChanged
+        - HutongGames.PlayMaker.Actions.BoolChanged
+        customNames:
+        - 
+        - 
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000200000005000000
+        actionHashCodes: e19d21d83aad00ef3aad00ef
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: SpiritOut
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 000000000000000000000000000001496e646f6f72735f4f7574646f6f72737265736574000100015265616c576f726c64537069726974576f726c6472657365740001
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 120000001c000000110000001700000011000000110000001700000011000000
+        paramName:
+        - customEventName
+        - eventOriginPoint
+        - boolVariable
+        - changedEvent
+        - storeResult
+        - boolVariable
+        - changedEvent
+        - storeResult
+        paramDataPos: 00000000000000000d0000001f00000024000000260000003c00000041000000
+        paramByteDataSize: 000000000d000000120000000500000002000000160000000500000002000000
+    - name: Outdoors_Real
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 54
+        y: 286
+        width: 111
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: reset
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: State 1
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - MasterAudioFireCustomEvent
+        - HutongGames.PlayMaker.Actions.BoolChanged
+        - HutongGames.PlayMaker.Actions.BoolChanged
+        customNames:
+        - 
+        - 
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000200000005000000
+        actionHashCodes: e19d21d83aad00ef3aad00ef
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: RealOut
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 000000000000000000000000000001496e646f6f72735f4f7574646f6f72737265736574000100015265616c576f726c64537069726974576f726c6472657365740001
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 120000001c000000110000001700000011000000110000001700000011000000
+        paramName:
+        - customEventName
+        - eventOriginPoint
+        - boolVariable
+        - changedEvent
+        - storeResult
+        - boolVariable
+        - changedEvent
+        - storeResult
+        paramDataPos: 00000000000000000d0000001f00000024000000260000003c00000041000000
+        paramByteDataSize: 000000000d000000120000000500000002000000160000000500000002000000
     events:
+    - name: Real
+      isSystemEvent: 0
+      isGlobal: 0
     - name: SendPlayerIn
       isSystemEvent: 0
       isGlobal: 0
     - name: SendPlayerOut
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: Spirit
       isSystemEvent: 0
       isGlobal: 0
     - name: reset
