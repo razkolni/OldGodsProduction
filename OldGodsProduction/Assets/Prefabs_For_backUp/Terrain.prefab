@@ -1,0 +1,1466 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &103536
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 456772}
+  - 218: {fileID: 21830424}
+  - 154: {fileID: 15422210}
+  - 114: {fileID: 11460256}
+  - 114: {fileID: 11450470}
+  m_Layer: 0
+  m_Name: Terrain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &456772
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103536}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 41.2999992, y: -2.5999999, z: 14.1999998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11450470
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b895cc0f7bca8d4d83e11db00b40619, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controlA: {fileID: 2835074, guid: 0cf46312f7e313b439bc299ceb166220, type: 2}
+  controlB: {fileID: 0}
+  controlC: {fileID: 0}
+  save_path_controlA: 
+  save_path_controlB: 
+  save_path_controlC: 
+  save_path_colormap: 
+  save_path_BumpGlobalCombined: 
+  save_path_WetMask: 
+  NormalGlobal: {fileID: 0}
+  TreesGlobal: {fileID: 0}
+  ColorGlobal: {fileID: 0}
+  AmbientEmissiveMap: {fileID: 0}
+  BumpGlobalCombined: {fileID: 0}
+  TERRAIN_WetMask: {fileID: 0}
+  tmp_globalColorMap: {fileID: 0}
+  tmp_CombinedMap: {fileID: 0}
+  tmp_WaterMap: {fileID: 0}
+  globalColorModifed_flag: 0
+  globalCombinedModifed_flag: 1
+  globalWaterModifed_flag: 0
+  splat_layer_ordered_mode: 0
+  source_controls_channels: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  splat_layer_seq: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b000000
+  splat_layer_boost:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  splat_layer_calc: 000000000000000000000000
+  splat_layer_masked: 000000000000000000000000
+  source_controls_mask_channels: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  source_controls:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  source_controls_invert: 000000000000000000000000
+  source_controls_mask:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  source_controls_mask_invert: 000000000000000000000000
+  customTiling: {x: 3, y: 3}
+  presetHolders: []
+  globalSettingsHolder:
+    useTerrainMaterial: 1
+    numTiles: 0
+    numLayers: 3
+    gloss_baked:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    splats:
+    - {fileID: 2800000, guid: a5cb09c186e1dc8479a50b0b4da48d40, type: 3}
+    - {fileID: 2800000, guid: 18214e9d6af6248559d501391856f1c7, type: 3}
+    - {fileID: 2800000, guid: 9131e55c4e116df46bf4658c152940e3, type: 3}
+    splat_atlases:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    save_path_atlasA: 
+    save_path_atlasB: 
+    save_path_atlasC: 
+    save_path_terrain_steepness: 
+    save_path_terrain_height: 
+    save_path_terrain_direction: 
+    save_path_Bump01: 
+    save_path_Bump23: 
+    save_path_Bump45: 
+    save_path_Bump67: 
+    save_path_Bump89: 
+    save_path_BumpAB: 
+    save_path_HeightMap: 
+    save_path_HeightMap2: 
+    save_path_HeightMap3: 
+    save_path_SSColorCombinedA: 
+    save_path_SSColorCombinedB: 
+    newPresetName: a preset name...
+    activateObject: {fileID: 0}
+    _RTP_LODmanagerScript: {fileID: 0}
+    super_simple_active: 0
+    RTP_MIP_BIAS: 0
+    _SpecColor: {r: 0, g: 0, b: 0, a: 1}
+    RTP_DeferredAddPassSpec: .529999971
+    MasterLayerBrightness: 1
+    MasterLayerSaturation: 1
+    EmissionRefractFiltering: 4
+    EmissionRefractAnimSpeed: 4
+    SuperDetailA_channel: 0
+    SuperDetailB_channel: 0
+    Bump01: {fileID: 0}
+    Bump23: {fileID: 0}
+    Bump45: {fileID: 0}
+    Bump67: {fileID: 0}
+    Bump89: {fileID: 0}
+    BumpAB: {fileID: 0}
+    BumpGlobal: {fileID: 2800000, guid: 8238403a96f1dc7438313114f1ce4eed, type: 3}
+    BumpGlobalCombinedSize: 1024
+    SSColorCombinedA: {fileID: 0}
+    SSColorCombinedB: {fileID: 0}
+    VerticalTexture: {fileID: 0}
+    BumpMapGlobalScale: .100000001
+    GlobalColorMapBlendValues: {x: .200000003, y: .400000006, z: .5}
+    _GlobalColorMapNearMIP: 0
+    GlobalColorMapSaturation: 1
+    GlobalColorMapSaturationFar: 1
+    GlobalColorMapDistortByPerlin: .00499999989
+    GlobalColorMapBrightness: 1
+    GlobalColorMapBrightnessFar: 1
+    _FarNormalDamp: .200000003
+    blendMultiplier: 1
+    terrainTileSize: {x: 100, y: 600, z: 100}
+    HeightMap: {fileID: 0}
+    ReliefTransform: {x: 3, y: 3, z: 0, w: 0}
+    DIST_STEPS: 20
+    WAVELENGTH: 4.26999998
+    ReliefBorderBlend: 6
+    ExtrudeHeight: .0350000001
+    LightmapShading: 0
+    RTP_AOsharpness: 1.5
+    RTP_AOamp: .100000001
+    colorSpaceLinear: 1
+    SHADOW_STEPS: 20
+    WAVELENGTH_SHADOWS: 2
+    SelfShadowStrength: .800000012
+    ShadowSmoothing: 1
+    ShadowSoftnessFade: .800000012
+    distance_start: 5
+    distance_transition: 20
+    distance_start_bumpglobal: 30
+    distance_transition_bumpglobal: 30
+    rtp_perlin_start_val: 0
+    _Phong: 0
+    tessHeight: 300
+    _TessSubdivisions: 1
+    _TessSubdivisionsFar: 1
+    _TessYOffset: 0
+    trees_shadow_distance_start: 50
+    trees_shadow_distance_transition: 10
+    trees_shadow_value: .5
+    trees_pixel_distance_start: 500
+    trees_pixel_distance_transition: 10
+    trees_pixel_blend_val: 2
+    global_normalMap_multiplier: 1
+    global_normalMap_farUsage: 0
+    _AmbientEmissiveMultiplier: 1
+    _AmbientEmissiveRelief: .5
+    HeightMap2: {fileID: 0}
+    HeightMap3: {fileID: 0}
+    rtp_mipoffset_globalnorm: 0
+    _SuperDetailTiling: 8
+    SuperDetailA: {fileID: 0}
+    SuperDetailB: {fileID: 0}
+    TERRAIN_ReflectionMap: {fileID: 0}
+    TERRAIN_ReflectionMap_channel: 0
+    TERRAIN_ReflColorA: {r: 1, g: 1, b: 1, a: 1}
+    TERRAIN_ReflColorB: {r: .392156869, g: .470588237, b: .509803951, a: 1}
+    TERRAIN_ReflColorC: {r: .156862751, g: .188235298, b: .235294119, a: 1}
+    TERRAIN_ReflColorCenter: .5
+    TERRAIN_ReflGlossAttenuation: .5
+    TERRAIN_ReflectionRotSpeed: .300000012
+    TERRAIN_GlobalWetness: 1
+    TERRAIN_RippleMap: {fileID: 2800000, guid: 87b672e098a28584d82865fa6f149b44, type: 3}
+    TERRAIN_RippleScale: .5
+    TERRAIN_FlowScale: 1
+    TERRAIN_FlowSpeed: .5
+    TERRAIN_FlowCycleScale: 1
+    TERRAIN_FlowMipOffset: 0
+    TERRAIN_WetDarkening: .5
+    TERRAIN_WetDropletsStrength: .298999995
+    TERRAIN_WetHeight_Treshold: -200
+    TERRAIN_WetHeight_Transition: 5
+    TERRAIN_RainIntensity: 1
+    TERRAIN_DropletsSpeed: 7
+    TERRAIN_mipoffset_flowSpeed: 1
+    TERRAIN_CausticsAnimSpeed: 2
+    TERRAIN_CausticsColor: {r: 1, g: 1, b: 1, a: 1}
+    TERRAIN_CausticsWaterLevelRefObject: {fileID: 0}
+    TERRAIN_CausticsWaterLevel: 30
+    TERRAIN_CausticsWaterLevelByAngle: 2
+    TERRAIN_CausticsWaterDeepFadeLength: 50
+    TERRAIN_CausticsWaterShallowFadeLength: 30
+    TERRAIN_CausticsTilingScale: 1
+    TERRAIN_CausticsTex: {fileID: 0}
+    rtp_customAmbientCorrection: {r: 0, g: 0, b: 0, a: 1}
+    _CubemapDiff: {fileID: 0}
+    TERRAIN_IBL_DiffAO_Damp: .25
+    _CubemapSpec: {fileID: 0}
+    TERRAIN_IBLRefl_SpecAO_Damp: .5
+    RTP_LightDefVector: {x: .0500000007, y: .5, z: .5, w: 25}
+    RTP_ReflexLightDiffuseColor: {r: .792156875, g: .941176474, b: 1, a: .200000003}
+    RTP_ReflexLightDiffuseColor2: {r: .792156875, g: .941176474, b: 1, a: .200000003}
+    RTP_ReflexLightSpecColor: {r: .941176474, g: .960784316, b: 1, a: .150000006}
+    Bumps:
+    - {fileID: 2800000, guid: baec0eb9ce90c314795e98e3ef6f6b28, type: 3}
+    - {fileID: 2800000, guid: 96fdae319ce9b4e4ea779e8f742949b5, type: 3}
+    - {fileID: 2800000, guid: fb87a6d9f1021274ba65964755cc3ba4, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    Spec:
+    - 1
+    - 1
+    - 1.15999997
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    FarSpecCorrection:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    MIPmult:
+    - 0
+    - 0
+    - .270000011
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    MixScale:
+    - .200000003
+    - .200000003
+    - .200000003
+    - .00999999978
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    MixBlend:
+    - .5
+    - .5
+    - .5
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    MixSaturation:
+    - .300000012
+    - .300000012
+    - .300000012
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    RTP_gloss2mask:
+    - .5
+    - .5
+    - .552999973
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    RTP_gloss_mult:
+    - 1.71000004
+    - 1
+    - .920000017
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    RTP_gloss_shaping:
+    - .5
+    - .5
+    - .559000015
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    RTP_Fresnel:
+    - 0
+    - 0
+    - .127000004
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    RTP_FresnelAtten:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    RTP_DiffFresnel:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    RTP_IBL_bump_smoothness:
+    - .699999988
+    - .699999988
+    - .717999995
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    RTP_IBL_DiffuseStrength:
+    - .5
+    - .5
+    - .5
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    RTP_IBL_SpecStrength:
+    - .5
+    - .5
+    - .5
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    _DeferredSpecDampAddPass:
+    - 1
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    GlobalColorBottom:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    GlobalColorTop:
+    - 1
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    GlobalColorColormapLoSat:
+    - 1
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    GlobalColorColormapHiSat:
+    - 1
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    GlobalColorLayerLoSat:
+    - 1
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    GlobalColorLayerHiSat:
+    - 1
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    GlobalColorLoBlend:
+    - 1
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    GlobalColorHiBlend:
+    - 1
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    MixBrightness:
+    - 2
+    - 2
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    MixReplace:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    LayerBrightness:
+    - .680000007
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    LayerBrightness2Spec:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    LayerAlbedo2SpecColor:
+    - 0
+    - 0
+    - .115000002
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    LayerSaturation:
+    - .372000009
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    LayerEmission:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    LayerEmissionColor:
+    - {r: 0, g: 0, b: 0, a: 1}
+    - {r: 0, g: 0, b: 0, a: 1}
+    - {r: 0, g: 0, b: 0, a: 1}
+    - {r: 0, g: 0, b: 0, a: 0}
+    - {r: 0, g: 0, b: 0, a: 0}
+    - {r: 0, g: 0, b: 0, a: 0}
+    - {r: 0, g: 0, b: 0, a: 0}
+    - {r: 0, g: 0, b: 0, a: 0}
+    - {r: 0, g: 0, b: 0, a: 0}
+    - {r: 0, g: 0, b: 0, a: 0}
+    - {r: 0, g: 0, b: 0, a: 0}
+    - {r: 0, g: 0, b: 0, a: 0}
+    LayerEmissionRefractStrength:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    LayerEmissionRefractHBedge:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    GlobalColorPerLayer:
+    - 1
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    PER_LAYER_HEIGHT_MODIFIER:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    _SuperDetailStrengthMultA:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    _SuperDetailStrengthMultASelfMaskNear:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    _SuperDetailStrengthMultASelfMaskFar:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    _SuperDetailStrengthMultB:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    _SuperDetailStrengthMultBSelfMaskNear:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    _SuperDetailStrengthMultBSelfMaskFar:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    _SuperDetailStrengthNormal:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    _BumpMapGlobalStrength:
+    - .300000012
+    - .300000012
+    - .0199999996
+    - .0199999996
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    AO_strength:
+    - 1
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    VerticalTextureStrength:
+    - .5
+    - .5
+    - .5
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    VerticalTextureGlobalBumpInfluence: 0
+    VerticalTextureTiling: 50
+    Heights:
+    - {fileID: 2800000, guid: 89807fd3eb4d06746b8e99127fae3f54, type: 3}
+    - {fileID: 2800000, guid: 85628394a296ba346a07cf33c869c0dd, type: 3}
+    - {fileID: 2800000, guid: 39e5c6ee61ba00243af0f2e1a08cc95a, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    _snow_strength_per_layer:
+    - 1
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    Substances:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    TERRAIN_LayerWetStrength:
+    - .565999985
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    TERRAIN_WaterLevel:
+    - 1.12199998
+    - .5
+    - .853999972
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    TERRAIN_WaterLevelSlopeDamp:
+    - 2
+    - .5
+    - .5
+    - .100000001
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    TERRAIN_WaterEdge:
+    - 1
+    - 2
+    - 2
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    TERRAIN_WaterSpecularity:
+    - .532999992
+    - .5
+    - .5
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    TERRAIN_WaterGloss:
+    - -.163000003
+    - .100000001
+    - .100000001
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    TERRAIN_WaterGlossDamper:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    TERRAIN_WaterOpacity:
+    - .398999989
+    - .300000012
+    - .0939999968
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    TERRAIN_Refraction:
+    - .00999999978
+    - .00999999978
+    - .00999999978
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    TERRAIN_WetRefraction:
+    - .152999997
+    - .200000003
+    - .200000003
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    TERRAIN_Flow:
+    - .300000012
+    - .300000012
+    - .300000012
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    TERRAIN_WetFlow:
+    - .542999983
+    - .0500000007
+    - .0500000007
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    TERRAIN_WetSpecularity:
+    - .465000004
+    - .200000003
+    - .200000003
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    TERRAIN_WetGloss:
+    - .231000006
+    - .0500000007
+    - .0500000007
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    TERRAIN_WaterColor:
+    - {r: .272058845, g: .272058845, b: .272058845, a: .501960814}
+    - {r: .899999976, g: .899999976, b: 1, a: .5}
+    - {r: 1, g: 1, b: 1, a: .501960814}
+    - {r: 0, g: 0, b: 0, a: 0}
+    - {r: 0, g: 0, b: 0, a: 0}
+    - {r: 0, g: 0, b: 0, a: 0}
+    - {r: 0, g: 0, b: 0, a: 0}
+    - {r: 0, g: 0, b: 0, a: 0}
+    - {r: 0, g: 0, b: 0, a: 0}
+    - {r: 0, g: 0, b: 0, a: 0}
+    - {r: 0, g: 0, b: 0, a: 0}
+    - {r: 0, g: 0, b: 0, a: 0}
+    TERRAIN_WaterIBL_SpecWetStrength:
+    - .5
+    - .5
+    - .5
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    TERRAIN_WaterIBL_SpecWaterStrength:
+    - .5
+    - .5
+    - .5
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    TERRAIN_WaterEmission:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    _snow_strength: 1
+    _global_color_brightness_to_snow: .5
+    _snow_slope_factor: 2
+    _snow_edge_definition: 5
+    _snow_height_treshold: -200
+    _snow_height_transition: 1
+    _snow_color: {r: 1, g: 1, b: 1, a: 1}
+    _snow_specular: .5
+    _snow_gloss: .699999988
+    _snow_reflectivness: .699999988
+    _snow_deep_factor: 1.5
+    _snow_fresnel: .5
+    _snow_diff_fresnel: .5
+    _snow_IBL_DiffuseStrength: .5
+    _snow_IBL_SpecStrength: .5
+    _4LAYERS_SHADER_USED: 1
+    flat_dir_ref: 1
+    flip_dir_ref: 1
+    direction_object: {fileID: 0}
+    show_details: 0
+    show_details_main: 0
+    show_details_atlasing: 0
+    show_details_layers: 0
+    show_details_uv_blend: 0
+    show_controlmaps: 0
+    show_controlmaps_build: 0
+    show_controlmaps_helpers: 0
+    show_controlmaps_highcost: 0
+    show_controlmaps_splats: 0
+    show_vert_texture: 0
+    show_global_color: 0
+    show_snow: 0
+    show_global_bump: 0
+    show_global_bump_normals: 0
+    show_global_bump_superdetail: 0
+    submenu: 3
+    submenu_settings: 8
+    submenu_derived_textures: 0
+    submenu_control_textures: 0
+    show_global_wet_settings: 0
+    show_global_reflection_settings: 0
+    show_active_layer: 0
+    show_derivedmaps: 0
+    show_settings: 1
+    undo_flag: 0
+    paint_flag: 0
+    paint_size: .5
+    paint_smoothness: 0
+    paint_opacity: 1
+    paintColor: {r: .5, g: .300000012, b: 0, a: 0}
+    preserveBrightness: 1
+    paint_alpha_flag: 0
+    paint_wetmask: 1
+    paintHitInfo_flag: 0
+    cut_holes: 0
+    paintColorSwatches: []
+    use_mat: {fileID: 0}
+--- !u!114 &11460256
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: de72a6d2da64d114d95e3c5a01cfaec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    usedInTemplate: {fileID: 0}
+    name: FSM
+    startState: State 1
+    states:
+    - name: State 1
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 50
+        y: 100
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SetProperty
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: d23668dc
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams:
+        - TargetObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: UnityEngine.Object
+            value: {fileID: 103536}
+          TargetTypeName: UnityEngine.GameObject
+          PropertyName: 
+          BoolParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          FloatParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          IntParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          GameObjectParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+          StringParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          Vector2Parameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0}
+          Vector3Parameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0, z: 0}
+          RectParamater:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value:
+              serializedVersion: 2
+              x: 0
+              y: 0
+              width: 0
+              height: 0
+          QuaternionParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0, z: 0, w: 0}
+          ObjectParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          MaterialParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          TextureParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          ColorParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {r: 0, g: 0, b: 0, a: 1}
+          setProperty: 1
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 2400000001000000
+        paramName:
+        - targetProperty
+        - everyFrame
+        paramDataPos: 0000000000000000
+        paramByteDataSize: 0000000001000000
+    events: []
+    globalTransitions: []
+    variables:
+      floatVariables: []
+      intVariables: []
+      boolVariables: []
+      stringVariables: []
+      vector2Variables: []
+      vector3Variables: []
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+    description: 
+    docUrl: 
+    showStateLabel: 1
+    maxLoopCount: 0
+    watermark: 
+    version: 0
+    ExposedEvents: []
+    RestartOnEnable: 1
+    EnableDebugFlow: 0
+    StepFrame: 0
+    activeStateName: 
+  fsmTemplate: {fileID: 0}
+--- !u!154 &15422210
+TerrainCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103536}
+  m_Material: {fileID: 0}
+  m_Enabled: 1
+  m_TerrainData: {fileID: 15600000, guid: 0cf46312f7e313b439bc299ceb166220, type: 2}
+  m_EnableTreeColliders: 1
+--- !u!218 &21830424
+Terrain:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103536}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_TerrainData: {fileID: 15600000, guid: 0cf46312f7e313b439bc299ceb166220, type: 2}
+  m_TreeDistance: 2000
+  m_TreeBillboardDistance: 50
+  m_TreeCrossFadeLength: 5
+  m_TreeMaximumFullLODCount: 50
+  m_DetailObjectDistance: 40
+  m_DetailObjectDensity: .75
+  m_HeightmapPixelError: 5
+  m_SplatMapDistance: 500000
+  m_HeightmapMaximumLOD: 0
+  m_CastShadows: 1
+  m_DrawHeightmap: 1
+  m_DrawTreesAndFoliage: 1
+  m_ReflectionProbeUsage: 1
+  m_MaterialType: 3
+  m_LegacySpecular:
+    serializedVersion: 2
+    rgba: 4286545791
+  m_LegacyShininess: .078125
+  m_MaterialTemplate: {fileID: 0}
+  m_BakeLightProbesForTrees: 1
+  m_ScaleInLightmap: .040959999
+  m_LightmapParameters: {fileID: 15200, guid: 0000000000000000f000000000000000, type: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 103536}
+  m_IsPrefabParent: 1

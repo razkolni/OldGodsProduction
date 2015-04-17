@@ -47,7 +47,6 @@ GameObject:
   - 20: {fileID: 2036908}
   - 92: {fileID: 9236908}
   - 124: {fileID: 12436908}
-  - 81: {fileID: 8136908}
   - 114: {fileID: 11439028}
   - 114: {fileID: 11409520}
   - 114: {fileID: 11466014}
@@ -85,6 +84,7 @@ GameObject:
   - 114: {fileID: 11419288}
   - 114: {fileID: 11419154}
   - 114: {fileID: 11487574}
+  - 81: {fileID: 8177020}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -103,7 +103,6 @@ GameObject:
   - 20: {fileID: 2036910}
   - 92: {fileID: 9236910}
   - 124: {fileID: 12436910}
-  - 81: {fileID: 8136910}
   - 114: {fileID: 11417206}
   - 114: {fileID: 11412740}
   - 114: {fileID: 11491270}
@@ -181,7 +180,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 136908}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 87.5400009, y: 7.17999983, z: 43.0400009}
+  m_LocalPosition: {x: 83.4899979, y: 2.93000007, z: 57.7200012}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 436904}
@@ -342,19 +341,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!81 &8136908
+--- !u!81 &8177020
 AudioListener:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 136906}
-  m_Enabled: 1
---- !u!81 &8136910
-AudioListener:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 136910}
+  m_GameObject: {fileID: 136908}
   m_Enabled: 1
 --- !u!92 &9236908
 Behaviour:

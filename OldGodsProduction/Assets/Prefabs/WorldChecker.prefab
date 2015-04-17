@@ -60,14 +60,12 @@ MonoBehaviour:
       actionData:
         actionNames:
         - MasterAudioPlaySound
-        - MasterAudioFireCustomEvent
         customNames:
         - 
-        - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000009000000
-        actionHashCodes: 74708330e19d21d8
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 74708330
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -98,20 +96,14 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: Real
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000803f0000000000000100000000000000803f0000000000000000000000000000
+        byteData: 0000803f0000000000000100000000000000803f00
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000012000000120000000f0000000f0000001100000011000000110000000f000000120000001c000000
+        paramDataType: 1400000012000000120000000f0000000f0000001100000011000000110000000f000000
         paramName:
         - gameObject
         - soundGroupName
@@ -122,10 +114,8 @@ MonoBehaviour:
         - attachToGameObject
         - useFixedPitch
         - fixedPitch
-        - customEventName
-        - eventOriginPoint
-        paramDataPos: 00000000000000000100000000000000050000000a0000000c0000000e000000100000000200000015000000
-        paramByteDataSize: 000000000000000000000000050000000500000002000000020000000200000005000000000000000d000000
+        paramDataPos: 00000000000000000100000000000000050000000a0000000c0000000e00000010000000
+        paramByteDataSize: 000000000000000000000000050000000500000002000000020000000200000005000000
     - name: State 2
       description: 
       colorIndex: 0
@@ -197,7 +187,7 @@ MonoBehaviour:
         customNames:
         - 
         - 
-        actionEnabled: 0101
+        actionEnabled: 0100
         actionIsOpen: 0101
         actionStartIndex: 0000000009000000
         actionHashCodes: 74708330e19d21d8
