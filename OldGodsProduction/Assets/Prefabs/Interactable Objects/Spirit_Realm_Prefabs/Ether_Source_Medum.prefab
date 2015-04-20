@@ -17,23 +17,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &118934
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 472108}
-  - 198: {fileID: 19824526}
-  - 199: {fileID: 19953172}
-  m_Layer: 9
-  m_Name: SpiritBase
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &173424
 GameObject:
   m_ObjectHideFlags: 0
@@ -72,6 +55,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &189134
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 446654}
+  - 198: {fileID: 19839452}
+  - 199: {fileID: 19967356}
+  m_Layer: 9
+  m_Name: SpiritBase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &405538
 Transform:
   m_ObjectHideFlags: 1
@@ -94,17 +94,17 @@ Transform:
   m_LocalPosition: {x: 75.3700027, y: -2.66000009, z: 65.8700027}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 472108}
+  - {fileID: 446654}
   - {fileID: 405538}
   - {fileID: 482580}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!4 &472108
+--- !u!4 &446654
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 118934}
+  m_GameObject: {fileID: 189134}
   m_LocalRotation: {x: -.707106829, y: -7.4505806e-09, z: -7.4505806e-09, w: .707106829}
   m_LocalPosition: {x: -.833000004, y: .340000004, z: .388000011}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -1657,7 +1657,7 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             typeName: UnityEngine.Object
-            value: {fileID: 19824526}
+            value: {fileID: 19839452}
           TargetTypeName: UnityEngine.ParticleSystem
           PropertyName: loop
           BoolParameter:
@@ -1968,7 +1968,7 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             typeName: UnityEngine.Object
-            value: {fileID: 19824526}
+            value: {fileID: 19839452}
           TargetTypeName: UnityEngine.ParticleSystem
           PropertyName: loop
           BoolParameter:
@@ -2279,7 +2279,7 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             typeName: UnityEngine.Object
-            value: {fileID: 19824526}
+            value: {fileID: 19839452}
           TargetTypeName: UnityEngine.ParticleSystem
           PropertyName: loop
           BoolParameter:
@@ -2666,7 +2666,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 118934}
+            value: {fileID: 189134}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -2761,7 +2761,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 118934}
+            value: {fileID: 189134}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -3988,12 +3988,12 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 12
   m_Center: {x: -.819999993, y: .5, z: .280000001}
---- !u!198 &19824526
+--- !u!198 &19839452
 ParticleSystem:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 118934}
+  m_GameObject: {fileID: 189134}
   lengthInSec: 1
   startDelay: 0
   speed: 1
@@ -6074,20 +6074,20 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &19953172
+--- !u!199 &19966590
 ParticleSystemRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 118934}
+  m_GameObject: {fileID: 173424}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: aafef553886dce74fbbd06854fb7435a, type: 2}
+  - {fileID: 2100000, guid: 11456c29c9da30a45bed072dcfca212b, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
+  m_UseLightProbes: 0
   m_ReflectionProbeUsage: 1
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
@@ -6110,20 +6110,20 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
---- !u!199 &19966590
+--- !u!199 &19967356
 ParticleSystemRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 173424}
+  m_GameObject: {fileID: 189134}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 11456c29c9da30a45bed072dcfca212b, type: 2}
+  - {fileID: 2100000, guid: aafef553886dce74fbbd06854fb7435a, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
+  m_UseLightProbes: 1
   m_ReflectionProbeUsage: 1
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1

@@ -400,7 +400,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 113820}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.51999998, y: -6.55999994, z: .170000002}
+  m_LocalPosition: {x: .670000017, y: -3.05999994, z: -.689999998}
   m_LocalScale: {x: 1.33170497, y: 2.68264389, z: 1.38148177}
   m_Children:
   - {fileID: 413822}
@@ -437,8 +437,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 113826}
-  m_LocalRotation: {x: 0, y: -.991445005, z: 0, w: -.130525142}
-  m_LocalPosition: {x: 90.0299988, y: 10.4899998, z: 41.0289993}
+  m_LocalRotation: {x: 0, y: -.866026044, z: 0, w: -.499999017}
+  m_LocalPosition: {x: 92.6299973, y: 2.36999989, z: 56.0099983}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 413834}
@@ -452,8 +452,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 113828}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.15999997, y: -3.51999998, z: -.289999992}
+  m_LocalRotation: {x: 0, y: -.239600271, z: 0, w: .970871627}
+  m_LocalPosition: {x: .579999983, y: -3.51999998, z: -4.98000002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 483002}
@@ -490,7 +490,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 113834}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.51999998, y: -6.55999994, z: .170000002}
+  m_LocalPosition: {x: .670000017, y: -3.05999994, z: -.689999998}
   m_LocalScale: {x: 1.33170497, y: 2.68264389, z: 1.38148201}
   m_Children:
   - {fileID: 413832}
@@ -1186,7 +1186,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 183814}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2.64000058, y: .506590664, z: 2.80999994}
@@ -2381,8 +2381,8 @@ MonoBehaviour:
       colorIndex: 1
       position:
         serializedVersion: 2
-        x: 82.890625
-        y: 586.289062
+        x: 79.4453125
+        y: 591.460938
         width: 114
         height: 32
       isBreakpoint: 0
@@ -2647,7 +2647,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 0001010101010101
-        actionIsOpen: 0100010101010101
+        actionIsOpen: 0101010101010101
         actionStartIndex: 0000000004000000070000000b0000001000000015000000190000001f000000
         actionHashCodes: eec9d9681a4c434ec3addc63b4797e4ab4797e4ae0558823b81f8bad437581ed
         unityObjectParams: []
@@ -2831,6 +2831,7 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.IntAdd
         - HutongGames.PlayMaker.Actions.SetBoolValue
         - HutongGames.PlayMaker.Actions.SetLayerRecursive
+        - HutongGames.PlayMaker.Actions.SetLayerRecursive
         - HutongGames.PlayMaker.Actions.ActivateGameObject
         - HutongGames.PlayMaker.Actions.ActivateGameObject
         - HutongGames.PlayMaker.Actions.EnableFSM
@@ -2843,14 +2844,23 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 01010101010101
-        actionIsOpen: 01010101010101
-        actionStartIndex: 000000000300000006000000090000000e0000001300000017000000
-        actionHashCodes: 9ffa9c6629b4727b1a4c434eb4797e4ab4797e4ac3addc63eec9d968
+        - 
+        actionEnabled: 0101010101010101
+        actionIsOpen: 0101010101010101
+        actionStartIndex: 000000000300000006000000090000000c00000011000000160000001a000000
+        actionHashCodes: 9ffa9c6629b4727b1a4c434e1a4c434eb4797e4ab4797e4ac3addc63eec9d968
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
         - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 113826}
+        - ownerOption: 0
           gameObject:
             useVariable: 0
             name: 
@@ -2929,12 +2939,12 @@ MonoBehaviour:
           value: SpiritSwitched
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 000000000150737963686f736973fdffffff00000001497353756d6d6f6e65640000000900000001000001000000010001000000010000007265736574000000000000
+        byteData: 000000000150737963686f736973fdffffff00000001497353756d6d6f6e656400000009000000010a00000000000001000000010001000000010000007265736574000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 10000000100000000100000011000000110000000100000014000000000000000100000014000000110000001100000001000000010000001400000011000000110000000100000001000000140000001200000011000000110000001f000000170000000f00000001000000
+        paramDataType: 10000000100000000100000011000000110000000100000014000000000000000100000014000000000000000100000014000000110000001100000001000000010000001400000011000000110000000100000001000000140000001200000011000000110000001f000000170000000f00000001000000
         paramName:
         - intVariable
         - add
@@ -2942,6 +2952,9 @@ MonoBehaviour:
         - boolVariable
         - boolValue
         - everyFrame
+        - gameObject
+        - layer
+        - children
         - gameObject
         - layer
         - children
@@ -2963,8 +2976,8 @@ MonoBehaviour:
         - sendEvent
         - delay
         - everyFrame
-        paramDataPos: 000000000e0000001300000014000000200000002200000000000000230000002700000001000000280000002a0000002c0000002d000000020000002e0000003000000032000000330000000300000000000000340000003600000000000000380000003d00000042000000
-        paramByteDataSize: 0e00000005000000010000000c0000000200000001000000000000000400000001000000000000000200000002000000010000000100000000000000020000000200000001000000010000000000000000000000020000000200000000000000050000000500000001000000
+        paramDataPos: 000000000e0000001300000014000000200000002200000000000000230000002700000001000000280000002c000000020000002d0000002f000000310000003200000003000000330000003500000037000000380000000400000000000000390000003b000000000000003d0000004200000047000000
+        paramByteDataSize: 0e00000005000000010000000c0000000200000001000000000000000400000001000000000000000400000001000000000000000200000002000000010000000100000000000000020000000200000001000000010000000000000000000000020000000200000000000000050000000500000001000000
     - name: TestIfSummoned
       description: 
       colorIndex: 0
