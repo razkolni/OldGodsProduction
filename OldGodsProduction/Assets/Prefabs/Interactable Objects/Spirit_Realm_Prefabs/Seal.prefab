@@ -257,7 +257,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &151128
 GameObject:
   m_ObjectHideFlags: 1
@@ -435,7 +435,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &177564
 GameObject:
   m_ObjectHideFlags: 1
@@ -1083,8 +1083,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 151130}
-  m_LocalRotation: {x: 0, y: -.387411356, z: 0, w: .921907008}
-  m_LocalPosition: {x: 14.7691898, y: -3.64099979, z: -3.24798608}
+  m_LocalRotation: {x: 0, y: -.556264818, z: 0, w: .831005156}
+  m_LocalPosition: {x: 14.8018885, y: -8.7159996, z: 3.50526857}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 438642}
@@ -1175,8 +1175,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 177560}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.68000031, y: .189999998, z: -11.8800001}
+  m_LocalRotation: {x: 0, y: -.991559684, z: 0, w: -.129651397}
+  m_LocalPosition: {x: 107.940002, y: 4.51000023, z: 80.2900009}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 451130}
@@ -1528,8 +1528,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 145774}
-  m_LocalRotation: {x: -.247337013, y: .063703835, z: .966561198, w: -.0229289532}
-  m_LocalPosition: {x: 6.48999977, y: 6.44000006, z: 2.17000008}
+  m_LocalRotation: {x: -.47524038, y: -.406501532, z: .584091187, w: .517436624}
+  m_LocalPosition: {x: 6.90050983, y: 4.04185247, z: 3.94605565}
   m_LocalScale: {x: .326070994, y: .326071113, z: .326071173}
   m_Children: []
   m_Father: {fileID: 451130}
@@ -1948,7 +1948,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 177568}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
@@ -8260,7 +8260,7 @@ MonoBehaviour:
         width: 100
         height: 16
       isBreakpoint: 0
-      isSequence: 1
+      isSequence: 0
       hideUnused: 0
       transitions: []
       actionData:
@@ -8415,7 +8415,7 @@ MonoBehaviour:
         width: 203
         height: 32
       isBreakpoint: 0
-      isSequence: 1
+      isSequence: 0
       hideUnused: 0
       transitions:
       - fsmEvent:
@@ -9197,7 +9197,7 @@ MonoBehaviour:
         width: 128
         height: 48
       isBreakpoint: 0
-      isSequence: 1
+      isSequence: 0
       hideUnused: 0
       transitions:
       - fsmEvent:
@@ -9249,7 +9249,7 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000004001536967696c2d5265616374696f6e2d54696d6500004040000000000000014e756d6265724f6652756e7300000000000052657475726e5f4368696c6472656e436f6e74696e75655f5265736574000100
+        byteData: 0000204001536967696c2d5265616374696f6e2d54696d6500004040000000000000014e756d6265724f6652756e7300000000000052657475726e5f4368696c6472656e436f6e74696e75655f5265736574000100
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -9300,40 +9300,63 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.PlayAnimation
         - HutongGames.PlayMaker.Actions.IntCompare
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 71d53d18
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000007000000
+        actionHashCodes: 6e06efc071d53d18
         unityObjectParams: []
         fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: Animated_Player
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Sigil-Mini-Game
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0500000001536967696c436f6d706c657869747900000000014e756d6265724f6652756e73537563636573537563636573436f6e74696e756500
+        byteData: 040000009a99993e00000700000001536967696c436f6d706c657869747900000000014e756d6265724f6652756e73537563636573537563636573436f6e74696e756500
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 100000001000000017000000170000001700000001000000
+        paramDataType: 1400000012000000070000000f000000170000001700000001000000100000001000000017000000170000001700000001000000
         paramName:
+        - gameObject
+        - animName
+        - playMode
+        - blendTime
+        - finishEvent
+        - loopEvent
+        - stopOnExit
         - integer1
         - integer2
         - equal
         - lessThan
         - greaterThan
         - everyFrame
-        paramDataPos: 0000000014000000250000002b0000003100000039000000
-        paramByteDataSize: 140000001100000006000000060000000800000001000000
+        paramDataPos: 000000000000000000000000040000000900000009000000090000000a0000001e0000002f000000350000003b00000043000000
+        paramByteDataSize: 00000000000000000400000005000000000000000000000001000000140000001100000006000000060000000800000001000000
     - name: State 1
       description: 
       colorIndex: 0
@@ -9344,11 +9367,12 @@ MonoBehaviour:
         width: 153
         height: 16
       isBreakpoint: 0
-      isSequence: 1
+      isSequence: 0
       hideUnused: 0
       transitions: []
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.PlayAnimation
         - HutongGames.PlayMaker.Actions.SetFloatValue
         - HutongGames.PlayMaker.Actions.DestroyObjectsByTag
         - HutongGames.PlayMaker.Actions.SendEvent
@@ -9356,13 +9380,22 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
-        actionStartIndex: 000000000300000007000000
-        actionHashCodes: 79fc1dedadf738d7eec9d968
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 00000000070000000a0000000e000000
+        actionHashCodes: 6e06efc079fc1dedadf738d7eec9d968
         unityObjectParams: []
         fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: Animated_Player
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -9407,16 +9440,29 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
+          value: Summoning
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
           value: Activated_Rune
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000004001536967696c2d5265616374696f6e2d54696d6500004040000000000000000000000052697475616c5f49735f4f7665725f53756363657373000000000000
+        byteData: 040000009a99993e00000000204001536967696c2d5265616374696f6e2d54696d6500004040000000000000000000000052697475616c5f49735f4f7665725f53756363657373000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0f0000000f00000001000000120000000f00000011000000110000001f000000170000000f00000001000000
+        paramDataType: 1400000012000000070000000f0000001700000017000000010000000f0000000f00000001000000120000000f00000011000000110000001f000000170000000f00000001000000
         paramName:
+        - gameObject
+        - animName
+        - playMode
+        - blendTime
+        - finishEvent
+        - loopEvent
+        - stopOnExit
         - floatVariable
         - floatValue
         - everyFrame
@@ -9428,8 +9474,8 @@ MonoBehaviour:
         - sendEvent
         - delay
         - everyFrame
-        paramDataPos: 00000000180000001d000000000000001e000000230000002500000000000000270000003d00000042000000
-        paramByteDataSize: 1800000005000000010000000000000005000000020000000200000000000000160000000500000001000000
+        paramDataPos: 000000000000000000000000040000000900000009000000090000000a000000220000002700000001000000280000002d0000002f0000000000000031000000470000004c000000
+        paramByteDataSize: 000000000000000004000000050000000000000000000000010000001800000005000000010000000000000005000000020000000200000000000000160000000500000001000000
     - name: State 4
       description: 
       colorIndex: 0
@@ -9530,21 +9576,31 @@ MonoBehaviour:
         width: 100
         height: 16
       isBreakpoint: 0
-      isSequence: 1
+      isSequence: 0
       hideUnused: 0
       transitions: []
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.PlayAnimation
         - HutongGames.PlayMaker.Actions.SendEvent
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: eec9d968
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000007000000
+        actionHashCodes: 6e06efc0eec9d968
         unityObjectParams: []
         fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: Animated_Player
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -9583,22 +9639,35 @@ MonoBehaviour:
           fsmComponent: {fileID: 0}
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Spirit-Interaction-Fail
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 52697475616c5f49735f4f766572000000000000
+        byteData: 040000009a99993e000052697475616c5f49735f4f766572000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1f000000170000000f00000001000000
+        paramDataType: 1400000012000000070000000f0000001700000017000000010000001f000000170000000f00000001000000
         paramName:
+        - gameObject
+        - animName
+        - playMode
+        - blendTime
+        - finishEvent
+        - loopEvent
+        - stopOnExit
         - eventTarget
         - sendEvent
         - delay
         - everyFrame
-        paramDataPos: 00000000000000000e00000013000000
-        paramByteDataSize: 000000000e0000000500000001000000
+        paramDataPos: 00000000000000000000000004000000090000000900000009000000000000000a000000180000001d000000
+        paramByteDataSize: 00000000000000000400000005000000000000000000000001000000000000000e0000000500000001000000
     events:
     - name: Begin_Ritual
       isSystemEvent: 0
@@ -9877,7 +9946,7 @@ MonoBehaviour:
           name: success
           isSystemEvent: 0
           isGlobal: 0
-        toState: State 2
+        toState: Animation_State
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -10045,8 +10114,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 429
-        y: 137
+        x: 576
+        y: 175
         width: 134.5
         height: 16
       isBreakpoint: 0
@@ -10163,6 +10232,81 @@ MonoBehaviour:
         - detachChildren
         paramDataPos: 00000000000000000100000000000000050000000a0000000c0000000e00000010000000150000001a0000001a000000000000001b0000002a0000002f00000030000000350000003500000036000000
         paramByteDataSize: 000000000000000000000000050000000500000002000000020000000200000005000000050000000000000001000000000000000f000000050000000100000005000000000000000100000002000000
+    - name: Animation_State
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 406
+        y: 140
+        width: 130
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: success
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: State 2
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.PlayAnimation
+        - HutongGames.PlayMaker.Actions.NextFrameEvent
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000007000000
+        actionHashCodes: 6e06efc0c631a949
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: Animated_Player
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Sigil-Success
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 040000009a99993e000073756363657373
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1400000012000000070000000f00000017000000170000000100000017000000
+        paramName:
+        - gameObject
+        - animName
+        - playMode
+        - blendTime
+        - finishEvent
+        - loopEvent
+        - stopOnExit
+        - sendEvent
+        paramDataPos: 000000000000000000000000040000000900000009000000090000000a000000
+        paramByteDataSize: 0000000000000000040000000500000000000000000000000100000007000000
     events:
     - name: failed
       isSystemEvent: 0
@@ -10238,7 +10382,7 @@ MonoBehaviour:
           name: success
           isSystemEvent: 0
           isGlobal: 0
-        toState: State 2
+        toState: Animation_State
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -10406,8 +10550,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 366
-        y: 173
+        x: 605
+        y: 198
         width: 134.5
         height: 16
       isBreakpoint: 0
@@ -10524,6 +10668,81 @@ MonoBehaviour:
         - detachChildren
         paramDataPos: 00000000000000000100000000000000050000000a0000000c0000000e00000010000000150000001a0000001a000000000000001b0000002a0000002f00000030000000350000003500000036000000
         paramByteDataSize: 000000000000000000000000050000000500000002000000020000000200000005000000050000000000000001000000000000000f000000050000000100000005000000000000000100000002000000
+    - name: Animation_State
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 440
+        y: 127
+        width: 130
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: success
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: State 2
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.PlayAnimation
+        - HutongGames.PlayMaker.Actions.NextFrameEvent
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000007000000
+        actionHashCodes: 6e06efc0c631a949
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: Animated_Player
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Sigil-Success
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 040000009a99993e000073756363657373
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1400000012000000070000000f00000017000000170000000100000017000000
+        paramName:
+        - gameObject
+        - animName
+        - playMode
+        - blendTime
+        - finishEvent
+        - loopEvent
+        - stopOnExit
+        - sendEvent
+        paramDataPos: 000000000000000000000000040000000900000009000000090000000a000000
+        paramByteDataSize: 0000000000000000040000000500000000000000000000000100000007000000
     events:
     - name: failed
       isSystemEvent: 0
@@ -10599,7 +10818,7 @@ MonoBehaviour:
           name: success
           isSystemEvent: 0
           isGlobal: 0
-        toState: State 4
+        toState: Animation_State
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -10767,8 +10986,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 401
-        y: 163
+        x: 590
+        y: 176
         width: 134.5
         height: 16
       isBreakpoint: 0
@@ -10885,6 +11104,81 @@ MonoBehaviour:
         - detachChildren
         paramDataPos: 00000000000000000100000000000000050000000a0000000c0000000e00000010000000150000001a0000001a000000000000001b0000002a0000002f00000030000000350000003500000036000000
         paramByteDataSize: 000000000000000000000000050000000500000002000000020000000200000005000000050000000000000001000000000000000f000000050000000100000005000000000000000100000002000000
+    - name: Animation_State
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 399
+        y: 119
+        width: 130
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: success
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: State 4
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.PlayAnimation
+        - HutongGames.PlayMaker.Actions.NextFrameEvent
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000007000000
+        actionHashCodes: 6e06efc0c631a949
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: Animated_Player
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Sigil-Success
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 040000009a99993e000073756363657373
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1400000012000000070000000f00000017000000170000000100000017000000
+        paramName:
+        - gameObject
+        - animName
+        - playMode
+        - blendTime
+        - finishEvent
+        - loopEvent
+        - stopOnExit
+        - sendEvent
+        paramDataPos: 000000000000000000000000040000000900000009000000090000000a000000
+        paramByteDataSize: 0000000000000000040000000500000000000000000000000100000007000000
     events:
     - name: failed
       isSystemEvent: 0
@@ -10960,7 +11254,7 @@ MonoBehaviour:
           name: success
           isSystemEvent: 0
           isGlobal: 0
-        toState: State 4
+        toState: Animation_State
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -11128,8 +11422,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 431
-        y: 152
+        x: 562
+        y: 170
         width: 134.5
         height: 16
       isBreakpoint: 0
@@ -11246,6 +11540,81 @@ MonoBehaviour:
         - detachChildren
         paramDataPos: 00000000000000000100000000000000050000000a0000000c0000000e00000010000000150000001a0000001a000000000000001b0000002a0000002f00000030000000350000003500000036000000
         paramByteDataSize: 000000000000000000000000050000000500000002000000020000000200000005000000050000000000000001000000000000000f000000050000000100000005000000000000000100000002000000
+    - name: Animation_State
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 403
+        y: 121
+        width: 130
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: success
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: State 4
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.PlayAnimation
+        - HutongGames.PlayMaker.Actions.NextFrameEvent
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000007000000
+        actionHashCodes: 6e06efc0c631a949
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: Animated_Player
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Sigil-Success
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 040000009a99993e000073756363657373
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1400000012000000070000000f00000017000000170000000100000017000000
+        paramName:
+        - gameObject
+        - animName
+        - playMode
+        - blendTime
+        - finishEvent
+        - loopEvent
+        - stopOnExit
+        - sendEvent
+        paramDataPos: 000000000000000000000000040000000900000009000000090000000a000000
+        paramByteDataSize: 0000000000000000040000000500000000000000000000000100000007000000
     events:
     - name: failed
       isSystemEvent: 0
