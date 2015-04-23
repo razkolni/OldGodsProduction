@@ -651,7 +651,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &136908
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,7 +710,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &138890
 GameObject:
   m_ObjectHideFlags: 1
@@ -2594,7 +2594,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 136908}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 128.800003, y: 10.3199997, z: 104.970001}
+  m_LocalPosition: {x: 71.3000031, y: 4.6500001, z: 60.7700005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 436904}
@@ -4679,7 +4679,7 @@ MonoBehaviour:
         paramByteDataSize: 0000000002000000020000000100000001000000040000000d00000002000000
     - name: Lantern_Goes_off
       description: Lantern Down Animation
-      colorIndex: 0
+      colorIndex: 1
       position:
         serializedVersion: 2
         x: 443.335938
@@ -4700,16 +4700,26 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - MasterAudioPlaySound
         - HutongGames.PlayMaker.Actions.PlayAnimation
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 6e06efc0
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000009000000
+        actionHashCodes: 747083306e06efc0
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         - ownerOption: 1
           gameObject:
             useVariable: 1
@@ -4730,16 +4740,37 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
+          value: LanternOff
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
           value: Put-Down
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 040000009a99993e00726573657400
+        byteData: 0000803f0000000000000100000000000000803f00040000009a99993e00726573657400
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000012000000070000000f000000170000001700000001000000
+        paramDataType: 1400000012000000120000000f0000000f0000001100000011000000110000000f0000001400000012000000070000000f000000170000001700000001000000
         paramName:
+        - gameObject
+        - soundGroupName
+        - variationName
+        - volume
+        - delaySound
+        - useThisLocation
+        - attachToGameObject
+        - useFixedPitch
+        - fixedPitch
         - gameObject
         - animName
         - playMode
@@ -4747,11 +4778,11 @@ MonoBehaviour:
         - finishEvent
         - loopEvent
         - stopOnExit
-        paramDataPos: 00000000000000000000000004000000090000000e0000000e000000
-        paramByteDataSize: 00000000000000000400000005000000050000000000000001000000
+        paramDataPos: 00000000000000000100000000000000050000000a0000000c0000000e00000010000000010000000200000015000000190000001e0000002300000023000000
+        paramByteDataSize: 00000000000000000000000005000000050000000200000002000000020000000500000000000000000000000400000005000000050000000000000001000000
     - name: Lantern_Goes_on
       description: LanternActive-Animation
-      colorIndex: 0
+      colorIndex: 1
       position:
         serializedVersion: 2
         x: 63
@@ -4772,6 +4803,7 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - MasterAudioPlaySound
         - HutongGames.PlayMaker.Actions.SetBoolValue
         - HutongGames.PlayMaker.Actions.ActivateGameObject
         - HutongGames.PlayMaker.Actions.PlayAnimation
@@ -4779,13 +4811,22 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
-        actionStartIndex: 000000000300000008000000
-        actionHashCodes: 29b4727bb4797e4a6e06efc0
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 00000000090000000c00000011000000
+        actionHashCodes: 7470833029b4727bb4797e4a6e06efc0
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         - ownerOption: 1
           gameObject:
             useVariable: 1
@@ -4814,16 +4855,37 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
+          value: LanternOn
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
           value: Lantern-Activate
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 00014c414e5445524e5f5550010000010001000000040000009a99993e0070726f6363656400
+        byteData: 0000803f0000000000000100000000000000803f0000014c414e5445524e5f5550010000010001000000040000009a99993e0070726f6363656400
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 11000000110000000100000014000000110000001100000001000000010000001400000012000000070000000f000000170000001700000001000000
+        paramDataType: 1400000012000000120000000f0000000f0000001100000011000000110000000f00000011000000110000000100000014000000110000001100000001000000010000001400000012000000070000000f000000170000001700000001000000
         paramName:
+        - gameObject
+        - soundGroupName
+        - variationName
+        - volume
+        - delaySound
+        - useThisLocation
+        - attachToGameObject
+        - useFixedPitch
+        - fixedPitch
         - boolVariable
         - boolValue
         - everyFrame
@@ -4839,8 +4901,8 @@ MonoBehaviour:
         - finishEvent
         - loopEvent
         - stopOnExit
-        paramDataPos: 000000000c0000000e000000000000000f000000110000001300000014000000010000000000000015000000190000001e0000002500000025000000
-        paramByteDataSize: 0c0000000200000001000000000000000200000002000000010000000100000000000000000000000400000005000000070000000000000001000000
+        paramDataPos: 00000000000000000100000000000000050000000a0000000c0000000e00000010000000150000002100000023000000010000002400000026000000280000002900000002000000020000002a0000002e000000330000003a0000003a000000
+        paramByteDataSize: 0000000000000000000000000500000005000000020000000200000002000000050000000c0000000200000001000000000000000200000002000000010000000100000000000000000000000400000005000000070000000000000001000000
     - name: GameBegins
       description: 
       colorIndex: 0
