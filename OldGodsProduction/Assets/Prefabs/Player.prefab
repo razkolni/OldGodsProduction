@@ -1748,7 +1748,7 @@ GameObject:
   - 4: {fileID: 474482}
   - 198: {fileID: 19878024}
   - 199: {fileID: 19932096}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: SpiritSyphon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2567,8 +2567,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 136904}
-  m_LocalRotation: {x: -.127930135, y: 0, z: 0, w: .991783202}
-  m_LocalPosition: {x: -.0120000001, y: 1.53999996, z: -.00999999978}
+  m_LocalRotation: {x: -.171069473, y: 0, z: 0, w: .985258996}
+  m_LocalPosition: {x: .526000023, y: 1.22099996, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 436906}
@@ -2594,7 +2594,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 136908}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 71.3000031, y: 4.6500001, z: 60.7700005}
+  m_LocalPosition: {x: 88.6100006, y: -.829999983, z: 70.6200027}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 436904}
@@ -3390,8 +3390,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 152102}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0399999991, y: .230000004, z: -.159999996}
-  m_LocalScale: {x: .604695737, y: .604695737, z: .604695737}
+  m_LocalPosition: {x: .49048999, y: .250629991, z: -.185800001}
+  m_LocalScale: {x: .489023536, y: .489023536, z: .489023536}
   m_Children:
   - {fileID: 490232}
   - {fileID: 454866}
@@ -3680,13 +3680,13 @@ Camera:
     height: 1
   near clip plane: .100000001
   far clip plane: 1000
-  field of view: 50
+  field of view: 71
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294966783
+    m_Bits: 4294964735
   m_RenderingPath: 3
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -3712,13 +3712,13 @@ Camera:
     height: 1
   near clip plane: .100000001
   far clip plane: 1000
-  field of view: 50
+  field of view: 71
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4294965247
   m_RenderingPath: 3
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -6600,7 +6600,7 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 020000000000004000000000400000000000000000000000000070c200000070420001
+        byteData: 0200000000000040000000004000000000000000000000000000c8c100000020420001
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
