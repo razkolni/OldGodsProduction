@@ -107,11 +107,11 @@ Material:
         second: .0199999996
       data:
         first:
-          name: _Glossiness
+          name: _ZWrite
         second: 0
       data:
         first:
-          name: _ZWrite
+          name: _Glossiness
         second: 0
       data:
         first:
@@ -153,7 +153,7 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: 1, g: 1, b: 1, a: 1}
+        second: {r: 1, g: 1, b: 1, a: .991370499}
       data:
         first:
           name: _SpecColor

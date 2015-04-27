@@ -30,13 +30,13 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 1
+      value: 2
     - useVariable: 1
       name: Sigil-Reaction-Time
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 2.5
+      value: 3
     - useVariable: 1
       name: SpiritWorldMoveSpeed
       tooltip: 
@@ -110,7 +110,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 1
+      value: 0
     - useVariable: 1
       name: HAS_ABILITY_SUMMON_OBJECTS
       tooltip: 
@@ -158,14 +158,14 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 0
+      value: 1
     stringVariables:
     - useVariable: 1
       name: Material Name
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 
+      value: StoneWalls (Instance)
     vector2Variables: []
     vector3Variables:
     - useVariable: 1
@@ -173,7 +173,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: {x: 0, y: 0, z: 0}
+      value: {x: -0, y: 0, z: 0}
     colorVariables: []
     rectVariables: []
     quaternionVariables: []
