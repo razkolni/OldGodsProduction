@@ -24,13 +24,13 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 10
+      value: 120
     - useVariable: 1
       name: Psy_Price_SpiritStay_Time
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 2
+      value: 1
     - useVariable: 1
       name: Sigil-Reaction-Time
       tooltip: 
@@ -55,7 +55,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 0
+      value: 110
     - useVariable: 1
       name: EtherPrice_Summoning
       tooltip: 
@@ -85,7 +85,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 0
+      value: 97
     boolVariables:
     - useVariable: 1
       name: CharacterMoving
@@ -128,7 +128,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 0
+      value: 1
     - useVariable: 1
       name: LANTERN_UP
       tooltip: 
@@ -165,7 +165,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: StoneWalls (Instance)
+      value: Bridge_Spirit (Instance)
     vector2Variables: []
     vector3Variables:
     - useVariable: 1
@@ -173,7 +173,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: {x: -0, y: 0, z: 0}
+      value: {x: 0, y: 0, z: 0}
     colorVariables: []
     rectVariables: []
     quaternionVariables: []
@@ -204,6 +204,12 @@ MonoBehaviour:
       value: {fileID: 0}
     - useVariable: 1
       name: GameObjectWalkedOn
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: Normal_Camera
       tooltip: 
       showInInspector: 0
       networkSync: 0
@@ -300,3 +306,8 @@ MonoBehaviour:
   - PlayerIsInside
   - PlayerIsOutside
   - Insanity_Wispers
+  - INS_Wispers
+  - INS_Black_Out
+  - Force_To_Real
+  - Force_To_Spirit
+  - Calm_Down

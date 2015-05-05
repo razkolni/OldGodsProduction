@@ -47,6 +47,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\0000 ats V2 package\atsV2 UnityTerrainBump Package\CustomTerrainScriptAtsV2.cs" />
+     <Compile Include="Assets\Alcatraz Systems\TerrainUnpacker\Scripts\ParentObject.cs" />
+     <Compile Include="Assets\Alcatraz Systems\TerrainUnpacker\Scripts\TerrainUnpacker.cs" />
+     <Compile Include="Assets\Alcatraz Systems\TerrainUnpacker\Scripts\TreeCopy.cs" />
      <Compile Include="Assets\DarkTonic\MasterAudio\ExampleScenes\PlaymakerExampleScene\PlaymakerScene.cs" />
      <Compile Include="Assets\DarkTonic\MasterAudio\ExampleScenes\Scripts\MA_Bootstrapper.cs" />
      <Compile Include="Assets\DarkTonic\MasterAudio\ExampleScenes\Scripts\MA_DestroyFinishedParticle.cs" />
@@ -1009,6 +1012,7 @@
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\CreaseApply.shader" />
      <None Include="Assets\net.fabrejean\Editor\Common\GuiSkins\README.txt" />
+     <None Include="Assets\Alcatraz Systems\TerrainUnpacker\HowToUse\HowToUse.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseAndGrain.shader" />
      <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\VertexControl\ReliefTerrainPMTriplanarStandalone Tessellation(Phong).shader" />
      <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\2xParallaxMapped\GeometryBlend_PM_2VertexPaint.shader" />

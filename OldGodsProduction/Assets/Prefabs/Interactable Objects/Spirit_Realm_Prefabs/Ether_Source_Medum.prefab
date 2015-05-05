@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 482580}
   - 135: {fileID: 13580462}
   - 114: {fileID: 11439902}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sound_Component
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50,7 +50,7 @@ GameObject:
   - 114: {fileID: 11449734}
   m_Layer: 0
   m_Name: Ether_Source_Medum
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91,7 +91,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 184982}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 124.003998, y: 1.56900001, z: 86.7409973}
+  m_LocalPosition: {x: 75.3700027, y: -2.66000009, z: 65.8700027}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 446654}
@@ -1347,12 +1347,14 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.TriggerEvent
+        - HutongGames.PlayMaker.Actions.SetTag
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: e0558823
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000004000000
+        actionHashCodes: e0558823c3e6a958
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -1361,7 +1363,15 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: {fileID: 0}
-        fsmOwnerDefaultParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -1375,6 +1385,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: Player
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Untagged
         fsmObjectParams: []
         fsmVarParams: []
         byteData: 000000004765745f4b6579
@@ -1382,14 +1398,16 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 07000000120000001700000013000000
+        paramDataType: 070000001200000017000000130000001400000012000000
         paramName:
         - trigger
         - collideTag
         - sendEvent
         - storeCollider
-        paramDataPos: 00000000000000000400000000000000
-        paramByteDataSize: 04000000000000000700000000000000
+        - gameObject
+        - tag
+        paramDataPos: 000000000000000004000000000000000000000001000000
+        paramByteDataSize: 040000000000000007000000000000000000000000000000
     - name: Wait_For_Key
       description: 
       colorIndex: 0
@@ -1421,15 +1439,17 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.SetTag
         - HutongGames.PlayMaker.Actions.TriggerEvent
         - HutongGames.PlayMaker.Actions.GetKeyDown
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000004000000
-        actionHashCodes: e0558823437581ed
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000200000006000000
+        actionHashCodes: c3e6a958e0558823437581ed
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -1438,7 +1458,15 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: {fileID: 0}
-        fsmOwnerDefaultParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -1446,6 +1474,12 @@ MonoBehaviour:
         fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Interactable
         - useVariable: 0
           name: 
           tooltip: 
@@ -1459,8 +1493,10 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 07000000120000001700000013000000070000001700000011000000
+        paramDataType: 140000001200000007000000120000001700000013000000070000001700000011000000
         paramName:
+        - gameObject
+        - tag
         - trigger
         - collideTag
         - sendEvent
@@ -1468,8 +1504,8 @@ MonoBehaviour:
         - key
         - sendEvent
         - storeResult
-        paramDataPos: 00000000000000000400000000000000090000000d0000000f000000
-        paramByteDataSize: 04000000000000000500000000000000040000000200000002000000
+        paramDataPos: 000000000000000000000000010000000400000000000000090000000d0000000f000000
+        paramByteDataSize: 000000000000000004000000000000000500000000000000040000000200000002000000
     - name: StartAudio_CheckLevel
       description: 'Place Audio Event Here
 
@@ -1644,6 +1680,7 @@ MonoBehaviour:
       transitions: []
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.SetTag
         - HutongGames.PlayMaker.Actions.IntAdd
         - HutongGames.PlayMaker.Actions.SetProperty
         - HutongGames.PlayMaker.Actions.SetProperty
@@ -1661,13 +1698,22 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 0101010101010101
-        actionIsOpen: 0101010101010101
-        actionStartIndex: 000000000300000005000000070000000a0000000e0000001200000015000000
-        actionHashCodes: 9ffa9c66d23668dcd23668dc3708ec1af750cc8ff750cc8f3708ec1a3ee6a00a
+        - 
+        actionEnabled: 010101010101010101
+        actionIsOpen: 010101010101010101
+        actionStartIndex: 00000000020000000500000007000000090000000c000000100000001400000017000000
+        actionHashCodes: c3e6a9589ffa9c66d23668dcd23668dc3708ec1af750cc8ff750cc8f3708ec1a3ee6a00a
         unityObjectParams: []
         fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -1900,6 +1946,12 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
+          value: Untagged
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
           value: EtherIdle
         - useVariable: 0
           name: 
@@ -1909,13 +1961,15 @@ MonoBehaviour:
           value: EtherTouch
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 00000000014574686572320000000000000000001041000000000000803f00cdcccc3d0000000000803f00cdcccc3d000000003f00000000
+        byteData: 50000000014574686572320000000000000000001041000000000000803f00cdcccc3d0000000000803f00cdcccc3d000000003f00000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 100000001000000001000000240000000100000024000000010000000f000000170000000100000011000000120000000f0000000f00000011000000120000000f0000000f0000000f000000170000000100000011000000
+        paramDataType: 1400000012000000100000001000000001000000240000000100000024000000010000000f000000170000000100000011000000120000000f0000000f00000011000000120000000f0000000f0000000f000000170000000100000011000000
         paramName:
+        - gameObject
+        - tag
         - intVariable
         - add
         - everyFrame
@@ -1938,8 +1992,8 @@ MonoBehaviour:
         - finishEvent
         - realTime
         - detachChildren
-        paramDataPos: 000000000a0000000f0000000000000010000000010000001100000012000000170000001700000018000000000000001a0000001f0000002400000001000000260000002b00000030000000350000003500000036000000
-        paramByteDataSize: 0a000000050000000100000000000000010000000000000001000000050000000000000001000000020000000000000005000000050000000200000000000000050000000500000005000000000000000100000002000000
+        paramDataPos: 0000000000000000000000000a0000000f0000000000000010000000010000001100000012000000170000001700000018000000010000001a0000001f0000002400000002000000260000002b00000030000000350000003500000036000000
+        paramByteDataSize: 00000000000000000a000000050000000100000000000000010000000000000001000000050000000000000001000000020000000000000005000000050000000200000000000000050000000500000005000000000000000100000002000000
     - name: LVL2
       description: Audio needs to stop after couple of seconds
       colorIndex: 0
@@ -1955,6 +2009,7 @@ MonoBehaviour:
       transitions: []
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.SetTag
         - HutongGames.PlayMaker.Actions.IntAdd
         - HutongGames.PlayMaker.Actions.SetProperty
         - HutongGames.PlayMaker.Actions.SetProperty
@@ -1972,13 +2027,22 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 0101010101010101
-        actionIsOpen: 0101010101010101
-        actionStartIndex: 000000000300000005000000070000000a0000000e0000001200000015000000
-        actionHashCodes: 9ffa9c66d23668dcd23668dc3708ec1af750cc8ff750cc8f3708ec1a3ee6a00a
+        - 
+        actionEnabled: 010101010101010101
+        actionIsOpen: 010101010101010101
+        actionStartIndex: 00000000020000000500000007000000090000000c000000100000001400000017000000
+        actionHashCodes: c3e6a9589ffa9c66d23668dcd23668dc3708ec1af750cc8ff750cc8f3708ec1a3ee6a00a
         unityObjectParams: []
         fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -2211,6 +2275,12 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
+          value: Untagged
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
           value: EtherIdle
         - useVariable: 0
           name: 
@@ -2220,13 +2290,15 @@ MonoBehaviour:
           value: EtherTouch
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 000000000145746865724b0000000000000000001041000000000000803f00cdcccc3d0000000000803f00cdcccc3d000000003f00000000
+        byteData: 500000000145746865724b0000000000000000001041000000000000803f00cdcccc3d0000000000803f00cdcccc3d000000003f00000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 100000001000000001000000240000000100000024000000010000000f000000170000000100000011000000120000000f0000000f00000011000000120000000f0000000f0000000f000000170000000100000011000000
+        paramDataType: 1400000012000000100000001000000001000000240000000100000024000000010000000f000000170000000100000011000000120000000f0000000f00000011000000120000000f0000000f0000000f000000170000000100000011000000
         paramName:
+        - gameObject
+        - tag
         - intVariable
         - add
         - everyFrame
@@ -2249,8 +2321,8 @@ MonoBehaviour:
         - finishEvent
         - realTime
         - detachChildren
-        paramDataPos: 000000000a0000000f0000000000000010000000010000001100000012000000170000001700000018000000000000001a0000001f0000002400000001000000260000002b00000030000000350000003500000036000000
-        paramByteDataSize: 0a000000050000000100000000000000010000000000000001000000050000000000000001000000020000000000000005000000050000000200000000000000050000000500000005000000000000000100000002000000
+        paramDataPos: 0000000000000000000000000a0000000f0000000000000010000000010000001100000012000000170000001700000018000000010000001a0000001f0000002400000002000000260000002b00000030000000350000003500000036000000
+        paramByteDataSize: 00000000000000000a000000050000000100000000000000010000000000000001000000050000000000000001000000020000000000000005000000050000000200000000000000050000000500000005000000000000000100000002000000
     - name: LVL2 3
       description: Audio needs to stop after couple of seconds
       colorIndex: 0
@@ -2266,6 +2338,7 @@ MonoBehaviour:
       transitions: []
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.SetTag
         - HutongGames.PlayMaker.Actions.IntAdd
         - HutongGames.PlayMaker.Actions.SetProperty
         - HutongGames.PlayMaker.Actions.SetProperty
@@ -2283,13 +2356,22 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 0101010101010101
-        actionIsOpen: 0101010101010101
-        actionStartIndex: 000000000300000005000000070000000a0000000e0000001200000015000000
-        actionHashCodes: 9ffa9c66d23668dcd23668dc3708ec1af750cc8ff750cc8f3708ec1a3ee6a00a
+        - 
+        actionEnabled: 010101010101010101
+        actionIsOpen: 010101010101010101
+        actionStartIndex: 00000000020000000500000007000000090000000c000000100000001400000017000000
+        actionHashCodes: c3e6a9589ffa9c66d23668dcd23668dc3708ec1af750cc8ff750cc8f3708ec1a3ee6a00a
         unityObjectParams: []
         fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -2522,6 +2604,12 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
+          value: Untagged
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
           value: EtherIdle
         - useVariable: 0
           name: 
@@ -2531,13 +2619,15 @@ MonoBehaviour:
           value: EtherTouch
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 00000000014574686572640000000000000000001041000000000000803f00cdcccc3d0000000000803f00cdcccc3d000000003f00000000
+        byteData: 50000000014574686572640000000000000000001041000000000000803f00cdcccc3d0000000000803f00cdcccc3d000000003f00000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 100000001000000001000000240000000100000024000000010000000f000000170000000100000011000000120000000f0000000f00000011000000120000000f0000000f0000000f000000170000000100000011000000
+        paramDataType: 1400000012000000100000001000000001000000240000000100000024000000010000000f000000170000000100000011000000120000000f0000000f00000011000000120000000f0000000f0000000f000000170000000100000011000000
         paramName:
+        - gameObject
+        - tag
         - intVariable
         - add
         - everyFrame
@@ -2560,8 +2650,8 @@ MonoBehaviour:
         - finishEvent
         - realTime
         - detachChildren
-        paramDataPos: 000000000a0000000f0000000000000010000000010000001100000012000000170000001700000018000000000000001a0000001f0000002400000001000000260000002b00000030000000350000003500000036000000
-        paramByteDataSize: 0a000000050000000100000000000000010000000000000001000000050000000000000001000000020000000000000005000000050000000200000000000000050000000500000005000000000000000100000002000000
+        paramDataPos: 0000000000000000000000000a0000000f0000000000000010000000010000001100000012000000170000001700000018000000010000001a0000001f0000002400000002000000260000002b00000030000000350000003500000036000000
+        paramByteDataSize: 00000000000000000a000000050000000100000000000000010000000000000001000000050000000000000001000000020000000000000005000000050000000200000000000000050000000500000005000000000000000100000002000000
     events:
     - name: Consume
       isSystemEvent: 0
@@ -2654,15 +2744,17 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.EnableFSM
         - HutongGames.PlayMaker.Actions.ActivateGameObject
         - HutongGames.PlayMaker.Actions.ActivateGameObject
+        - HutongGames.PlayMaker.Actions.SetTag
         customNames:
         - 
         - 
         - 
         - 
-        actionEnabled: 01010101
-        actionIsOpen: 01010101
-        actionStartIndex: 0000000004000000080000000d000000
-        actionHashCodes: 3334d172c3addc63b4797e4ab4797e4a
+        - 
+        actionEnabled: 0101010101
+        actionIsOpen: 0101010101
+        actionStartIndex: 0000000004000000080000000d00000012000000
+        actionHashCodes: 3334d172c3addc63b4797e4ab4797e4ac3e6a958
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -2690,6 +2782,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 189134}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -2703,6 +2803,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: Consume_Ether
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Untagged
         fsmObjectParams: []
         fsmVarParams: []
         byteData: 00015265616c576f726c64537069726974576f726c64496e74657261637461626c650100000100000000000000000000000000
@@ -2710,7 +2816,7 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 110000001700000017000000010000001400000012000000110000001100000014000000110000001100000001000000010000001400000011000000110000000100000001000000
+        paramDataType: 1100000017000000170000000100000014000000120000001100000011000000140000001100000011000000010000000100000014000000110000001100000001000000010000001400000012000000
         paramName:
         - boolVariable
         - isTrue
@@ -2730,8 +2836,10 @@ MonoBehaviour:
         - recursive
         - resetOnExit
         - everyFrame
-        paramDataPos: 00000000160000002200000022000000000000000000000023000000250000000100000027000000290000002b0000002c000000020000002d0000002f0000003100000032000000
-        paramByteDataSize: 160000000c00000000000000010000000000000000000000020000000200000000000000020000000200000001000000010000000000000002000000020000000100000001000000
+        - gameObject
+        - tag
+        paramDataPos: 00000000160000002200000022000000000000000000000023000000250000000100000027000000290000002b0000002c000000020000002d0000002f00000031000000320000000300000001000000
+        paramByteDataSize: 160000000c000000000000000100000000000000000000000200000002000000000000000200000002000000010000000100000000000000020000000200000001000000010000000000000000000000
     - name: PlayerInSpirit
       description: 
       colorIndex: 0

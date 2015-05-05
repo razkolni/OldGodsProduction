@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Alcatraz Systems\TerrainUnpacker\Editor\TerrainUnpackerEditor.cs" />
      <Compile Include="Assets\DarkTonic\Editor\UndoHelper.cs" />
      <Compile Include="Assets\DarkTonic\MasterAudio\Editor\AudioEventInspector.cs" />
      <Compile Include="Assets\DarkTonic\MasterAudio\Editor\ButtonClickerInspector.cs" />
@@ -351,6 +352,7 @@
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\CreaseApply.shader" />
      <None Include="Assets\net.fabrejean\Editor\Common\GuiSkins\README.txt" />
+     <None Include="Assets\Alcatraz Systems\TerrainUnpacker\HowToUse\HowToUse.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseAndGrain.shader" />
      <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\VertexControl\ReliefTerrainPMTriplanarStandalone Tessellation(Phong).shader" />
      <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\2xParallaxMapped\GeometryBlend_PM_2VertexPaint.shader" />

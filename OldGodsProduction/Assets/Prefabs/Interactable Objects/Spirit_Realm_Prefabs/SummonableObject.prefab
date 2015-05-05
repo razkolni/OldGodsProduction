@@ -122,6 +122,44 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!1 &115142
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 497476}
+  - 33: {fileID: 3390600}
+  - 23: {fileID: 2372240}
+  - 65: {fileID: 6519088}
+  - 114: {fileID: 11414050}
+  m_Layer: 9
+  m_Name: Bridge_piece_13
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &117340
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 439102}
+  - 33: {fileID: 3341514}
+  - 23: {fileID: 2355844}
+  - 65: {fileID: 6561118}
+  - 114: {fileID: 11470810}
+  m_Layer: 9
+  m_Name: Bridge_piece_14
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &122308
 GameObject:
   m_ObjectHideFlags: 1
@@ -482,13 +520,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 113820}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .670000017, y: -3.05999994, z: -.689999998}
+  m_LocalRotation: {x: 0, y: .672626436, z: 0, w: .739982247}
+  m_LocalPosition: {x: 5.03999996, y: -3.05999994, z: -8.25}
   m_LocalScale: {x: 1.33170497, y: 2.68264389, z: 1.38148177}
   m_Children:
   - {fileID: 454834}
   - {fileID: 481292}
   - {fileID: 474548}
+  - {fileID: 497476}
+  - {fileID: 439102}
   m_Father: {fileID: 413826}
   m_RootOrder: 1
 --- !u!4 &413826
@@ -497,8 +537,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 113826}
-  m_LocalRotation: {x: 0, y: .879198253, z: 0, w: -.476456285}
-  m_LocalPosition: {x: 78.1600037, y: -1.51999998, z: 93.3700027}
+  m_LocalRotation: {x: 0, y: .604107976, z: 0, w: -.796902537}
+  m_LocalPosition: {x: 103.029999, y: 8.30000019, z: 87.3399963}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 413834}
@@ -513,7 +553,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 113828}
   m_LocalRotation: {x: 0, y: -.239600271, z: 0, w: .970871627}
-  m_LocalPosition: {x: .579999983, y: -3.51999998, z: -4.98000002}
+  m_LocalPosition: {x: .552999973, y: -3.24499989, z: -4.39300013}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 483002}
@@ -589,6 +629,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 483894}
   m_RootOrder: 0
+--- !u!4 &439102
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117340}
+  m_LocalRotation: {x: -.99580729, y: .0195982754, z: -.0889946446, w: -.0079827942}
+  m_LocalPosition: {x: -5.89799976, y: -.888999999, z: -9.13300037}
+  m_LocalScale: {x: .40472734, y: .171370476, z: .312639207}
+  m_Children: []
+  m_Father: {fileID: 413820}
+  m_RootOrder: 4
 --- !u!4 &454594
 Transform:
   m_ObjectHideFlags: 1
@@ -655,8 +707,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 122308}
-  m_LocalRotation: {x: -.875822544, y: .0796646699, z: .467890829, w: .0875591263}
-  m_LocalPosition: {x: -4.89655256, y: -.914954424, z: -4.3792963}
+  m_LocalRotation: {x: -.994767666, y: .0177463964, z: .099947691, w: -.0115274927}
+  m_LocalPosition: {x: -5.31400013, y: -.888999999, z: -5.34899998}
   m_LocalScale: {x: .404416144, y: .171220645, z: .31256935}
   m_Children: []
   m_Father: {fileID: 413820}
@@ -680,7 +732,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 199112}
   m_LocalRotation: {x: .02435112, y: .577982724, z: -.037283238, w: .814833105}
-  m_LocalPosition: {x: -2.50637436, y: -1.02440333, z: -3.00382209}
+  m_LocalPosition: {x: -4.99800014, y: -1.02400005, z: -4.7329998}
   m_LocalScale: {x: .397164255, y: .155458719, z: .3298105}
   m_Children: []
   m_Father: {fileID: 413820}
@@ -764,6 +816,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 413834}
   m_RootOrder: 2
+--- !u!4 &497476
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115142}
+  m_LocalRotation: {x: -.0381910652, y: .997172236, z: -.0205533914, w: .0613728315}
+  m_LocalPosition: {x: -5.21928835, y: -1.08200002, z: -8.44859219}
+  m_LocalScale: {x: .405630589, y: .157564923, z: .304339886}
+  m_Children: []
+  m_Father: {fileID: 413820}
+  m_RootOrder: 3
 --- !u!23 &2313828
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -932,6 +996,30 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
+--- !u!23 &2355844
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117340}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 54cbff2a0f7d0b5468a46f53094d7cc1, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
 --- !u!23 &2356410
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -1010,6 +1098,30 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 134304}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 54cbff2a0f7d0b5468a46f53094d7cc1, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!23 &2372240
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115142}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -1197,6 +1309,13 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 134304}
   m_Mesh: {fileID: 4300006, guid: e94fb4979f16cc542a400264188d59f8, type: 3}
+--- !u!33 &3341514
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117340}
+  m_Mesh: {fileID: 4300000, guid: e94fb4979f16cc542a400264188d59f8, type: 3}
 --- !u!33 &3344176
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -1253,6 +1372,13 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 123824}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &3390600
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115142}
+  m_Mesh: {fileID: 4300006, guid: e94fb4979f16cc542a400264188d59f8, type: 3}
 --- !u!33 &3397930
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -1284,6 +1410,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.30816102, y: 1.44098544, z: 2.70611548}
   m_Center: {x: .00313138962, y: .220492721, z: -.853163242}
+--- !u!65 &6519088
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115142}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.7226758, y: 3.42967296, z: 4.42484951}
+  m_Center: {x: .960750163, y: -.109999999, z: -.00468601938}
 --- !u!65 &6545290
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1308,6 +1446,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.64000058, y: .506590664, z: 2.80999994}
   m_Center: {x: -3.01079268e-07, y: -.135293379, z: .000359168829}
+--- !u!65 &6561118
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117340}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.71490574, y: 1.66357422, z: 5.72765493}
+  m_Center: {x: 1.00245261, y: .0199999996, z: 4.81688023}
 --- !u!65 &6567420
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1799,13 +1949,15 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.ActivateGameObject
         - HutongGames.PlayMaker.Actions.BoolTest
+        - HutongGames.PlayMaker.Actions.SetTag
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000005000000
-        actionHashCodes: b4797e4a3334d172
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000500000009000000
+        actionHashCodes: b4797e4a3334d172c3e6a958
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -1817,13 +1969,27 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 113828}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 183814}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Untagged
         fsmObjectParams: []
         fsmVarParams: []
         byteData: 00000100000000015265616c576f726c64537069726974576f726c64496e74657261637461626c6501
@@ -1831,7 +1997,7 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 140000001100000011000000010000000100000011000000170000001700000001000000
+        paramDataType: 1400000011000000110000000100000001000000110000001700000017000000010000001400000012000000
         paramName:
         - gameObject
         - activate
@@ -1842,8 +2008,10 @@ MonoBehaviour:
         - isTrue
         - isFalse
         - everyFrame
-        paramDataPos: 0000000000000000020000000400000005000000060000001c0000002800000028000000
-        paramByteDataSize: 0000000002000000020000000100000001000000160000000c0000000000000001000000
+        - gameObject
+        - tag
+        paramDataPos: 0000000000000000020000000400000005000000060000001c00000028000000280000000100000000000000
+        paramByteDataSize: 0000000002000000020000000100000001000000160000000c00000000000000010000000000000000000000
     - name: PlayerInSpirit
       description: Play Idle Sound
       colorIndex: 1
@@ -1867,6 +2035,7 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.SetTag
         - MasterAudioPlaySound
         - HutongGames.PlayMaker.Actions.ActivateGameObject
         - HutongGames.PlayMaker.Actions.ActivateGameObject
@@ -1882,13 +2051,22 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 01010101010101
-        actionIsOpen: 01010101010101
-        actionStartIndex: 00000000090000000e00000013000000180000001d00000022000000
-        actionHashCodes: 74708330b4797e4ab4797e4ab4797e4ab4797e4ab4797e4a3334d172
+        - 
+        actionEnabled: 0101010101010101
+        actionIsOpen: 0101010101010101
+        actionStartIndex: 00000000020000000b00000010000000150000001a0000001f00000024000000
+        actionHashCodes: c3e6a95874708330b4797e4ab4797e4ab4797e4ab4797e4ab4797e4a3334d172
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 183814}
         - ownerOption: 0
           gameObject:
             useVariable: 0
@@ -1949,6 +2127,12 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
+          value: Interactable
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
           value: WardIdle
         - useVariable: 0
           name: 
@@ -1963,8 +2147,10 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000012000000120000000f0000000f0000001100000011000000110000000f0000001400000011000000110000000100000001000000140000001100000011000000010000000100000014000000110000001100000001000000010000001400000011000000110000000100000001000000140000001100000011000000010000000100000011000000170000001700000001000000
+        paramDataType: 14000000120000001400000012000000120000000f0000000f0000001100000011000000110000000f0000001400000011000000110000000100000001000000140000001100000011000000010000000100000014000000110000001100000001000000010000001400000011000000110000000100000001000000140000001100000011000000010000000100000011000000170000001700000001000000
         paramName:
+        - gameObject
+        - tag
         - gameObject
         - soundGroupName
         - variationName
@@ -2003,8 +2189,8 @@ MonoBehaviour:
         - isTrue
         - isFalse
         - everyFrame
-        paramDataPos: 00000000000000000100000000000000050000000a0000000c0000000e00000010000000010000001500000017000000190000001a000000020000001b0000001d0000001f0000002000000003000000210000002300000025000000260000000400000027000000290000002b0000002c000000050000002d0000002f000000310000003200000033000000490000004900000058000000
-        paramByteDataSize: 0000000000000000000000000500000005000000020000000200000002000000050000000000000002000000020000000100000001000000000000000200000002000000010000000100000000000000020000000200000001000000010000000000000002000000020000000100000001000000000000000200000002000000010000000100000016000000000000000f00000001000000
+        paramDataPos: 000000000000000001000000010000000200000000000000050000000a0000000c0000000e00000010000000020000001500000017000000190000001a000000030000001b0000001d0000001f0000002000000004000000210000002300000025000000260000000500000027000000290000002b0000002c000000060000002d0000002f000000310000003200000033000000490000004900000058000000
+        paramByteDataSize: 00000000000000000000000000000000000000000500000005000000020000000200000002000000050000000000000002000000020000000100000001000000000000000200000002000000010000000100000000000000020000000200000001000000010000000000000002000000020000000100000001000000000000000200000002000000010000000100000016000000000000000f00000001000000
     - name: Sound_Stopper
       description: 'Stop Playing Idle Sound
 
@@ -2723,7 +2909,7 @@ MonoBehaviour:
           value: WardIdle
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 040000009a99993e00000000803f0000000000000100000000000000803f000000803f000000a03f000100000000000000803f000000cdcccc3d000000003f000001497353756d6d6f6e6564010000000000000150737963686f73697303000000015073795f50726963655f53756d6d6f6e696e6700000000000145746865720a00000001457468657250726963655f53756d6d6f6e696e6700547269676765725f53756d6d6f6e696e675f56697375616c7300000000000053756d6d6f6e000000000000
+        byteData: 000000009a99993e00000000803f0000000000000100000000000000803f000000803f000000a03f000100000000000000803f000000cdcccc3d000000003f000001497353756d6d6f6e6564010000000000000150737963686f73697303000000015073795f50726963655f53756d6d6f6e696e6700000000000145746865720a00000001457468657250726963655f53756d6d6f6e696e6700547269676765725f53756d6d6f6e696e675f56697375616c7300000000000053756d6d6f6e000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -3582,6 +3768,190 @@ MonoBehaviour:
       stringVariables: []
       vector2Variables: []
       vector3Variables: []
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+    description: 
+    docUrl: 
+    showStateLabel: 1
+    maxLoopCount: 0
+    watermark: 
+    version: 0
+    ExposedEvents: []
+    RestartOnEnable: 1
+    EnableDebugFlow: 0
+    StepFrame: 0
+    activeStateName: 
+  fsmTemplate: {fileID: 0}
+--- !u!114 &11414050
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: de72a6d2da64d114d95e3c5a01cfaec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    usedInTemplate: {fileID: 0}
+    name: Floating_In_Space
+    startState: State 1
+    states:
+    - name: State 1
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 50
+        y: 107
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 1
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.RandomFloat
+        - HutongGames.PlayMaker.Actions.RandomFloat
+        - HutongGames.PlayMaker.Actions.RandomFloat
+        - HutongGames.PlayMaker.Actions.RandomFloat
+        - HutongGames.PlayMaker.Actions.SetVector3XYZ
+        - HutongGames.PlayMaker.Actions.iTweenMoveBy
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 010101010101
+        actionIsOpen: 010101010101
+        actionStartIndex: 000000000300000006000000090000000c00000012000000
+        actionHashCodes: 980ad196980ad196980ad196980ad196f922f9b06828029a
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: cdccccbd00cdcccc3d00000000000152616e646f6d58cdcccc3d003333333f00000000000144656c617954696d65cdccccbd00cdcccc3d00000000000172616e646f6d59000080bf00cdcccc3d00000000000172616e646f6d5900000000000000000000000001466c6f61746174696f6e00000000000000000000000001000000000152616e646f6d58000000000172616e646f6d59000000000152616e646f6d5a0000000000000000000000000001466c6f61746174696f6e00000000010000000000cdcc4c3d00150000000200000000000000000000000000000000000000000001000000000000000000000001000100
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000001c0000001c0000000f0000000f0000000f0000000100000014000000120000001c0000000f0000000f0000000f00000007000000070000000700000011000000130000001c0000000f000000070000001700000017000000110000001100000011000000
+        paramName:
+        - min
+        - max
+        - storeResult
+        - min
+        - max
+        - storeResult
+        - min
+        - max
+        - storeResult
+        - min
+        - max
+        - storeResult
+        - vector3Variable
+        - vector3Value
+        - x
+        - y
+        - z
+        - everyFrame
+        - gameObject
+        - id
+        - vector
+        - time
+        - delay
+        - speed
+        - easeType
+        - loopType
+        - space
+        - orientToPath
+        - lookAtObject
+        - lookAtVector
+        - lookTime
+        - axis
+        - startEvent
+        - finishEvent
+        - realTime
+        - stopOnExit
+        - loopDontFinish
+        paramDataPos: 00000000050000000a000000160000001b000000200000002e000000330000003800000044000000490000004e0000005a000000710000007e0000008a00000096000000a20000000000000000000000a3000000ba000000bf000000c4000000c9000000cd000000d1000000d500000000000000d7000000e4000000e9000000ed000000ed000000ed000000ef000000f1000000
+        paramByteDataSize: 05000000050000000c00000005000000050000000e00000005000000050000000c00000005000000050000000c000000170000000d0000000c0000000c0000000c0000000100000000000000000000001700000005000000050000000500000004000000040000000400000002000000000000000d00000005000000040000000000000000000000020000000200000002000000
+    events: []
+    globalTransitions: []
+    variables:
+      floatVariables:
+      - useVariable: 1
+        name: DelayTime
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: RandomX
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: RandomZ
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: randomY
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      intVariables: []
+      boolVariables: []
+      stringVariables: []
+      vector2Variables: []
+      vector3Variables:
+      - useVariable: 1
+        name: Floatation
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {x: 0, y: 0, z: 0}
       colorVariables: []
       rectVariables: []
       quaternionVariables: []
@@ -5792,6 +6162,190 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 199112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: de72a6d2da64d114d95e3c5a01cfaec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    usedInTemplate: {fileID: 0}
+    name: Floating_In_Space
+    startState: State 1
+    states:
+    - name: State 1
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 150
+        y: 207
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 1
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.RandomFloat
+        - HutongGames.PlayMaker.Actions.RandomFloat
+        - HutongGames.PlayMaker.Actions.RandomFloat
+        - HutongGames.PlayMaker.Actions.RandomFloat
+        - HutongGames.PlayMaker.Actions.SetVector3XYZ
+        - HutongGames.PlayMaker.Actions.iTweenMoveBy
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 010101010101
+        actionIsOpen: 010101010101
+        actionStartIndex: 000000000300000006000000090000000c00000012000000
+        actionHashCodes: 980ad196980ad196980ad196980ad196f922f9b06828029a
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: cdccccbd00cdcccc3d00000000000152616e646f6d58cdcccc3d003333333f00000000000144656c617954696d65cdccccbd00cdcccc3d00000000000172616e646f6d59000080bf00cdcccc3d00000000000172616e646f6d5900000000000000000000000001466c6f61746174696f6e00000000000000000000000001000000000152616e646f6d58000000000172616e646f6d59000000000152616e646f6d5a0000000000000000000000000001466c6f61746174696f6e00000000010000000000cdcc4c3d00150000000200000000000000000000000000000000000000000001000000000000000000000001000100
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000001c0000001c0000000f0000000f0000000f0000000100000014000000120000001c0000000f0000000f0000000f00000007000000070000000700000011000000130000001c0000000f000000070000001700000017000000110000001100000011000000
+        paramName:
+        - min
+        - max
+        - storeResult
+        - min
+        - max
+        - storeResult
+        - min
+        - max
+        - storeResult
+        - min
+        - max
+        - storeResult
+        - vector3Variable
+        - vector3Value
+        - x
+        - y
+        - z
+        - everyFrame
+        - gameObject
+        - id
+        - vector
+        - time
+        - delay
+        - speed
+        - easeType
+        - loopType
+        - space
+        - orientToPath
+        - lookAtObject
+        - lookAtVector
+        - lookTime
+        - axis
+        - startEvent
+        - finishEvent
+        - realTime
+        - stopOnExit
+        - loopDontFinish
+        paramDataPos: 00000000050000000a000000160000001b000000200000002e000000330000003800000044000000490000004e0000005a000000710000007e0000008a00000096000000a20000000000000000000000a3000000ba000000bf000000c4000000c9000000cd000000d1000000d500000000000000d7000000e4000000e9000000ed000000ed000000ed000000ef000000f1000000
+        paramByteDataSize: 05000000050000000c00000005000000050000000e00000005000000050000000c00000005000000050000000c000000170000000d0000000c0000000c0000000c0000000100000000000000000000001700000005000000050000000500000004000000040000000400000002000000000000000d00000005000000040000000000000000000000020000000200000002000000
+    events: []
+    globalTransitions: []
+    variables:
+      floatVariables:
+      - useVariable: 1
+        name: DelayTime
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: RandomX
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: RandomZ
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: randomY
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      intVariables: []
+      boolVariables: []
+      stringVariables: []
+      vector2Variables: []
+      vector3Variables:
+      - useVariable: 1
+        name: Floatation
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {x: 0, y: 0, z: 0}
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+    description: 
+    docUrl: 
+    showStateLabel: 1
+    maxLoopCount: 0
+    watermark: 
+    version: 0
+    ExposedEvents: []
+    RestartOnEnable: 1
+    EnableDebugFlow: 0
+    StepFrame: 0
+    activeStateName: 
+  fsmTemplate: {fileID: 0}
+--- !u!114 &11470810
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117340}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1384774831, guid: de72a6d2da64d114d95e3c5a01cfaec5, type: 3}

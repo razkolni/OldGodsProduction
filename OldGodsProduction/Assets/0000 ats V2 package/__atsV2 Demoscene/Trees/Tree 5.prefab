@@ -147,7 +147,7 @@ Material:
       data:
         first:
           name: _Cutoff
-        second: .449999988
+        second: .25
       data:
         first:
           name: _SquashAmount
@@ -155,11 +155,11 @@ Material:
       data:
         first:
           name: _TranslucencyViewDependency
-        second: .699999988
+        second: .728999972
       data:
         first:
           name: _ShadowStrength
-        second: .75
+        second: 0
       data:
         first:
           name: _ShadowOffsetScale
@@ -184,7 +184,7 @@ Material:
       data:
         first:
           name: _TranslucencyColor
-        second: {r: .730000019, g: .850000024, b: .409999996, a: 1}
+        second: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1002 &2100003
 EditorExtensionImpl:
   serializedVersion: 6
@@ -378,7 +378,7 @@ MonoBehaviour:
   m_Name: Tree Data
   m_EditorClassIdentifier: 
   _uniqueID: 2773
-  materialHash: 72a1661f067a2a86ed683e7c5f385bd0215482368
+  materialHash: f06f2e8116fa4494864902ca783315dc215482368
   root:
     _uniqueID: 1
     seed: 1234

@@ -30,14 +30,14 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _TranslucencyMap
+          name: _GlossMap
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _GlossMap
+          name: _TranslucencyMap
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -53,18 +53,30 @@ Material:
       data:
         first:
           name: _Cutoff
-        second: .300000012
+        second: .25
       data:
         first:
           name: _Shininess
         second: .00999999978
       data:
         first:
-          name: _TranslucencyViewDependency
-        second: .699999988
+          name: _SquashAmount
+        second: 1
       data:
         first:
-          name: _SquashAmount
+          name: _BaseLight
+        second: 1
+      data:
+        first:
+          name: _AO
+        second: 5.82999992
+      data:
+        first:
+          name: _Occlusion
+        second: 20
+      data:
+        first:
+          name: _TranslucencyViewDependency
         second: 1
       data:
         first:
@@ -81,8 +93,16 @@ Material:
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
+          name: _TreeInstanceScale
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _TreeInstanceColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
           name: _TranslucencyColor
-        second: {r: .730000019, g: .850000024, b: .409999996, a: 1}
+        second: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1002 &2100001
 EditorExtensionImpl:
   serializedVersion: 6
