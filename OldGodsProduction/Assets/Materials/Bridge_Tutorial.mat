@@ -6,11 +6,11 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: TrapSigil
-  m_Shader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _ALPHABLEND_ON _EMISSION
-  m_LightmapFlags: 0
-  m_CustomRenderQueue: 3000
+  m_Name: Bridge_Tutorial
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: _NORMALMAP _PARALLAXMAP
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -18,14 +18,14 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 341a7315f31ef814db0a04be53aff583, type: 3}
+          m_Texture: {fileID: 2800000, guid: 858d4d2e9eaeff140b210714c2581050, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _BumpMap
         second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 2800000, guid: 3558d7886f6fdc64db905a0a948846a5, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -39,7 +39,7 @@ Material:
         first:
           name: _ParallaxMap
         second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 2800000, guid: 66f7255d7f7e28c48bc1837b31042f98, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -77,13 +77,6 @@ Material:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _SpecGlossMap
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
@@ -91,32 +84,28 @@ Material:
         second: .5
       data:
         first:
-          name: _Shininess
-        second: .078125
-      data:
-        first:
           name: _SrcBlend
-        second: 5
+        second: 1
       data:
         first:
           name: _DstBlend
-        second: 10
+        second: 0
       data:
         first:
           name: _Parallax
-        second: .0199999996
+        second: .00590000022
       data:
         first:
           name: _ZWrite
-        second: 0
+        second: 1
       data:
         first:
           name: _Glossiness
-        second: 0
+        second: .112999998
       data:
         first:
           name: _BumpScale
-        second: 1
+        second: 2.69000006
       data:
         first:
           name: _OcclusionStrength
@@ -132,41 +121,25 @@ Material:
       data:
         first:
           name: _EmissionScaleUI
-        second: .460000008
-      data:
-        first:
-          name: _Mode
-        second: 2
-      data:
-        first:
-          name: _Metallic
         second: 0
       data:
         first:
-          name: _InvFade
-        second: .839999974
+          name: _Mode
+        second: 0
+      data:
+        first:
+          name: _Metallic
+        second: .0240006
     m_Colors:
       data:
         first:
           name: _EmissionColor
-        second: {r: .281732351, g: .399118543, b: .38940388, a: .460000008}
+        second: {r: 0, g: 0, b: 0, a: 0}
       data:
         first:
           name: _Color
-        second: {r: 1, g: 1, b: 1, a: .578774691}
-      data:
-        first:
-          name: _SpecColor
-        second: {r: .654411793, g: .654411793, b: .654411793, a: 1}
+        second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: _EmissionColorUI
-        second: {r: .612456739, g: .867647052, b: .846527874, a: 1}
-      data:
-        first:
-          name: _TintColor
-        second: {r: .198210746, g: .573534667, b: .433759481, a: .419607848}
-      data:
-        first:
-          name: _EmisColor
-        second: {r: .543036342, g: .911764681, b: .682898819, a: 0}
+        second: {r: 1, g: 1, b: 1, a: 1}

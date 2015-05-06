@@ -30,7 +30,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 1
+      value: 2
     - useVariable: 1
       name: Sigil-Reaction-Time
       tooltip: 
@@ -85,7 +85,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 97
+      value: 0
     boolVariables:
     - useVariable: 1
       name: CharacterMoving
@@ -110,7 +110,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 0
+      value: 1
     - useVariable: 1
       name: HAS_ABILITY_SUMMON_OBJECTS
       tooltip: 
@@ -158,14 +158,14 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 1
+      value: 0
     stringVariables:
     - useVariable: 1
       name: Material Name
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: Bridge_Spirit (Instance)
+      value: Default-Diffuse (Instance)
     vector2Variables: []
     vector3Variables:
     - useVariable: 1
@@ -311,3 +311,5 @@ MonoBehaviour:
   - Force_To_Real
   - Force_To_Spirit
   - Calm_Down
+  - Activated
+  - Track
