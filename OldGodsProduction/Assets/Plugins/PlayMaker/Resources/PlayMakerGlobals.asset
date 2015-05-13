@@ -18,7 +18,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 0
+      value: 100
     - useVariable: 1
       name: MovementSpeed
       tooltip: 
@@ -30,7 +30,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 120
+      value: 20
     - useVariable: 1
       name: Psy_Price_SpiritStay_Time
       tooltip: 
@@ -67,9 +67,15 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 110
+      value: 0
     - useVariable: 1
       name: EtherPrice_Summoning
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 10
+    - useVariable: 1
+      name: EtherPrice_WallCross
       tooltip: 
       showInInspector: 0
       networkSync: 0
@@ -122,7 +128,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 1
+      value: 0
     - useVariable: 1
       name: HAS_ABILITY_SUMMON_OBJECTS
       tooltip: 
@@ -140,7 +146,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 1
+      value: 0
     - useVariable: 1
       name: LANTERN_UP
       tooltip: 
@@ -170,7 +176,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 0
+      value: 1
     stringVariables:
     - useVariable: 1
       name: Cause_Of_Death
@@ -183,15 +189,21 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: Default-Diffuse (Instance)
+      value: StoneWalls (Instance)
     vector2Variables: []
     vector3Variables:
+    - useVariable: 1
+      name: CP_Pos
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {x: 0, y: 0, z: 0}
     - useVariable: 1
       name: Cameras_Position
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: {x: 0, y: 0, z: 0}
+      value: {x: -.0219999999, y: 1.22099996, z: 0}
     - useVariable: 1
       name: Movement
       tooltip: 
@@ -350,3 +362,7 @@ MonoBehaviour:
   - Begining
   - VictoriaDies
   - Victoria_Hurt
+  - Show_No_Ability
+  - Show_Ability
+  - Ability_Gained
+  - succesful_seal_break
