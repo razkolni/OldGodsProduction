@@ -205,6 +205,18 @@ MonoBehaviour:
       networkSync: 0
       value: {x: -.0219999999, y: 1.22099996, z: 0}
     - useVariable: 1
+      name: Dagger_Current_Pos
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {x: 0, y: 0, z: 0}
+    - useVariable: 1
+      name: Dagger_Deffault_Pos
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {x: 0, y: 0, z: 0}
+    - useVariable: 1
       name: Movement
       tooltip: 
       showInInspector: 0
@@ -366,3 +378,7 @@ MonoBehaviour:
   - Show_Ability
   - Ability_Gained
   - succesful_seal_break
+  - Normalize
+  - Perfectly_Calm
+  - Hide_Dagger
+  - Show_Dagger
