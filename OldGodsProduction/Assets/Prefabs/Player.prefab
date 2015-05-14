@@ -662,9 +662,9 @@ GameObject:
   - 114: {fileID: 11424198}
   - 114: {fileID: 11437230}
   - 114: {fileID: 11416588}
-  - 114: {fileID: 11454202}
   - 114: {fileID: 11450562}
   - 114: {fileID: 11496116}
+  - 114: {fileID: 11454202}
   m_Layer: 8
   m_Name: NormalView
   m_TagString: MainCamera
@@ -2647,8 +2647,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 136908}
-  m_LocalRotation: {x: 0, y: .966147482, z: 0, w: -.25799039}
-  m_LocalPosition: {x: 87.2570038, y: 7.9289999, z: 46.0289993}
+  m_LocalRotation: {x: 0, y: .707106292, z: 0, w: .707107306}
+  m_LocalPosition: {x: -16.7700005, y: -.200000003, z: -35.7900009}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 436904}
@@ -5206,7 +5206,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 64.1171875
-        y: 104.796875
+        y: 168.796875
         width: 100
         height: 32
       isBreakpoint: 0
@@ -5223,19 +5223,19 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.GetProperty
-        - HutongGames.PlayMaker.Actions.GetProperty
-        - HutongGames.PlayMaker.Actions.GetProperty
+        - HutongGames.PlayMaker.Actions.SetFloatValue
+        - HutongGames.PlayMaker.Actions.SetFloatValue
+        - HutongGames.PlayMaker.Actions.SetFloatValue
         - HutongGames.PlayMaker.Actions.NextFrameEvent
         customNames:
-        - Get Blur_Corners
-        - Get Blur_distance
-        - Get FoV
+        - 
+        - 
+        - 
         - 
         actionEnabled: 01010100
         actionIsOpen: 01010101
-        actionStartIndex: 00000000020000000400000006000000
-        actionHashCodes: d23668dcd23668dcd23668dcc631a949
+        actionStartIndex: 00000000030000000600000009000000
+        actionHashCodes: 79fc1ded79fc1ded79fc1dedc631a949
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -5243,364 +5243,37 @@ MonoBehaviour:
         functionCallParams: []
         fsmTemplateControlParams: []
         fsmEventTargetParams: []
-        fsmPropertyParams:
-        - TargetObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: UnityEngine.Object
-            value: {fileID: 11466014}
-          TargetTypeName: UnityStandardAssets.ImageEffects.VignetteAndChromaticAberration
-          PropertyName: blur
-          BoolParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          FloatParameter:
-            useVariable: 1
-            name: BlurDis_Deff
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          IntParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          GameObjectParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
-          StringParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 
-          Vector2Parameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0}
-          Vector3Parameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0, z: 0}
-          RectParamater:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value:
-              serializedVersion: 2
-              x: 0
-              y: 0
-              width: 0
-              height: 0
-          QuaternionParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0, z: 0, w: 0}
-          ObjectParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: System.Single
-            value: {fileID: 0}
-          MaterialParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: 
-            value: {fileID: 0}
-          TextureParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: 
-            value: {fileID: 0}
-          ColorParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {r: 0, g: 0, b: 0, a: 1}
-          setProperty: 0
-        - TargetObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: UnityEngine.Object
-            value: {fileID: 11466014}
-          TargetTypeName: UnityStandardAssets.ImageEffects.VignetteAndChromaticAberration
-          PropertyName: blurSpread
-          BoolParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          FloatParameter:
-            useVariable: 1
-            name: BlurIntensity_Deff
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          IntParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          GameObjectParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
-          StringParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 
-          Vector2Parameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0}
-          Vector3Parameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0, z: 0}
-          RectParamater:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value:
-              serializedVersion: 2
-              x: 0
-              y: 0
-              width: 0
-              height: 0
-          QuaternionParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0, z: 0, w: 0}
-          ObjectParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: System.Single
-            value: {fileID: 0}
-          MaterialParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: 
-            value: {fileID: 0}
-          TextureParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: 
-            value: {fileID: 0}
-          ColorParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {r: 0, g: 0, b: 0, a: 1}
-          setProperty: 0
-        - TargetObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: UnityEngine.Object
-            value: {fileID: 2036908}
-          TargetTypeName: UnityEngine.Camera
-          PropertyName: fov
-          BoolParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          FloatParameter:
-            useVariable: 1
-            name: FoV_Deffault
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          IntParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          GameObjectParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
-          StringParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 
-          Vector2Parameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0}
-          Vector3Parameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0, z: 0}
-          RectParamater:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value:
-              serializedVersion: 2
-              x: 0
-              y: 0
-              width: 0
-              height: 0
-          QuaternionParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0, z: 0, w: 0}
-          ObjectParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: System.Single
-            value: {fileID: 0}
-          MaterialParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: 
-            value: {fileID: 0}
-          TextureParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: 
-            value: {fileID: 0}
-          ColorParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {r: 0, g: 0, b: 0, a: 1}
-          setProperty: 0
+        fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 000000676f
+        byteData: 0000000001426c75724469735f446566666666263f00000000000001426c7572496e74656e736974795f44656666b81e453f00000000000001466f565f4465666661756c7400008e420000676f
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 24000000010000002400000001000000240000000100000017000000
+        paramDataType: 0f0000000f000000010000000f0000000f000000010000000f0000000f0000000100000017000000
         paramName:
-        - targetProperty
+        - floatVariable
+        - floatValue
         - everyFrame
-        - targetProperty
+        - floatVariable
+        - floatValue
         - everyFrame
-        - targetProperty
+        - floatVariable
+        - floatValue
         - everyFrame
         - sendEvent
-        paramDataPos: 00000000000000000100000001000000020000000200000003000000
-        paramByteDataSize: 00000000010000000000000001000000000000000100000002000000
+        paramDataPos: 000000001100000016000000170000002e0000003300000034000000450000004a0000004b000000
+        paramByteDataSize: 11000000050000000100000017000000050000000100000011000000050000000100000002000000
     - name: Debug_Activation
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
         x: 53.125
-        y: 189.882812
+        y: 253.882812
         width: 137
         height: 16
       isBreakpoint: 0
@@ -5641,7 +5314,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 259
-        y: 237.984375
+        y: 301.984375
         width: 123
         height: 32
       isBreakpoint: 0
@@ -6068,7 +5741,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 255
-        y: 345.984375
+        y: 409.984375
         width: 144
         height: 32
       isBreakpoint: 0
@@ -6079,7 +5752,7 @@ MonoBehaviour:
           name: reset
           isSystemEvent: 0
           isGlobal: 0
-        toState: Debug_Activation
+        toState: State 2
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -6088,7 +5761,6 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.SetProperty
         - HutongGames.PlayMaker.Actions.EaseFloat
         - HutongGames.PlayMaker.Actions.SetProperty
-        - HutongGames.PlayMaker.Actions.SetProperty
         - HutongGames.PlayMaker.Actions.EaseFloat
         - HutongGames.PlayMaker.Actions.SetProperty
         - HutongGames.PlayMaker.Actions.EaseFloat
@@ -6096,16 +5768,15 @@ MonoBehaviour:
         customNames:
         - 
         - Ease FoV Float
-        - 
         - Set Blur_Distance
         - Ease Blur_Distance
         - Set Blur_Corners
         - Ease Blur_Corners
         - 
-        actionEnabled: 0101010101010101
-        actionIsOpen: 0101010001010101
-        actionStartIndex: 00000000020000000c0000000e000000100000001a0000001c00000026000000
-        actionHashCodes: d23668dcb5f4916bd23668dcd23668dcb5f4916bd23668dcb5f4916b3708ec1a
+        actionEnabled: 01010101010101
+        actionIsOpen: 01010101010101
+        actionStartIndex: 00000000020000000c0000000e000000180000001a00000024000000
+        actionHashCodes: d23668dcb5f4916bd23668dcb5f4916bd23668dcb5f4916b3708ec1a
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -6114,116 +5785,6 @@ MonoBehaviour:
         fsmTemplateControlParams: []
         fsmEventTargetParams: []
         fsmPropertyParams:
-        - TargetObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: UnityEngine.Object
-            value: {fileID: 2036908}
-          TargetTypeName: UnityEngine.Camera
-          PropertyName: fov
-          BoolParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          FloatParameter:
-            useVariable: 1
-            name: FoV_New
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          IntParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          GameObjectParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
-          StringParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 
-          Vector2Parameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0}
-          Vector3Parameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0, z: 0}
-          RectParamater:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value:
-              serializedVersion: 2
-              x: 0
-              y: 0
-              width: 0
-              height: 0
-          QuaternionParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0, z: 0, w: 0}
-          ObjectParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: System.Single
-            value: {fileID: 0}
-          MaterialParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: 
-            value: {fileID: 0}
-          TextureParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: 
-            value: {fileID: 0}
-          ColorParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {r: 0, g: 0, b: 0, a: 1}
-          setProperty: 1
         - TargetObject:
             useVariable: 0
             name: 
@@ -6558,12 +6119,12 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 010000000001466f565f4e65770000000001466f565f4465666661756c740000000001466f565f4e65770000804000000000000100000000010e00000000000001010000000001426c7572496e74656e736974795f4e65770000000001426c7572496e74656e736974795f446566660000000001426c7572496e74656e736974795f4e65770000804000000000000100000000010e000000000000010000000001426c75725f4469735f4e65770000000001426c75724469735f446566660000000001426c75725f4469735f4e65770000804000000000000100000000010e0000000000000000a04000726573657400
+        byteData: 010000000001466f565f4e65770000000001466f565f4465666661756c740000000001466f565f4e65770000804000000000000100000000010e000000000000010000000001426c7572496e74656e736974795f4e65770000000001426c7572496e74656e736974795f446566660000000001426c7572496e74656e736974795f4e65770000804000000000000100000000010e000000000000010000000001426c75725f4469735f4e65770000000001426c75724469735f446566660000000001426c75725f4469735f4e65770000804000000000000100000000010e0000000000000000a04000726573657400
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 24000000010000000f0000000f0000000f0000000f0000000f0000000f00000007000000110000001700000001000000240000000100000024000000010000000f0000000f0000000f0000000f0000000f0000000f0000000700000011000000170000000100000024000000010000000f0000000f0000000f0000000f0000000f0000000f000000070000001100000017000000010000000f0000001700000001000000
+        paramDataType: 24000000010000000f0000000f0000000f0000000f0000000f0000000f0000000700000011000000170000000100000024000000010000000f0000000f0000000f0000000f0000000f0000000f0000000700000011000000170000000100000024000000010000000f0000000f0000000f0000000f0000000f0000000f000000070000001100000017000000010000000f0000001700000001000000
         paramName:
         - targetProperty
         - everyFrame
@@ -6579,8 +6140,6 @@ MonoBehaviour:
         - realTime
         - targetProperty
         - everyFrame
-        - targetProperty
-        - everyFrame
         - fromValue
         - toValue
         - floatVariable
@@ -6606,15 +6165,15 @@ MonoBehaviour:
         - time
         - finishEvent
         - realTime
-        paramDataPos: 0000000000000000010000000d0000001e0000002a0000002f00000034000000390000003d0000003f0000003f0000000100000040000000020000004100000042000000580000006f000000850000008a0000008f00000094000000980000009a0000009a000000030000009b0000009c000000ad000000be000000cf000000d4000000d9000000de000000e2000000e4000000e4000000e5000000ea000000ef000000
-        paramByteDataSize: 00000000010000000c000000110000000c000000050000000500000005000000040000000200000000000000010000000000000001000000000000000100000016000000170000001600000005000000050000000500000004000000020000000000000001000000000000000100000011000000110000001100000005000000050000000500000004000000020000000000000001000000050000000500000001000000
+        paramDataPos: 0000000000000000010000000d0000001e0000002a0000002f00000034000000390000003d0000003f0000003f000000010000004000000041000000570000006e00000084000000890000008e00000093000000970000009900000099000000020000009a0000009b000000ac000000bd000000ce000000d3000000d8000000dd000000e1000000e3000000e3000000e4000000e9000000ee000000
+        paramByteDataSize: 00000000010000000c000000110000000c00000005000000050000000500000004000000020000000000000001000000000000000100000016000000170000001600000005000000050000000500000004000000020000000000000001000000000000000100000011000000110000001100000005000000050000000500000004000000020000000000000001000000050000000500000001000000
     - name: Calm_Down_Reset
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 467
-        y: 197.84375
+        x: 635
+        y: 189.84375
         width: 146
         height: 16
       isBreakpoint: 0
@@ -6626,22 +6185,20 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.SetProperty
         - HutongGames.PlayMaker.Actions.EaseFloat
         - HutongGames.PlayMaker.Actions.SetProperty
-        - HutongGames.PlayMaker.Actions.SetProperty
         - HutongGames.PlayMaker.Actions.EaseFloat
         - HutongGames.PlayMaker.Actions.SetProperty
         - HutongGames.PlayMaker.Actions.EaseFloat
         customNames:
         - 
         - Ease FoV Float
-        - 
         - Set Blur_Distance
         - Ease Blur_Distance
         - Set Blur_Corners
         - Ease Blur_Corners
-        actionEnabled: 01010101010101
-        actionIsOpen: 01010000000000
-        actionStartIndex: 00000000020000000c0000000e000000100000001a0000001c000000
-        actionHashCodes: d23668dcb5f4916bd23668dcd23668dcb5f4916bd23668dcb5f4916b
+        actionEnabled: 010101010101
+        actionIsOpen: 010100000000
+        actionStartIndex: 00000000020000000c0000000e000000180000001a000000
+        actionHashCodes: d23668dcb5f4916bd23668dcb5f4916bd23668dcb5f4916b
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -6650,116 +6207,6 @@ MonoBehaviour:
         fsmTemplateControlParams: []
         fsmEventTargetParams: []
         fsmPropertyParams:
-        - TargetObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: UnityEngine.Object
-            value: {fileID: 2036908}
-          TargetTypeName: UnityEngine.Camera
-          PropertyName: fov
-          BoolParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          FloatParameter:
-            useVariable: 1
-            name: FoV_New
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          IntParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          GameObjectParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
-          StringParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 
-          Vector2Parameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0}
-          Vector3Parameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0, z: 0}
-          RectParamater:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value:
-              serializedVersion: 2
-              x: 0
-              y: 0
-              width: 0
-              height: 0
-          QuaternionParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0, z: 0, w: 0}
-          ObjectParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: System.Single
-            value: {fileID: 0}
-          MaterialParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: 
-            value: {fileID: 0}
-          TextureParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: 
-            value: {fileID: 0}
-          ColorParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {r: 0, g: 0, b: 0, a: 1}
-          setProperty: 1
         - TargetObject:
             useVariable: 0
             name: 
@@ -7094,12 +6541,12 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 010000000001466f565f4e65770000000001466f565f4465666661756c740000000001466f565f4e65770000804000000000000100000000010e00000000000001010000000001426c7572496e74656e736974795f4e65770000000001426c7572496e74656e736974795f446566660000000001426c7572496e74656e736974795f4e65770000804000000000000100000000010e000000000000010000000001426c75725f4469735f4e65770000000001426c75724469735f446566660000000001426c75725f4469735f4e65770000804000000000000100000000010e000000000000
+        byteData: 010000000001466f565f4e65770000000001466f565f4465666661756c740000000001466f565f4e65770000804000000000000100000000010e000000000000010000000001426c7572496e74656e736974795f4e65770000000001426c7572496e74656e736974795f446566660000000001426c7572496e74656e736974795f4e65770000804000000000000100000000010e000000000000010000000001426c75725f4469735f4e65770000000001426c75724469735f446566660000000001426c75725f4469735f4e65770000804000000000000100000000010e000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 24000000010000000f0000000f0000000f0000000f0000000f0000000f00000007000000110000001700000001000000240000000100000024000000010000000f0000000f0000000f0000000f0000000f0000000f0000000700000011000000170000000100000024000000010000000f0000000f0000000f0000000f0000000f0000000f00000007000000110000001700000001000000
+        paramDataType: 24000000010000000f0000000f0000000f0000000f0000000f0000000f0000000700000011000000170000000100000024000000010000000f0000000f0000000f0000000f0000000f0000000f0000000700000011000000170000000100000024000000010000000f0000000f0000000f0000000f0000000f0000000f00000007000000110000001700000001000000
         paramName:
         - targetProperty
         - everyFrame
@@ -7115,8 +6562,6 @@ MonoBehaviour:
         - realTime
         - targetProperty
         - everyFrame
-        - targetProperty
-        - everyFrame
         - fromValue
         - toValue
         - floatVariable
@@ -7139,15 +6584,15 @@ MonoBehaviour:
         - reverse
         - finishEvent
         - realTime
-        paramDataPos: 0000000000000000010000000d0000001e0000002a0000002f00000034000000390000003d0000003f0000003f0000000100000040000000020000004100000042000000580000006f000000850000008a0000008f00000094000000980000009a0000009a000000030000009b0000009c000000ad000000be000000cf000000d4000000d9000000de000000e2000000e4000000e4000000
-        paramByteDataSize: 00000000010000000c000000110000000c000000050000000500000005000000040000000200000000000000010000000000000001000000000000000100000016000000170000001600000005000000050000000500000004000000020000000000000001000000000000000100000011000000110000001100000005000000050000000500000004000000020000000000000001000000
+        paramDataPos: 0000000000000000010000000d0000001e0000002a0000002f00000034000000390000003d0000003f0000003f000000010000004000000041000000570000006e00000084000000890000008e00000093000000970000009900000099000000020000009a0000009b000000ac000000bd000000ce000000d3000000d8000000dd000000e1000000e3000000e3000000
+        paramByteDataSize: 00000000010000000c000000110000000c00000005000000050000000500000004000000020000000000000001000000000000000100000016000000170000001600000005000000050000000500000004000000020000000000000001000000000000000100000011000000110000001100000005000000050000000500000004000000020000000000000001000000
     - name: Black_Out 2
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
         x: 811
-        y: 139
+        y: 203
         width: 109
         height: 32
       isBreakpoint: 0
@@ -7574,7 +7019,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 807
-        y: 247
+        y: 311
         width: 157
         height: 32
       isBreakpoint: 0
@@ -8115,7 +7560,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 838.664062
-        y: 334.539062
+        y: 398.539062
         width: 100
         height: 16
       isBreakpoint: 0
@@ -8492,6 +7937,862 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 000000000000000001000000010000000200000002000000
         paramByteDataSize: 000000000100000000000000010000000000000001000000
+    - name: State 2
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 612.890625
+        y: 370.703125
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SetProperty
+        - HutongGames.PlayMaker.Actions.SetProperty
+        - HutongGames.PlayMaker.Actions.SetProperty
+        customNames:
+        - 
+        - Set Blur_Distance
+        - Set Blur_Corners
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000200000004000000
+        actionHashCodes: d23668dcd23668dcd23668dc
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams:
+        - TargetObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: UnityEngine.Object
+            value: {fileID: 2036908}
+          TargetTypeName: UnityEngine.Camera
+          PropertyName: fov
+          BoolParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          FloatParameter:
+            useVariable: 1
+            name: FoV_Deffault
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          IntParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          GameObjectParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+          StringParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          Vector2Parameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0}
+          Vector3Parameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0, z: 0}
+          RectParamater:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value:
+              serializedVersion: 2
+              x: 0
+              y: 0
+              width: 0
+              height: 0
+          QuaternionParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0, z: 0, w: 0}
+          ObjectParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: System.Single
+            value: {fileID: 0}
+          MaterialParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          TextureParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          ColorParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {r: 0, g: 0, b: 0, a: 1}
+          setProperty: 1
+        - TargetObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: UnityEngine.Object
+            value: {fileID: 11466014}
+          TargetTypeName: UnityStandardAssets.ImageEffects.VignetteAndChromaticAberration
+          PropertyName: blurSpread
+          BoolParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          FloatParameter:
+            useVariable: 1
+            name: BlurIntensity_Deff
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          IntParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          GameObjectParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+          StringParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          Vector2Parameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0}
+          Vector3Parameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0, z: 0}
+          RectParamater:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value:
+              serializedVersion: 2
+              x: 0
+              y: 0
+              width: 0
+              height: 0
+          QuaternionParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0, z: 0, w: 0}
+          ObjectParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: System.Single
+            value: {fileID: 0}
+          MaterialParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          TextureParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          ColorParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {r: 0, g: 0, b: 0, a: 1}
+          setProperty: 1
+        - TargetObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: UnityEngine.Object
+            value: {fileID: 11466014}
+          TargetTypeName: UnityStandardAssets.ImageEffects.VignetteAndChromaticAberration
+          PropertyName: blur
+          BoolParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          FloatParameter:
+            useVariable: 1
+            name: BlurDis_Deff
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          IntParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          GameObjectParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+          StringParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          Vector2Parameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0}
+          Vector3Parameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0, z: 0}
+          RectParamater:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value:
+              serializedVersion: 2
+              x: 0
+              y: 0
+              width: 0
+              height: 0
+          QuaternionParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0, z: 0, w: 0}
+          ObjectParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: System.Single
+            value: {fileID: 0}
+          MaterialParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          TextureParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          ColorParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {r: 0, g: 0, b: 0, a: 1}
+          setProperty: 1
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 010101
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 240000000100000024000000010000002400000001000000
+        paramName:
+        - targetProperty
+        - everyFrame
+        - targetProperty
+        - everyFrame
+        - targetProperty
+        - everyFrame
+        paramDataPos: 000000000000000001000000010000000200000002000000
+        paramByteDataSize: 000000000100000000000000010000000000000001000000
+    - name: FoVBugControler
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 483
+        y: 109
+        width: 132
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: doFoVanim
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Calm_Down_Reset
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: noFoVanim
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: State 3
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.FloatCompare
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 53489ed1
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 0000000001466f565f4e657700000000000000803f006e6f466f56616e696d6e6f466f56616e696d646f466f56616e696d00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0f0000000f0000000f00000017000000170000001700000001000000
+        paramName:
+        - float1
+        - float2
+        - tolerance
+        - equal
+        - lessThan
+        - greaterThan
+        - everyFrame
+        paramDataPos: 000000000c00000011000000160000001f0000002800000031000000
+        paramByteDataSize: 0c000000050000000500000009000000090000000900000001000000
+    - name: State 3
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 372
+        y: 190
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SetProperty
+        - HutongGames.PlayMaker.Actions.SetProperty
+        - HutongGames.PlayMaker.Actions.EaseFloat
+        - HutongGames.PlayMaker.Actions.SetProperty
+        - HutongGames.PlayMaker.Actions.EaseFloat
+        customNames:
+        - 
+        - Set Blur_Distance
+        - Ease Blur_Distance
+        - Set Blur_Corners
+        - Ease Blur_Corners
+        actionEnabled: 0101010101
+        actionIsOpen: 0100000000
+        actionStartIndex: 0000000002000000040000000e00000010000000
+        actionHashCodes: d23668dcd23668dcb5f4916bd23668dcb5f4916b
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams:
+        - TargetObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: UnityEngine.Object
+            value: {fileID: 2036908}
+          TargetTypeName: UnityEngine.Camera
+          PropertyName: fov
+          BoolParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          FloatParameter:
+            useVariable: 1
+            name: FoV_Deffault
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          IntParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          GameObjectParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+          StringParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          Vector2Parameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0}
+          Vector3Parameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0, z: 0}
+          RectParamater:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value:
+              serializedVersion: 2
+              x: 0
+              y: 0
+              width: 0
+              height: 0
+          QuaternionParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0, z: 0, w: 0}
+          ObjectParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: System.Single
+            value: {fileID: 0}
+          MaterialParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          TextureParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          ColorParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {r: 0, g: 0, b: 0, a: 1}
+          setProperty: 1
+        - TargetObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: UnityEngine.Object
+            value: {fileID: 11466014}
+          TargetTypeName: UnityStandardAssets.ImageEffects.VignetteAndChromaticAberration
+          PropertyName: blurSpread
+          BoolParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          FloatParameter:
+            useVariable: 1
+            name: BlurIntensity_New
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          IntParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          GameObjectParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+          StringParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          Vector2Parameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0}
+          Vector3Parameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0, z: 0}
+          RectParamater:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value:
+              serializedVersion: 2
+              x: 0
+              y: 0
+              width: 0
+              height: 0
+          QuaternionParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0, z: 0, w: 0}
+          ObjectParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: System.Single
+            value: {fileID: 0}
+          MaterialParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          TextureParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          ColorParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {r: 0, g: 0, b: 0, a: 1}
+          setProperty: 1
+        - TargetObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: UnityEngine.Object
+            value: {fileID: 11466014}
+          TargetTypeName: UnityStandardAssets.ImageEffects.VignetteAndChromaticAberration
+          PropertyName: blur
+          BoolParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          FloatParameter:
+            useVariable: 1
+            name: Blur_Dis_New
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          IntParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          GameObjectParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+          StringParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          Vector2Parameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0}
+          Vector3Parameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0, z: 0}
+          RectParamater:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value:
+              serializedVersion: 2
+              x: 0
+              y: 0
+              width: 0
+              height: 0
+          QuaternionParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0, z: 0, w: 0}
+          ObjectParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: System.Single
+            value: {fileID: 0}
+          MaterialParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          TextureParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          ColorParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {r: 0, g: 0, b: 0, a: 1}
+          setProperty: 1
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 01010000000001426c7572496e74656e736974795f4e65770000000001426c7572496e74656e736974795f446566660000000001426c7572496e74656e736974795f4e65770000804000000000000100000000010e000000000000010000000001426c75725f4469735f4e65770000000001426c75724469735f446566660000000001426c75725f4469735f4e65770000804000000000000100000000010e000000000000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 240000000100000024000000010000000f0000000f0000000f0000000f0000000f0000000f0000000700000011000000170000000100000024000000010000000f0000000f0000000f0000000f0000000f0000000f00000007000000110000001700000001000000
+        paramName:
+        - targetProperty
+        - everyFrame
+        - targetProperty
+        - everyFrame
+        - fromValue
+        - toValue
+        - floatVariable
+        - time
+        - speed
+        - delay
+        - easeType
+        - reverse
+        - finishEvent
+        - realTime
+        - targetProperty
+        - everyFrame
+        - fromValue
+        - toValue
+        - floatVariable
+        - time
+        - speed
+        - delay
+        - easeType
+        - reverse
+        - finishEvent
+        - realTime
+        paramDataPos: 0000000000000000010000000100000002000000180000002f000000450000004a0000004f00000054000000580000005a0000005a000000020000005b0000005c0000006d0000007e0000008f00000094000000990000009e000000a2000000a4000000a4000000
+        paramByteDataSize: 0000000001000000000000000100000016000000170000001600000005000000050000000500000004000000020000000000000001000000000000000100000011000000110000001100000005000000050000000500000004000000020000000000000001000000
     events:
     - name: Calm_Down
       isSystemEvent: 0
@@ -8499,13 +8800,22 @@ MonoBehaviour:
     - name: INS_Black_Out
       isSystemEvent: 0
       isGlobal: 1
+    - name: Normalize
+      isSystemEvent: 0
+      isGlobal: 1
     - name: Victoria_Hurt
       isSystemEvent: 0
       isGlobal: 1
+    - name: doFoVanim
+      isSystemEvent: 0
+      isGlobal: 0
     - name: event_over
       isSystemEvent: 0
       isGlobal: 0
     - name: go
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: noFoVanim
       isSystemEvent: 0
       isGlobal: 0
     - name: reset
@@ -8521,18 +8831,26 @@ MonoBehaviour:
       linkConstraint: 0
       colorIndex: 0
     - fsmEvent:
-        name: Calm_Down
-        isSystemEvent: 0
-        isGlobal: 1
-      toState: Calm_Down_Reset
-      linkStyle: 0
-      linkConstraint: 0
-      colorIndex: 0
-    - fsmEvent:
         name: Victoria_Hurt
         isSystemEvent: 0
         isGlobal: 1
       toState: Black_Out 2
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
+    - fsmEvent:
+        name: Normalize
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: State 2
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
+    - fsmEvent:
+        name: Calm_Down
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: FoVBugControler
       linkStyle: 0
       linkConstraint: 0
       colorIndex: 0
@@ -12930,15 +13248,17 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.CameraFadeOut
         - HutongGames.PlayMaker.Actions.SendEvent
+        - HutongGames.PlayMaker.Actions.SendEvent
+        - HutongGames.PlayMaker.Actions.CameraFadeOut
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000004000000
-        actionHashCodes: 06583ecfeec9d968
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000400000008000000
+        actionHashCodes: eec9d968eec9d96806583ecf
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -12978,28 +13298,64 @@ MonoBehaviour:
             networkSync: 0
             value: 0
           fsmComponent: {fileID: 0}
+        - target: 4
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 0
+            gameObject:
+              useVariable: 0
+              name: 
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 0}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
         fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000000000000000000000000000803f000000003f0053706972697453776974636800566963746f7269614953537069726974000000000000
+        byteData: 566963746f72696149535370697269740000000000004e6f726d616c697a650000000000000000000000000000000000000000803f000000003f0053706972697453776974636800
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 190000000f00000017000000010000001f000000170000000f00000001000000
+        paramDataType: 1f000000170000000f000000010000001f000000170000000f00000001000000190000000f0000001700000001000000
         paramName:
-        - color
-        - time
-        - finishEvent
-        - realTime
         - eventTarget
         - sendEvent
         - delay
         - everyFrame
-        paramDataPos: 0000000011000000160000002200000000000000230000003300000038000000
-        paramByteDataSize: 11000000050000000c0000000100000000000000100000000500000001000000
+        - eventTarget
+        - sendEvent
+        - delay
+        - everyFrame
+        - color
+        - time
+        - finishEvent
+        - realTime
+        paramDataPos: 0000000000000000100000001500000001000000160000001f0000002400000025000000360000003b00000047000000
+        paramByteDataSize: 000000001000000005000000010000000000000009000000050000000100000011000000050000000c00000001000000
     - name: EnterRealWorld
       description: 
       colorIndex: 0
@@ -13025,13 +13381,15 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.CameraFadeOut
         - HutongGames.PlayMaker.Actions.SendEvent
+        - HutongGames.PlayMaker.Actions.SendEvent
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000004000000
-        actionHashCodes: 06583ecfeec9d968
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000400000008000000
+        actionHashCodes: 06583ecfeec9d968eec9d968
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -13071,17 +13429,49 @@ MonoBehaviour:
             networkSync: 0
             value: 0
           fsmComponent: {fileID: 0}
+        - target: 4
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 0
+            gameObject:
+              useVariable: 0
+              name: 
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 0}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
         fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000000000000000000000000000803f000000003f0053706972697453776974636800566963746f72696149535265616c000000000000
+        byteData: 0000000000000000000000000000803f000000003f00537069726974537769746368004e6f726d616c697a65000000000000566963746f72696149535265616c000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 190000000f00000017000000010000001f000000170000000f00000001000000
+        paramDataType: 190000000f00000017000000010000001f000000170000000f000000010000001f000000170000000f00000001000000
         paramName:
         - color
         - time
@@ -13091,8 +13481,12 @@ MonoBehaviour:
         - sendEvent
         - delay
         - everyFrame
-        paramDataPos: 0000000011000000160000002200000000000000230000003100000036000000
-        paramByteDataSize: 11000000050000000c00000001000000000000000e0000000500000001000000
+        - eventTarget
+        - sendEvent
+        - delay
+        - everyFrame
+        paramDataPos: 0000000011000000160000002200000000000000230000002c0000003100000001000000320000004000000045000000
+        paramByteDataSize: 11000000050000000c0000000100000000000000090000000500000001000000000000000e0000000500000001000000
     events:
     - name: Force_To_Real
       isSystemEvent: 0
@@ -15279,8 +15673,8 @@ MonoBehaviour:
       colorIndex: 1
       position:
         serializedVersion: 2
-        x: 268.9375
-        y: 283.21875
+        x: 267.9375
+        y: 307.21875
         width: 134
         height: 16
       isBreakpoint: 0
@@ -15602,8 +15996,8 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.GetProperty
-        - HutongGames.PlayMaker.Actions.GetProperty
+        - HutongGames.PlayMaker.Actions.SetFloatValue
+        - HutongGames.PlayMaker.Actions.SetFloatValue
         - HutongGames.PlayMaker.Actions.NextFrameEvent
         customNames:
         - 
@@ -15611,8 +16005,8 @@ MonoBehaviour:
         - 
         actionEnabled: 010101
         actionIsOpen: 010101
-        actionStartIndex: 000000000200000004000000
-        actionHashCodes: d23668dcd23668dcc631a949
+        actionStartIndex: 000000000300000006000000
+        actionHashCodes: 79fc1ded79fc1dedc631a949
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -15620,245 +16014,27 @@ MonoBehaviour:
         functionCallParams: []
         fsmTemplateControlParams: []
         fsmEventTargetParams: []
-        fsmPropertyParams:
-        - TargetObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: UnityEngine.Object
-            value: {fileID: 11437230}
-          TargetTypeName: UnityStandardAssets.ImageEffects.Twirl
-          PropertyName: angle
-          BoolParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          FloatParameter:
-            useVariable: 1
-            name: Twirl_Angle_Deffault
-            tooltip: 
-            showInInspector: 0
-            networkSync: 1
-            value: 0
-          IntParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          GameObjectParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
-          StringParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 
-          Vector2Parameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0}
-          Vector3Parameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0, z: 0}
-          RectParamater:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value:
-              serializedVersion: 2
-              x: 0
-              y: 0
-              width: 0
-              height: 0
-          QuaternionParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0, z: 0, w: 0}
-          ObjectParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: System.Single
-            value: {fileID: 0}
-          MaterialParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: 
-            value: {fileID: 0}
-          TextureParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: 
-            value: {fileID: 0}
-          ColorParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {r: 0, g: 0, b: 0, a: 1}
-          setProperty: 0
-        - TargetObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: UnityEngine.Object
-            value: {fileID: 11466014}
-          TargetTypeName: UnityStandardAssets.ImageEffects.VignetteAndChromaticAberration
-          PropertyName: intensity
-          BoolParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          FloatParameter:
-            useVariable: 1
-            name: Vignet_Intensity_Deffault
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          IntParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          GameObjectParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
-          StringParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 
-          Vector2Parameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0}
-          Vector3Parameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0, z: 0}
-          RectParamater:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value:
-              serializedVersion: 2
-              x: 0
-              y: 0
-              width: 0
-              height: 0
-          QuaternionParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0, z: 0, w: 0}
-          ObjectParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: System.Single
-            value: {fileID: 0}
-          MaterialParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: 
-            value: {fileID: 0}
-          TextureParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: 
-            value: {fileID: 0}
-          ColorParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {r: 0, g: 0, b: 0, a: 1}
-          setProperty: 0
+        fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000676f
+        byteData: 0000000001547769726c5f416e676c655f4465666661756c7400000000000000000000015669676e65745f496e74656e736974795f4465666661756c740000b0400000676f
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 2400000001000000240000000100000017000000
+        paramDataType: 0f0000000f000000010000000f0000000f0000000100000017000000
         paramName:
-        - targetProperty
+        - floatVariable
+        - floatValue
         - everyFrame
-        - targetProperty
+        - floatVariable
+        - floatValue
         - everyFrame
         - sendEvent
-        paramDataPos: 0000000000000000010000000100000002000000
-        paramByteDataSize: 0000000001000000000000000100000002000000
+        paramDataPos: 00000000190000001e0000001f0000003d0000004200000043000000
+        paramByteDataSize: 1900000005000000010000001e000000050000000100000002000000
     - name: Calm_Down_Reset
       description: 
       colorIndex: 0
@@ -15879,18 +16055,16 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.EaseFloat
         - HutongGames.PlayMaker.Actions.SetProperty
         - HutongGames.PlayMaker.Actions.EaseFloat
-        - HutongGames.PlayMaker.Actions.SetFloatValue
         customNames:
         - 
         - 
         - Ease Vignette Intensity
         - 
         - Ease Twirl Variable
-        - 
-        actionEnabled: 010101010101
-        actionIsOpen: 000000000000
-        actionStartIndex: 00000000040000000600000010000000120000001c000000
-        actionHashCodes: f750cc8fd23668dcb5f4916bd23668dcb5f4916b79fc1ded
+        actionEnabled: 0101010101
+        actionIsOpen: 0001010101
+        actionStartIndex: 0000000004000000060000001000000012000000
+        actionHashCodes: f750cc8fd23668dcb5f4916bd23668dcb5f4916b
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -16129,12 +16303,12 @@ MonoBehaviour:
           value: WhispersA
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000000000000000000040000100000000015669676e657474655f496e7465736974795f4e657700000000015669676e65745f496e74656e736974795f4465666661756c7400000000015669676e657474655f496e7465736974795f4e657700000040000000000001000000000115000000000000010000000001547769726c5f416e676c655f4e65770000000001547769726c5f416e676c655f4465666661756c740000000001547769726c5f416e676c655f4e65770000004000000000000100000000011500000000000000000000015669676e657474655f496e7465736974795f4e6577000000000000
+        byteData: 0000000000000000000040000100000000015669676e657474655f496e7465736974795f4e657700000000015669676e65745f496e74656e736974795f4465666661756c7400000000015669676e657474655f496e7465736974795f4e657700000040000000000001000000000115000000000000010000000001547769726c5f416e676c655f4e65770000000001547769726c5f416e676c655f4465666661756c740000000001547769726c5f416e676c655f4e657700000040000000000001000000000115000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 11000000120000000f0000000f00000024000000010000000f0000000f0000000f0000000f0000000f0000000f0000000700000011000000170000000100000024000000010000000f0000000f0000000f0000000f0000000f0000000f000000070000001100000017000000010000000f0000000f00000001000000
+        paramDataType: 11000000120000000f0000000f00000024000000010000000f0000000f0000000f0000000f0000000f0000000f0000000700000011000000170000000100000024000000010000000f0000000f0000000f0000000f0000000f0000000f00000007000000110000001700000001000000
         paramName:
         - allGroups
         - soundGroupName
@@ -16164,11 +16338,8 @@ MonoBehaviour:
         - reverse
         - finishEvent
         - realTime
-        - floatVariable
-        - floatValue
-        - everyFrame
-        paramDataPos: 00000000000000000200000007000000000000000c0000000d00000027000000450000005f00000064000000690000006e0000007200000074000000740000000100000075000000760000008a000000a3000000b7000000bc000000c1000000c6000000ca000000cc000000cc000000cd000000e7000000ec000000
-        paramByteDataSize: 0200000000000000050000000500000000000000010000001a0000001e0000001a000000050000000500000005000000040000000200000000000000010000000000000001000000140000001900000014000000050000000500000005000000040000000200000000000000010000001a0000000500000001000000
+        paramDataPos: 00000000000000000200000007000000000000000c0000000d00000027000000450000005f00000064000000690000006e0000007200000074000000740000000100000075000000760000008a000000a3000000b7000000bc000000c1000000c6000000ca000000cc000000cc000000
+        paramByteDataSize: 0200000000000000050000000500000000000000010000001a0000001e0000001a00000005000000050000000500000004000000020000000000000001000000000000000100000014000000190000001400000005000000050000000500000004000000020000000000000001000000
     - name: State 1
       description: 
       colorIndex: 0
@@ -16340,11 +16511,283 @@ MonoBehaviour:
         - sendEvent
         paramDataPos: 0000000000000000010000001b0000002000000021000000
         paramByteDataSize: 00000000010000001a000000050000000100000002000000
+    - name: State 2
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 534
+        y: 290
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SetProperty
+        - HutongGames.PlayMaker.Actions.SetProperty
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000002000000
+        actionHashCodes: d23668dcd23668dc
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams:
+        - TargetObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: UnityEngine.Object
+            value: {fileID: 11466014}
+          TargetTypeName: UnityStandardAssets.ImageEffects.VignetteAndChromaticAberration
+          PropertyName: intensity
+          BoolParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          FloatParameter:
+            useVariable: 1
+            name: Vignet_Intensity_Deffault
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          IntParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          GameObjectParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+          StringParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          Vector2Parameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0}
+          Vector3Parameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0, z: 0}
+          RectParamater:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value:
+              serializedVersion: 2
+              x: 0
+              y: 0
+              width: 0
+              height: 0
+          QuaternionParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0, z: 0, w: 0}
+          ObjectParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: System.Single
+            value: {fileID: 0}
+          MaterialParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          TextureParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          ColorParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {r: 0, g: 0, b: 0, a: 1}
+          setProperty: 1
+        - TargetObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: UnityEngine.Object
+            value: {fileID: 11437230}
+          TargetTypeName: UnityStandardAssets.ImageEffects.Twirl
+          PropertyName: angle
+          BoolParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          FloatParameter:
+            useVariable: 1
+            name: Twirl_Angle_Deffault
+            tooltip: 
+            showInInspector: 0
+            networkSync: 1
+            value: 0
+          IntParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          GameObjectParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+          StringParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          Vector2Parameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0}
+          Vector3Parameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0, z: 0}
+          RectParamater:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value:
+              serializedVersion: 2
+              x: 0
+              y: 0
+              width: 0
+              height: 0
+          QuaternionParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0, z: 0, w: 0}
+          ObjectParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: System.Single
+            value: {fileID: 0}
+          MaterialParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          TextureParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          ColorParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {r: 0, g: 0, b: 0, a: 1}
+          setProperty: 1
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 0101
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 24000000010000002400000001000000
+        paramName:
+        - targetProperty
+        - everyFrame
+        - targetProperty
+        - everyFrame
+        paramDataPos: 00000000000000000100000001000000
+        paramByteDataSize: 00000000010000000000000001000000
     events:
     - name: Calm_Down
       isSystemEvent: 0
       isGlobal: 1
     - name: INS_Wispers
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: Normalize
       isSystemEvent: 0
       isGlobal: 1
     - name: event_over
@@ -16367,6 +16810,14 @@ MonoBehaviour:
         isSystemEvent: 0
         isGlobal: 1
       toState: State 1
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
+    - fsmEvent:
+        name: Normalize
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: State 2
       linkStyle: 0
       linkConstraint: 0
       colorIndex: 0
@@ -16426,7 +16877,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 136906}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 75febd242c999f04d9654522a10c006b, type: 3}
   m_Name: 
@@ -17004,20 +17455,30 @@ MonoBehaviour:
         x: 484
         y: 254
         width: 100
-        height: 16
+        height: 32
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
-      transitions: []
+      transitions:
+      - fsmEvent:
+          name: next
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: State 3
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.CameraFadeOut
+        - HutongGames.PlayMaker.Actions.Wait
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 06583ecf
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000004000000
+        actionHashCodes: 06583ecf3708ec1a
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -17030,19 +17491,22 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000803f0000803f0000803f0000803f000000803f0000
+        byteData: 0000803f0000803f0000803f0000803f000000803f00000000803f006e65787400
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 190000000f0000001700000001000000
+        paramDataType: 190000000f00000017000000010000000f0000001700000001000000
         paramName:
         - color
         - time
         - finishEvent
         - realTime
-        paramDataPos: 00000000110000001600000016000000
-        paramByteDataSize: 11000000050000000000000001000000
+        - time
+        - finishEvent
+        - realTime
+        paramDataPos: 00000000110000001600000016000000170000001c00000020000000
+        paramByteDataSize: 11000000050000000000000001000000050000000400000001000000
     - name: State 2
       description: 
       colorIndex: 0
@@ -17058,6 +17522,9 @@ MonoBehaviour:
       transitions: []
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.SendEvent
+        - HutongGames.PlayMaker.Actions.Wait
+        - HutongGames.PlayMaker.Actions.SendEvent
         - HutongGames.PlayMaker.Actions.SetIntValue
         - HutongGames.PlayMaker.Actions.SetFloatValue
         - HutongGames.PlayMaker.Actions.SetPosition
@@ -17067,10 +17534,13 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 01010101
-        actionIsOpen: 01010101
-        actionStartIndex: 0000000003000000060000000e000000
-        actionHashCodes: 9ffa9c6679fc1ded8b80e9a506583ecf
+        - 
+        - 
+        - 
+        actionEnabled: 01010101010101
+        actionIsOpen: 01010101010101
+        actionStartIndex: 0000000004000000070000000b0000000e0000001100000019000000
+        actionHashCodes: eec9d9683708ec1aeec9d9689ffa9c6679fc1ded8b80e9a506583ecf
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -17085,19 +17555,94 @@ MonoBehaviour:
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
-        fsmEventTargetParams: []
+        fsmEventTargetParams:
+        - target: 4
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 0
+            gameObject:
+              useVariable: 0
+              name: 
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 0}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
+        - target: 4
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 0
+            gameObject:
+              useVariable: 0
+              name: 
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 0}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
         fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 000000000150737963686f7369730000000000000000c8420143757272656e745f4865616c74680000c842015374617274696e675f4865616c7468000000000000000000000000000143505f506f730000000001000000000100000000010100000000000000000000000000000000000000803f000000803f0000
+        byteData: 466f7263655f546f5f5265616c000000000000cdcccc3d00004e6f726d616c697a65000000000000000000000150737963686f7369730000000000000000c8420143757272656e745f4865616c74680000c842015374617274696e675f4865616c7468000000000000000000000000000143505f506f730000000001000000000100000000010100000000000000000000000000000000000000803f000000803f0000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1000000010000000010000000f0000000f00000001000000140000001c0000000f0000000f0000000f000000070000000100000001000000190000000f0000001700000001000000
+        paramDataType: 1f000000170000000f000000010000000f00000017000000010000001f000000170000000f000000010000001000000010000000010000000f0000000f00000001000000140000001c0000000f0000000f0000000f000000070000000100000001000000190000000f0000001700000001000000
         paramName:
+        - eventTarget
+        - sendEvent
+        - delay
+        - everyFrame
+        - time
+        - finishEvent
+        - realTime
+        - eventTarget
+        - sendEvent
+        - delay
+        - everyFrame
         - intVariable
         - intValue
         - everyFrame
@@ -17116,8 +17661,164 @@ MonoBehaviour:
         - time
         - finishEvent
         - realTime
-        paramDataPos: 000000000e0000001300000014000000270000003b000000000000003c0000004f00000054000000590000005e000000620000006300000064000000750000007a0000007a000000
-        paramByteDataSize: 0e0000000500000001000000130000001400000001000000000000001300000005000000050000000500000004000000010000000100000011000000050000000000000001000000
+        paramDataPos: 00000000000000000d000000120000001300000018000000180000000100000019000000220000002700000028000000360000003b0000003c0000004f000000630000000000000064000000770000007c00000081000000860000008a0000008b0000008c0000009d000000a2000000a2000000
+        paramByteDataSize: 000000000d0000000500000001000000050000000000000001000000000000000900000005000000010000000e0000000500000001000000130000001400000001000000000000001300000005000000050000000500000004000000010000000100000011000000050000000000000001000000
+    - name: State 3
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 481
+        y: 357
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 1
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SendEvent
+        - HutongGames.PlayMaker.Actions.Wait
+        - HutongGames.PlayMaker.Actions.SendEvent
+        - HutongGames.PlayMaker.Actions.SetIntValue
+        - HutongGames.PlayMaker.Actions.SetFloatValue
+        - HutongGames.PlayMaker.Actions.SetPosition
+        - HutongGames.PlayMaker.Actions.CameraFadeIn
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 01010101010101
+        actionIsOpen: 01010101010101
+        actionStartIndex: 0000000004000000070000000b0000000e0000001100000019000000
+        actionHashCodes: eec9d9683708ec1aeec9d9689ffa9c6679fc1ded8b80e9a506583ecf
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams:
+        - target: 4
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 0
+            gameObject:
+              useVariable: 0
+              name: 
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 0}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
+        - target: 4
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 0
+            gameObject:
+              useVariable: 0
+              name: 
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 0}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 466f7263655f546f5f5265616c000000000000cdcccc3d00004e6f726d616c697a65000000000000000000000150737963686f7369730000000000000000c8420143757272656e745f4865616c74680000c842015374617274696e675f4865616c7468000000000000000000000000000143505f506f730000000001000000000100000000010100000000000000803f0000803f0000803f0000803f000000803f0000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1f000000170000000f000000010000000f00000017000000010000001f000000170000000f000000010000001000000010000000010000000f0000000f00000001000000140000001c0000000f0000000f0000000f000000070000000100000001000000190000000f0000001700000001000000
+        paramName:
+        - eventTarget
+        - sendEvent
+        - delay
+        - everyFrame
+        - time
+        - finishEvent
+        - realTime
+        - eventTarget
+        - sendEvent
+        - delay
+        - everyFrame
+        - intVariable
+        - intValue
+        - everyFrame
+        - floatVariable
+        - floatValue
+        - everyFrame
+        - gameObject
+        - vector
+        - x
+        - y
+        - z
+        - space
+        - everyFrame
+        - lateUpdate
+        - color
+        - time
+        - finishEvent
+        - realTime
+        paramDataPos: 00000000000000000d000000120000001300000018000000180000000100000019000000220000002700000028000000360000003b0000003c0000004f000000630000000000000064000000770000007c00000081000000860000008a0000008b0000008c0000009d000000a2000000a2000000
+        paramByteDataSize: 000000000d0000000500000001000000050000000000000001000000000000000900000005000000010000000e0000000500000001000000130000001400000001000000000000001300000005000000050000000500000004000000010000000100000011000000050000000000000001000000
     events:
     - name: VictoriaDies
       isSystemEvent: 0
