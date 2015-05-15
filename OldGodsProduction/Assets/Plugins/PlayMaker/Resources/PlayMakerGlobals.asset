@@ -18,7 +18,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 100
+      value: 87.2415619
     - useVariable: 1
       name: MovementSpeed
       tooltip: 
@@ -67,7 +67,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 0
+      value: 20
     - useVariable: 1
       name: EtherPrice_Summoning
       tooltip: 
@@ -176,7 +176,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 1
+      value: 0
     stringVariables:
     - useVariable: 1
       name: Cause_Of_Death
@@ -189,7 +189,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: StoneWalls (Instance)
+      value: Stone_Blend (Instance)
     vector2Variables: []
     vector3Variables:
     - useVariable: 1
@@ -209,13 +209,13 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: {x: 0, y: 0, z: 0}
+      value: {x: -4.8572669, y: 1.08774257, z: -54.1141129}
     - useVariable: 1
       name: Dagger_Deffault_Pos
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: {x: 0, y: 0, z: 0}
+      value: {x: -.461904526, y: -.0493395776, z: 1.06225097}
     - useVariable: 1
       name: Movement
       tooltip: 
@@ -382,3 +382,5 @@ MonoBehaviour:
   - Perfectly_Calm
   - Hide_Dagger
   - Show_Dagger
+  - Reset_Health
+  - Reset_Sanity
