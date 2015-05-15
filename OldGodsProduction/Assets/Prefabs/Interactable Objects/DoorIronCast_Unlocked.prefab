@@ -236,7 +236,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 181080}
   m_LocalRotation: {x: .335993528, y: -.335992664, z: -.622181773, w: .622179329}
-  m_LocalPosition: {x: 96.1819992, y: -1.11000001, z: 65.8710022}
+  m_LocalPosition: {x: -5.93760252, y: -.821037173, z: 1.75587082}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 407116}
@@ -1139,14 +1139,13 @@ MonoBehaviour:
         paramDataPos: 0000000000000000050000000a000000
         paramByteDataSize: 00000000050000000500000001000000
     - name: OpenSuccess
-      description: "\"Unlocked\" message. \n Disable Input message \nAnim for \"Chest
-        Top\" is set and plays here."
-      colorIndex: 0
+      description: Door_Opens
+      colorIndex: 1
       position:
         serializedVersion: 2
-        x: 784
-        y: 400
-        width: 205.5
+        x: 776
+        y: 398
+        width: 101
         height: 32
       isBreakpoint: 0
       isSequence: 0
@@ -1162,18 +1161,28 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - MasterAudioPlaySound
         - HutongGames.PlayMaker.Actions.iTweenRotateAdd
         - HutongGames.PlayMaker.Actions.CameraFadeOut
         customNames:
         - 
         - 
-        actionEnabled: 0100
-        actionIsOpen: 0101
-        actionStartIndex: 000000000e000000
-        actionHashCodes: 50f3a9a506583ecf
+        - 
+        actionEnabled: 010100
+        actionIsOpen: 010101
+        actionStartIndex: 000000000900000017000000
+        actionHashCodes: 7470833050f3a9a506583ecf
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         - ownerOption: 1
           gameObject:
             useVariable: 0
@@ -1189,6 +1198,18 @@ MonoBehaviour:
         fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: DoorA
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
         - useVariable: 1
           name: 
           tooltip: 
@@ -1197,13 +1218,22 @@ MonoBehaviour:
           value: 
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 00000000000000000000964200000040400000000000000000000001180000000000000001000000646f6f7249734f70656e0000010000000000000000000000000000000000803f00000000400000
+        byteData: 0000803f0000000000000100000000000000803f0000000000000000000000964200000040400000000000000000000001180000000000000001000000646f6f7249734f70656e0000010000000000000000000000000000000000803f00000000400000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000120000001c0000000f0000000f0000000f0000000700000007000000070000001700000017000000110000001100000011000000190000000f0000001700000001000000
+        paramDataType: 1400000012000000120000000f0000000f0000001100000011000000110000000f00000014000000120000001c0000000f0000000f0000000f0000000700000007000000070000001700000017000000110000001100000011000000190000000f0000001700000001000000
         paramName:
+        - gameObject
+        - soundGroupName
+        - variationName
+        - volume
+        - delaySound
+        - useThisLocation
+        - attachToGameObject
+        - useFixedPitch
+        - fixedPitch
         - gameObject
         - id
         - vector
@@ -1222,8 +1252,8 @@ MonoBehaviour:
         - time
         - finishEvent
         - realTime
-        paramDataPos: 0000000000000000000000000d00000012000000170000001c0000002000000024000000280000002800000032000000340000003600000038000000490000004e0000004e000000
-        paramByteDataSize: 00000000000000000d000000050000000500000005000000040000000400000004000000000000000a00000002000000020000000200000011000000050000000000000001000000
+        paramDataPos: 00000000000000000100000000000000050000000a0000000c0000000e0000001000000001000000020000001500000022000000270000002c0000003100000035000000390000003d0000003d00000047000000490000004b0000004d0000005e0000006300000063000000
+        paramByteDataSize: 00000000000000000000000005000000050000000200000002000000020000000500000000000000000000000d000000050000000500000005000000040000000400000004000000000000000a00000002000000020000000200000011000000050000000000000001000000
     - name: OpenStart
       description: 
       colorIndex: 0
@@ -1517,12 +1547,12 @@ MonoBehaviour:
         paramDataPos: 0000000000000000040000000000000000000000010000001300000013000000210000002300000024000000280000002d000000
         paramByteDataSize: 04000000000000000f000000000000000000000000000000000000000e0000000200000001000000040000000500000002000000
     - name: State 2
-      description: 
-      colorIndex: 0
+      description: Door_Closes
+      colorIndex: 1
       position:
         serializedVersion: 2
-        x: 1386.46094
-        y: 418.226562
+        x: 1381.46094
+        y: 395.226562
         width: 100
         height: 32
       isBreakpoint: 0
@@ -1539,16 +1569,26 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - MasterAudioPlaySound
         - HutongGames.PlayMaker.Actions.iTweenRotateAdd
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 50f3a9a5
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000009000000
+        actionHashCodes: 7470833050f3a9a5
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         - ownerOption: 1
           gameObject:
             useVariable: 0
@@ -1564,6 +1604,18 @@ MonoBehaviour:
         fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: DoorB
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
         - useVariable: 1
           name: 
           tooltip: 
@@ -1572,13 +1624,22 @@ MonoBehaviour:
           value: 
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000000000000000000096c200000040400000000000000000000001020000000000000001000000446f6f72436c6f736573000001000000
+        byteData: 0000803f0000000000000100000000000000803f000000000000000000000096c200000040400000000000000000000001020000000000000001000000446f6f72436c6f736573000001000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000120000001c0000000f0000000f0000000f0000000700000007000000070000001700000017000000110000001100000011000000
+        paramDataType: 1400000012000000120000000f0000000f0000001100000011000000110000000f00000014000000120000001c0000000f0000000f0000000f0000000700000007000000070000001700000017000000110000001100000011000000
         paramName:
+        - gameObject
+        - soundGroupName
+        - variationName
+        - volume
+        - delaySound
+        - useThisLocation
+        - attachToGameObject
+        - useFixedPitch
+        - fixedPitch
         - gameObject
         - id
         - vector
@@ -1593,8 +1654,8 @@ MonoBehaviour:
         - realTime
         - stopOnExit
         - loopDontFinish
-        paramDataPos: 0000000000000000000000000d00000012000000170000001c00000020000000240000002800000028000000320000003400000036000000
-        paramByteDataSize: 00000000000000000d000000050000000500000005000000040000000400000004000000000000000a000000020000000200000002000000
+        paramDataPos: 00000000000000000100000000000000050000000a0000000c0000000e0000001000000001000000020000001500000022000000270000002c0000003100000035000000390000003d0000003d00000047000000490000004b000000
+        paramByteDataSize: 00000000000000000000000005000000050000000200000002000000020000000500000000000000000000000d000000050000000500000005000000040000000400000004000000000000000a000000020000000200000002000000
     events:
     - name: CanInteract
       isSystemEvent: 0
