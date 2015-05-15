@@ -118,6 +118,12 @@ MonoBehaviour:
       networkSync: 0
       value: 1
     - useVariable: 1
+      name: Dagger_Drawn
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
       name: HAS_ABILITY_GHOSTING
       tooltip: 
       showInInspector: 0
@@ -384,3 +390,4 @@ MonoBehaviour:
   - Show_Dagger
   - Reset_Health
   - Reset_Sanity
+  - rotation solver
