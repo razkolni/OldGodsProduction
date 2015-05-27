@@ -18,7 +18,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 87.2415619
+      value: 38.5096359
     - useVariable: 1
       name: MovementSpeed
       tooltip: 
@@ -67,7 +67,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 20
+      value: 0
     - useVariable: 1
       name: EtherPrice_Summoning
       tooltip: 
@@ -103,14 +103,14 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 0
+      value: 39
     boolVariables:
     - useVariable: 1
       name: CharacterMoving
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 0
+      value: 1
     - useVariable: 1
       name: CharacterOnGround
       tooltip: 
@@ -134,7 +134,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 0
+      value: 1
     - useVariable: 1
       name: HAS_ABILITY_SUMMON_OBJECTS
       tooltip: 
@@ -152,7 +152,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 0
+      value: 1
     - useVariable: 1
       name: LANTERN_UP
       tooltip: 
@@ -182,20 +182,20 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 0
+      value: 1
     stringVariables:
     - useVariable: 1
       name: Cause_Of_Death
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 
+      value: damage
     - useVariable: 1
       name: Material Name
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: Stone_Blend (Instance)
+      value: Stones_pebbles_diffuse_spec
     vector2Variables: []
     vector3Variables:
     - useVariable: 1
@@ -203,7 +203,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: {x: 0, y: 0, z: 0}
+      value: {x: 109.764, y: 6.48999977, z: 79.7979965}
     - useVariable: 1
       name: Cameras_Position
       tooltip: 
@@ -221,7 +221,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: {x: -.461904526, y: -.0493395776, z: 1.06225097}
+      value: {x: -.500999987, y: -.0399999991, z: .73299998}
     - useVariable: 1
       name: Movement
       tooltip: 

@@ -299,8 +299,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 490.351562
-        y: 125.398438
+        x: 512
+        y: 112
         width: 123
         height: 32
       isBreakpoint: 0
@@ -318,18 +318,16 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.SendEvent
-        - HutongGames.PlayMaker.Actions.SendEvent
         - HutongGames.PlayMaker.Actions.SetIntValue
         - HutongGames.PlayMaker.Actions.NextFrameEvent
         customNames:
         - 
         - 
         - 
-        - 
-        actionEnabled: 01010101
-        actionIsOpen: 01010101
-        actionStartIndex: 0000000004000000080000000b000000
-        actionHashCodes: eec9d968eec9d9689ffa9c66c631a949
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000400000007000000
+        actionHashCodes: eec9d9689ffa9c66c631a949
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -369,54 +367,18 @@ MonoBehaviour:
             networkSync: 0
             value: 0
           fsmComponent: {fileID: 0}
-        - target: 4
-          excludeSelf:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          gameObject:
-            ownerOption: 0
-            gameObject:
-              useVariable: 0
-              name: 
-              tooltip: 
-              showInInspector: 0
-              networkSync: 0
-              value: {fileID: 0}
-          fsmName:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 
-          sendToChildren:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          fsmComponent: {fileID: 0}
         fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 506572666563746c795f43616c6d0000000000004e6f726d616c697a65000000000000000000000150737963686f7369730000000000007265736574
+        byteData: 4e6f726d616c697a65000000000000000000000150737963686f7369730000000000007265736574
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1f000000170000000f000000010000001f000000170000000f0000000100000010000000100000000100000017000000
+        paramDataType: 1f000000170000000f0000000100000010000000100000000100000017000000
         paramName:
-        - eventTarget
-        - sendEvent
-        - delay
-        - everyFrame
         - eventTarget
         - sendEvent
         - delay
@@ -425,8 +387,8 @@ MonoBehaviour:
         - intValue
         - everyFrame
         - sendEvent
-        paramDataPos: 00000000000000000e0000001300000001000000140000001d0000002200000023000000310000003600000037000000
-        paramByteDataSize: 000000000e0000000500000001000000000000000900000005000000010000000e000000050000000100000005000000
+        paramDataPos: 0000000000000000090000000e0000000f0000001d0000002200000023000000
+        paramByteDataSize: 000000000900000005000000010000000e000000050000000100000005000000
     - name: StageTwo_Psychosis_Check
       description: 
       colorIndex: 0
@@ -543,8 +505,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 55
-        y: 153
+        x: 64
+        y: 160
         width: 100
         height: 32
       isBreakpoint: 0
