@@ -144,6 +144,7 @@
      <Compile Include="Assets\DarkTonic\MasterAudio\Scripts\Utility\DynamicSoundGroupCreator.cs" />
      <Compile Include="Assets\DarkTonic\MasterAudio\Scripts\Utility\PlaylistController.cs" />
      <Compile Include="Assets\DarkTonic\MasterAudio\Scripts\Utility\UtilStrings.cs" />
+     <Compile Include="Assets\FPSDisplay.cs" />
      <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonGUILayoutToolBarWithPlayers.cs" />
      <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonGUILayoutToolBarWithRooms.cs" />
      <Compile Include="Assets\Photon Unity Networking\PlayMaker\Actions\PhotonNetworkConnectManually.cs" />
@@ -941,6 +942,7 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\FisheyeShader.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ConvertDepth.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\SSAA.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Normal-BumpSpecForCull.shader" />
      <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\ReliefTerrainPMStandalone_geomblend.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionCurvesSimple.shader" />
      <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\Water\GeometryBlend_WaterShader_2VertexPaint U5.shader" />

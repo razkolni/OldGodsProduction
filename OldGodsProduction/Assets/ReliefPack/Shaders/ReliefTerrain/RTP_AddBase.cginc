@@ -15,7 +15,7 @@
 	// optional tessellation switch
 	#define TESSELLATION
 	// do we sample height&normal texture ? (if undefined tessellation benefits come only from phong smoothing)
-	//#define SAMPLE_TEXTURE_TESSELLATION
+	#define SAMPLE_TEXTURE_TESSELLATION
 	// when we're in tessellation we can additionally sample heightmap with bicubic (instead of hardware bilinear) filtering
 	// helps smoothening a lot when we've got aburpt heightmap changes
 	//#define HEIGHTMAP_SAMPLE_BICUBIC
