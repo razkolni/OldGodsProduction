@@ -452,14 +452,14 @@ SubShader {
 	Fog { Mode Off }
 	CGPROGRAM
 
-	#pragma surface surf CustomBlinnPhong vertex:vert finalcolor:customFog  tessellate:tessEdge tessphong:_Phong
+	#pragma surface surf CustomBlinnPhong vertex:vert finalcolor:customFog  tessellate:tessEdge tessphong:_Phong addshadow
 	// U5 fog handling
 	#pragma multi_compile_fog	
 	#include "UnityCG.cginc"
 
 	#pragma target 3.0
 	#pragma glsl
-	#pragma only_renderers d3d11
+	#pragma only_renderers d3d9 d3d11
 	#pragma multi_compile RTP_PM_SHADING RTP_SIMPLE_SHADING
 	//#define RTP_POM_SHADING_LO
 	//#define RTP_PM_SHADING
@@ -487,7 +487,7 @@ CGPROGRAM
 	   
 	#pragma target 3.0
 	#pragma glsl
-	#pragma only_renderers d3d11
+	#pragma only_renderers d3d9 d3d11
 	#pragma multi_compile RTP_PM_SHADING RTP_SIMPLE_SHADING
 	//#define RTP_PM_SHADING
 	//#define RTP_SIMPLE_SHADING
@@ -505,7 +505,7 @@ ENDCG
 */ // AddFar
 
 // (not used / commented below when addshadow surf keyword used above)
-///* SHADOW PASSES
+/* SHADOW PASSES
 	// Pass to render object as a shadow caster
 	Pass {
 		Name "Caster"
@@ -576,14 +576,14 @@ CGPROGRAM
 #define SHADOW_COLLECTOR_PASS
 #include "UnityCG.cginc"
 
-/*
+/astar
 // Shadow Softener part
 #pragma target 3.0
 // Define the Shadow Filter
 #define SOFTENER_FILTER PCF8x8
 // Include Shadow Softener
 #include "../../../Shadow Softener/Shaders/ShadowSoftener.cginc"
-*/
+astar/
 
 #define RTP_CUT_HOLES
 
@@ -620,7 +620,7 @@ fixed4 frag (v2f i) : COLOR
 ENDCG
 
 }
-//*/ // SHADOW PASSES
+*/ // SHADOW PASSES
 
 	
 }
@@ -649,7 +649,7 @@ CGPROGRAM
 	#pragma surface surf Lambert vertex:vert
 	#include "UnityCG.cginc"
 	
-	#pragma only_renderers d3d11
+	#pragma only_renderers d3d9 d3d11
 		
 /////////////////////////////////////////////////////////////////////
 // RTP specific
@@ -785,7 +785,7 @@ CGPROGRAM
 	#pragma surface surf Lambert vertex:vert decal:add
 	#include "UnityCG.cginc"
 	
-	#pragma only_renderers d3d11
+	#pragma only_renderers d3d9 d3d11
 		
 /////////////////////////////////////////////////////////////////////
 // RTP specific

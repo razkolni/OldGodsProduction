@@ -6368,7 +6368,7 @@ MonoBehaviour:
         width: 100
         height: 32
       isBreakpoint: 0
-      isSequence: 0
+      isSequence: 1
       hideUnused: 0
       transitions:
       - fsmEvent:
@@ -6381,13 +6381,17 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.SetBoolValue
+        - HutongGames.PlayMaker.Actions.SetIntValue
         - HutongGames.PlayMaker.Actions.CameraFadeIn
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 06583ecf
+        - 
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000300000006000000
+        actionHashCodes: 29b4727b9ffa9c6606583ecf
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -6400,19 +6404,25 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000000000000000000000000000803f00000080400070726f6365656400
+        byteData: 0001496e646f6f72735f4f7574646f6f7273000000000000000145746865720000000000000000000000000000000000000000803f00000080400070726f6365656400
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 190000000f0000001700000001000000
+        paramDataType: 110000001100000001000000100000001000000001000000190000000f0000001700000001000000
         paramName:
+        - boolVariable
+        - boolValue
+        - everyFrame
+        - intVariable
+        - intValue
+        - everyFrame
         - color
         - time
         - finishEvent
         - realTime
-        paramDataPos: 0000000011000000160000001d000000
-        paramByteDataSize: 11000000050000000700000001000000
+        paramDataPos: 000000001200000014000000150000001f0000002400000025000000360000003b00000042000000
+        paramByteDataSize: 1200000002000000010000000a000000050000000100000011000000050000000700000001000000
     - name: State 2
       description: 
       colorIndex: 0
