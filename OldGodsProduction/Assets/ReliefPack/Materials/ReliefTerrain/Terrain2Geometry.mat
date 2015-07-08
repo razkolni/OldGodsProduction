@@ -58,16 +58,16 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: TERRAIN_RippleMap
+          name: _ColorMapGlobal
         second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 2800000, guid: 7d0d715b1a395244981126dc3360bf44, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _ColorMapGlobal
+          name: TERRAIN_RippleMap
         second:
-          m_Texture: {fileID: 2800000, guid: 7d0d715b1a395244981126dc3360bf44, type: 3}
+          m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -346,30 +346,6 @@ Material:
     m_Floats:
       data:
         first:
-          name: TERRAIN_RippleScale
-        second: 4
-      data:
-        first:
-          name: TERRAIN_DropletsSpeed
-        second: 10
-      data:
-        first:
-          name: TERRAIN_WetDropletsStrength
-        second: 0
-      data:
-        first:
-          name: TERRAIN_FlowScale
-        second: 1
-      data:
-        first:
-          name: TERRAIN_FlowSpeed
-        second: .5
-      data:
-        first:
-          name: TERRAIN_ReflectionRotSpeed
-        second: .300000012
-      data:
-        first:
           name: _BumpMapGlobalScale
         second: .100000001
       data:
@@ -394,12 +370,36 @@ Material:
         second: 0
       data:
         first:
-          name: _Phong
+          name: _GlobalColorMapSaturation
+        second: 1
+      data:
+        first:
+          name: TERRAIN_RippleScale
+        second: 4
+      data:
+        first:
+          name: TERRAIN_DropletsSpeed
+        second: 10
+      data:
+        first:
+          name: TERRAIN_WetDropletsStrength
         second: 0
       data:
         first:
-          name: _GlobalColorMapSaturation
+          name: TERRAIN_FlowScale
         second: 1
+      data:
+        first:
+          name: TERRAIN_FlowSpeed
+        second: .5
+      data:
+        first:
+          name: TERRAIN_ReflectionRotSpeed
+        second: .300000012
+      data:
+        first:
+          name: _Phong
+        second: 0
       data:
         first:
           name: _GlobalColorMapSaturationFar
@@ -595,6 +595,10 @@ Material:
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
+          name: _GlobalColorMapBlendValues
+        second: {r: .200000003, g: .400000006, b: .5, a: 0}
+      data:
+        first:
           name: TERRAIN_ReflColorA
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
@@ -605,10 +609,6 @@ Material:
         first:
           name: terrainTileSize
         second: {r: 100, g: 600, b: 100, a: 0}
-      data:
-        first:
-          name: _GlobalColorMapBlendValues
-        second: {r: .200000003, g: .400000006, b: .5, a: 0}
       data:
         first:
           name: _TERRAIN_ReliefTransform
