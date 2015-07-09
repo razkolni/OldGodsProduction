@@ -18,7 +18,19 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 92.030304
+      value: 100
+    - useVariable: 1
+      name: MaterialIndex
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: Material_Index_Final
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
     - useVariable: 1
       name: MovementSpeed
       tooltip: 
@@ -67,7 +79,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 100
+      value: 975
     - useVariable: 1
       name: EtherPrice_Summoning
       tooltip: 
@@ -183,6 +195,12 @@ MonoBehaviour:
       showInInspector: 0
       networkSync: 0
       value: 0
+    - useVariable: 1
+      name: WaterStatus
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
     stringVariables:
     - useVariable: 1
       name: Cause_Of_Death
@@ -191,11 +209,17 @@ MonoBehaviour:
       networkSync: 0
       value: damage
     - useVariable: 1
+      name: Final_Sound_Message
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 
+    - useVariable: 1
       name: Material Name
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: Stone_Blend (Instance)
+      value: StoneWalls (Instance)
     vector2Variables: []
     vector3Variables:
     - useVariable: 1
@@ -203,7 +227,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: {x: 86.8700027, y: 9.77000046, z: 42.8800011}
+      value: {x: 34.6819992, y: 2.16659999, z: -72.5080032}
     - useVariable: 1
       name: Cameras_Position
       tooltip: 
@@ -215,7 +239,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: {x: -.788397551, y: .861577153, z: -44.0108147}
+      value: {x: 31.8081264, y: .488464236, z: -65.5735626}
     - useVariable: 1
       name: Dagger_Deffault_Pos
       tooltip: 
@@ -227,7 +251,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: {x: 0, y: 0, z: 0}
+      value: {x: -0, y: 0, z: 0}
     colorVariables: []
     rectVariables: []
     quaternionVariables: []
@@ -407,3 +431,5 @@ MonoBehaviour:
   - Pixie_Bridge
   - Pixie_Final_J
   - Ending
+  - In_Water
+  - Out_Water
