@@ -92,6 +92,7 @@ GameObject:
   - 114: {fileID: 11409732}
   - 114: {fileID: 11410546}
   - 114: {fileID: 11444672}
+  - 114: {fileID: 11494448}
   m_Layer: 0
   m_Name: Insanity_System
   m_TagString: Untagged
@@ -252,15 +253,17 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.SetBoolValue
         - HutongGames.PlayMaker.Actions.IntCompare
         - HutongGames.PlayMaker.Actions.IntCompare
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000006000000
-        actionHashCodes: 71d53d1871d53d18
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000300000009000000
+        actionHashCodes: 29b4727b71d53d1871d53d18
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -273,18 +276,15 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 000000000150737963686f73697300000000005265736574416e6453657401000000000150737963686f7369731400000000436f6e74696e75655f53746167654f6e6550737963686f736973436f6e74696e75655f53746167654f6e6550737963686f73697301
+        byteData: 0001497350737963686f746963000000000000000150737963686f73697300000000005265736574416e6453657401000000000150737963686f7369731400000000436f6e74696e75655f53746167654f6e6550737963686f736973436f6e74696e75655f53746167654f6e6550737963686f73697301
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 100000001000000017000000170000001700000001000000100000001000000017000000170000001700000001000000
+        paramDataType: 110000001100000001000000100000001000000017000000170000001700000001000000100000001000000017000000170000001700000001000000
         paramName:
-        - integer1
-        - integer2
-        - equal
-        - lessThan
-        - greaterThan
+        - boolVariable
+        - boolValue
         - everyFrame
         - integer1
         - integer2
@@ -292,8 +292,14 @@ MonoBehaviour:
         - lessThan
         - greaterThan
         - everyFrame
-        paramDataPos: 000000000e00000013000000130000001e0000001e0000001f0000002d000000320000004c0000004c00000066000000
-        paramByteDataSize: 0e00000005000000000000000b00000000000000010000000e000000050000001a000000000000001a00000001000000
+        - integer1
+        - integer2
+        - equal
+        - lessThan
+        - greaterThan
+        - everyFrame
+        paramDataPos: 000000000d0000000f000000100000001e00000023000000230000002e0000002e0000002f0000003d000000420000005c0000005c00000076000000
+        paramByteDataSize: 0d00000002000000010000000e00000005000000000000000b00000000000000010000000e000000050000001a000000000000001a00000001000000
     - name: ResetingToZero
       description: 
       colorIndex: 0
@@ -420,6 +426,7 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.SetBoolValue
         - HutongGames.PlayMaker.Actions.SendEvent
         - HutongGames.PlayMaker.Actions.IntCompare
         - HutongGames.PlayMaker.Actions.IntCompare
@@ -427,10 +434,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
-        actionStartIndex: 00000000040000000a000000
-        actionHashCodes: eec9d96871d53d1871d53d18
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 0000000003000000070000000d000000
+        actionHashCodes: 29b4727beec9d96871d53d1871d53d18
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -475,13 +483,16 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 53746167654f6e6550737963686f73697342000000000000000000000150737963686f7369732800000000436f6e74696e75655f537461676554776f50737963686f736973436f6e74696e75655f537461676554776f50737963686f73697301000000000150737963686f736973120000000052657365745f53746167655f446f776e01
+        byteData: 0001497350737963686f74696301000053746167654f6e6550737963686f73697342000000000000000000000150737963686f7369732800000000436f6e74696e75655f537461676554776f50737963686f736973436f6e74696e75655f537461676554776f50737963686f73697301000000000150737963686f736973120000000052657365745f53746167655f446f776e01
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1f000000170000000f00000001000000100000001000000017000000170000001700000001000000100000001000000017000000170000001700000001000000
+        paramDataType: 1100000011000000010000001f000000170000000f00000001000000100000001000000017000000170000001700000001000000100000001000000017000000170000001700000001000000
         paramName:
+        - boolVariable
+        - boolValue
+        - everyFrame
         - eventTarget
         - sendEvent
         - delay
@@ -498,8 +509,8 @@ MonoBehaviour:
         - lessThan
         - greaterThan
         - everyFrame
-        paramDataPos: 0000000000000000120000001700000018000000260000002b00000045000000450000005f000000600000006e00000073000000730000008300000083000000
-        paramByteDataSize: 000000001200000005000000010000000e000000050000001a000000000000001a000000010000000e0000000500000000000000100000000000000001000000
+        paramDataPos: 000000000d0000000f0000000000000010000000220000002700000028000000360000003b00000055000000550000006f000000700000007e00000083000000830000009300000093000000
+        paramByteDataSize: 0d0000000200000001000000000000001200000005000000010000000e000000050000001a000000000000001a000000010000000e0000000500000000000000100000000000000001000000
     - name: CalmDown
       description: 
       colorIndex: 0
@@ -1593,8 +1604,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 191.679688
-        y: 539.78125
+        x: 252.507812
+        y: 557.304688
         width: 100
         height: 32
       isBreakpoint: 0
@@ -6752,6 +6763,230 @@ MonoBehaviour:
       linkStyle: 0
       linkConstraint: 0
       colorIndex: 0
+    variables:
+      floatVariables: []
+      intVariables: []
+      boolVariables: []
+      stringVariables: []
+      vector2Variables: []
+      vector3Variables: []
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+    description: 
+    docUrl: 
+    showStateLabel: 1
+    maxLoopCount: 0
+    watermark: 
+    version: 0
+    ExposedEvents: []
+    RestartOnEnable: 1
+    EnableDebugFlow: 0
+    StepFrame: 0
+    activeStateName: 
+  fsmTemplate: {fileID: 0}
+--- !u!114 &11494448
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 181192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: de72a6d2da64d114d95e3c5a01cfaec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    usedInTemplate: {fileID: 0}
+    name: Audio_Hallucinations
+    startState: Activate
+    states:
+    - name: Activate
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 253
+        y: 106
+        width: 100
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: no
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: No_Audio_Hal
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: yes
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Play_Audio_Hal
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.BoolTest
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 3334d172
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 0001497350737963686f7469637965736e6f01
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 11000000170000001700000001000000
+        paramName:
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
+        paramDataPos: 000000000d0000001000000012000000
+        paramByteDataSize: 0d000000030000000200000001000000
+    - name: Play_Audio_Hal
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 62
+        y: 182
+        width: 126
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: go
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Activate
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.BoolChanged
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 3aad00ef
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 0001497350737963686f746963676f0001
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 110000001700000011000000
+        paramName:
+        - boolVariable
+        - changedEvent
+        - storeResult
+        paramDataPos: 000000000d0000000f000000
+        paramByteDataSize: 0d0000000200000002000000
+    - name: No_Audio_Hal
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 432
+        y: 183
+        width: 115
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: go
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Activate
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.BoolChanged
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 3aad00ef
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 0001497350737963686f746963676f0001
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 110000001700000011000000
+        paramName:
+        - boolVariable
+        - changedEvent
+        - storeResult
+        paramDataPos: 000000000d0000000f000000
+        paramByteDataSize: 0d0000000200000002000000
+    events:
+    - name: go
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: no
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: yes
+      isSystemEvent: 0
+      isGlobal: 0
+    globalTransitions: []
     variables:
       floatVariables: []
       intVariables: []
