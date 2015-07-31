@@ -623,6 +623,11 @@ public class RTP_LODmanagerEditor : Editor {
 			if (_target.RTP_4LAYERS_MODE) {
 				EditorGUILayout.Space();
 				EditorGUILayout.HelpBox("Massive terrain mode takes very simple version of the RTP shader. This lets you use global color and optionaly - global normal, perlin, bumpmaps at close distance (where CLOSE now means - perlin distance !), pixel trees/shadows and very simple close-distance detail colors (grayscale tinted by global colormap).",MessageType.Warning, true);
+				#if UNITY_5
+				if (_target.RTP_SUPER_SIMPLE) {
+					EditorGUILayout.HelpBox("For unknown (U5.0.0f4) reason it works only in deferred mode.",MessageType.Error, true);
+				}
+				#endif
 				EditorGUILayout.BeginHorizontal();
 					EditorGUILayout.LabelField("Massive terrain mode", GUILayout.MinWidth(160), GUILayout.MaxWidth(160));
 					_target.RTP_SUPER_SIMPLE=EditorGUILayout.Toggle(_target.RTP_SUPER_SIMPLE);

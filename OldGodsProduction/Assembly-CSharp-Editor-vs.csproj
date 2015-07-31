@@ -19,7 +19,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_5_0_1;UNITY_5_0;UNITY_5;ENABLE_LICENSE_RENAME;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_NEW_HIERARCHY;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_NONPRO;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;CROSS_PLATFORM_INPUT</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_0_1;UNITY_5_0;UNITY_5;ENABLE_LICENSE_RENAME;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_NEW_HIERARCHY;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_NONPRO;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;CROSS_PLATFORM_INPUT</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -39,10 +39,10 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -98,32 +98,32 @@
      <Compile Include="Assets\Photon Unity Networking\PlayMaker\Editor\PlayMakerPhotonEditorUtility.cs" />
      <Compile Include="Assets\Photon Unity Networking\PlayMaker\Editor\PlayMakerPhotonGameObjectProxyEditor.cs" />
      <Compile Include="Assets\Photon Unity Networking\PlayMaker\Editor\PlayMakerPhotonWizard.cs" />
-     <Compile Include="Assets\PlayMaker\Actions\Editor\LookAtActionEditor.cs" />
-     <Compile Include="Assets\PlayMaker\Actions\Editor\MoveTowardsActionEditor.cs" />
-     <Compile Include="Assets\PlayMaker\Actions\Editor\SetCameraFOVActionEditor.cs" />
-     <Compile Include="Assets\PlayMaker\Editor\AboutWindow.cs" />
-     <Compile Include="Assets\PlayMaker\Editor\ContextToolWindow.cs" />
-     <Compile Include="Assets\PlayMaker\Editor\FsmActionWindow.cs" />
-     <Compile Include="Assets\PlayMaker\Editor\FsmComponentInspector.cs" />
-     <Compile Include="Assets\PlayMaker\Editor\FsmEditorHelpers.cs" />
-     <Compile Include="Assets\PlayMaker\Editor\FsmEditorWindow.cs" />
-     <Compile Include="Assets\PlayMaker\Editor\FsmErrorWindow.cs" />
-     <Compile Include="Assets\PlayMaker\Editor\FsmEventsWindow.cs" />
-     <Compile Include="Assets\PlayMaker\Editor\FsmGlobalsWindow.cs" />
-     <Compile Include="Assets\PlayMaker\Editor\FsmLogWindow.cs" />
-     <Compile Include="Assets\PlayMaker\Editor\FsmSelectorWindow.cs" />
-     <Compile Include="Assets\PlayMaker\Editor\FsmStateWindow.cs" />
-     <Compile Include="Assets\PlayMaker\Editor\FsmTemplate.cs" />
-     <Compile Include="Assets\PlayMaker\Editor\FsmTemplateEditor.cs" />
-     <Compile Include="Assets\PlayMaker\Editor\FsmTemplateWindow.cs" />
-     <Compile Include="Assets\PlayMaker\Editor\PlayMakerBugReportWindow.cs" />
-     <Compile Include="Assets\PlayMaker\Editor\PlayMakerCustomActionWizard.cs" />
-     <Compile Include="Assets\PlayMaker\Editor\PlayMakerGUIInspector.cs" />
-     <Compile Include="Assets\PlayMaker\Editor\PlayMakerGlobalsInspector.cs" />
-     <Compile Include="Assets\PlayMaker\Editor\PlayMakerMainMenu.cs" />
-     <Compile Include="Assets\PlayMaker\Editor\PlayMakerUpgradeGuide.cs" />
-     <Compile Include="Assets\PlayMaker\Editor\PlayMakerWelcomeWindow.cs" />
-     <Compile Include="Assets\PlayMaker\Editor\ReportWindow.cs" />
+     <Compile Include="Assets\Prefabs\Interactable Objects\Spirit_Realm_Prefabs\PlayMaker\Actions\Editor\LookAtActionEditor.cs" />
+     <Compile Include="Assets\Prefabs\Interactable Objects\Spirit_Realm_Prefabs\PlayMaker\Actions\Editor\MoveTowardsActionEditor.cs" />
+     <Compile Include="Assets\Prefabs\Interactable Objects\Spirit_Realm_Prefabs\PlayMaker\Actions\Editor\SetCameraFOVActionEditor.cs" />
+     <Compile Include="Assets\Prefabs\Interactable Objects\Spirit_Realm_Prefabs\PlayMaker\Editor\AboutWindow.cs" />
+     <Compile Include="Assets\Prefabs\Interactable Objects\Spirit_Realm_Prefabs\PlayMaker\Editor\ContextToolWindow.cs" />
+     <Compile Include="Assets\Prefabs\Interactable Objects\Spirit_Realm_Prefabs\PlayMaker\Editor\FsmActionWindow.cs" />
+     <Compile Include="Assets\Prefabs\Interactable Objects\Spirit_Realm_Prefabs\PlayMaker\Editor\FsmComponentInspector.cs" />
+     <Compile Include="Assets\Prefabs\Interactable Objects\Spirit_Realm_Prefabs\PlayMaker\Editor\FsmEditorHelpers.cs" />
+     <Compile Include="Assets\Prefabs\Interactable Objects\Spirit_Realm_Prefabs\PlayMaker\Editor\FsmEditorWindow.cs" />
+     <Compile Include="Assets\Prefabs\Interactable Objects\Spirit_Realm_Prefabs\PlayMaker\Editor\FsmErrorWindow.cs" />
+     <Compile Include="Assets\Prefabs\Interactable Objects\Spirit_Realm_Prefabs\PlayMaker\Editor\FsmEventsWindow.cs" />
+     <Compile Include="Assets\Prefabs\Interactable Objects\Spirit_Realm_Prefabs\PlayMaker\Editor\FsmGlobalsWindow.cs" />
+     <Compile Include="Assets\Prefabs\Interactable Objects\Spirit_Realm_Prefabs\PlayMaker\Editor\FsmLogWindow.cs" />
+     <Compile Include="Assets\Prefabs\Interactable Objects\Spirit_Realm_Prefabs\PlayMaker\Editor\FsmSelectorWindow.cs" />
+     <Compile Include="Assets\Prefabs\Interactable Objects\Spirit_Realm_Prefabs\PlayMaker\Editor\FsmStateWindow.cs" />
+     <Compile Include="Assets\Prefabs\Interactable Objects\Spirit_Realm_Prefabs\PlayMaker\Editor\FsmTemplate.cs" />
+     <Compile Include="Assets\Prefabs\Interactable Objects\Spirit_Realm_Prefabs\PlayMaker\Editor\FsmTemplateEditor.cs" />
+     <Compile Include="Assets\Prefabs\Interactable Objects\Spirit_Realm_Prefabs\PlayMaker\Editor\FsmTemplateWindow.cs" />
+     <Compile Include="Assets\Prefabs\Interactable Objects\Spirit_Realm_Prefabs\PlayMaker\Editor\PlayMakerBugReportWindow.cs" />
+     <Compile Include="Assets\Prefabs\Interactable Objects\Spirit_Realm_Prefabs\PlayMaker\Editor\PlayMakerCustomActionWizard.cs" />
+     <Compile Include="Assets\Prefabs\Interactable Objects\Spirit_Realm_Prefabs\PlayMaker\Editor\PlayMakerGUIInspector.cs" />
+     <Compile Include="Assets\Prefabs\Interactable Objects\Spirit_Realm_Prefabs\PlayMaker\Editor\PlayMakerGlobalsInspector.cs" />
+     <Compile Include="Assets\Prefabs\Interactable Objects\Spirit_Realm_Prefabs\PlayMaker\Editor\PlayMakerMainMenu.cs" />
+     <Compile Include="Assets\Prefabs\Interactable Objects\Spirit_Realm_Prefabs\PlayMaker\Editor\PlayMakerUpgradeGuide.cs" />
+     <Compile Include="Assets\Prefabs\Interactable Objects\Spirit_Realm_Prefabs\PlayMaker\Editor\PlayMakerWelcomeWindow.cs" />
+     <Compile Include="Assets\Prefabs\Interactable Objects\Spirit_Realm_Prefabs\PlayMaker\Editor\ReportWindow.cs" />
      <Compile Include="Assets\ReliefPack\Editor\ReliefTerrain\ClearAuxTerrainTextures.cs" />
      <Compile Include="Assets\ReliefPack\Editor\ReliefTerrain\ExportTerrainRTPtweaked.cs" />
      <Compile Include="Assets\ReliefPack\Editor\ReliefTerrain\GeometryVsTerrainBlendEditor.cs" />
@@ -134,6 +134,7 @@
      <Compile Include="Assets\ReliefPack\Editor\ReliefTerrain\SampleTerrainHeightmap2Texture.cs" />
      <Compile Include="Assets\ReliefPack\Editor\ReliefTerrain\SelectorHelperClassEditor.cs" />
      <Compile Include="Assets\ReliefPack\Editor\ReliefTerrain\TextureChannelMixer.cs" />
+     <Compile Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\Standard\Editor\StandardShaderGUI_RTPGeomBlend.cs" />
      <Compile Include="Assets\ReliefPack\Shaders\ReliefTerrain\VertexControl\Editor\ReliefTerrainVertexBlendTriplanarEditor.cs" />
      <Compile Include="Assets\UVee\Editor\UVeeWindow.cs" />
      <Compile Include="Assets\UVee\Editor\UVee_HandleUtility.cs" />
@@ -184,7 +185,7 @@
      <None Include="Assets\ReliefPack\Models\ReliefTerrain\Michael O. demo stuff\courtesy info.txt" />
      <None Include="Assets\0000 ats V2 package\readme_grassShader.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\RadialBlur.shader" />
-     <None Include="Assets\PlayMaker\Readme.txt" />
+     <None Include="Assets\Prefabs\Interactable Objects\Spirit_Realm_Prefabs\PlayMaker\Readme.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SunShaftsComposite.shader" />
      <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\2xParallaxMapped\GeometryBlend_PM_2VertexPaint_HB_COMPLEX.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionCurves.shader" />
@@ -315,12 +316,14 @@
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Luminance.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\Standard\UnityStandardInput.cginc" />
      <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\000_readme_Making_GeomBlend_Compliant_Shaders.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionSelective.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\Bokeh34.shader" />
      <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\PBL deferred info.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableBlur.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\MotionBlurClear.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\Standard\UnityStandardCore.cginc" />
      <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\ReliefTerrain-AddPass.shader" />
      <None Include="Assets\ReliefPack\Shaders\CustomLightingLegacy.cginc" />
      <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\Bonus shaders\WaterShader_FlowMap U5.shader" />
@@ -343,7 +346,7 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseAndGrainDX11.shader" />
      <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\Water\GeometryBlend_WaterShader_FlowMap.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
-     <None Include="Assets\PlayMaker\Resources\PlayMakerAssemblies.txt" />
+     <None Include="Assets\Prefabs\Interactable Objects\Spirit_Realm_Prefabs\PlayMaker\Resources\PlayMakerAssemblies.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ConvertDepth.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableBlur.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Vertex Colored.shader" />
@@ -367,6 +370,7 @@
      <None Include="Assets\Photon Unity Networking\readme.txt" />
      <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VignettingShader.shader" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\Standard\GeomBlend_Standard.shader" />
      <None Include="Assets\DarkTonic\MasterAudio\audioImportSettings.xml" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Tonemapper.shader" />
      <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\Water\GeometryBlend_WaterShader_FlowMap_2VertexPaint U5.shader" />
@@ -414,6 +418,7 @@
      <None Include="Assets\Photon Unity Networking\changelog.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlurDX11.shader" />
      <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\RTP_AddBase.cginc" />
+     <None Include="Assets\ReliefPack\Shaders\ReliefTerrain\GeomBlendCompliant\Standard\GeomBlend_StandardSpecular.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
      <None Include="Assets\0000 ats V2 package\readme_vertexLitShader.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAAPreset2.shader" />
@@ -422,88 +427,94 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendForBloom.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\VortexEffect.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>/Users/fablabguest/OldGodsProduction/OldGodsProduction/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>C:/Users/Fablab Guest/Documents/OldGodsProduction/OldGodsProduction/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="Assembly-UnityScript">
- <HintPath>/Users/fablabguest/OldGodsProduction/OldGodsProduction/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+ <HintPath>C:/Users/Fablab Guest/Documents/OldGodsProduction/OldGodsProduction/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>/Users/fablabguest/OldGodsProduction/OldGodsProduction/Assets/Photon Unity Networking/Editor/PhotonNetwork/Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Users/Fablab Guest/Documents/OldGodsProduction/OldGodsProduction/Assets/Photon Unity Networking/Editor/PhotonNetwork/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="Photon3Unity3D">
- <HintPath>/Users/fablabguest/OldGodsProduction/OldGodsProduction/Assets/Photon Unity Networking/Plugins/PhotonNetwork/library/Photon3Unity3D.dll</HintPath>
- </Reference>
- <Reference Include="PlayMakerEditor">
- <HintPath>/Users/fablabguest/OldGodsProduction/OldGodsProduction/Assets/PlayMaker/Editor/PlayMakerEditor.dll</HintPath>
- </Reference>
- <Reference Include="PlayMakerEditorResources">
- <HintPath>/Users/fablabguest/OldGodsProduction/OldGodsProduction/Assets/PlayMaker/Editor/PlayMakerEditorResources.dll</HintPath>
- </Reference>
- <Reference Include="PlayMakerEditor.de.resources">
- <HintPath>/Users/fablabguest/OldGodsProduction/OldGodsProduction/Assets/PlayMaker/Editor/de/PlayMakerEditor.de.resources.dll</HintPath>
- </Reference>
- <Reference Include="PlayMakerEditor.es-ES.resources">
- <HintPath>/Users/fablabguest/OldGodsProduction/OldGodsProduction/Assets/PlayMaker/Editor/es-ES/PlayMakerEditor.es-ES.resources.dll</HintPath>
- </Reference>
- <Reference Include="PlayMakerEditor.fr.resources">
- <HintPath>/Users/fablabguest/OldGodsProduction/OldGodsProduction/Assets/PlayMaker/Editor/fr/PlayMakerEditor.fr.resources.dll</HintPath>
- </Reference>
- <Reference Include="PlayMakerEditor.it.resources">
- <HintPath>/Users/fablabguest/OldGodsProduction/OldGodsProduction/Assets/PlayMaker/Editor/it/PlayMakerEditor.it.resources.dll</HintPath>
- </Reference>
- <Reference Include="PlayMakerEditor.ja.resources">
- <HintPath>/Users/fablabguest/OldGodsProduction/OldGodsProduction/Assets/PlayMaker/Editor/ja/PlayMakerEditor.ja.resources.dll</HintPath>
- </Reference>
- <Reference Include="PlayMakerEditor.nl.resources">
- <HintPath>/Users/fablabguest/OldGodsProduction/OldGodsProduction/Assets/PlayMaker/Editor/nl/PlayMakerEditor.nl.resources.dll</HintPath>
- </Reference>
- <Reference Include="PlayMakerEditor.pt-BR.resources">
- <HintPath>/Users/fablabguest/OldGodsProduction/OldGodsProduction/Assets/PlayMaker/Editor/pt-BR/PlayMakerEditor.pt-BR.resources.dll</HintPath>
- </Reference>
- <Reference Include="PlayMakerEditor.sv-SE.resources">
- <HintPath>/Users/fablabguest/OldGodsProduction/OldGodsProduction/Assets/PlayMaker/Editor/sv-SE/PlayMakerEditor.sv-SE.resources.dll</HintPath>
- </Reference>
- <Reference Include="PlayMakerEditor.zh-CN.resources">
- <HintPath>/Users/fablabguest/OldGodsProduction/OldGodsProduction/Assets/PlayMaker/Editor/zh-CN/PlayMakerEditor.zh-CN.resources.dll</HintPath>
- </Reference>
- <Reference Include="PlayMakerEditor.zh-TW.resources">
- <HintPath>/Users/fablabguest/OldGodsProduction/OldGodsProduction/Assets/PlayMaker/Editor/zh-TW/PlayMakerEditor.zh-TW.resources.dll</HintPath>
+ <HintPath>C:/Users/Fablab Guest/Documents/OldGodsProduction/OldGodsProduction/Assets/Photon Unity Networking/Plugins/PhotonNetwork/library/Photon3Unity3D.dll</HintPath>
  </Reference>
  <Reference Include="PlayMaker">
- <HintPath>/Users/fablabguest/OldGodsProduction/OldGodsProduction/Assets/Plugins/PlayMaker/PlayMaker.dll</HintPath>
+ <HintPath>C:/Users/Fablab Guest/Documents/OldGodsProduction/OldGodsProduction/Assets/Plugins/PlayMaker/PlayMaker.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
- <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.Graphs.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Android.Extensions">
- <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/androidplayer/UnityEditor.Android.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions">
- <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WP8.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/wp8support/UnityEditor.WP8.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Metro.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/metrosupport/UnityEditor.Metro.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.BB10.Extensions">
- <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/BlackBerryPlayer/UnityEditor.BB10.Extensions.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/blackberryplayer/UnityEditor.BB10.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.WebGL.Extensions">
- <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/webglsupport/UnityEditor.WebGL.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.LinuxStandalone.Extensions">
- <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/linuxstandalonesupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
- <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
- <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/macstandalonesupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="PlayMakerEditorResources">
+ <HintPath>C:/Users/Fablab Guest/Documents/OldGodsProduction/OldGodsProduction/Assets/Prefabs/Interactable Objects/Spirit_Realm_Prefabs/PlayMaker/Editor/PlayMakerEditorResources.dll</HintPath>
+ </Reference>
+ <Reference Include="PlayMakerEditor.fr.resources">
+ <HintPath>C:/Users/Fablab Guest/Documents/OldGodsProduction/OldGodsProduction/Assets/Prefabs/Interactable Objects/Spirit_Realm_Prefabs/PlayMaker/Editor/fr/PlayMakerEditor.fr.resources.dll</HintPath>
+ </Reference>
+ <Reference Include="PlayMakerEditor.sv-SE.resources">
+ <HintPath>C:/Users/Fablab Guest/Documents/OldGodsProduction/OldGodsProduction/Assets/Prefabs/Interactable Objects/Spirit_Realm_Prefabs/PlayMaker/Editor/sv-SE/PlayMakerEditor.sv-SE.resources.dll</HintPath>
+ </Reference>
+ <Reference Include="PlayMakerEditor.es-ES.resources">
+ <HintPath>C:/Users/Fablab Guest/Documents/OldGodsProduction/OldGodsProduction/Assets/Prefabs/Interactable Objects/Spirit_Realm_Prefabs/PlayMaker/Editor/es-ES/PlayMakerEditor.es-ES.resources.dll</HintPath>
+ </Reference>
+ <Reference Include="PlayMakerEditor.de.resources">
+ <HintPath>C:/Users/Fablab Guest/Documents/OldGodsProduction/OldGodsProduction/Assets/Prefabs/Interactable Objects/Spirit_Realm_Prefabs/PlayMaker/Editor/de/PlayMakerEditor.de.resources.dll</HintPath>
+ </Reference>
+ <Reference Include="PlayMakerEditor.pt-BR.resources">
+ <HintPath>C:/Users/Fablab Guest/Documents/OldGodsProduction/OldGodsProduction/Assets/Prefabs/Interactable Objects/Spirit_Realm_Prefabs/PlayMaker/Editor/pt-BR/PlayMakerEditor.pt-BR.resources.dll</HintPath>
+ </Reference>
+ <Reference Include="PlayMakerEditor">
+ <HintPath>C:/Users/Fablab Guest/Documents/OldGodsProduction/OldGodsProduction/Assets/Prefabs/Interactable Objects/Spirit_Realm_Prefabs/PlayMaker/Editor/PlayMakerEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="PlayMakerEditor.it.resources">
+ <HintPath>C:/Users/Fablab Guest/Documents/OldGodsProduction/OldGodsProduction/Assets/Prefabs/Interactable Objects/Spirit_Realm_Prefabs/PlayMaker/Editor/it/PlayMakerEditor.it.resources.dll</HintPath>
+ </Reference>
+ <Reference Include="PlayMakerEditor.ja.resources">
+ <HintPath>C:/Users/Fablab Guest/Documents/OldGodsProduction/OldGodsProduction/Assets/Prefabs/Interactable Objects/Spirit_Realm_Prefabs/PlayMaker/Editor/ja/PlayMakerEditor.ja.resources.dll</HintPath>
+ </Reference>
+ <Reference Include="PlayMakerEditor.zh-TW.resources">
+ <HintPath>C:/Users/Fablab Guest/Documents/OldGodsProduction/OldGodsProduction/Assets/Prefabs/Interactable Objects/Spirit_Realm_Prefabs/PlayMaker/Editor/zh-TW/PlayMakerEditor.zh-TW.resources.dll</HintPath>
+ </Reference>
+ <Reference Include="PlayMakerEditor.nl.resources">
+ <HintPath>C:/Users/Fablab Guest/Documents/OldGodsProduction/OldGodsProduction/Assets/Prefabs/Interactable Objects/Spirit_Realm_Prefabs/PlayMaker/Editor/nl/PlayMakerEditor.nl.resources.dll</HintPath>
+ </Reference>
+ <Reference Include="PlayMakerEditor.zh-CN.resources">
+ <HintPath>C:/Users/Fablab Guest/Documents/OldGodsProduction/OldGodsProduction/Assets/Prefabs/Interactable Objects/Spirit_Realm_Prefabs/PlayMaker/Editor/zh-CN/PlayMakerEditor.zh-CN.resources.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
- <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

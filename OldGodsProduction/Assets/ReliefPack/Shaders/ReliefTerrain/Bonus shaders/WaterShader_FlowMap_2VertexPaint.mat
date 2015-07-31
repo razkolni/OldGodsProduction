@@ -30,6 +30,13 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
+          name: TERRAIN_RippleMap
+        second:
+          m_Texture: {fileID: 2800000, guid: 87b672e098a28584d82865fa6f149b44, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
           name: _MainTex2
         second:
           m_Texture: {fileID: 2800000, guid: 9131e55c4e116df46bf4658c152940e3, type: 3}
@@ -41,13 +48,6 @@ Material:
         second:
           m_Texture: {fileID: 2800000, guid: fb87a6d9f1021274ba65964755cc3ba4, type: 3}
           m_Scale: {x: 2, y: 2}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: TERRAIN_RippleMap
-        second:
-          m_Texture: {fileID: 2800000, guid: 87b672e098a28584d82865fa6f149b44, type: 3}
-          m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
@@ -91,6 +91,34 @@ Material:
         second: .5
       data:
         first:
+          name: TERRAIN_RippleScale
+        second: 2
+      data:
+        first:
+          name: TERRAIN_DropletsSpeed
+        second: 15
+      data:
+        first:
+          name: TERRAIN_WetDropletsStrength
+        second: .0961538479
+      data:
+        first:
+          name: TERRAIN_FlowScale
+        second: .5
+      data:
+        first:
+          name: TERRAIN_FlowSpeed
+        second: .519230843
+      data:
+        first:
+          name: TERRAIN_ReflectionRotSpeed
+        second: .338461548
+      data:
+        first:
+          name: TERRAIN_RainIntensity
+        second: 1
+      data:
+        first:
           name: TERRAIN_LayerReflection
         second: 1.03846157
       data:
@@ -119,10 +147,6 @@ Material:
         second: .5
       data:
         first:
-          name: TERRAIN_RippleScale
-        second: 2
-      data:
-        first:
           name: TERRAIN_WaterLevel
         second: .884615362
       data:
@@ -139,14 +163,6 @@ Material:
         second: .711538494
       data:
         first:
-          name: TERRAIN_DropletsSpeed
-        second: 15
-      data:
-        first:
-          name: TERRAIN_WetDropletsStrength
-        second: .0961538479
-      data:
-        first:
           name: TERRAIN_Refraction
         second: .00923076924
       data:
@@ -157,14 +173,6 @@ Material:
         first:
           name: TERRAIN_Flow
         second: 1
-      data:
-        first:
-          name: TERRAIN_FlowScale
-        second: .5
-      data:
-        first:
-          name: TERRAIN_FlowSpeed
-        second: .519230843
       data:
         first:
           name: TERRAIN_WetSpecularity
@@ -179,14 +187,6 @@ Material:
         second: .0538461544
       data:
         first:
-          name: TERRAIN_ReflectionRotSpeed
-        second: .338461548
-      data:
-        first:
-          name: TERRAIN_RainIntensity
-        second: 1
-      data:
-        first:
           name: TERRAIN_FlowSpeedMap
         second: .200000003
     m_Colors:
@@ -196,13 +196,13 @@ Material:
         second: {r: .5, g: .5, b: .5, a: 1}
       data:
         first:
-          name: TERRAIN_WaterColor
-        second: {r: .89775008, g: .951922894, b: .970149279, a: 1}
-      data:
-        first:
           name: TERRAIN_ReflColorA
         second: {r: .5, g: .5, b: .5, a: 1}
       data:
         first:
           name: TERRAIN_ReflColorB
         second: {r: .771886826, g: .841371298, b: .940298498, a: .239215687}
+      data:
+        first:
+          name: TERRAIN_WaterColor
+        second: {r: .89775008, g: .951922894, b: .970149279, a: 1}

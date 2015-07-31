@@ -13,9 +13,9 @@
 // (we don't tessellate terrain in geom blend base)
 #if !defined(COLOR_EARLY_EXIT) && defined(UNITY_CAN_COMPILE_TESSELLATION)
 	// optional tessellation switch
-	#define TESSELLATION
+	//#define TESSELLATION
 	// do we sample height&normal texture ? (if undefined tessellation benefits come only from phong smoothing)
-	#define SAMPLE_TEXTURE_TESSELLATION
+	//#define SAMPLE_TEXTURE_TESSELLATION
 	// when we're in tessellation we can additionally sample heightmap with bicubic (instead of hardware bilinear) filtering
 	// helps smoothening a lot when we've got aburpt heightmap changes
 	//#define HEIGHTMAP_SAMPLE_BICUBIC
@@ -27,7 +27,7 @@
 #define _4LAYERS
 
 // turn on when you need to skip all specularity PBL lighting (can gain up to 2-3ms per pass on Intel HD4000)
-#define NO_SPECULARITY
+//#define NO_SPECULARITY
 
 // U5 8layers mode workaround
 #if defined(UNITY_PI) && !defined(_4LAYERS) && defined(FAR_ONLY)
@@ -163,7 +163,7 @@
 // we use wet (can't be used with superdetail as globalnormal texture BA channels are shared)
 //#define RTP_WETNESS
 // water droplets
-#define RTP_WET_RIPPLE_TEXTURE
+//#define RTP_WET_RIPPLE_TEXTURE
 // if defined water won't handle flow nor refractions
 //#define SIMPLE_WATER
 
@@ -234,7 +234,7 @@
 
 // we're working in LINEAR / GAMMA (used in IBL  fresnel , PBL fresnel and gloss calcs)
 // if not defined we're rendering in GAMMA
-#define RTP_COLORSPACE_LINEAR
+//#define RTP_COLORSPACE_LINEAR
 
 // if defined we'll use cubemap defined by skyshop in its "Sky" GameObject
 //#define RTP_SKYSHOP_SYNC
@@ -729,6 +729,10 @@ float rtp_snow_strength;
 uniform float4 _WorldSpaceLightPosCustom;
 #endif
 
+#ifdef UNITY_PASS_META
+	float4 _MainTex_ST;
+#endif
+
 struct Input {
 	#ifdef RTP_PLANET
 		float2 uv_ColorMapGlobal; // texcoords from mesh (mapped cylindrical)
@@ -865,7 +869,7 @@ inline float3 myObjSpaceLightDir( in float4 v )
     float _TessSubdivisionsFar;
     float _TessYOffset;
 	
-	float interpolate_bicubic(float x, float y, float paddingFactor, out float3 norm) {
+	float interpolate_bicubic(float x, float y, out float3 norm) {
 		//x=frac(x);
 		//y=frac(y);
 		x*=_NormalMapGlobal_TexelSize.z;
@@ -886,8 +890,8 @@ inline float3 myObjSpaceLightDir( in float4 v )
 		// h0 = w1/g0 - 1, move from [-0.5, extent-0.5] to [0, extent]
 		float2 h0 = (w1 / g0) - 0.5 + index;
 		float2 h1 = (w3 / g1) + 1.5 + index;
-		h0*=_NormalMapGlobal_TexelSize.x*paddingFactor;
-		h1*=_NormalMapGlobal_TexelSize.y*paddingFactor;
+		h0*=_NormalMapGlobal_TexelSize.x;
+		h1*=_NormalMapGlobal_TexelSize.y;
 		// fetch the four linear interpolations
 		float4 val;
 		val= tex2Dlod(_NormalMapGlobal, float4(h0.x, h0.y,0,0));
@@ -916,7 +920,7 @@ inline float3 myObjSpaceLightDir( in float4 v )
 		tex10 = lerp(tex11, tex10, g0.y);
 		// weigh along the x-direction
 		return lerp(tex10, tex00, g0.x);
-	}    
+	} 
 
 //    float4 tessEdge (appdata v0, appdata v1, appdata v2)
 //    {
@@ -957,11 +961,10 @@ float2 RTP_CustomTiling;
 			#ifndef SAMPLE_TEXTURE_TESSELLATION
 				// we still benefit phong geometry smoothing
 			#else
-				float paddingFactor = 1;//(1-2*_NormalMapGlobal_TexelSize.x)+_NormalMapGlobal_TexelSize.x;
-		    	float2 gUV = paddingFactor * v.texcoord.xy;
+				float2 gUV = v.texcoord.xy*(1-_NormalMapGlobal_TexelSize.xy) + _NormalMapGlobal_TexelSize.xy*0.5;
 		    	#ifdef HEIGHTMAP_SAMPLE_BICUBIC
 		    		float3 norm=0;
-					v.vertex.y=interpolate_bicubic(gUV.x, gUV.y, paddingFactor, /*out*/ norm)*terrainTileSize.y+_TessYOffset;
+					v.vertex.y=interpolate_bicubic(gUV.x, gUV.y, /*out*/ norm)*terrainTileSize.y+_TessYOffset;
 					norm.xz*=_TERRAIN_trees_shadow_values.w;
 					v.normal.xyz=normalize(norm.xyz);
 				#else
@@ -1181,13 +1184,18 @@ void surf (Input IN, inout RTPSurfaceOutput o) {
 		// so we need to sample normal here
     	float3 worldNormalFlat;
     	{
+			#ifdef UNITY_PASS_META	
+    			float2 gUV = (IN.uv_Control.xy*_MainTex_ST.xy+_MainTex_ST.zw)*(1-_NormalMapGlobal_TexelSize.xy) + _NormalMapGlobal_TexelSize.xy*0.5;
+			#else
+	    		float2 gUV = IN.uv_Control*(1-_NormalMapGlobal_TexelSize.xy) + _NormalMapGlobal_TexelSize.xy*0.5;
+			#endif    	
 	    	#ifdef HEIGHTMAP_SAMPLE_BICUBIC
 	    		float3 norm=0;
-				interpolate_bicubic(IN.uv_Control.x, IN.uv_Control.y, 1, /*out*/ norm);
+				interpolate_bicubic(gUV.x, gUV.y, /*out*/ norm);
 				norm.xz*=_TERRAIN_trees_shadow_values.w;
 				worldNormalFlat=normalize(norm.xyz);
 			#else
-		    	fixed4 HNMap=tex2Dlod(_NormalMapGlobal, float4(IN.uv_Control.xy,0,0));
+		    	fixed4 HNMap=tex2Dlod(_NormalMapGlobal, float4(gUV.xy,0,0));
 				float3 norm;
 				norm.xz=HNMap.ba*2-1;
 				norm.y=sqrt(1-saturate(dot(norm.xz, norm.xz)));
@@ -1226,6 +1234,9 @@ void surf (Input IN, inout RTPSurfaceOutput o) {
 		float2 _ddxGlobal=ddx(IN_uv_Control);
 		float2 _ddyGlobal=ddy(IN_uv_Control);
 	#else
+		#ifdef UNITY_PASS_META	
+			IN.uv_Control.xy=IN.uv_Control.xy*_MainTex_ST.xy+_MainTex_ST.zw;
+		#endif	
 		#define IN_uv_Control (IN.uv_Control)
 		// used in tex2Dp() but compiled out anyway
 		#define _ddxGlobal float2(0,0)
@@ -1281,6 +1292,161 @@ void surf (Input IN, inout RTPSurfaceOutput o) {
 		//
 		// super simple mode
 		//
+		float4 splat_control = tex2D(_Control3, IN_uv_Control);		
+		float total_coverage=dot(splat_control,1);
+		splat_control/=total_coverage;
+		
+		float _uv_Relief_w=saturate((_INPUT_distance - _TERRAIN_distance_start_bumpglobal) / _TERRAIN_distance_transition_bumpglobal);
+		
+		#if defined(SS_USE_PERLIN)
+			float4 global_bump_val=tex2D(_BumpMapGlobal, _INPUT_uv.xy*_BumpMapGlobalScale*8)*0.4+tex2D(_BumpMapGlobal, _INPUT_uv.xy*_BumpMapGlobalScale)*0.6;
+		#endif		
+		
+		#ifdef COLOR_EARLY_EXIT
+			if (IN.color.a<0.002) return;
+		#endif
+		#ifndef RTP_CUT_HOLES
+			if (total_coverage<0.002) return;
+		#endif
+		
+		#ifdef COLOR_MAP
+			float global_color_blend=lerp( _GlobalColorMapBlendValues.x, _GlobalColorMapBlendValues.z, _uv_Relief_w);
+			float4 global_color_value=tex2Dp(_ColorMapGlobal, IN_uv_Control, _ddxGlobal, _ddyGlobal);
+			#ifdef RTP_CUT_HOLES
+			clip(global_color_value.a-0.001f);
+			if (total_coverage<0.002) return;
+			#endif
+			
+			global_color_value.rgb=lerp(tex2Dlod(_ColorMapGlobal, float4(IN_uv_Control, _GlobalColorMapNearMIP.xx)).rgb, global_color_value.rgb, _uv_Relief_w);
+			
+//			#if defined(SS_USE_PERLIN)
+//				float perlin2global_color=abs((global_bump_val.r-0.4)*5);
+//				perlin2global_color*=perlin2global_color;				
+//				float GlobalColorMapSaturationByPerlin = saturate( lerp(_GlobalColorMapSaturation, _GlobalColorMapSaturationFar, _uv_Relief_w) -perlin2global_color*_GlobalColorMapSaturationByPerlin);
+//			#else
+//				float GlobalColorMapSaturationByPerlin = lerp(_GlobalColorMapSaturation, _GlobalColorMapSaturationFar, _uv_Relief_w);
+//			#endif
+			float GlobalColorMapSaturationByPerlin = lerp(_GlobalColorMapSaturation, _GlobalColorMapSaturationFar, _uv_Relief_w);
+			global_color_value.rgb=lerp(dot(global_color_value.rgb,0.35).xxx, global_color_value.rgb, GlobalColorMapSaturationByPerlin);
+			global_color_value.rgb*=lerp(_GlobalColorMapBrightness, _GlobalColorMapBrightnessFar, _uv_Relief_w);
+		#endif
+		
+		#ifdef FAR_ONLY
+		if (false) {
+		#else
+		if (_uv_Relief_w<1) {
+		#endif
+		 	fixed4 col;
+		 	#if defined(SS_GRAYSCALE_DETAIL_COLORS)
+				col.rgb = global_color_value.rgb*dot(splat_control, tex2D(_SSColorCombinedA, _INPUT_uv.xy, _ddxMain.xy, _ddyMain.xy));
+		 	#else
+				col = splat_control.r * tex2D(_SplatC0, _INPUT_uv.xy, _ddxMain.xy, _ddyMain.xy);
+				col += splat_control.g * tex2D(_SplatC1, _INPUT_uv.xy, _ddxMain.xy, _ddyMain.xy);
+				col += splat_control.b * tex2D(_SplatC2, _INPUT_uv.xy, _ddxMain.xy, _ddyMain.xy);
+				col += splat_control.a * tex2D(_SplatC3, _INPUT_uv.xy, _ddxMain.xy, _ddyMain.xy);
+				
+				float glcombined = col.a;
+				#if defined(RTP_COLORSPACE_LINEAR)
+				//glcombined=FastToLinear(glcombined);
+				#endif
+				float RTP_gloss2mask = dot(splat_control, RTP_gloss2mask89AB);
+				float _Spec = dot(saturate(splat_control-float4(0.5,0.5,0.5,0.5))*2, _Spec89AB); // anti-bleed subtraction
+				float RTP_gloss_mult = dot(splat_control, RTP_gloss_mult89AB);
+				float RTP_gloss_shaping = dot(splat_control, RTP_gloss_shaping89AB);
+				float gls = saturate(glcombined * RTP_gloss_mult);
+				o_Gloss =  lerp(1, gls, RTP_gloss2mask) * _Spec;
+				float2 gloss_shaped=float2(gls, 1-gls);
+				gloss_shaped=gloss_shaped*gloss_shaped*gloss_shaped;
+				gls=lerp(gloss_shaped.x, 1-gloss_shaped.y, RTP_gloss_shaping);
+				o.Specular = saturate(gls);
+				// gloss vs. fresnel dependency
+				float fresnelAtten=dot(splat_control, RTP_FresnelAtten89AB);
+				#if defined(RTP_REFLECTION) || defined(RTP_IBL_SPEC) || defined(RTP_PBL_FRESNEL)
+				o.RTP.x=dot(splat_control, RTP_Fresnel89AB);				
+				o.RTP.x*=lerp(1, 1-fresnelAtten, o.Specular*0.9+0.1);			
+				#endif
+				half colDesat=dot(col.rgb,0.33333);
+				float brightness2Spec=dot(splat_control, _LayerBrightness2Spec89AB);
+				o_Gloss*=lerp(1, colDesat, brightness2Spec);
+				col.rgb=lerp(colDesat.xxx, col.rgb, dot(splat_control, _LayerSaturation89AB));	
+				col.rgb*=dot(splat_control, _LayerBrightness89AB);  
+		 	#endif
+			o.Albedo=lerp(col.rgb, global_color_value.rgb, _uv_Relief_w);
+			o_Gloss*=(1-_uv_Relief_w);
+			o.Specular=lerp(o.Specular, 0.5, _uv_Relief_w);
+			
+			#if defined(SS_USE_BUMPMAPS)
+				float3 n;
+				float4 normals_combined;
+				normals_combined = tex2D(_BumpMap89, _INPUT_uv.xy, _ddxMain.xy, _ddyMain.xy).rgba*splat_control.rrgg;
+				normals_combined+=tex2D(_BumpMapAB, _INPUT_uv.xy, _ddxMain.xy, _ddyMain.xy).rgba*splat_control.bbaa;
+				n.xy=(normals_combined.rg+normals_combined.ba)*2-1;
+				n.xy*=1-_uv_Relief_w;
+				n.z = sqrt(1 - saturate(dot(n.xy, n.xy)));
+				o.Normal=n;
+			#endif
+		} else {
+			o.Albedo=global_color_value.rgb;
+		}
+		float o_SpecularInvSquared = (1-o.Specular)*(1-o.Specular);
+
+		#if defined(SS_USE_PERLIN)
+			float3 norm_far;
+			norm_far.xy = global_bump_val.rg*4-2;
+			norm_far.z = sqrt(1 - saturate(dot(norm_far.xy, norm_far.xy)));		
+			o.Normal+=norm_far*lerp(rtp_perlin_start_val,1, _uv_Relief_w)*dot(_BumpMapGlobalStrength89AB, splat_control);
+		#endif
+		
+		global_color_blend *= dot(splat_control, _GlobalColorPerLayer89AB);
+		#if defined(COLOR_MAP_BLEND_MULTIPLY) 
+			o.Albedo=lerp(o.Albedo, o.Albedo*global_color_value.rgb*2, global_color_blend);
+		#else
+			o.Albedo=lerp(o.Albedo, global_color_value.rgb, global_color_blend);
+		#endif
+		
+		// simple fresnel rim (w/o bumpmapping)
+		IN.viewDir=normalize(IN.viewDir);
+		IN.viewDir.z=saturate(IN.viewDir.z); // czasem wystepuja problemy na krawedziach widocznosci (viewDir.z nie powinien byc jednak ujemny)
+		float diffFresnel = exp2(SchlickFresnelApproxExp2Const*IN.viewDir.z); // ca. (1-x)^5
+		#ifdef APPROX_TANGENTS
+			// dla RTP na meshach (przykladowa scena)  normalne sa plaskie i ponizszy tweak dziala b. zle
+			//diffFresnel = (diffFresnel>0.999) ? ((1-diffFresnel)/0.001) : (diffFresnel/0.999);
+		#endif
+		
+		// shaped diffuse fresnel term for soft surface layers (grass)
+		float _DiffFresnel=dot(splat_control, RTP_DiffFresnel89AB);
+		float diffuseScatteringFactor=1.0 + diffFresnel*_DiffFresnel;
+		o.Albedo *= diffuseScatteringFactor;		
+		
+		// (zmienione obl. global normal)
+		#if defined(SS_USE_PERLIN)
+			o.Normal=normalize(o.Normal);
+		#endif
+		
+		#ifdef RTP_TREESGLOBAL	
+			float4 pixel_trees_val=tex2Dp(_TreesMapGlobal, IN_uv_Control, _ddxGlobal, _ddyGlobal);
+			float pixel_trees_blend_val=saturate((pixel_trees_val.r+pixel_trees_val.g+pixel_trees_val.b)*_TERRAIN_trees_pixel_values.z);
+			pixel_trees_blend_val*=saturate((_INPUT_distance - _TERRAIN_trees_pixel_values.x) / _TERRAIN_trees_pixel_values.y);
+			o.Albedo=lerp(o.Albedo, pixel_trees_val.rgb, pixel_trees_blend_val);
+			#if !defined(RTP_AMBIENT_EMISSIVE_MAP)
+				float pixel_trees_shadow_val=saturate((_INPUT_distance - _TERRAIN_trees_shadow_values.x) / _TERRAIN_trees_shadow_values.y);
+				pixel_trees_shadow_val=lerp(1, pixel_trees_val.a, pixel_trees_shadow_val);
+				o.RTP.y*=lerp(_TERRAIN_trees_shadow_values.z, 1, pixel_trees_shadow_val);
+			#endif
+		#endif
+			
+		#if defined(RTP_AMBIENT_EMISSIVE_MAP)
+			float4 eMapVal=tex2Dp(_AmbientEmissiveMapGlobal, IN_uv_Control, _ddxGlobal, _ddyGlobal);
+			o.Emission+=o.Albedo*eMapVal.rgb*_AmbientEmissiveMultiplier*lerp(1, saturate(o.Normal.z*o.Normal.z*2-1), _AmbientEmissiveRelief);
+			float pixel_trees_shadow_val=saturate((_INPUT_distance - _TERRAIN_trees_shadow_values.x) / _TERRAIN_trees_shadow_values.y);
+			pixel_trees_shadow_val=lerp(1, eMapVal.a, pixel_trees_shadow_val);
+			o.RTP.y*=lerp(_TERRAIN_trees_shadow_values.z, 1, pixel_trees_shadow_val);
+		#endif			
+
+		//
+		// EOF super simple mode
+		//	
+		
 	#else
 	//
 	// regular mode

@@ -430,12 +430,12 @@ SubShader {
 	Fog { Mode Off }
 	//Offset -1,-1
 	CGPROGRAM
-	#pragma surface surf CustomBlinnPhong vertex:vert finalcolor:customFog tessellate:tessEdge tessphong:_Phong addshadow
+	#pragma surface surf CustomBlinnPhong vertex:vert finalcolor:customFog
 	// U5 fog handling
 	#pragma multi_compile_fog	
 	#pragma target 3.0
 	#pragma glsl
-	#pragma only_renderers d3d9 d3d11
+	#pragma only_renderers d3d9 opengl gles flash d3d11
 	#pragma multi_compile RTP_PM_SHADING RTP_SIMPLE_SHADING
 	//#define RTP_POM_SHADING_HI
 	
@@ -450,17 +450,17 @@ SubShader {
 
 	ENDCG
 	
-/* AddBlend
+///* AddBlend
 Fog { Mode Off }
 ZWrite Off
 ZTest LEqual	
 CGPROGRAM
-	#pragma surface surf CustomBlinnPhong vertex:vert finalcolor:customFog decal:blend tessellate:tessEdge tessphong:_Phong
+	#pragma surface surf CustomBlinnPhong vertex:vert finalcolor:customFog decal:blend
 	// U5 fog handling
 	#pragma multi_compile_fog		
 	#pragma target 3.0
 	#pragma glsl
-	#pragma only_renderers d3d9 d3d11
+	#pragma only_renderers d3d9 opengl gles flash d3d11
 	#pragma multi_compile RTP_PM_SHADING RTP_SIMPLE_SHADING
 	//#define RTP_PM_SHADING
 	
@@ -474,7 +474,7 @@ CGPROGRAM
 	#include "RTP_AddBase.cginc"
 	
 ENDCG  				
-*/ // AddBlend
+//*/ // AddBlend
 
 }
 // EOF POM / PM / SIMPLE shading
@@ -500,7 +500,7 @@ CGPROGRAM
 	#pragma surface surf Lambert vertex:vert
 	#include "UnityCG.cginc"
 	
-	#pragma only_renderers d3d9 d3d11
+	#pragma only_renderers d3d9 opengl gles flash d3d11
 	
 /////////////////////////////////////////////////////////////////////
 // RTP specific
@@ -620,7 +620,7 @@ CGPROGRAM
 	#pragma surface surf Lambert vertex:vert decal:add
 	#include "UnityCG.cginc"
 	
-	#pragma only_renderers d3d9 d3d11
+	#pragma only_renderers d3d9 opengl gles flash d3d11
 	
 /////////////////////////////////////////////////////////////////////
 // RTP specific

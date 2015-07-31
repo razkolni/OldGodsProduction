@@ -19,9 +19,9 @@
 // (we don't tessellate terrain in geom blend base)
 #if !defined(COLOR_EARLY_EXIT) && defined(UNITY_CAN_COMPILE_TESSELLATION)
 	// optional tessellation switch
-	#define TESSELLATION
+	//#define TESSELLATION
 	// do we sample height&normal texture ? (if undefined tessellation benefits come only from phong smoothing)
-	#define SAMPLE_TEXTURE_TESSELLATION
+	//#define SAMPLE_TEXTURE_TESSELLATION
 	// when we're in tessellation we can additionally sample heightmap with bicubic (instead of hardware bilinear) filtering
 	// helps smoothening a lot when we've got aburpt heightmap changes
 	//#define HEIGHTMAP_SAMPLE_BICUBIC
@@ -33,7 +33,7 @@
 #define _4LAYERS
 
 // turn on when you need to skip all specularity PBL lighting (can gain up to 2-3ms per pass on Intel HD4000)
-#define NO_SPECULARITY
+//#define NO_SPECULARITY
 
 // U5 8layers mode workaround
 #if defined(UNITY_PI) && !defined(_4LAYERS) && defined(FAR_ONLY)
@@ -169,9 +169,9 @@
 //#define RTP_VERTICAL_TEXTURE
 
 // we use wet (can't be used with superdetail as globalnormal texture BA channels are shared)
-#define RTP_WETNESS
+//#define RTP_WETNESS
 // water droplets
-#define RTP_WET_RIPPLE_TEXTURE
+//#define RTP_WET_RIPPLE_TEXTURE
 // if defined water won't handle flow nor refractions
 //#define SIMPLE_WATER
 
@@ -238,7 +238,7 @@
 
 // we're working in LINEAR / GAMMA (used in IBL  fresnel , PBL fresnel and gloss calcs)
 // if not defined we're rendering in GAMMA
-#define RTP_COLORSPACE_LINEAR
+//#define RTP_COLORSPACE_LINEAR
 
 // if defined we'll use cubemap defined by skyshop in its "Sky" GameObject
 //#define RTP_SKYSHOP_SYNC
@@ -871,6 +871,10 @@ float rtp_snow_strength;
 
 #ifdef UNITY_PASS_PREPASSFINAL
 uniform float4 _WorldSpaceLightPosCustom;
+#endif
+
+#ifdef UNITY_PASS_META
+	float4 _MainTex_ST;
 #endif
 
 struct Input {
@@ -1544,7 +1548,11 @@ void surf (Input IN, inout RTPSurfaceOutput o) { // RTPSurfaceOutput
 		// so we need to sample normal here
     	float3 worldNormalFlat;
     	{
-    		float2 gUV = IN.uv_Control*(1-_NormalMapGlobal_TexelSize.xy) + _NormalMapGlobal_TexelSize.xy*0.5;
+			#ifdef UNITY_PASS_META	
+    			float2 gUV = (IN.uv_Control.xy*_MainTex_ST.xy+_MainTex_ST.zw)*(1-_NormalMapGlobal_TexelSize.xy) + _NormalMapGlobal_TexelSize.xy*0.5;
+			#else
+	    		float2 gUV = IN.uv_Control*(1-_NormalMapGlobal_TexelSize.xy) + _NormalMapGlobal_TexelSize.xy*0.5;
+			#endif
 	    	#ifdef HEIGHTMAP_SAMPLE_BICUBIC
 	    		float3 norm=0;
 				interpolate_bicubic(gUV.x, gUV.y, /*out*/ norm);
@@ -1606,6 +1614,9 @@ void surf (Input IN, inout RTPSurfaceOutput o) { // RTPSurfaceOutput
 				float4 tHeightmapTMP = tex2D(_TERRAIN_HeightMap, tiledUV); // potrzebujemy tego tymczasowo na końcu
 			#endif						
 		#else
+			#ifdef UNITY_PASS_META	
+				IN.uv_Control.xy=IN.uv_Control.xy*_MainTex_ST.xy+_MainTex_ST.zw;
+			#endif		
 			#define IN_uv_Control (IN.uv_Control)
 			// used in tex2Dp() but compiled out anyway
 			#define _ddxGlobal float2(0,0)
@@ -1722,7 +1733,7 @@ void surf (Input IN, inout RTPSurfaceOutput o) { // RTPSurfaceOutput
 				float RTP_gloss_shaping = dot(splat_control, RTP_gloss_shaping0123);
 				float gls = saturate(glcombined * RTP_gloss_mult);
 				o_Gloss =  lerp(1, gls, RTP_gloss2mask) * _Spec;
-				float2 gloss_shaped=float2(gl, 1-gls);
+				float2 gloss_shaped=float2(gls, 1-gls);
 				gloss_shaped=gloss_shaped*gloss_shaped*gloss_shaped;
 				gls=lerp(gloss_shaped.x, 1-gloss_shaped.y, RTP_gloss_shaping);
 				o.Specular = saturate(gls);

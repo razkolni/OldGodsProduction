@@ -16,13 +16,6 @@ Material:
     m_TexEnvs:
       data:
         first:
-          name: _ColorMapGlobal
-        second:
-          m_Texture: {fileID: 2800000, guid: 480af2a3990a0ba4dad5a53d79f76264, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
           name: TERRAIN_RippleMap
         second:
           m_Texture: {fileID: 2800000, guid: 87b672e098a28584d82865fa6f149b44, type: 3}
@@ -30,23 +23,44 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
+          name: _ColorMapGlobal
+        second:
+          m_Texture: {fileID: 2800000, guid: 480af2a3990a0ba4dad5a53d79f76264, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _TERRAIN_HeightMap
+        second:
+          m_Texture: {fileID: 2800000, guid: 29e5d0a42ea814744b533fa9cf9a0a86, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMapGlobal
+        second:
+          m_Texture: {fileID: 2800000, guid: 290d7c2deedd33f44803b2e9b422cf9d, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
           name: _SplatA0
         second:
-          m_Texture: {fileID: 2800000, guid: a5cb09c186e1dc8479a50b0b4da48d40, type: 3}
+          m_Texture: {fileID: 2800000, guid: e47dfd743e82b9b4b990ce6407d8b205, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _SplatA1
         second:
-          m_Texture: {fileID: 2800000, guid: 18214e9d6af6248559d501391856f1c7, type: 3}
+          m_Texture: {fileID: 2800000, guid: b2718d468c104cc428f0a29683b131b2, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _SplatA2
         second:
-          m_Texture: {fileID: 2800000, guid: 9131e55c4e116df46bf4658c152940e3, type: 3}
+          m_Texture: {fileID: 2800000, guid: 4874bc6fe33a3094582dcd43c235615e, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -68,20 +82,6 @@ Material:
           name: _BumpMap23
         second:
           m_Texture: {fileID: 2800000, guid: 907f6839ed9a12d45a4bdec6b7500003, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _TERRAIN_HeightMap
-        second:
-          m_Texture: {fileID: 2800000, guid: 29e5d0a42ea814744b533fa9cf9a0a86, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _BumpMapGlobal
-        second:
-          m_Texture: {fileID: 2800000, guid: 290d7c2deedd33f44803b2e9b422cf9d, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -112,12 +112,32 @@ Material:
         second: .5
       data:
         first:
+          name: TERRAIN_RippleScale
+        second: 4
+      data:
+        first:
+          name: TERRAIN_DropletsSpeed
+        second: 15
+      data:
+        first:
+          name: TERRAIN_WetDropletsStrength
+        second: .100000001
+      data:
+        first:
+          name: TERRAIN_FlowScale
+        second: .5
+      data:
+        first:
+          name: TERRAIN_FlowSpeed
+        second: .5
+      data:
+        first:
           name: _BumpMapGlobalScale
         second: .100000001
       data:
         first:
           name: _TERRAIN_distance_start
-        second: 5
+        second: 0
       data:
         first:
           name: _TERRAIN_distance_transition
@@ -125,55 +145,67 @@ Material:
       data:
         first:
           name: _TERRAIN_distance_start_bumpglobal
-        second: 30
+        second: 0
       data:
         first:
           name: _TERRAIN_distance_transition_bumpglobal
-        second: 30
+        second: 50
       data:
         first:
           name: rtp_perlin_start_val
-        second: 0
-      data:
-        first:
-          name: _GlobalColorMapSaturation
         second: 1
-      data:
-        first:
-          name: TERRAIN_RippleScale
-        second: 4
-      data:
-        first:
-          name: TERRAIN_DropletsSpeed
-        second: 10
-      data:
-        first:
-          name: TERRAIN_WetDropletsStrength
-        second: 0
-      data:
-        first:
-          name: TERRAIN_FlowScale
-        second: 1
-      data:
-        first:
-          name: TERRAIN_FlowSpeed
-        second: .5
       data:
         first:
           name: TERRAIN_ReflectionRotSpeed
         second: .300000012
       data:
         first:
-          name: EmissionRefractFiltering
-        second: 4
-      data:
-        first:
-          name: EmissionRefractAnimSpeed
-        second: 4
+          name: _GlobalColorMapSaturation
+        second: .673076928
       data:
         first:
           name: _TERRAIN_ReliefTransformTriplanarZ
-        second: 3
+        second: 4
+      data:
+        first:
+          name: _RTP_MIP_BIAS
+        second: -.230769232
+      data:
+        first:
+          name: _TERRAIN_ExtrudeHeight
+        second: .0757500008
+      data:
+        first:
+          name: _blend_multiplier
+        second: 1
+      data:
+        first:
+          name: _FarNormalDamp
+        second: 0
+      data:
+        first:
+          name: _VerticalTextureTiling
+        second: 2
+      data:
+        first:
+          name: _VerticalTextureGlobalBumpInfluence
+        second: .300000012
+      data:
+        first:
+          name: TERRAIN_CausticsAnimSpeed
+        second: 2
+      data:
+        first:
+          name: TERRAIN_CausticsTilingScale
+        second: 2
+      data:
+        first:
+          name: EmissionRefractFiltering
+        second: 2
+      data:
+        first:
+          name: EmissionRefractAnimSpeed
+        second: 2
       data:
         first:
           name: _TERRAIN_DIST_STEPS
@@ -184,20 +216,12 @@ Material:
         second: 2
       data:
         first:
-          name: _blend_multiplier
-        second: 1
-      data:
-        first:
-          name: _TERRAIN_ExtrudeHeight
-        second: .0500000007
-      data:
-        first:
           name: _TERRAIN_SHADOW_STEPS
         second: 20
       data:
         first:
           name: _TERRAIN_WAVELENGTH_SHADOWS
-        second: 2
+        second: 4
       data:
         first:
           name: _TERRAIN_SHADOW_SMOOTH_STEPS
@@ -205,11 +229,11 @@ Material:
       data:
         first:
           name: _TERRAIN_SelfShadowStrength
-        second: .800000012
+        second: .5
       data:
         first:
           name: _TERRAIN_ShadowSmoothing
-        second: 0
+        second: 1.5
       data:
         first:
           name: rtp_mipoffset_color
@@ -218,14 +242,6 @@ Material:
         first:
           name: rtp_mipoffset_globalnorm
         second: -3.32192802
-      data:
-        first:
-          name: TERRAIN_CausticsAnimSpeed
-        second: 2
-      data:
-        first:
-          name: TERRAIN_CausticsTilingScale
-        second: 1
       data:
         first:
           name: TERRAIN_ReflGlossAttenuation
@@ -249,35 +265,19 @@ Material:
       data:
         first:
           name: TERRAIN_WetHeight_Treshold
-        second: -200
+        second: -500
       data:
         first:
           name: TERRAIN_WetHeight_Transition
-        second: 5
+        second: 20
       data:
         first:
           name: TERRAIN_mipoffset_flowSpeed
-        second: 1
-      data:
-        first:
-          name: _FarNormalDamp
-        second: .200000003
-      data:
-        first:
-          name: _RTP_MIP_BIAS
-        second: 0
+        second: .600000024
       data:
         first:
           name: _SuperDetailTiling
-        second: 8
-      data:
-        first:
-          name: _VerticalTextureTiling
-        second: 50
-      data:
-        first:
-          name: _VerticalTextureGlobalBumpInfluence
-        second: 0
+        second: 3
       data:
         first:
           name: _Fdensity
@@ -361,7 +361,7 @@ Material:
       data:
         first:
           name: TERRAIN_GlobalWetness
-        second: 1
+        second: 0
       data:
         first:
           name: TERRAIN_RainIntensity
@@ -388,85 +388,125 @@ Material:
         second: .200000003
       data:
         first:
-          name: rtp_mipoffset_globalnorm_offset
-        second: 0
-      data:
-        first:
           name: _TERRAIN_distance_start_vertexinterpolation
         second: 100
       data:
         first:
           name: _TERRAIN_distance_transition_vertexinterpolation
         second: 30
+      data:
+        first:
+          name: rtp_mipoffset_globalnorm_offset
+        second: 0
     m_Colors:
       data:
         first:
           name: _SpecColor
-        second: {r: .784313738, g: .784313738, b: .784313738, a: 1}
-      data:
-        first:
-          name: _GlobalColorMapBlendValues
-        second: {r: .200000003, g: .400000006, b: .5, a: 0}
+        second: {r: .5, g: .5, b: .5, a: 1}
       data:
         first:
           name: TERRAIN_ReflColorA
-        second: {r: 1, g: 1, b: 1, a: 1}
+        second: {r: .789173543, g: .798507452, b: .715081275, a: 0}
       data:
         first:
           name: TERRAIN_ReflColorB
-        second: {r: .392156869, g: .470588237, b: .509803951, a: 1}
+        second: {r: .291044772, g: .291044772, b: .291044772, a: .313725501}
       data:
         first:
-          name: _TERRAIN_ReliefTransform
-        second: {r: 3, g: 3, b: 0, a: 0}
+          name: _GlobalColorMapBlendValues
+        second: {r: 1, g: 1, b: 1, a: 0}
       data:
         first:
-          name: TERRAIN_CausticsColor
+          name: _Spec0123
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
-          name: TERRAIN_ReflColorC
-        second: {r: .156862751, g: .188235298, b: .235294119, a: 1}
+          name: RTP_gloss_mult0123
+        second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
-          name: _MixScale0123
-        second: {r: .200000003, g: .200000003, b: .200000003, a: 0}
-      data:
-        first:
-          name: _MixBlend0123
-        second: {r: .5, g: .5, b: .5, a: 0}
-      data:
-        first:
-          name: _GlobalColorPerLayer0123
-        second: {r: 1, g: 1, b: 1, a: 0}
-      data:
-        first:
-          name: _LayerBrightness0123
-        second: {r: 1, g: 1, b: 1, a: 0}
-      data:
-        first:
-          name: _LayerSaturation0123
-        second: {r: 1, g: 1, b: 1, a: 0}
+          name: RTP_gloss2mask0123
+        second: {r: 0, g: 0, b: 0, a: 0}
       data:
         first:
           name: _LayerBrightness2Spec0123
         second: {r: 0, g: 0, b: 0, a: 0}
       data:
         first:
+          name: RTP_gloss_shaping0123
+        second: {r: .5, g: .5, b: .5, a: .5}
+      data:
+        first:
+          name: _FarSpecCorrection0123
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: RTP_Fresnel0123
+        second: {r: .5, g: .5, b: .5, a: .5}
+      data:
+        first:
+          name: RTP_FresnelAtten0123
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: RTP_DiffFresnel0123
+        second: {r: 2, g: 1, b: 0, a: 0}
+      data:
+        first:
           name: _LayerAlbedo2SpecColor0123
         second: {r: 0, g: 0, b: 0, a: 0}
       data:
         first:
+          name: _LayerBrightness0123
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _LayerSaturation0123
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _MIPmult0123
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _MixScale0123
+        second: {r: .150000006, g: .150000006, b: .150000006, a: .150000006}
+      data:
+        first:
+          name: _MixBlend0123
+        second: {r: .400000006, g: .400000006, b: .600000024, a: .699999988}
+      data:
+        first:
           name: _MixSaturation0123
-        second: {r: .300000012, g: .300000012, b: .300000012, a: 0}
+        second: {r: .200000003, g: .200000003, b: .300000012, a: .300000012}
       data:
         first:
           name: _MixBrightness0123
-        second: {r: 2, g: 2, b: 2, a: 0}
+        second: {r: 2, g: 2, b: 2, a: 2}
       data:
         first:
           name: _MixReplace0123
-        second: {r: 0, g: 0, b: 0, a: 0}
+        second: {r: .5, g: .5, b: .5, a: .5}
+      data:
+        first:
+          name: _GlobalColorPerLayer0123
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _BumpMapGlobalStrength0123
+        second: {r: .400000006, g: .400000006, b: 1, a: 1}
+      data:
+        first:
+          name: TERRAIN_CausticsColor
+        second: {r: .358654499, g: .515518188, b: .522388101, a: 0}
+      data:
+        first:
+          name: _TERRAIN_ReliefTransform
+        second: {r: 4, g: 4, b: 0, a: 0}
+      data:
+        first:
+          name: TERRAIN_ReflColorC
+        second: {r: .300000012, g: .600000024, b: .899999976, a: 0}
       data:
         first:
           name: _LayerEmission0123
@@ -481,76 +521,60 @@ Material:
         second: {r: 0, g: 0, b: 0, a: 0}
       data:
         first:
-          name: _Spec0123
-        second: {r: 1, g: 1, b: 1, a: 0}
-      data:
-        first:
-          name: _FarSpecCorrection0123
-        second: {r: 0, g: 0, b: 0, a: 0}
-      data:
-        first:
-          name: _MIPmult0123
-        second: {r: 0, g: 0, b: 0, a: 0}
-      data:
-        first:
           name: TERRAIN_LayerWetStrength0123
-        second: {r: 1, g: 1, b: 1, a: 0}
+        second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: TERRAIN_WaterLevel0123
-        second: {r: .5, g: .5, b: .5, a: 0}
+        second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: TERRAIN_WaterLevelSlopeDamp0123
-        second: {r: .5, g: .5, b: .5, a: 0}
+        second: {r: 0, g: .100000001, b: .100000001, a: .100000001}
       data:
         first:
           name: TERRAIN_WaterEdge0123
-        second: {r: 2, g: 2, b: 2, a: 0}
+        second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: TERRAIN_WaterOpacity0123
-        second: {r: .300000012, g: .300000012, b: .300000012, a: 0}
+        second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: TERRAIN_Refraction0123
-        second: {r: .00999999978, g: .00999999978, b: .00999999978, a: 0}
+        second: {r: .0199999996, g: .0199999996, b: .0199999996, a: .0199999996}
       data:
         first:
           name: TERRAIN_WetRefraction0123
-        second: {r: .200000003, g: .200000003, b: .200000003, a: 0}
+        second: {r: .5, g: .5, b: .5, a: .5}
       data:
         first:
           name: TERRAIN_Flow0123
-        second: {r: .300000012, g: .300000012, b: .300000012, a: 0}
+        second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: TERRAIN_WetSpecularity0123
-        second: {r: .200000003, g: .200000003, b: .200000003, a: 0}
+        second: {r: .5, g: .5, b: .5, a: .5}
       data:
         first:
           name: TERRAIN_WetFlow0123
-        second: {r: .0500000007, g: .0500000007, b: .0500000007, a: 0}
+        second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: TERRAIN_WetGloss0123
-        second: {r: .0500000007, g: .0500000007, b: .0500000007, a: 0}
+        second: {r: .200000003, g: .200000003, b: .200000003, a: .200000003}
       data:
         first:
           name: TERRAIN_WaterSpecularity0123
-        second: {r: .5, g: .5, b: .5, a: 0}
+        second: {r: .100000001, g: .100000001, b: .100000001, a: .100000001}
       data:
         first:
           name: TERRAIN_WaterGloss0123
-        second: {r: .100000001, g: .100000001, b: .100000001, a: 0}
+        second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: TERRAIN_WaterEmission0123
         second: {r: 0, g: 0, b: 0, a: 0}
-      data:
-        first:
-          name: _BumpMapGlobalStrength0123
-        second: {r: .300000012, g: .300000012, b: .300000012, a: 0}
       data:
         first:
           name: _SuperDetailStrengthNormal0123
@@ -558,47 +582,23 @@ Material:
       data:
         first:
           name: _VerticalTexture0123
-        second: {r: .5, g: .5, b: .5, a: 0}
-      data:
-        first:
-          name: RTP_gloss2mask0123
-        second: {r: .5, g: .5, b: .5, a: 0}
-      data:
-        first:
-          name: RTP_gloss_mult0123
-        second: {r: 1, g: 1, b: 1, a: 0}
-      data:
-        first:
-          name: RTP_gloss_shaping0123
-        second: {r: .5, g: .5, b: .5, a: 0}
-      data:
-        first:
-          name: RTP_Fresnel0123
-        second: {r: 0, g: 0, b: 0, a: 0}
-      data:
-        first:
-          name: RTP_FresnelAtten0123
-        second: {r: 0, g: 0, b: 0, a: 0}
-      data:
-        first:
-          name: RTP_DiffFresnel0123
-        second: {r: 0, g: 0, b: 0, a: 0}
+        second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: RTP_IBL_bump_smoothness0123
-        second: {r: .699999988, g: .699999988, b: .699999988, a: 0}
+        second: {r: .699999988, g: .699999988, b: .699999988, a: .699999988}
       data:
         first:
           name: RTP_IBL_SpecStrength0123
-        second: {r: .5, g: .5, b: .5, a: 0}
+        second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: TERRAIN_WaterIBL_SpecWetStrength0123
-        second: {r: .5, g: .5, b: .5, a: 0}
+        second: {r: .5, g: .5, b: .5, a: .5}
       data:
         first:
           name: TERRAIN_WaterIBL_SpecWaterStrength0123
-        second: {r: .5, g: .5, b: .5, a: 0}
+        second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: rtp_snow_color
@@ -610,7 +610,7 @@ Material:
       data:
         first:
           name: rtp_snow_strength_per_layer0123
-        second: {r: 1, g: 1, b: 1, a: 0}
+        second: {r: .5, g: .300000012, b: 1, a: 1}
       data:
         first:
           name: _TERRAIN_PosSize

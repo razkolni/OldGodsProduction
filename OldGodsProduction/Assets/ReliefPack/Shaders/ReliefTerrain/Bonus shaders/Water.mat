@@ -126,7 +126,39 @@ Material:
         second: .113876954
       data:
         first:
-          name: _Intensity
+          name: TERRAIN_RippleScale
+        second: 1
+      data:
+        first:
+          name: TERRAIN_DropletsSpeed
+        second: 10
+      data:
+        first:
+          name: TERRAIN_WetDropletsStrength
+        second: 0
+      data:
+        first:
+          name: TERRAIN_FlowScale
+        second: .5
+      data:
+        first:
+          name: TERRAIN_FlowSpeed
+        second: .75
+      data:
+        first:
+          name: TERRAIN_ReflectionRotSpeed
+        second: 2
+      data:
+        first:
+          name: _TERRAIN_ExtrudeHeight
+        second: .0496153831
+      data:
+        first:
+          name: TERRAIN_GlobalWetness
+        second: 1
+      data:
+        first:
+          name: TERRAIN_RainIntensity
         second: 1
       data:
         first:
@@ -158,10 +190,6 @@ Material:
         second: 1
       data:
         first:
-          name: TERRAIN_RippleScale
-        second: 1
-      data:
-        first:
           name: TERRAIN_WaterLevel
         second: .961538494
       data:
@@ -178,14 +206,6 @@ Material:
         second: 0
       data:
         first:
-          name: TERRAIN_DropletsSpeed
-        second: 10
-      data:
-        first:
-          name: TERRAIN_WetDropletsStrength
-        second: 0
-      data:
-        first:
           name: TERRAIN_Refraction
         second: .0238461532
       data:
@@ -198,14 +218,6 @@ Material:
         second: .75000006
       data:
         first:
-          name: TERRAIN_FlowScale
-        second: .5
-      data:
-        first:
-          name: TERRAIN_FlowSpeed
-        second: .75
-      data:
-        first:
           name: TERRAIN_WetSpecularity
         second: .442307681
       data:
@@ -216,22 +228,6 @@ Material:
         first:
           name: TERRAIN_ReflDistortion
         second: .057692308
-      data:
-        first:
-          name: TERRAIN_ReflectionRotSpeed
-        second: 2
-      data:
-        first:
-          name: _TERRAIN_ExtrudeHeight
-        second: .0496153831
-      data:
-        first:
-          name: TERRAIN_RainIntensity
-        second: 1
-      data:
-        first:
-          name: TERRAIN_GlobalWetness
-        second: 1
       data:
         first:
           name: _Tim
@@ -320,6 +316,10 @@ Material:
         first:
           name: _Speed
         second: 10
+      data:
+        first:
+          name: _Intensity
+        second: 1
       data:
         first:
           name: _RefractionPower
@@ -439,16 +439,16 @@ Material:
         second: {r: .858208954, g: .851804435, b: .851804435, a: 1}
       data:
         first:
-          name: TERRAIN_WaterColor
-        second: {r: .805524588, g: .923818409, b: .955223858, a: .419607848}
-      data:
-        first:
           name: TERRAIN_ReflColorA
         second: {r: .276119411, g: .276119411, b: .276119411, a: 1}
       data:
         first:
           name: TERRAIN_ReflColorB
         second: {r: .470873266, g: .579092324, b: .708955228, a: .20784314}
+      data:
+        first:
+          name: TERRAIN_WaterColor
+        second: {r: .805524588, g: .923818409, b: .955223858, a: .419607848}
       data:
         first:
           name: _TERRAIN_WaterColor
