@@ -30,6 +30,20 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
+          name: _TERRAIN_HeightMap
+        second:
+          m_Texture: {fileID: 2800000, guid: 29e5d0a42ea814744b533fa9cf9a0a86, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMapGlobal
+        second:
+          m_Texture: {fileID: 2800000, guid: 290d7c2deedd33f44803b2e9b422cf9d, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
           name: _SplatA0
         second:
           m_Texture: {fileID: 2800000, guid: 4874bc6fe33a3094582dcd43c235615e, type: 3}
@@ -72,9 +86,9 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _TERRAIN_HeightMap
+          name: _VerticalTexture
         second:
-          m_Texture: {fileID: 2800000, guid: 29e5d0a42ea814744b533fa9cf9a0a86, type: 3}
+          m_Texture: {fileID: 2800000, guid: c769df3f35825744d89c215b2c7d0d21, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -82,20 +96,6 @@ Material:
           name: _NormalMapGlobal
         second:
           m_Texture: {fileID: 2800000, guid: 271df3f72a1d2aa4ea40b284b56840e0, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _BumpMapGlobal
-        second:
-          m_Texture: {fileID: 2800000, guid: 290d7c2deedd33f44803b2e9b422cf9d, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _VerticalTexture
-        second:
-          m_Texture: {fileID: 2800000, guid: c769df3f35825744d89c215b2c7d0d21, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -173,12 +173,28 @@ Material:
         second: .200000003
       data:
         first:
-          name: _blend_multiplier
-        second: 1
+          name: _RTP_MIP_BIAS
+        second: -.307692319
       data:
         first:
           name: _TERRAIN_ExtrudeHeight
         second: .192923084
+      data:
+        first:
+          name: _blend_multiplier
+        second: 1
+      data:
+        first:
+          name: _FarNormalDamp
+        second: 0
+      data:
+        first:
+          name: _VerticalTextureTiling
+        second: 2
+      data:
+        first:
+          name: _VerticalTextureGlobalBumpInfluence
+        second: .178846166
       data:
         first:
           name: TERRAIN_FlowCycleScale
@@ -205,32 +221,16 @@ Material:
         second: .100000001
       data:
         first:
-          name: _FarNormalDamp
-        second: 0
+          name: _Fdensity
+        second: .0599999987
       data:
         first:
-          name: _RTP_MIP_BIAS
-        second: -.307692319
+          name: _Fstart
+        second: 10
       data:
         first:
-          name: _VerticalTextureTiling
-        second: 2
-      data:
-        first:
-          name: _VerticalTextureGlobalBumpInfluence
-        second: .178846166
-      data:
-        first:
-          name: TERRAIN_RainIntensity
-        second: 1
-      data:
-        first:
-          name: TERRAIN_GlobalWetness
-        second: 1
-      data:
-        first:
-          name: rtp_mipoffset_globalnorm_offset
-        second: 0
+          name: _Fend
+        second: 200
       data:
         first:
           name: rtp_snow_strength
@@ -243,6 +243,10 @@ Material:
         first:
           name: rtp_snow_slope_factor
         second: 3.74999976
+      data:
+        first:
+          name: rtp_snow_edge_definition
+        second: 20
       data:
         first:
           name: rtp_snow_height_treshold
@@ -261,6 +265,10 @@ Material:
         second: .199999988
       data:
         first:
+          name: rtp_snow_deep_factor
+        second: 2.11538458
+      data:
+        first:
           name: rtp_snow_fresnel
         second: .543076932
       data:
@@ -269,32 +277,28 @@ Material:
         second: .269230783
       data:
         first:
-          name: rtp_snow_edge_definition
-        second: 20
+          name: TERRAIN_GlobalWetness
+        second: 1
       data:
         first:
-          name: rtp_snow_deep_factor
-        second: 2.11538458
-      data:
-        first:
-          name: RTP_ReflexLightDiffuseSoftness
-        second: 0
+          name: TERRAIN_RainIntensity
+        second: 1
       data:
         first:
           name: RTP_BackLightStrength
         second: 0
       data:
         first:
-          name: _Fdensity
-        second: .0599999987
+          name: RTP_ReflexLightDiffuseSoftness
+        second: 0
       data:
         first:
-          name: _Fstart
-        second: 10
+          name: RTP_ReflexLightSpecularity
+        second: .100000001
       data:
         first:
-          name: _Fend
-        second: 200
+          name: rtp_mipoffset_globalnorm_offset
+        second: 0
       data:
         first:
           name: _NormalMapGlobalStrength
@@ -455,10 +459,6 @@ Material:
         first:
           name: _GlossFromColormapComp
         second: .634615362
-      data:
-        first:
-          name: RTP_ReflexLightSpecularity
-        second: .100000001
     m_Colors:
       data:
         first:
@@ -470,16 +470,44 @@ Material:
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
-          name: _MixScale0123
-        second: {r: .0500000007, g: .0250000004, b: .100000001, a: .0500000007}
-      data:
-        first:
-          name: _MixBlend0123
+          name: _Spec0123
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
-          name: _GlobalColorPerLayer0123
-        second: {r: 1, g: 1, b: 1, a: 1}
+          name: RTP_gloss_mult0123
+        second: {r: .300000012, g: .300000012, b: .200000003, a: .300000012}
+      data:
+        first:
+          name: RTP_gloss2mask0123
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _LayerBrightness2Spec0123
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: RTP_gloss_shaping0123
+        second: {r: .200000003, g: .5, b: .5, a: .5}
+      data:
+        first:
+          name: _FarSpecCorrection0123
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: RTP_Fresnel0123
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: RTP_FresnelAtten0123
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: RTP_DiffFresnel0123
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _LayerAlbedo2SpecColor0123
+        second: {r: 0, g: 0, b: 0, a: 0}
       data:
         first:
           name: _LayerBrightness0123
@@ -490,12 +518,16 @@ Material:
         second: {r: 1, g: .300000012, b: .600000024, a: 1}
       data:
         first:
-          name: _LayerBrightness2Spec0123
-        second: {r: 0, g: 0, b: 0, a: 0}
+          name: _MIPmult0123
+        second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
-          name: _LayerAlbedo2SpecColor0123
-        second: {r: 0, g: 0, b: 0, a: 0}
+          name: _MixScale0123
+        second: {r: .0500000007, g: .0250000004, b: .100000001, a: .0500000007}
+      data:
+        first:
+          name: _MixBlend0123
+        second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: _MixSaturation0123
@@ -510,16 +542,12 @@ Material:
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
-          name: _Spec0123
+          name: _GlobalColorPerLayer0123
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
-          name: _FarSpecCorrection0123
-        second: {r: 0, g: 0, b: 0, a: 0}
-      data:
-        first:
-          name: _MIPmult0123
-        second: {r: 1, g: 1, b: 1, a: 1}
+          name: _BumpMapGlobalStrength0123
+        second: {r: 4, g: 3, b: 8, a: 3}
       data:
         first:
           name: TERRAIN_LayerWetStrength0123
@@ -578,36 +606,8 @@ Material:
         second: {r: 0, g: 0, b: 1.80999994, a: 0}
       data:
         first:
-          name: _BumpMapGlobalStrength0123
-        second: {r: 4, g: 3, b: 8, a: 3}
-      data:
-        first:
           name: _VerticalTexture0123
         second: {r: 2, g: .5, b: 1, a: 1}
-      data:
-        first:
-          name: RTP_gloss2mask0123
-        second: {r: 0, g: 0, b: 0, a: 0}
-      data:
-        first:
-          name: RTP_gloss_mult0123
-        second: {r: .300000012, g: .300000012, b: .200000003, a: .300000012}
-      data:
-        first:
-          name: RTP_gloss_shaping0123
-        second: {r: .200000003, g: .5, b: .5, a: .5}
-      data:
-        first:
-          name: RTP_Fresnel0123
-        second: {r: 0, g: 0, b: 0, a: 0}
-      data:
-        first:
-          name: RTP_FresnelAtten0123
-        second: {r: 0, g: 0, b: 0, a: 0}
-      data:
-        first:
-          name: RTP_DiffFresnel0123
-        second: {r: 0, g: 0, b: 0, a: 0}
       data:
         first:
           name: TERRAIN_WaterIBL_SpecWetStrength0123
@@ -618,16 +618,12 @@ Material:
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
-          name: rtp_customAmbientCorrection
-        second: {r: 0, g: 0, b: 0, a: 1}
-      data:
-        first:
-          name: rtp_snow_strength_per_layer0123
-        second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
           name: rtp_snow_color
         second: {r: .634328365, g: .627376616, b: .563321471, a: 1}
+      data:
+        first:
+          name: rtp_customAmbientCorrection
+        second: {r: 0, g: 0, b: 0, a: 1}
       data:
         first:
           name: RTP_ReflexLightDiffuseColor1
@@ -636,6 +632,14 @@ Material:
         first:
           name: RTP_ReflexLightDiffuseColor2
         second: {r: .723880589, g: .884145677, b: 1, a: .274509817}
+      data:
+        first:
+          name: RTP_ReflexLightSpecColor
+        second: {r: 1, g: 1, b: 1, a: .0500000007}
+      data:
+        first:
+          name: rtp_snow_strength_per_layer0123
+        second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: _FColor
@@ -708,10 +712,6 @@ Material:
         first:
           name: _GlossFromColormapColor
         second: {r: .0156862754, g: .0823529437, b: .180392161, a: 0}
-      data:
-        first:
-          name: RTP_ReflexLightSpecColor
-        second: {r: 1, g: 1, b: 1, a: .0500000007}
       data:
         first:
           name: TERRAIN_WaterColor0

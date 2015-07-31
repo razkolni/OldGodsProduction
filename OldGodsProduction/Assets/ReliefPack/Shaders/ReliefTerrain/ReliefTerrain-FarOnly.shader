@@ -452,14 +452,14 @@ SubShader {
 	Fog { Mode Off }
 	CGPROGRAM
 
-	#pragma surface surf CustomBlinnPhong vertex:vert finalcolor:customFog  tessellate:tessEdge tessphong:_Phong addshadow
+	#pragma surface surf CustomBlinnPhong vertex:vert finalcolor:customFog  exclude_path:deferred
 	// U5 fog handling
 	#pragma multi_compile_fog	
 	#include "UnityCG.cginc"
 
 	#pragma target 3.0
 	#pragma glsl
-	#pragma only_renderers d3d9 d3d11
+	#pragma only_renderers d3d9 opengl gles flash d3d11
 	#pragma multi_compile RTP_PM_SHADING RTP_SIMPLE_SHADING
 	//#define RTP_POM_SHADING_LO
 	//#define RTP_PM_SHADING
@@ -476,18 +476,18 @@ SubShader {
 
 	ENDCG
 
-/* AddFar
+///* AddFar
 Fog { Mode Off }
 ZWrite Off
 CGPROGRAM
-	#pragma surface surf CustomBlinnPhong vertex:vert finalcolor:customFog decal:blend tessellate:tessEdge tessphong:_Phong
+	#pragma surface surf CustomBlinnPhong vertex:vert finalcolor:customFog decal:blend exclude_path:deferred
 	// U5 fog handling
 	#pragma multi_compile_fog	
 	#include "UnityCG.cginc"
 	   
 	#pragma target 3.0
 	#pragma glsl
-	#pragma only_renderers d3d9 d3d11
+	#pragma only_renderers d3d9 opengl gles flash d3d11
 	#pragma multi_compile RTP_PM_SHADING RTP_SIMPLE_SHADING
 	//#define RTP_PM_SHADING
 	//#define RTP_SIMPLE_SHADING
@@ -502,10 +502,10 @@ CGPROGRAM
 	#include "RTP_AddBase.cginc"
 
 ENDCG  	
-*/ // AddFar
+//*/ // AddFar
 
 // (not used / commented below when addshadow surf keyword used above)
-/* SHADOW PASSES
+///* SHADOW PASSES
 	// Pass to render object as a shadow caster
 	Pass {
 		Name "Caster"
@@ -576,14 +576,14 @@ CGPROGRAM
 #define SHADOW_COLLECTOR_PASS
 #include "UnityCG.cginc"
 
-/astar
+/*
 // Shadow Softener part
 #pragma target 3.0
 // Define the Shadow Filter
 #define SOFTENER_FILTER PCF8x8
 // Include Shadow Softener
 #include "../../../Shadow Softener/Shaders/ShadowSoftener.cginc"
-astar/
+*/
 
 #define RTP_CUT_HOLES
 
@@ -620,7 +620,7 @@ fixed4 frag (v2f i) : COLOR
 ENDCG
 
 }
-*/ // SHADOW PASSES
+//*/ // SHADOW PASSES
 
 	
 }
@@ -646,10 +646,10 @@ SubShader {
 	LOD 100
 
 CGPROGRAM
-	#pragma surface surf Lambert vertex:vert
+	#pragma surface surf Lambert vertex:vert exclude_path:deferred
 	#include "UnityCG.cginc"
 	
-	#pragma only_renderers d3d9 d3d11
+	#pragma only_renderers d3d9 opengl gles flash d3d11
 		
 /////////////////////////////////////////////////////////////////////
 // RTP specific
@@ -698,6 +698,10 @@ float rtp_snow_specular;
 #endif
 ////////////////////////////////////////////////////////////////////
 
+#ifdef UNITY_PASS_META
+	float4 _MainTex_ST;
+#endif
+
 struct Input {
 	float4 _uv_Relief;
 	float4 snowDir;
@@ -708,7 +712,11 @@ void vert (inout appdata_full v, out Input o) {
 		UNITY_INITIALIZE_OUTPUT(Input, o);
 	#endif
 	o._uv_Relief.xy=mul(_Object2World, v.vertex).xz / _TERRAIN_ReliefTransform.xy + _TERRAIN_ReliefTransform.zw;
+#ifdef UNITY_PASS_META	
+	o._uv_Relief.zw=TRANSFORM_TEX(v.texcoord, _MainTex);
+#else
 	o._uv_Relief.zw=TRANSFORM_TEX(v.texcoord, _Control);
+#endif
 /////////////////////////////////////////////////////////////////////
 // RTP specific
 //
@@ -772,20 +780,20 @@ void surf (Input IN, inout SurfaceOutput o) {
 		#endif		
 	#endif	
 		
-	o.Albedo = col.rgb;
+	o.Albedo = float3(1,0,0);//col.rgb;
 	//o.Gloss = col.a*total_coverage;
 	//o.Specular = dot(_Spec0123, splat_control);
 }
 ENDCG  
 
-/* AddPass
+///* AddPass
 ZTest LEqual
 //Offset -1,-1
 CGPROGRAM
-	#pragma surface surf Lambert vertex:vert decal:add
+	#pragma surface surf Lambert vertex:vert decal:add exclude_path:deferred
 	#include "UnityCG.cginc"
 	
-	#pragma only_renderers d3d9 d3d11
+	#pragma only_renderers d3d9 opengl gles flash d3d11
 		
 /////////////////////////////////////////////////////////////////////
 // RTP specific
@@ -833,6 +841,10 @@ float rtp_snow_specular;
 #endif
 ////////////////////////////////////////////////////////////////////
 
+#ifdef UNITY_PASS_META
+	float4 _MainTex_ST;
+#endif
+
 struct Input {
 	float4 _uv_Relief;
 	float4 snowDir;
@@ -843,7 +855,11 @@ void vert (inout appdata_full v, out Input o) {
 		UNITY_INITIALIZE_OUTPUT(Input, o);
 	#endif
 	o._uv_Relief.xy=mul(_Object2World, v.vertex).xz / _TERRAIN_ReliefTransform.xy + _TERRAIN_ReliefTransform.zw;
+#ifdef UNITY_PASS_META	
+	o._uv_Relief.zw=TRANSFORM_TEX(v.texcoord, _MainTex);
+#else
 	o._uv_Relief.zw=TRANSFORM_TEX(v.texcoord, _Control);
+#endif
 /////////////////////////////////////////////////////////////////////
 // RTP specific
 //
@@ -913,7 +929,7 @@ void surf (Input IN, inout SurfaceOutput o) {
 	//o.Specular = dot(_Spec4567, splat_control);
 }
 ENDCG  
-*/ // AddPass
+//*/ // AddPass
 
 }
 // EOF CLASSIC shading

@@ -30,37 +30,9 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _MainTex2
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _BumpMapCombined
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _HeightMapCombined
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
           name: TERRAIN_RippleMap
         second:
           m_Texture: {fileID: 2800000, guid: 87b672e098a28584d82865fa6f149b44, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _BumpMapPerlin
-        second:
-          m_Texture: {fileID: 2800000, guid: 290d7c2deedd33f44803b2e9b422cf9d, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -82,6 +54,34 @@ Material:
           name: _VerticalTexture
         second:
           m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _MainTex2
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMapCombined
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _HeightMapCombined
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMapPerlin
+        second:
+          m_Texture: {fileID: 2800000, guid: 290d7c2deedd33f44803b2e9b422cf9d, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -189,7 +189,71 @@ Material:
         second: .113876954
       data:
         first:
-          name: _Intensity
+          name: TERRAIN_RippleScale
+        second: 4
+      data:
+        first:
+          name: TERRAIN_DropletsSpeed
+        second: 10
+      data:
+        first:
+          name: TERRAIN_WetDropletsStrength
+        second: 0
+      data:
+        first:
+          name: TERRAIN_FlowScale
+        second: 1
+      data:
+        first:
+          name: TERRAIN_FlowSpeed
+        second: .5
+      data:
+        first:
+          name: _BumpMapGlobalScale
+        second: .00999999978
+      data:
+        first:
+          name: _TERRAIN_distance_start
+        second: 0
+      data:
+        first:
+          name: _TERRAIN_distance_transition
+        second: 20
+      data:
+        first:
+          name: _TERRAIN_distance_start_bumpglobal
+        second: 0
+      data:
+        first:
+          name: _TERRAIN_distance_transition_bumpglobal
+        second: 32
+      data:
+        first:
+          name: rtp_perlin_start_val
+        second: .600000024
+      data:
+        first:
+          name: TERRAIN_ReflectionRotSpeed
+        second: .300000012
+      data:
+        first:
+          name: _TERRAIN_ExtrudeHeight
+        second: .0496153831
+      data:
+        first:
+          name: _VerticalTextureTiling
+        second: 50
+      data:
+        first:
+          name: _VerticalTextureGlobalBumpInfluence
+        second: 0
+      data:
+        first:
+          name: TERRAIN_GlobalWetness
+        second: 1
+      data:
+        first:
+          name: TERRAIN_RainIntensity
         second: 1
       data:
         first:
@@ -221,10 +285,6 @@ Material:
         second: 1
       data:
         first:
-          name: TERRAIN_RippleScale
-        second: 4
-      data:
-        first:
           name: TERRAIN_WaterLevel
         second: .730769277
       data:
@@ -241,14 +301,6 @@ Material:
         second: .865384638
       data:
         first:
-          name: TERRAIN_DropletsSpeed
-        second: 10
-      data:
-        first:
-          name: TERRAIN_WetDropletsStrength
-        second: 0
-      data:
-        first:
           name: TERRAIN_Refraction
         second: .0284615383
       data:
@@ -259,14 +311,6 @@ Material:
         first:
           name: TERRAIN_Flow
         second: .730769277
-      data:
-        first:
-          name: TERRAIN_FlowScale
-        second: 1
-      data:
-        first:
-          name: TERRAIN_FlowSpeed
-        second: .5
       data:
         first:
           name: TERRAIN_WetSpecularity
@@ -281,10 +325,6 @@ Material:
         second: .0500000007
       data:
         first:
-          name: TERRAIN_ReflectionRotSpeed
-        second: .300000012
-      data:
-        first:
           name: _BumpMapPerlinBlendA
         second: .300000012
       data:
@@ -293,56 +333,12 @@ Material:
         second: .300000012
       data:
         first:
-          name: _BumpMapGlobalScale
-        second: .00999999978
-      data:
-        first:
-          name: _TERRAIN_distance_start
-        second: 0
-      data:
-        first:
-          name: _TERRAIN_distance_transition
-        second: 20
-      data:
-        first:
-          name: _TERRAIN_distance_start_bumpglobal
-        second: 0
-      data:
-        first:
-          name: _TERRAIN_distance_transition_bumpglobal
-        second: 32
-      data:
-        first:
-          name: rtp_perlin_start_val
-        second: .600000024
-      data:
-        first:
-          name: _TERRAIN_ExtrudeHeight
-        second: .0496153831
-      data:
-        first:
-          name: _VerticalTextureTiling
-        second: 50
-      data:
-        first:
-          name: _VerticalTextureGlobalBumpInfluence
-        second: 0
-      data:
-        first:
-          name: TERRAIN_RainIntensity
-        second: 1
-      data:
-        first:
           name: TERRAIN_FlowSpeedMap
         second: .107692309
       data:
         first:
           name: _BumpMapPerlinBlend
         second: .300000012
-      data:
-        first:
-          name: TERRAIN_GlobalWetness
-        second: 1
       data:
         first:
           name: _ExtrudeHeight
@@ -451,6 +447,10 @@ Material:
         first:
           name: _Speed
         second: 10
+      data:
+        first:
+          name: _Intensity
+        second: 1
       data:
         first:
           name: _RefractionPower
@@ -570,20 +570,20 @@ Material:
         second: {r: .858208954, g: .851804435, b: .851804435, a: 1}
       data:
         first:
-          name: _MainColor
-        second: {r: .440298498, g: .440298498, b: .440298498, a: 1}
-      data:
-        first:
-          name: TERRAIN_WaterColor
-        second: {r: .777734458, g: .782600641, b: .783582091, a: .20784314}
-      data:
-        first:
           name: TERRAIN_ReflColorA
         second: {r: .5, g: .5, b: .5, a: 1}
       data:
         first:
           name: TERRAIN_ReflColorB
         second: {r: .642236531, g: .655275404, b: .694029808, a: .501960814}
+      data:
+        first:
+          name: _MainColor
+        second: {r: .440298498, g: .440298498, b: .440298498, a: 1}
+      data:
+        first:
+          name: TERRAIN_WaterColor
+        second: {r: .777734458, g: .782600641, b: .783582091, a: .20784314}
       data:
         first:
           name: _TERRAIN_PosSize

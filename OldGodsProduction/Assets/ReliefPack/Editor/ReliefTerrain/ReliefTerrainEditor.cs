@@ -348,7 +348,7 @@ public class ReliefTerrainEditor : Editor {
 
 		bool RTP_SUPER_SIMPLE = _RTP_LODmanagerScript && _RTP_LODmanagerScript.RTP_SUPER_SIMPLE;
 		bool RTP_SS_GRAYSCALE_DETAIL_COLORS_FIRST = _RTP_LODmanagerScript && _RTP_LODmanagerScript.RTP_SUPER_SIMPLE  && _RTP_LODmanagerScript.RTP_SS_GRAYSCALE_DETAIL_COLORS_FIRST;
-		bool RTP_SS_GRAYSCALE_DETAIL_COLORS_ADD = _RTP_LODmanagerScript && _RTP_LODmanagerScript.RTP_SUPER_SIMPLE  && _RTP_LODmanagerScript.RTP_SS_GRAYSCALE_DETAIL_COLORS_ADD;
+		bool RTP_SS_GRAYSCALE_DETAIL_COLORS_ADD = _target.numLayers>4 && _RTP_LODmanagerScript && _RTP_LODmanagerScript.RTP_SUPER_SIMPLE  && _RTP_LODmanagerScript.RTP_SS_GRAYSCALE_DETAIL_COLORS_ADD;
 		bool RTP_USE_PERLIN_FIRST = _RTP_LODmanagerScript && _RTP_LODmanagerScript.RTP_USE_PERLIN_FIRST;
 		bool RTP_USE_PERLIN_ADD = _RTP_LODmanagerScript && _RTP_LODmanagerScript.RTP_USE_PERLIN_ADD;
 		
